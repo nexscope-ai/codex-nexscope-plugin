@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nexscope"
+  short_description: "Ecommerce research and data"
+  default_prompt: "Use Nexscope to research ecommerce products and save the results."

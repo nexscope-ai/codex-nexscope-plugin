@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nexscope-cli"
+version = "0.1.0"
+description = "Nexscope ecommerce skills for Codex"
+requires-python = ">=3.11"
+dependencies = ["keyring>=25,<26", "requests>=2.32,<3", "jmespath>=1,<2", "qrcode>=8,<9", "oss2>=2.19,<3"]
+license = "LicenseRef-Proprietary"
+
+[project.scripts]
+nexscope = "nexscope_cli.main:main"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+where = ["cli"]
+include = ["nexscope_cli"]
+
+[tool.setuptools.package-data]
+nexscope_cli = ["catalog.json", "skills/**/*"]
+
+[tool.setuptools.exclude-package-data]
+nexscope_cli = ["**/__pycache__/*", "**/*.pyc"]

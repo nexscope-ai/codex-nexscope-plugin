@@ -1,0 +1,42 @@
+{
+  "name": "codex-nexscope-plugin",
+  "version": "0.1.0",
+  "description": "Research ecommerce products, keywords, competitors and advertising with Nexscope.",
+  "author": {
+    "name": "Nexscope",
+    "url": "https://www.nexscope.ai",
+    "email": "service@nexscope.ai"
+  },
+  "homepage": "https://www.nexscope.ai",
+  "license": "LicenseRef-Proprietary",
+  "keywords": [
+    "ecommerce",
+    "amazon",
+    "research",
+    "advertising"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Nexscope",
+    "shortDescription": "Ecommerce research and data",
+    "longDescription": "Research ecommerce products, keywords, markets and competitors. Connect your Nexscope account from the conversation and save results as files. API usage consumes Nexscope credits.",
+    "developerName": "Nexscope",
+    "category": "Productivity",
+    "websiteURL": "https://www.nexscope.ai",
+    "privacyPolicyURL": "https://www.nexscope.ai/privacy",
+    "termsOfServiceURL": "https://www.nexscope.ai/terms",
+    "defaultPrompt": [
+      "Find Amazon US wireless headphones and save a CSV.",
+      "Compare keywords for my Amazon competitors.",
+      "Analyze the market for insulated water bottles."
+    ],
+    "brandColor": "#7C3AED",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png",
+    "capabilities": [
+      "Read",
+      "Write"
+    ]
+  },
+  "repository": "https://github.com/nexscope-ai/codex-nexscope-plugin"
+}

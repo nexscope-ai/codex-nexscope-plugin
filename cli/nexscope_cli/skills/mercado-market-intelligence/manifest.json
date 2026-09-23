@@ -1,0 +1,16 @@
+{
+  "name": "ecommerce.mercado-market-intelligence",
+  "version": "1.0.1",
+  "description": "Query Mercado Libre public market intelligence through Nexscope.",
+  "triggers": [
+    "Mercado Libre public market intelligence"
+  ],
+  "files": [
+    "SKILL.md",
+    "manifest.json",
+    "references/api.md",
+    "references/testing.md",
+    "scripts/damai_mercado_market_intelligence.py",
+    "scripts/upload_image.py"
+  ]
+}

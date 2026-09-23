@@ -1,0 +1,10 @@
+{
+  "geo-score-check": {
+    "reason": "The pinned upstream release does not include quick_geo_score.mjs or its scoring-model, platform-handling and report-contract references. The HTML template alone cannot provide the documented scoring workflow.",
+    "requiredResources": ["scripts/quick_geo_score.mjs", "references/scoring-model.md", "references/platform-handling.md", "references/report-contract.md"]
+  },
+  "product-ai-visibility": {
+    "reason": "This workflow uses a separate MODEL_BASE_URL / MODEL_KEY gateway and profile workspace, not the Nexscope CLI account API. A supported model-gateway integration and portable workspace setup are required before enabling it.",
+    "requiredIntegration": "Nexscope account-authenticated model capture and evaluation"
+  }
+}

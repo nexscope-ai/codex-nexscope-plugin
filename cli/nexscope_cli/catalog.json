@@ -1,0 +1,2152 @@
+{
+  "source": "https://github.com/nexscope-ai/nexscope-ecommerce-skills",
+  "revision": "cd532d33ce21a643f9945e05ca556b5ba890813d",
+  "skills": {
+    "1688-product-billboard": {
+      "source": "ecommerce-1688-product-billboard",
+      "description": "Retrieve 1688 bestseller ranking data.",
+      "scripts": [
+        "scripts/1688_product_billboard.py"
+      ],
+      "files": {
+        "SKILL.md": "45b0498aa4fad215f1eeb399bce623f01b0c1cf7f4c487c0f4740b5caa22be7c",
+        "references/api.md": "9a1e11abf2f27982cf93378eee3adf61bdfcf294a5152506574a0de929820ea1",
+        "scripts/1688_product_billboard.py": "6655ed48f69d63aa85d04fbfdb70213495c7ca897307534cab54c4b41819792e"
+      },
+      "available": true
+    },
+    "1688-product-detail": {
+      "source": "ecommerce-1688-product-detail",
+      "description": "Query 1688 public product details through Nexscope.",
+      "scripts": [
+        "scripts/alibaba1688_product_detail.py"
+      ],
+      "files": {
+        "SKILL.md": "61ada4b6bb044a8272ea339a635815c7e26f60c37e3ce700476c06dd188b5e10",
+        "manifest.json": "6eb0442e2d04933c6d1434fd33864c357a3ad2588f304be176c72d84ededdfba",
+        "references/api.md": "ea5cdc7df564c314e2319855ff17cacd71f229d915f068ed3e0bc39240d9195d",
+        "references/testing.md": "10fa47e74044854996ad9771f076ab4daf2b25688ee195d90b03941678901980",
+        "scripts/alibaba1688_product_detail.py": "ed4588ff173eb9172ef874e202a8d2825d2fd9932c0a0a10788dfa767beb0930"
+      },
+      "available": true
+    },
+    "1688-product-search": {
+      "source": "ecommerce-1688-product-search",
+      "description": "Search 1688 products with sourcing and sales filters.",
+      "scripts": [
+        "scripts/1688_product_search.py"
+      ],
+      "files": {
+        "SKILL.md": "886b872c1794e1d8c085bc51ab2380dc6a49c46c8b829dca4c35d0c98927c0e4",
+        "references/api.md": "70a5b297bb839e48e8661f654ede8f4aa81bcb99006ee676975d4eac568fb9d7",
+        "scripts/1688_product_search.py": "87c9f2f16e62c2cdf6dadc87891d01b031b215fc40d80327fea903e0b4c62136"
+      },
+      "available": true
+    },
+    "1688-search-by-image": {
+      "source": "ecommerce-1688-search-by-image",
+      "description": "Search for visually similar products on 1688 using an image.",
+      "scripts": [
+        "scripts/alibaba1688_image_search.py",
+        "scripts/upload_image.py"
+      ],
+      "files": {
+        "SKILL.md": "10477a58a893b651e328b2507ee6889ebc56d74dd72873f48d6a6ec335067bef",
+        "references/api.md": "01f8a98bccca1c686fad0647aa6cb28e2307245063f8f2c6e1442ec87ffb0866",
+        "scripts/alibaba1688_image_search.py": "094189bce90eedc7412f9285e898dd449d3c8ca222210b4fcd593445556a97a5",
+        "scripts/upload_image.py": "44b0648ffdce5292eeec6d53ef8fcfddc74023abc145095a2a2a84fe278f72a2"
+      },
+      "available": true
+    },
+    "amazon-ads-api-access": {
+      "source": "ecommerce-amazon-ads-api-access",
+      "description": "Authorize Amazon Ads accounts and inspect safe connection and profile metadata.",
+      "scripts": [
+        "scripts/amazon_connection.py"
+      ],
+      "files": {
+        "SKILL.md": "49f84d58ecc4889b7384780deb7a2762c70e9c5173b7b5a0d98a98018b215941",
+        "references/api.json": "2ba362a70980955a6de960077e60b079c7f8ed8882fa00a32f2be5b0b924ddc8",
+        "references/api.md": "48db5c849746c744a3099a538558bdc5ef5c3e6d45a33de6024774ac9d6e0fc4",
+        "references/testing.md": "7eb7a88cf4843dac252e9ca2341ce7a0aa37d7f1e0b4b07175fdbb881689fb34",
+        "scripts/amazon_connection.py": "5e964a0bd6b4cb5c8e573c2bf692d3d73e65278ce4a9c284ec27c511549c73a1"
+      },
+      "available": true
+    },
+    "amazon-ads-manager": {
+      "source": "ecommerce-amazon-ads-manager",
+      "description": "Read and mutate SP, SB, and SD campaigns, ad groups, ads, targeting, and budget rules.",
+      "scripts": [
+        "scripts/amazon_api.py"
+      ],
+      "files": {
+        "SKILL.md": "3c680718d32bfb944e09556f25263c2cc42fa179e88fa687fd60e765e7970dc6",
+        "references/api.json": "f6c6d398e8d60ee732edbc3f50038cec3fcb55a03b44a96c80237bf7d0db65cf",
+        "references/api.md": "cc336b5d2e45fba13ab35e30322a71fd2a15c38b33d2a0b65b68e453c84923c9",
+        "references/testing.md": "57235056f8f23e96092b2be41ac75df8c345ce94a348b89e5bb96d29e3478c19",
+        "scripts/amazon_api.py": "8cac22af461a665c59048523a96fb69341e6219e527ffeda761e77a7a5924979"
+      },
+      "available": true
+    },
+    "amazon-ads-reporting-api": {
+      "source": "ecommerce-amazon-ads-reporting-api",
+      "description": "Create, poll, resume, download, and save Amazon Ads v3 reports.",
+      "scripts": [
+        "scripts/amazon_ads_report_workflow.py"
+      ],
+      "files": {
+        "SKILL.md": "ffb7f28a022a3f619abfa0bc970e8293637f8dc97ea9c557b9d01e2eb07a7440",
+        "references/ads-report-types.json": "61a295109fd986cd889e0b15018dec8f2f420b50dd7e684a3d57a03830d3c34d",
+        "references/api.json": "97637dc2e9109ce9b3b475f41f0292ccc5053b3379efd24a54c7f968368fe672",
+        "references/api.md": "27f836474920b612456d60764bdc4ee38e9017265acba2c16f6942863be17d2b",
+        "references/testing.md": "94ba87ddf2a9877cea65426374f0da4ea5e44fa77be05686d2db6c6402811db8",
+        "scripts/amazon_ads_report_workflow.py": "daaa4df66da2fb7b97666812bd32818d969ba41c63f6d21053f735e219930f58"
+      },
+      "available": true
+    },
+    "amazon-ads-sp-insights-report": {
+      "source": "ecommerce-amazon-ads-sp-insights-report",
+      "description": "Retrieve Amazon Ads Sponsored Products audience and search-term impression-share reports through Nexscope.",
+      "scripts": [
+        "scripts/check_auth_dependency.py",
+        "scripts/get_sp_audience_report.py",
+        "scripts/get_sp_search_impression_share.py"
+      ],
+      "files": {
+        "SKILL.md": "fe8e488c8319940da20a72da175bf4d6446504c220f821ce41c3d001065b38f4",
+        "manifest.json": "1e10f17a1dc384665a6e9d4673d8de51baee1e93be339e1d821435c30a2163e9",
+        "references/api.json": "1a86e51f14cd9a40d4c8b5bea10f759a2b5416f308ae05c3b50725c5ec1e18ce",
+        "references/api.md": "cd25e0951957eb5c75c2fac601951c93e34a37185f5259e818c74dd3d4818d3f",
+        "references/sp-audience-reporting-v1.md": "dd32bee0e012963b56a72f1b5d31533deecf63606bac2c1b00803b5311495798",
+        "references/sp-search-impression-share-v1.md": "5c26cd4fa4f5709bd29c38f69ce57dc6da0af165d9dfae29608a2a7628064546",
+        "references/testing.md": "92bea804eef4afb74ad1739b8e878d6f8fac5cbddfc476204b10830b2fc70b21",
+        "scripts/check_auth_dependency.py": "fc169493a0f6e23467129adbb8f9584ca9eb104403f69648d499a56fd6582497",
+        "scripts/get_sp_audience_report.py": "55c8a792f613eb2ecd27f54a47cd1919e1a1e23dd610619f1aa972fdafe577e0",
+        "scripts/get_sp_search_impression_share.py": "26c691d1931c9142d8f367a857526d64df98f450bf9b8d49366258d48e2f50af",
+        "scripts/reporting_v1_workflow.py": "f45c4444a15d1726d9d558ed3c30e1ee6dad5b34fdd7d975ddea3de4aeca55e9"
+      },
+      "available": true
+    },
+    "amazon-advertising-api": {
+      "source": "ecommerce-amazon-advertising-api",
+      "description": "Authorize Amazon Ads accounts, manage SP, SB, and SD entities, and retrieve advertising reports.",
+      "scripts": [
+        "scripts/amazon_ads_report_workflow.py",
+        "scripts/amazon_api.py",
+        "scripts/amazon_connection.py"
+      ],
+      "files": {
+        "SKILL.md": "a6a664886bfa003e598c573e09f312b322584c78f9528d72a5086d2fcfa046e2",
+        "references/ads-report-types.json": "61a295109fd986cd889e0b15018dec8f2f420b50dd7e684a3d57a03830d3c34d",
+        "references/api.json": "d7e3aee0023de983b44eefb9a373b3394e84e5832783c5f375be0869514e7d89",
+        "references/api.md": "d4fc96ea67cde95c98b1d2078da360bcd866d814387f06bc2ea1106ca0ae0cb4",
+        "references/testing.md": "9f9f947793a669618bff2460b04665cd8e8e87eff475eb8206e56860e3112d67",
+        "scripts/amazon_ads_report_workflow.py": "daaa4df66da2fb7b97666812bd32818d969ba41c63f6d21053f735e219930f58",
+        "scripts/amazon_api.py": "8cac22af461a665c59048523a96fb69341e6219e527ffeda761e77a7a5924979",
+        "scripts/amazon_connection.py": "5e964a0bd6b4cb5c8e573c2bf692d3d73e65278ce4a9c284ec27c511549c73a1"
+      },
+      "available": true
+    },
+    "amazon-alexa-search": {
+      "source": "ecommerce-amazon-alexa-search",
+      "description": "Search Amazon Alexa shopping results.",
+      "scripts": [
+        "scripts/amazon_alexa_search.py"
+      ],
+      "files": {
+        "SKILL.md": "6374cde21a63b7f1679d27a7859127ccb80d30d32d9b1bcd39421b42ac93c8ff",
+        "references/api.md": "2e888b71841c7ba77802ac58c5e2f3d01f24d85a0a517cc181df110d84135ea7",
+        "scripts/amazon_alexa_search.py": "562ee22025b07575d96e13280fd9ef65befe9304f8a7d5cb9084d3f48e25381b"
+      },
+      "available": true
+    },
+    "amazon-asin-keywords": {
+      "source": "ecommerce-amazon-asin-keywords",
+      "description": "Retrieve keywords associated with an Amazon ASIN.",
+      "scripts": [
+        "scripts/amazon_asin_keywords.py"
+      ],
+      "files": {
+        "SKILL.md": "18c09c7ed7b66428f2bf4e1cb9298cca2ffd6359f13dbe75edba0ddbcea974d2",
+        "references/api.md": "8cec857ba66036f0362e574ddacc9b8b84fa2990228739ecdf555ae31af2f334",
+        "scripts/amazon_asin_keywords.py": "db5670088ab3804ea3613f685eda3e6388b545ae774b0da06659665d1e964c73"
+      },
+      "available": true
+    },
+    "amazon-asin-traffic-summary": {
+      "source": "ecommerce-amazon-asin-traffic-summary",
+      "description": "Retrieve an Amazon ASIN traffic summary.",
+      "scripts": [
+        "scripts/amazon_asin_traffic_summary.py"
+      ],
+      "files": {
+        "SKILL.md": "ddd36a68f885a66d6bbddd8c1bc45465f5721b0e501266dc34f81f7c2b4d0374",
+        "references/api.md": "f5ad0a535268394f338d692dfbc9f376b5aab2d56c54d8559c6584bef2603e70",
+        "scripts/amazon_asin_traffic_summary.py": "9f0457c3aa0ccfe911c1a079d781ea8e31c3a9a86318d1e6140f7a2c10ac1856"
+      },
+      "available": true
+    },
+    "amazon-broad-product-search": {
+      "source": "ecommerce-amazon-broad-product-search",
+      "description": "Search broadly for Amazon products.",
+      "scripts": [
+        "scripts/amazon_broad_product_search.py"
+      ],
+      "files": {
+        "SKILL.md": "eeaa423a78fcb82578ff6b81055758342e16470fd71d6e496a49574afd58628e",
+        "references/api.md": "fcf64f148935c7b21ea6842ed3cc470453bdafa17eab9a8cf49b78779d9677e8",
+        "scripts/amazon_broad_product_search.py": "6d349ef1ee17be3fd47eb0bacc16b52b9210975193ddc6e7fe643623a36af470"
+      },
+      "available": true
+    },
+    "amazon-category-lookup": {
+      "source": "ecommerce-amazon-category-lookup",
+      "description": "Browse Amazon category nodes by parent identifier or search category metadata by name.",
+      "scripts": [
+        "scripts/amazon_category_lookup.py"
+      ],
+      "files": {
+        "SKILL.md": "49c3251479c42fa1eb670f537c8cf45d09a6b724315769d5e624626305df8cd1",
+        "references/api.json": "0a5c2918b73133eaf1c06e6959b78daca129fce790edc826bce5315cd5b7ca19",
+        "references/api.md": "3d2c06053ac4468334e2c0915607287fcff9ca830eb734cca98b8e5afe58919e",
+        "references/credentials.md": "75c3e111bf756f2ecbb1f4d343cd69f8d26ef7f1406ef97d4deb66c4b3f5de11",
+        "references/testing.md": "64038e2a6f9d36baee184d05bd59e02cafcb1b70806a8ba7fe27802886406723",
+        "references/workflow.md": "b0c55335ac5688154d0aa9e4acdd529fdf0f717b8312227ed8e402eb3ee42fa8",
+        "scripts/amazon_category_lookup.py": "dc7d7cb9b37fd91425a39f957691efb52e2459ffcb529bc7e402d416d83b4c83"
+      },
+      "available": true
+    },
+    "amazon-competitor-lookup": {
+      "source": "ecommerce-amazon-competitor-lookup",
+      "description": "Look up competing Amazon products.",
+      "scripts": [
+        "scripts/amazon_competitor_lookup.py"
+      ],
+      "files": {
+        "SKILL.md": "891e63d1dd4745826f5d5d3997470b560284c50c53f8c8bb7278189df4d53cbb",
+        "references/api.md": "df18b3e1c6b063faa553f76537673935b7d3f296557169747f916c1ba80486df",
+        "scripts/amazon_competitor_lookup.py": "e52395d2b7af30a1a50a2d9266a4422e2b5f25edb4d9430477e8cb6f12667c37"
+      },
+      "available": true
+    },
+    "amazon-keyword-expansion": {
+      "source": "ecommerce-amazon-keyword-expansion",
+      "description": "Expand an Amazon keyword.",
+      "scripts": [
+        "scripts/amazon_keyword_expansion.py"
+      ],
+      "files": {
+        "SKILL.md": "bb196d161a54d8fa927ad0e19b152ba70170a537ada599b0f5e41e8b45c0b2fe",
+        "references/api.md": "a086aa99d56aa95aa65270d763e0a16c8efe30f419fa03d00419afa94f53c1ec",
+        "scripts/amazon_keyword_expansion.py": "f402c972e52381bd5252988fda2c7d613d1d0743824eecba6d5cea5c4b608138"
+      },
+      "available": true
+    },
+    "amazon-keyword-intelligence": {
+      "source": "ecommerce-amazon-keyword-intelligence",
+      "description": "Query Amazon keyword intelligence data.",
+      "scripts": [
+        "scripts/aba_query.py"
+      ],
+      "files": {
+        "SKILL.md": "8e769ab07c7928adcf3e3d37950daea137fef123c3766235f1d3b0e60633a327",
+        "references/api.md": "fa05f50b3a905a899047d3c4f11c9b8e486ec5d7c920cec5c122c75f9725c212",
+        "scripts/aba_query.py": "cc69308db3a1bed470301484c311d4dc31466aa5665e2550f88c3f97f45bed94"
+      },
+      "available": true
+    },
+    "amazon-keyword-overview": {
+      "source": "ecommerce-amazon-keyword-overview",
+      "description": "Retrieve an overview for an Amazon keyword.",
+      "scripts": [
+        "scripts/amazon_keyword_overview.py"
+      ],
+      "files": {
+        "SKILL.md": "43d844344357e12ce1c50ce0311dc28bb17e2a14aa47a04f283fcc7ac144f5a1",
+        "references/api.md": "71018ddba9e860574a3fa0de1c1f2c77749eb3de6c941a953d00f4ff387bf624",
+        "scripts/amazon_keyword_overview.py": "4fd7209bc3cbcd1621a06387831c101394576705e3b845c706b6b080d645b180"
+      },
+      "available": true
+    },
+    "amazon-keyword-search-history": {
+      "source": "ecommerce-amazon-keyword-search-history",
+      "description": "Retrieve historical Amazon keyword search volume.",
+      "scripts": [
+        "scripts/amazon_keyword_search_history.py"
+      ],
+      "files": {
+        "SKILL.md": "8c64ff28a955d4853c2932178f8ce4bb9ff79a277ce6128a0a85cb7f46aad876",
+        "references/api.md": "266defbb41134dec315fedbac77c19a1743e52ad360b07d111a29af6c0d5a408",
+        "scripts/amazon_keyword_search_history.py": "3cd35c5af659ea365e931087d6ae697408597f656ec972afb79d7cd71850ba27"
+      },
+      "available": true
+    },
+    "amazon-keyword-share-of-voice": {
+      "source": "ecommerce-amazon-keyword-share-of-voice",
+      "description": "Retrieve Amazon keyword share of voice.",
+      "scripts": [
+        "scripts/amazon_keyword_share_of_voice.py"
+      ],
+      "files": {
+        "SKILL.md": "089537e359832e9034315bbe66052efef053a09aafcf2d55e662664023c41ef9",
+        "references/api.md": "badf2caf5cc17702000f7385f8382cc2544c775e51b9e06308983264a964c27a",
+        "scripts/amazon_keyword_share_of_voice.py": "6fe4780ede15a4e9daa7feebf0c563a50a4b222c7d1c4b934a88959223df7a86"
+      },
+      "available": true
+    },
+    "amazon-keyword-summary": {
+      "source": "ecommerce-amazon-keyword-summary",
+      "description": "Retrieve a summary for an Amazon keyword.",
+      "scripts": [
+        "scripts/amazon_keyword_summary.py"
+      ],
+      "files": {
+        "SKILL.md": "a29e3bfe972c4a13c3ce350669ebccadb6797a3e09481bbe607cf245ea08c67e",
+        "references/api.md": "cd06c8fc29b9c4dd9151c8f8dfe1e7126742c15380c73d72e61b8bf8b2e44f00",
+        "scripts/amazon_keyword_summary.py": "704ee0f6c24adca586800feaf3ff24ece4c48326502f3ff1be69e377a7c05a6b"
+      },
+      "available": true
+    },
+    "amazon-market-product-detail": {
+      "source": "ecommerce-amazon-market-product-detail",
+      "description": "Retrieve Amazon marketplace product details.",
+      "scripts": [
+        "scripts/amazon_market_product_detail.py"
+      ],
+      "files": {
+        "SKILL.md": "a0f854a815046cff75c3428b689584a210dad9710a73131de360fba7785943ef",
+        "references/api.md": "eafa5c86ee13448f266a1b365c4f54a27e45e13865932652d78a76f3c590ee54",
+        "scripts/amazon_market_product_detail.py": "2b21032098a36b5a4c5f54cd535bf9d8aa19aa607289b10d61455b4418501487"
+      },
+      "available": true
+    },
+    "amazon-market-product-search": {
+      "source": "ecommerce-amazon-market-product-search",
+      "description": "Search for products in the Amazon marketplace.",
+      "scripts": [
+        "scripts/amazon_market_product_search.py"
+      ],
+      "files": {
+        "SKILL.md": "fb0b161cf14734cd5ad75732b8a9ce7471852c61c4e155a46800827c22d1444e",
+        "references/api.md": "bc36e793ed15b1cd40d85b53060597cad7dcb42ff2bcd9d6c5ca094638023584",
+        "scripts/amazon_market_product_search.py": "756cf4755bc82ccc89f878b4c45dfee6590c8d2ed63edbc812b9df3ea5eca530"
+      },
+      "available": true
+    },
+    "amazon-market-research": {
+      "source": "ecommerce-amazon-market-research",
+      "description": "Research an Amazon market.",
+      "scripts": [
+        "scripts/amazon_market_research.py"
+      ],
+      "files": {
+        "SKILL.md": "01bbf2b8f379ea7b9a3962cac619d5b41fcbb58c8b5f446eb3adee84fbab8c04",
+        "references/api.md": "2206809517ee5381384ec38bf173a3a3f4df464590c25c4ec534ff6ec81bc823",
+        "scripts/amazon_market_research.py": "84a2a4e09b27e25e9f49e8ee7d0d0ee0b58cf6d3bba28792d5dcd12a69f0f23f"
+      },
+      "available": true
+    },
+    "amazon-market-statistics": {
+      "source": "ecommerce-amazon-market-statistics",
+      "description": "Analyze Amazon market statistics.",
+      "scripts": [
+        "scripts/amazon_market_statistics.py"
+      ],
+      "files": {
+        "SKILL.md": "c15dfcf534ab5ae714f5dbac34e5126ff41b9acc53d5435524e98e7738edd199",
+        "references/api.md": "678e940ccb622036a48750c78a4d7b42307579fc33822844d27a825f88d5965c",
+        "scripts/amazon_market_statistics.py": "cfe136e1235f530abf0e34e592af7677be935e900fe5da597b65332ba87bde04"
+      },
+      "available": true
+    },
+    "amazon-niche-info": {
+      "source": "ecommerce-amazon-niche-info",
+      "description": "Retrieve Amazon niche information.",
+      "scripts": [
+        "scripts/amazon_niche_info.py"
+      ],
+      "files": {
+        "SKILL.md": "dc30a32ccb6a932b56f90643c8f486584e60688f9f067791ebfed2503eb38871",
+        "references/api.md": "f423c7bc39bfb9b6a373c892844dc423f8bf0a53a1270ced765ad77e0a051ee4",
+        "scripts/amazon_niche_info.py": "bbfdd6e707b4591dc6b9153836efc343467f0db408154ed4dda4ffaa9cc0c0e7"
+      },
+      "available": true
+    },
+    "amazon-niche-info-by-asin": {
+      "source": "ecommerce-amazon-niche-info-by-asin",
+      "description": "Retrieve Amazon niche information by ASIN.",
+      "scripts": [
+        "scripts/amazon_niche_info_by_asin.py"
+      ],
+      "files": {
+        "SKILL.md": "e48bc622fc9ccfc7bfd0d5b7f800ec157db3ae5f67bec7d310d6729e6e240550",
+        "references/api.md": "cb44e919da3a0010e8207ee278d8709daeb09203b666fe7d5dd976e383178f96",
+        "scripts/amazon_niche_info_by_asin.py": "9fde918fd9df36b651b3eea6d48a31adaef077bb47d1cae09053c9956e12198f"
+      },
+      "available": true
+    },
+    "amazon-niche-info-by-keyword": {
+      "source": "ecommerce-amazon-niche-info-by-keyword",
+      "description": "Retrieve Amazon niche information by keyword.",
+      "scripts": [
+        "scripts/amazon_niche_info_by_keyword.py"
+      ],
+      "files": {
+        "SKILL.md": "e2169af600619a2c8f034c4bae702d86e8952fb42a53a8374d2bbf4e62b71ea9",
+        "references/api.md": "420cecabf7510641f3c3844786531fd52042daf715c952c3579b407526dcaff6",
+        "scripts/amazon_niche_info_by_keyword.py": "c0f5d69e4ad4cac2ab26e47ce9dd5c5e298a1767eb4621c659182e5c1b831b03"
+      },
+      "available": true
+    },
+    "amazon-niche-reviews-by-keyword": {
+      "source": "ecommerce-amazon-niche-reviews-by-keyword",
+      "description": "Retrieve Amazon niche reviews by keyword.",
+      "scripts": [
+        "scripts/amazon_niche_reviews_by_keyword.py"
+      ],
+      "files": {
+        "SKILL.md": "a6397910a5d24be00c23587afb4fac7a24121ef60c1e9737b28f008773f91a12",
+        "references/api.md": "4e16aea2ed33ceecfb3a18f342c36762f7cd8f40057d28e4847fc71fbe25b427",
+        "scripts/amazon_niche_reviews_by_keyword.py": "b5ed9e30e03a33a6c56d5d7f17d6445d049b36c149d74486ad5aa515578ee496"
+      },
+      "available": true
+    },
+    "amazon-opportunity-report-by-keyword": {
+      "source": "ecommerce-amazon-opportunity-report-by-keyword",
+      "description": "Retrieve Amazon opportunity reports by keyword.",
+      "scripts": [
+        "scripts/amazon_opportunity_report.py"
+      ],
+      "files": {
+        "SKILL.md": "5b7e6d012d4f1ff6a5d318ddbeb5af90a98dccfa0670c6df06e97e1d07db7c12",
+        "references/api.md": "42ab4e3b27b4496bbfbfd622fb9c56cdea59199aaa58f29378a2029c97242de1",
+        "scripts/amazon_opportunity_report.py": "cbe46b7a478b1d373f8f8e147f93607dd7c8c82324a03a3c639b319481d13dbc"
+      },
+      "available": true
+    },
+    "amazon-opportunity-search-by-metrics": {
+      "source": "ecommerce-amazon-opportunity-search-by-metrics",
+      "description": "Search Amazon opportunities by metrics.",
+      "scripts": [
+        "scripts/amazon_opportunity_screener.py"
+      ],
+      "files": {
+        "SKILL.md": "077e84705495ee17dc9b7897ab13eaf331b5ff34060002b900a5ee0f7ec561f8",
+        "references/api.md": "cfde951bcb507bba722833a24760ca10a02d3e2748348c873757904c209c0c96",
+        "scripts/amazon_opportunity_screener.py": "b8482ecf055e1d7414e3fff027987c8378c004bbb8fb0ea3b937e5c8774087bf"
+      },
+      "available": true
+    },
+    "amazon-policy-feed": {
+      "source": "ecommerce-amazon-policy-feed",
+      "description": "Retrieve marketplace policy updates and full article details.",
+      "scripts": [
+        "scripts/amazon_policy_feed.py",
+        "scripts/amazon_policy_feed_detail.py"
+      ],
+      "files": {
+        "SKILL.md": "97f20342a145a687b4a1646c71cacee668ab7639dcef9f89ff506fcd9a840416",
+        "references/api.md": "c92624a1f15e2660ce93aff140853bc5df07503706b72035add1b86599a21006",
+        "scripts/amazon_policy_feed.py": "f12d727aee969b5406ab8428298482c50fe344bdd5d5781caa1abb910672b179",
+        "scripts/amazon_policy_feed_detail.py": "2b6a78a5aaa0f5d0df5185c9a9f63213a45ab5f0925e3d2251f82e607a7a3214"
+      },
+      "available": true
+    },
+    "amazon-product-database": {
+      "source": "ecommerce-amazon-product-database",
+      "description": "Query the Amazon product database.",
+      "scripts": [
+        "scripts/amazon_product_database.py"
+      ],
+      "files": {
+        "SKILL.md": "71d388e5c610981c572ffa5aa0794c9a0e4e8f5d8a14b347f3ef4c6d32545693",
+        "references/api.md": "d5c1cf424ce666563ed0ec43c344f1da1ff2672c0edfe56bb8aefb8cab4d3946",
+        "scripts/amazon_product_database.py": "f9133734ac509b7c90367d00460019ea64d1279814a65ca25749b5b4615e1374"
+      },
+      "available": true
+    },
+    "amazon-product-database-search": {
+      "source": "ecommerce-amazon-product-database-search",
+      "description": "Search the Amazon product database.",
+      "scripts": [
+        "scripts/amazon_product_database_search.py"
+      ],
+      "files": {
+        "SKILL.md": "b470fd31d8605d14f100a41aebe04b89f32c654f5d8a6d1bebeafce10aa101e9",
+        "references/api.md": "3444140b5418f48ab2a8b66d0c3c07fcd733526300d65856ad275aea7317bb57",
+        "scripts/amazon_product_database_search.py": "c56fad240735dbd99f6f49fe1eb432c670b55b6c4fd57061498c6273d2ba0b9b"
+      },
+      "available": true
+    },
+    "amazon-product-detail": {
+      "source": "ecommerce-amazon-product-detail",
+      "description": "Retrieve Amazon product details.",
+      "scripts": [
+        "scripts/amazon_product_detail.py"
+      ],
+      "files": {
+        "SKILL.md": "980fb37ce3ca866ca8d282e320c7e2160f14c36d9dbdf7a022f675c07beb5a31",
+        "references/api.md": "c4c3be6ed351dc82c611883ff60fc7e5eae4a10bc69361c2f12ae9b00af97755",
+        "scripts/amazon_product_detail.py": "d1d0ddea54a3e1f95bf0206b4e5fd6cfbabdc83229512f991d1d7834353c9d12"
+      },
+      "available": true
+    },
+    "amazon-product-discovery": {
+      "source": "ecommerce-amazon-product-discovery",
+      "description": "Discover Amazon products.",
+      "scripts": [
+        "scripts/amazon_product_discovery.py"
+      ],
+      "files": {
+        "SKILL.md": "ae1f794e75e2056f13e2031c4ce2bc1a2bb800a2c3f4b93ab29fa590a5928f5b",
+        "references/api.md": "f50fa637b985b86a2e068a9d78e46d74d4eb3c085067f1673524f27ca8ac503c",
+        "scripts/amazon_product_discovery.py": "4cf7fa87213ee546638d2ba94cf25b64ead29e6fc5a7b5cff24d435a164f851e"
+      },
+      "available": true
+    },
+    "amazon-product-history": {
+      "source": "ecommerce-amazon-product-history",
+      "description": "Retrieve Amazon product history and product details.",
+      "scripts": [
+        "scripts/amazon_product_history.py"
+      ],
+      "files": {
+        "SKILL.md": "50fdc748c83b3de07a845df7f11740b4cc09259f96a92310685659343a3dc517",
+        "references/api.md": "6e1f2c5fb087f08fb04374b539529042d3da5d4a57fead21aebd839b5dd57075",
+        "scripts/amazon_product_history.py": "fa238b2cb3cf09eb6cce593b62a344f65b69a70b883552e2a76f776a67fafcf8"
+      },
+      "available": true
+    },
+    "amazon-product-price-series": {
+      "source": "ecommerce-amazon-product-price-series",
+      "description": "Retrieve Amazon product price and metric series.",
+      "scripts": [
+        "scripts/amazon_product_price_series.py"
+      ],
+      "files": {
+        "SKILL.md": "900aa2cad779e59053eb92326d7bdbf269717efeac03c49fca81e518e1ec351b",
+        "references/api.md": "33920bf8d1b5e819fad498a654d0b785bfcc2cc7a60970c03803ea6d4fdf1cf2",
+        "scripts/amazon_product_price_series.py": "7eab6cb5ddf1663470c291e213a9f44daf0496f97c76c724585ec401f1768050"
+      },
+      "available": true
+    },
+    "amazon-product-research-api": {
+      "source": "ecommerce-amazon-product-research-api",
+      "description": "Route Amazon product-selection work across market, keyword, competitor, trend, review, and profitability capabilities.",
+      "scripts": [
+        "scripts/aba_query.py",
+        "scripts/amazon_alexa_search.py",
+        "scripts/amazon_opportunity_report.py",
+        "scripts/amazon_opportunity_screener.py",
+        "scripts/amazon_product_detail.py",
+        "scripts/amazon_reviews.py",
+        "scripts/amazon_search.py",
+        "scripts/amazon_search_by_image.py",
+        "scripts/jiimore_get_niche_info.py",
+        "scripts/jiimore_get_niche_info_by_keyword.py",
+        "scripts/jiimore_get_niche_review.py",
+        "scripts/jiimore_page_asins_by_asin.py",
+        "scripts/jiimore_product_discovery.py",
+        "scripts/junglescout_keyword_by_asin.py",
+        "scripts/junglescout_keyword_by_keyword.py",
+        "scripts/junglescout_keyword_history.py",
+        "scripts/junglescout_keyword_sov.py",
+        "scripts/junglescout_product_database.py",
+        "scripts/junglescout_sales_estimates.py",
+        "scripts/keepa_product_detail.py",
+        "scripts/keepa_product_history.py",
+        "scripts/keepa_product_search.py",
+        "scripts/onboarding.py",
+        "scripts/sellersprite_competitor_lookup.py",
+        "scripts/sellersprite_market_research.py",
+        "scripts/sellersprite_market_statistics.py",
+        "scripts/sellersprite_product_search.py",
+        "scripts/sellersprite_traffic_keyword.py",
+        "scripts/sif_asin_keywords.py",
+        "scripts/sif_asin_summary.py",
+        "scripts/sif_keyword_overview.py",
+        "scripts/sif_keyword_traffic.py",
+        "scripts/sorftime_product_detail.py",
+        "scripts/sorftime_product_search.py",
+        "scripts/upload_image.py"
+      ],
+      "files": {
+        "SKILL.md": "a94f7b437e3767b399a1a5ea5560fc7dbc9f881aeab3042f7816be03840025a7",
+        "references/aba-intelligent-query.md": "915352a31aa4b224523c0c7727a29e80d8c51be84bc645a93aabe140d3e6fdf7",
+        "references/amazon-alexa-search.md": "38f8aeffd75b9da34da7cee6259de231f5cc87f3379217a1b6798bbac05579cc",
+        "references/amazon-opportunity-report-by-keyword.md": "1c43edeffbce03569ceacf768e60c2da35f466a6aebd7eb286c3ea640c02a22e",
+        "references/amazon-opportunity-search-by-metrics.md": "dbf760c156e30e6339517da1f81a91167f52d0dc5254975bb33b1dae6efc77b3",
+        "references/amazon-product-detail.md": "278c1e1ccee71649e3169f0c839322a6c3644c7a6e221dac87652893d196b647",
+        "references/amazon-reviews-list.md": "129437b2a45366f99a31cf0e3048aa58cf4253c348438b694e8d4e92234f8a90",
+        "references/amazon-search-by-image.md": "365352e123c4e33bafc36570dc2a732072b1cf276784a5ff9f633e800e95974e",
+        "references/amazon-search.md": "de2f6b9b8a4d901c580b38a6f522e61565cf43a01501f047d8807095c973da1e",
+        "references/api.json": "54860c565b4028e196bbccb1aef1041e7e28874e534724dd1248bdafd9b7c03c",
+        "references/api.md": "f94aa7fedb88d8d211a208fa6a0d5a2c0c005766c4ab6f63ac0d43e532338e7f",
+        "references/credentials.md": "7909e1225e483b7526a4c5ad974f39aa703ec3fa85710c7628a48a25405423f8",
+        "references/jiimore-get-niche-info-by-keyword.md": "b8f1e1027fa96c7a534c24a200a18daf2d27d5af967c867d236ac7b6319f5952",
+        "references/jiimore-get-niche-info.md": "8fec9a113cda0c3b9792dc0fce5db25ea781d0e6db1bb5a68b1b49bcf6696bd4",
+        "references/jiimore-get-niche-review-from-keyword.md": "93bf3083b5d485a1d0fd6bb2ebfb59a4d9e42144577eb4be04f95900f49763d6",
+        "references/jiimore-page-asins-by-asin.md": "4badeb866927f5ba8233bdc7f9c6ad611b4fc43d00c4c8ac4ecaea7d1274c7a9",
+        "references/jiimore-product-discovery.md": "18c0d99519e8f8773cd0a3ee6b7a343ade88e70d8feb7740c17dbba112ed734d",
+        "references/junglescout-keyword-by-asin.md": "2084b03739f7b72c0bc78a3bc121314d8be72c0285beeaa9f5c6ada4cc46d8ac",
+        "references/junglescout-keyword-by-keyword.md": "04aa55e45426fb3d985ada6aa31414314ee7cfdff3606112c7f381f67bada079",
+        "references/junglescout-keyword-history.md": "4af5d4a6b23092e836abd593fc0786c728571c980e6f63aba6d7d81efbb05356",
+        "references/junglescout-keyword-share-of-voice.md": "51e877bf8cd2a24ad27f782784e991376283212fed827c0f122bd7fcd130affe",
+        "references/junglescout-product-database.md": "e41d8e8eba1b4adbdc399eb479d0b3430a3169e913e38c4780f4b64a7c6e8056",
+        "references/junglescout-sales-estimates.md": "69a4ca1a7cc36df0dfaee9947278a5d3631b5a3541b8c4e0df6331e3fbfe8d2c",
+        "references/keepa-product-request.md": "0a2a1a760801ed6f9d35b2bf01bc996e5c22fafeeb850c3ddc7d700ff8ab3155",
+        "references/keepa-product-search.md": "98f12fad6efce9fdd691a94a7678e779100e60ff3d7ed3ce736d23fb6c3ecfc2",
+        "references/keepa-product-series.md": "b5ac05524a5c5c8a8a78fdc7307dbb03f754af4f6424138a15c05df54541c431",
+        "references/onboarding.md": "faa92b6bc6913b5eeffecbaf184b2ba591579a877e550be7bd99df19565d886b",
+        "references/sellersprite-competitor-lookup.md": "0091afe41737d950db42f42617ac4f9b86d9a2c6d8ed22b4ff52949d097d1576",
+        "references/sellersprite-market-research.md": "a51ec9365b40c0b45215d80dc3c322bcce79b2c2b85a5235561b9a8a359241b5",
+        "references/sellersprite-market-statistics.md": "1d232698855a9aba90b2302fb3950fbf1b986e9158092e7e15d8d2159633a8f2",
+        "references/sellersprite-product-search.md": "9539dc00adcbcbd464c7a9eec14b5e2aaefa2a8963f6e77b6a8a507fc6a4702f",
+        "references/sellersprite-traffic-keyword.md": "d54eca272efc25f45b0f5b2dc0536524b1bc9c3d508ca266beafdf9972e02bc8",
+        "references/sif-asin-keywords.md": "1dda38c1801b6db413a80716c1098fd64bcd82b7f42615d486207e8ae4d4b8c5",
+        "references/sif-asin-summary.md": "2ce7cff38ac88c1560e1c13a724f70782117dbacbebaaa042d110c88bfaec58b",
+        "references/sif-keyword-overview.md": "85b388011d75929fad9b4ad2246976fd382d343a682ebfe0d701f553e99c788a",
+        "references/sif-keyword-summary.md": "d7194f0d1adafd39377e13166737418be16f4daf7af1c30ff9d689868ee87e4d",
+        "references/sorftime-amazon-product-detail.md": "164060fb3ef26ccdaaec42611f93c3b00535d3b9f2fb947f95139fe53aa9f553",
+        "references/sorftime-amazon-product-query.md": "02a43d76ce38b041aff7060c3726ac11d8054d6bc9f7b439f1dd9e4d16221e83",
+        "references/testing.md": "93334e47991ce017363ca154a997457834166c9cc35a71ae28ee954318149ccb",
+        "references/workflow.md": "15594bc35a274967e9c47b093e1247737b31984cf6bfe679e268184a8da751f0",
+        "scripts/aba_query.py": "e8b4bf07f7f1eb6daaf25ef0c9c6959e8d85f6824ce930aa69984488cdeae2e1",
+        "scripts/amazon_alexa_search.py": "711ba568bfee67df7ca567c904cbfca4e4e5e7d635d52b6b3176ad0269e9ff9d",
+        "scripts/amazon_opportunity_report.py": "319dec01629caabaf0d44203daff25ed802fe3b3b14e04eee23242849ee504b3",
+        "scripts/amazon_opportunity_screener.py": "5c2152bd0530303d65eb56cbaf168d1d8f7be73e3e7a33909fd70c6ae009b5ca",
+        "scripts/amazon_product_detail.py": "7fe82109cb58e2d4fb7745870b603fe9073757869b4c0ac765d4aaa790d9cc7b",
+        "scripts/amazon_reviews.py": "1c544ba934ff09b207b54213d9279ae5d988d658cd87e976b65ca499fa4e4c22",
+        "scripts/amazon_search.py": "b80420ddd6af3f5e7861d2b01ae5bac4e5c0bf15e4c320518c12cb973599569a",
+        "scripts/amazon_search_by_image.py": "b58c6524e863b2f92aaae6ab642baf632224868c4aecab79d2f03f49c89fdb8d",
+        "scripts/jiimore_get_niche_info.py": "1f1c91d68bfe003ff7bb82abbefa99ae4af9991c3525ee814da2765839b4165d",
+        "scripts/jiimore_get_niche_info_by_keyword.py": "ec8319f8d08e08d7d5fcd500fb276e5f89a75fe446ff599e2e135e3bbdd62bad",
+        "scripts/jiimore_get_niche_review.py": "1c2558c67523fb59d1177bce95c704f08b543d899ffaebe10bc62ef454217aae",
+        "scripts/jiimore_page_asins_by_asin.py": "9c275cdf0f72e2102a73375ea6eaa0500c2f7ac048c3ab8596ccf1e03badf2e3",
+        "scripts/jiimore_product_discovery.py": "52057a8e9a31cf26f53a94946148f60e98d4f2729c8e90549eacafe1107dce2c",
+        "scripts/junglescout_keyword_by_asin.py": "3196ac4d5abd4afc72fcf83c98d98fc8ab4a80e8bda8abec9d8442b670eb85a1",
+        "scripts/junglescout_keyword_by_keyword.py": "d26c62f5772f7a0699cdf7141848e7dfc64e4907dfe64801c329f77450524825",
+        "scripts/junglescout_keyword_history.py": "8500d7e5321f0dfe10941ab620fa8d19f29a2b39c0d8a0e4ba98fae7c24911af",
+        "scripts/junglescout_keyword_sov.py": "4228e84ff48b262c3c6810909dfcf0bd3752398ff4cc3223c29afa6fbe88b9c8",
+        "scripts/junglescout_product_database.py": "595e0f207ea7b4be95664775a03aeb36564747ff9fff6de55a4b9bafe9c1e0b0",
+        "scripts/junglescout_sales_estimates.py": "397e91c8091e78a20c9074f21427be35eac76187bafcceaff1edb1c239c45d57",
+        "scripts/keepa_product_detail.py": "6557c9a99c0580736d4ec7124e237f6ebf8b97bf6655369b1dadb292b9907adf",
+        "scripts/keepa_product_history.py": "7edd82e3934f1422ff1fda92e44ea54392a136cf37ce30aa5e17358eeb581283",
+        "scripts/keepa_product_search.py": "6b1be625aed25d828bab8a40927745eaede61ec99a754d5089349918e4f8b467",
+        "scripts/onboarding.py": "2141e6038f149aca910f686fab274fd3c18581c7710911f0a9c4812c0c54b99e",
+        "scripts/sellersprite_competitor_lookup.py": "41e8525bf190ad644a4c658230d0a9f8f2698a71c5fc68ebdd0bc58e49a33c0a",
+        "scripts/sellersprite_market_research.py": "b9f2094c99d85b21fe62efbcf5354356e4e808006c6486bc037847ea7904fc47",
+        "scripts/sellersprite_market_statistics.py": "a18995f9733e4c66437b8876f42d65a5ec2adf7d04683863ccddf0637e04ad88",
+        "scripts/sellersprite_product_search.py": "be6916a20fe0387149992bc78b3ad71aafc5a6877207f3444888ad56c59b7b47",
+        "scripts/sellersprite_traffic_keyword.py": "d995b0c406f82743527caf2a0fb3ed3f7882333198375cb7b640e1a3a3d3c7e0",
+        "scripts/sif_asin_keywords.py": "690693e03cc7d34c3ed05eead5b2a2e0ef7671a94772fc5fa52c7fd34f4b5991",
+        "scripts/sif_asin_summary.py": "5f8613d5a292df0eb20a1a869a659ad6c0ffae84f3d8f9e5b9c0ff51a9f08581",
+        "scripts/sif_keyword_overview.py": "5875802be74ef7fb0e28247520608a97fa230767535c112a40f3533565b2e19f",
+        "scripts/sif_keyword_traffic.py": "446598cef18e02af4aea2ad2718204705d016457741eccb74cf337f5be852b8d",
+        "scripts/sorftime_product_detail.py": "f03a17b98291352c70da38859b4a0b7157918da8ca2e72e24a81f0ab4ca1c228",
+        "scripts/sorftime_product_search.py": "a8aeec3cab18da5d73f5b1f53539c6da67cf0e22fcf7893b4e4c83245cece91c",
+        "scripts/upload_image.py": "167f3a55f2b80023435b52a22ad368861680adbfe8e803febe6c0247f82a03d2"
+      },
+      "available": true
+    },
+    "amazon-related-asins": {
+      "source": "ecommerce-amazon-related-asins",
+      "description": "Retrieve Amazon ASINs related to an ASIN.",
+      "scripts": [
+        "scripts/amazon_related_asins.py"
+      ],
+      "files": {
+        "SKILL.md": "f74bf65af2e57ac7919f0b24e8fd4eb7d7f42b81d3774426267718a2d9a67532",
+        "references/api.md": "4680af415f2a129444520c19810b2e7a184f188f913261420fa294cd55b25765",
+        "scripts/amazon_related_asins.py": "2c5e9f05d3c482abdbd902f2a2c7bb93a4e08b4a385706d8a7504d3871999121"
+      },
+      "available": true
+    },
+    "amazon-reviews-list": {
+      "source": "ecommerce-amazon-reviews-list",
+      "description": "Retrieve Amazon product reviews.",
+      "scripts": [
+        "scripts/amazon_reviews.py"
+      ],
+      "files": {
+        "SKILL.md": "8e0bb4040fc287191b6e8c69cf98970c432b1a2159c7f3049eb9d983c9bf4b9a",
+        "references/api.md": "0915258ba986520e3bbaf86fc89dad7a23169b4573850ff5c785f09dbcaf9b09",
+        "scripts/amazon_reviews.py": "7f33c351ae297dfae2a3662f52c8da42f16d9592e783ecc8cc616ae033b83ea8"
+      },
+      "available": true
+    },
+    "amazon-sales-estimates": {
+      "source": "ecommerce-amazon-sales-estimates",
+      "description": "Estimate historical daily sales for an Amazon product.",
+      "scripts": [
+        "scripts/amazon_sales_estimates.py"
+      ],
+      "files": {
+        "SKILL.md": "b4e0d5e6aaf018dd4e66f2527b5c4304924fced96ce2742fda06b3b1e35fd289",
+        "references/api.md": "077ac621cee0e12bc1d8387e97f62cf6ec0c9acf4aef5cafd2f296553b2935d8",
+        "scripts/amazon_sales_estimates.py": "bf6c1e0886d89352769f34082631503779b86a1b9baf7566f2037ed5d21f117e"
+      },
+      "available": true
+    },
+    "amazon-search": {
+      "source": "ecommerce-amazon-search",
+      "description": "Search Amazon products.",
+      "scripts": [
+        "scripts/amazon_search.py"
+      ],
+      "files": {
+        "SKILL.md": "a1a93bca7c7c5db7b991fdc5287aaa1d0768c032bc99192d9e677e0432581cff",
+        "references/api.md": "8cc820dc17824f11a22036ba3e2960b993cc8f52699daf815ed4f74279eaf8bb",
+        "scripts/amazon_search.py": "2a1cf2c1fb8ff10995d4b344a17b8ad9e246ebc1a8bc9a30ff2436b90e9cc88d"
+      },
+      "available": true
+    },
+    "amazon-search-by-image": {
+      "source": "ecommerce-amazon-search-by-image",
+      "description": "Search for visually similar products on Amazon using an image across 8 marketplaces.",
+      "scripts": [
+        "scripts/amazon_search_by_image.py",
+        "scripts/upload_image.py"
+      ],
+      "files": {
+        "SKILL.md": "ec1e9351340c93f1472a1b23b8b948fe30ab273e4c4d7f608e1a5ff666d8f912",
+        "references/api.md": "a6f05eff2b49eaa7c670d38fbf7430ea9309ab40cfd5cc8e53adf0065e081eb1",
+        "scripts/amazon_search_by_image.py": "61cca37ca63c2af558f20c099ebd7448681fe022e5eab80bb3d61d804e2eb526",
+        "scripts/upload_image.py": "44b0648ffdce5292eeec6d53ef8fcfddc74023abc145095a2a2a84fe278f72a2"
+      },
+      "available": true
+    },
+    "amazon-traffic-keywords": {
+      "source": "ecommerce-amazon-traffic-keywords",
+      "description": "Research Amazon traffic keywords.",
+      "scripts": [
+        "scripts/amazon_traffic_keywords.py"
+      ],
+      "files": {
+        "SKILL.md": "569fabaed98cfc54d4a0e24745bc020ac086106a8bcdce39e25b316af62002c6",
+        "references/api.md": "2affeffad41d7630d0baf87c5442d450e002e3005b233f470a9fdfceab9e7603",
+        "scripts/amazon_traffic_keywords.py": "4364efb5f6d80afd73e4f7696864ad64e237cc7c372863286b5650dc21d767c6"
+      },
+      "available": true
+    },
+    "chuhaijiang-tiktok-ads": {
+      "source": "ecommerce-chuhaijiang-tiktok-ads",
+      "description": "Research public TikTok ads and creative assets through Chuhaijiang and Nexscope.",
+      "scripts": [
+        "scripts/chuhaijiang_ad_detail.py",
+        "scripts/chuhaijiang_ad_related_products.py",
+        "scripts/chuhaijiang_ad_search.py",
+        "scripts/chuhaijiang_creative_detail.py",
+        "scripts/chuhaijiang_creative_search.py"
+      ],
+      "files": {
+        "SKILL.md": "1369a1373759fcaa356a3801bfe78bef37e6def05b019b00343b3e034b13da53",
+        "manifest.json": "c8720eec768375be6dadff13c82eb86d1dc29a18c56ff8e7de9100160c47e0f1",
+        "references/api.md": "f6fe47c0c3db40340c05c76f9b011d588a3fe72c2bb4f275adbb254ca2e79dc0",
+        "references/testing.md": "d92dcac2b27a5b803c2acae7447e13786f7f6623579cf11d2cb4fe2b6990ad23",
+        "scripts/chuhaijiang_ad_detail.py": "bf8239587a54f02d0bfbde0e08845e3f295a147f104f51fd811f037556c6e298",
+        "scripts/chuhaijiang_ad_related_products.py": "6b49eb08ea2a1dccd436e4ad837fa7048415ef4298a68683e54df4349d347126",
+        "scripts/chuhaijiang_ad_search.py": "f82fb0b88c3fcb2113702e78f1fb633cbb3639a9cf965c9fb0470783e134ca12",
+        "scripts/chuhaijiang_creative_detail.py": "2553b2d4f6dea52bfc9ff6586cbd31004f458524fc71f0e7dbf95fb605f58715",
+        "scripts/chuhaijiang_creative_search.py": "5088781a712c024001151997a2609d35db80c5f91db927e1343224b7c021152f"
+      },
+      "available": true
+    },
+    "chuhaijiang-tiktok-creator": {
+      "source": "ecommerce-chuhaijiang-tiktok-creator",
+      "description": "Research public TikTok creators and commerce relationships through Chuhaijiang and Nexscope.",
+      "scripts": [
+        "scripts/chuhaijiang_creator_detail.py",
+        "scripts/chuhaijiang_creator_rank_agencies.py",
+        "scripts/chuhaijiang_creator_rank_commercial.py",
+        "scripts/chuhaijiang_creator_rank_growth.py",
+        "scripts/chuhaijiang_creator_related_lives.py",
+        "scripts/chuhaijiang_creator_related_products.py",
+        "scripts/chuhaijiang_creator_related_videos.py",
+        "scripts/chuhaijiang_creator_search.py"
+      ],
+      "files": {
+        "SKILL.md": "5c3630f775c9c57b96b69fd646008a3acc7c1798ad86d3af7f7e2e252c54b12a",
+        "manifest.json": "b820cb549e66653d140515f8aed123cb4a06e7161cf14f23d35c9b9b2a9c365d",
+        "references/api.md": "85fc6de61848e23420bb79280090445cddeb2a4ec3f28ece416b9422bfaad859",
+        "references/testing.md": "8ed02428292f4859797355edf823f188c4f1b8e1d8ea4b0032d6fad3e31f106b",
+        "scripts/chuhaijiang_creator_detail.py": "4fa7e03643091a6de52da5240cf65817d0c573cca75eeed6fa085709a9ec7db2",
+        "scripts/chuhaijiang_creator_rank_agencies.py": "3e3f219008cc9f6a4eb2bc5a7d2a34952d6169d7822898ebaffd7efb234ce8d9",
+        "scripts/chuhaijiang_creator_rank_commercial.py": "9225320d50eae68677b8d3735ea06cd4aefda0b4ab1ccfd1ba4a15774306c97e",
+        "scripts/chuhaijiang_creator_rank_growth.py": "dd69f987925faaed0fc1d789e09617870681aca8e341a06f5d22a230bb4ff9a9",
+        "scripts/chuhaijiang_creator_related_lives.py": "a83ed8fb10d0d39b96d0e3ffd3d9d9eea6b5a3ea21b8956c62b6cdb9c6ccc8fb",
+        "scripts/chuhaijiang_creator_related_products.py": "a0c33746efefc49f65e05281609c48af8bc21ddd3d2871cd9a7ced6313d5fc4d",
+        "scripts/chuhaijiang_creator_related_videos.py": "a078ad91a82573d1edadb2f3f28ff7d0fde34b160b815ff5e058d63d953c90ce",
+        "scripts/chuhaijiang_creator_search.py": "c1eb92e4c0a48ae57c49f906171fdbd2d5f299c0c0f6f472ea42862d840793c5"
+      },
+      "available": true
+    },
+    "chuhaijiang-tiktok-live": {
+      "source": "ecommerce-chuhaijiang-tiktok-live",
+      "description": "Research public TikTok commerce livestreams through Chuhaijiang and Nexscope.",
+      "scripts": [
+        "scripts/chuhaijiang_live_detail.py",
+        "scripts/chuhaijiang_live_related_products.py",
+        "scripts/chuhaijiang_live_search.py"
+      ],
+      "files": {
+        "SKILL.md": "5bc613408a1c30f669fd082ece2275b27f53ab4c43b60484bb68cc60a9ad79d1",
+        "manifest.json": "2af3dee3836185268b3020183f926ab39180fcb7eda557f05e9189a1d614c6b3",
+        "references/api.md": "30a1a947c03c9e28efe2e335e005f61d97c030d586025d7b886348904a51e6fb",
+        "references/testing.md": "bb63517e3e6f27022299f457f7bd6496c28c1aebe62a1d668b7ebaf18df7ad1a",
+        "scripts/chuhaijiang_live_detail.py": "cd9bddd042a29a86c0b83842dea172954d5c55066dda0850d1eb85afe5adc761",
+        "scripts/chuhaijiang_live_related_products.py": "3c867d0c169bf9554777c66226b6870eca51d5a285b00702ebcc48508cb58135",
+        "scripts/chuhaijiang_live_search.py": "50cb733d1381fc0505f655a1d652e75a76524d64ce42527473d73c068282d1db"
+      },
+      "available": true
+    },
+    "chuhaijiang-tiktok-product": {
+      "source": "ecommerce-chuhaijiang-tiktok-product",
+      "description": "Research public TikTok Shop products and related market entities through Chuhaijiang and Nexscope.",
+      "scripts": [
+        "scripts/chuhaijiang_product_detail.py",
+        "scripts/chuhaijiang_product_image_search.py",
+        "scripts/chuhaijiang_product_rank_most_promoted.py",
+        "scripts/chuhaijiang_product_rank_new_arrivals.py",
+        "scripts/chuhaijiang_product_rank_top_selling.py",
+        "scripts/chuhaijiang_product_related_creators.py",
+        "scripts/chuhaijiang_product_related_lives.py",
+        "scripts/chuhaijiang_product_related_videos.py",
+        "scripts/chuhaijiang_product_reviews.py",
+        "scripts/chuhaijiang_product_search.py",
+        "scripts/upload_image.py"
+      ],
+      "files": {
+        "SKILL.md": "da97140c2b88aae8c12a6379356031171a1d9631a3b2312e4d526631daaa740a",
+        "manifest.json": "78fd9214703e0970f085879593b58f8dd5ee2ec424883560972fb240d8926bac",
+        "references/api.md": "8adc997e5a4de2ed01a28c59bd78d9d3e4d03680ebed9207b8eb3ba3c5c246f5",
+        "references/testing.md": "3c0d1c6d289c191ad1253721fc301633d96f8ef0783da0fb76b0cf9051880eb5",
+        "scripts/chuhaijiang_product_detail.py": "4e3bc022330e4ce99e7931d7a674ebd47a2d1902b397589124dd6e488e964a94",
+        "scripts/chuhaijiang_product_image_search.py": "09ad28c581fa3b8ece4afc7f5e533e70ea2cfe6eb4467bdd1a86a27ed6e37832",
+        "scripts/chuhaijiang_product_rank_most_promoted.py": "5e876e9a406d31886d1a36116af5373440d7b32191044cbe57cd9b9bdf114783",
+        "scripts/chuhaijiang_product_rank_new_arrivals.py": "70f2c5f18d8c67a57b944a90ab1221254369cd0ffb78ff6e9c8f0c73eb3f082f",
+        "scripts/chuhaijiang_product_rank_top_selling.py": "a6b23394b7f508191c2cf2ae1ff418956fdd73672409cd0c6a4e16252151a81e",
+        "scripts/chuhaijiang_product_related_creators.py": "536c3dc15ea3eea7efcf37f908d8abb6aa104263a0aad790e69ea54349cc7f67",
+        "scripts/chuhaijiang_product_related_lives.py": "c457c14b2612d18d4678c6d89a742b20aa4b9de802c9922ddaad4ab225e69aac",
+        "scripts/chuhaijiang_product_related_videos.py": "e13e14a51566728e36c5c748f0859c1726c5bf3b14b42a0e7c329dc7acc5f942",
+        "scripts/chuhaijiang_product_reviews.py": "fd9a4225e396afb5a21881b1d08012a88e74d1c39e49a235f1180f9f0ecb47dc",
+        "scripts/chuhaijiang_product_search.py": "421fcc8ab29e47d96529c7dc6ae49357a3d46bf5bf64b4fc21314bd8b0f9cea6",
+        "scripts/upload_image.py": "f77ed43af516a9f9f6d61fbeaaedcfd232eb1b5a14a30e80a4676eab47bb6707"
+      },
+      "available": true
+    },
+    "chuhaijiang-tiktok-shop": {
+      "source": "ecommerce-chuhaijiang-tiktok-shop",
+      "description": "Research public TikTok Shop stores and related entities through Chuhaijiang and Nexscope.",
+      "scripts": [
+        "scripts/chuhaijiang_seller_detail.py",
+        "scripts/chuhaijiang_seller_rank_most_promoted.py",
+        "scripts/chuhaijiang_seller_rank_top_selling.py",
+        "scripts/chuhaijiang_seller_related_creators.py",
+        "scripts/chuhaijiang_seller_related_products.py",
+        "scripts/chuhaijiang_seller_related_videos.py",
+        "scripts/chuhaijiang_seller_search.py"
+      ],
+      "files": {
+        "SKILL.md": "ca16266e1173ebe3a3a88b01e3c4c3468d1873ebb232f6d3d1a15b0fd25f75e6",
+        "manifest.json": "157272ad75517363f28c8e13ae527c95d5e8fd4d9052f15066fb5acfefca8754",
+        "references/api.md": "14cc2dd5b6743b0e109ebeca5c1a64e525ac6a58ee67ddf65adbf804e6b90564",
+        "references/testing.md": "bbe4c686b83624da61f2ac2d8cccd9af293a5ec6edf72df90b60d51d7fcd4f87",
+        "scripts/chuhaijiang_seller_detail.py": "1379b1421d0b418cf5cd6ac3efadcf94f6798d26b14ea4081d1202be2df04abf",
+        "scripts/chuhaijiang_seller_rank_most_promoted.py": "c13ffffebbe3e4ce23c52166c7d97ef9d014d99a92045365047d7ff20d318e43",
+        "scripts/chuhaijiang_seller_rank_top_selling.py": "62595023aecbdffabfd0cf0abce2bba1e2fc797b1451104274341a4591c14f6b",
+        "scripts/chuhaijiang_seller_related_creators.py": "3d08d773bc8f6694562a7cb18d33d451811834df76cab487ce125cf2f754552d",
+        "scripts/chuhaijiang_seller_related_products.py": "cbb629789993de57d3ff30982dcf17cb60256a50b8268450d6e45133de273509",
+        "scripts/chuhaijiang_seller_related_videos.py": "d2e0abcc40596f8f9f695a41321e87546c449bbaaeebccc5450f1da43ad509e5",
+        "scripts/chuhaijiang_seller_search.py": "ee45cf3ba7115a30452822fa0c1bff22de7229c614876901ffb072d6b1d8aebd"
+      },
+      "available": true
+    },
+    "chuhaijiang-tiktok-video": {
+      "source": "ecommerce-chuhaijiang-tiktok-video",
+      "description": "Research public TikTok videos and commerce relationships through Chuhaijiang and Nexscope.",
+      "scripts": [
+        "scripts/chuhaijiang_video_detail.py",
+        "scripts/chuhaijiang_video_related_products.py",
+        "scripts/chuhaijiang_video_reviews.py",
+        "scripts/chuhaijiang_video_search.py"
+      ],
+      "files": {
+        "SKILL.md": "d46b677d47e4c026702569204f5f671af127653e44cb764d11b69fb52cc0e39c",
+        "manifest.json": "d99bb42b3953cdf169333729f5046762f11cb06a1b44960f2a67871df54ce134",
+        "references/api.md": "6f58739822aa5899f703b25335a22325e37d8a0242dd143cb89d69ab0ca67704",
+        "references/testing.md": "dea056475fc88d11bc25b4f1048b2cd0efe70f691b6841819caeef33d658bc29",
+        "scripts/chuhaijiang_video_detail.py": "756ebf641c5f02e28837a0f60794cf6f84b65285c83fffc194ddb2d6bd05667b",
+        "scripts/chuhaijiang_video_related_products.py": "7865cd65dbadf273fcad026520e4e23e94038f3ec71dd0ced5e569d5e9308fd9",
+        "scripts/chuhaijiang_video_reviews.py": "87818f6f55223b75e587d0484eaad0e6ffdb76214633d46549a260128073a2e9",
+        "scripts/chuhaijiang_video_search.py": "9a6db5c6a0fca6669e79d6ecd367153d0b6e6e180ccff40f877d7ca7d0d769e8"
+      },
+      "available": true
+    },
+    "ebay-search": {
+      "source": "ecommerce-ebay-search",
+      "description": "Search eBay products.",
+      "scripts": [
+        "scripts/ebay_search.py"
+      ],
+      "files": {
+        "SKILL.md": "d82cdae9be0878b4409684fd6fca41205f6d8d04c6ed72792a16209b7c4ca89c",
+        "references/api.md": "ce7e623c33a1a8b68e1184d3a6869cdc9486d267416707fed540a9151258e67e",
+        "scripts/ebay_search.py": "f6af8a2c0683c9621af21c0e2cf9bd01373cce7ad6b3a5b96533ae9513a8591f"
+      },
+      "available": true
+    },
+    "etsy-category-search": {
+      "source": "ecommerce-etsy-category-search",
+      "description": "Search marketplace categories.",
+      "scripts": [
+        "scripts/etsy_category_search.py"
+      ],
+      "files": {
+        "SKILL.md": "53a2e91f96113e4627c461128565edc5c79364b8c2418a9d8fe329a72148671f",
+        "references/api.md": "ec4c6662bd2073872f9eb748194ece03c92347eee4f684f70948f82a86223b39",
+        "scripts/etsy_category_search.py": "ac7581ee3d314dd9ff3e3fe0ea9a74240ff5879dfd81523fc45521334d1fd727"
+      },
+      "available": true
+    },
+    "etsy-product-detail": {
+      "source": "ecommerce-etsy-product-detail",
+      "description": "Query Etsy public listing details through Nexscope.",
+      "scripts": [
+        "scripts/etsy_product_detail.py"
+      ],
+      "files": {
+        "SKILL.md": "ca94bc8d2e9942186f39207494ce92f66d6dfa5534ebaa5f4b7dabe4481f7eb8",
+        "manifest.json": "220a8d8abb8d1d5337b4c21a9d177bbd16f0c30672192593d401515cc36cf582",
+        "references/api.md": "a7a4737f71cab6c5115689fc3d837ef26d94bd5e988b6d37e88efbe4ce697e40",
+        "references/testing.md": "4a54860cf1dc5dc157c14d4ed2e449754e2038e3f0a2de1fb70a055140dcdd16",
+        "scripts/etsy_product_detail.py": "1d8b60075c6dac7483ada0a6433890382e301d87c6464dabf730fdf3fceb0dfe"
+      },
+      "available": true
+    },
+    "etsy-product-query": {
+      "source": "ecommerce-etsy-product-query",
+      "description": "Query marketplace product listings and performance data.",
+      "scripts": [
+        "scripts/etsy_product_query.py"
+      ],
+      "files": {
+        "SKILL.md": "91712c5c69458f4803a911178ccb61d818c96ebca4c84e74264b0b3ae669d7a3",
+        "references/api.md": "860afa7b63828df16bc34bd67cafb52aaeb7a8a792e20e5a906659274a797d79",
+        "scripts/etsy_product_query.py": "9aab4e30f5b25cd61217e159edf12f311671383ab904352d27b82f5513fe18e8"
+      },
+      "available": true
+    },
+    "etsy-store-query": {
+      "source": "ecommerce-etsy-store-query",
+      "description": "Query marketplace stores and performance data.",
+      "scripts": [
+        "scripts/etsy_store_query.py"
+      ],
+      "files": {
+        "SKILL.md": "bca13ac3d38eff5e932ecd449dee4bfe7f0043b54918e7df24c8dcbb84c6ebe8",
+        "references/api.md": "424e1ca2e4a8b06d8b28af7023c0a225bd72bc94e6ff29bfc9f31aa999539c76",
+        "scripts/etsy_store_query.py": "bf687c5474973590e0d89c17eb5b4c4c1b967e72b92ebc48530d1da0529cf712"
+      },
+      "available": true
+    },
+    "geekbi-temu-market-research": {
+      "source": "ecommerce-geekbi-temu-market-research",
+      "description": "Analyze public Temu category opportunities and keyword demand through GeekBI and Nexscope.",
+      "scripts": [
+        "scripts/geekbi_temu_category_list.py",
+        "scripts/geekbi_temu_category_search.py",
+        "scripts/geekbi_temu_keyword_search.py",
+        "scripts/geekbi_temu_site_list.py"
+      ],
+      "files": {
+        "SKILL.md": "a6c131a21a2b22761e955c01abdefcec05d6c0651b6fa5d8aaf0a0873bca95e4",
+        "manifest.json": "57b5dc2f25c41b61cd840efabb43625fe77c3b29f0deae12543bb31b26850f8c",
+        "references/api.md": "c1e912e42d2927732cc1ca26926e33486d33d2051c3bc33724f911648b58aa28",
+        "references/testing.md": "74687765186fcb8dd4af55224ee6ceb95e3dce2f15e848aec7ae923c6d2e195f",
+        "scripts/geekbi_temu_category_list.py": "ac6f075e74ec10bfb1cddb65aa69a0b52f767d52e98fe8719e9c5886cec73875",
+        "scripts/geekbi_temu_category_search.py": "56f8153175a03f50858909435abaad49ce21fbdf74982ad2abe17e896e48fc01",
+        "scripts/geekbi_temu_keyword_search.py": "78382fc2c855addf6c7099aef9bef6cba9e839552d8df784d8af21998949431f",
+        "scripts/geekbi_temu_site_list.py": "de64b334d48862787ab469a7d3554c91b57188efcc639401c364f2b45fab2fce"
+      },
+      "available": true
+    },
+    "geekbi-temu-product": {
+      "source": "ecommerce-geekbi-temu-product",
+      "description": "Search public Temu products and inspect product details and recent history through GeekBI and Nexscope.",
+      "scripts": [
+        "scripts/geekbi_temu_category_list.py",
+        "scripts/geekbi_temu_goods_detail.py",
+        "scripts/geekbi_temu_goods_search.py",
+        "scripts/geekbi_temu_site_list.py"
+      ],
+      "files": {
+        "SKILL.md": "4ffce7555547bf4a6875346a69907cfcc1f391623238a57a2bfadd5155b590a1",
+        "manifest.json": "5ca45da8302355a68c327967d23e455cdfc1ebd3741907574b0a85cf8cd3c476",
+        "references/api.md": "7434a584c3c2a3f668e6ae279c8767c8ffef8fd6a93e2ce6299587b9fa60bb96",
+        "references/testing.md": "f9431c7943df549bdbd41ae951f8c22e4d323827d19660956b7ce53245d09b94",
+        "scripts/geekbi_temu_category_list.py": "86f903d96d8e4bdf115f46bceaaf0138d5237d87a4dd519f43de470d51fde98e",
+        "scripts/geekbi_temu_goods_detail.py": "952847fa7d700535f91ee9b3525d24a18650453c6c2fae6ae066a1037479ff5d",
+        "scripts/geekbi_temu_goods_search.py": "2ef32dad7136d33390dddf429dea250b5139d99ff5eb99f97dc8d913aadf0cfc",
+        "scripts/geekbi_temu_site_list.py": "d72b9ddd22a3f4ca8f2d58b0afaef2d114564538b48ea8a8ced67e2d99a3ef51"
+      },
+      "available": true
+    },
+    "geekbi-temu-search-by-image": {
+      "source": "ecommerce-geekbi-temu-search-by-image",
+      "description": "Find visually similar products in the public Temu marketplace through GeekBI and Nexscope.",
+      "scripts": [
+        "scripts/geekbi_temu_goods_image_search.py",
+        "scripts/upload_image.py"
+      ],
+      "files": {
+        "SKILL.md": "e1067013cb6d9c8104971bae17c876cc7278a86c34163d447badea9d327425e8",
+        "manifest.json": "7fbbac14e1e1721890a1d183358790e80a5fbb2a9bc1af58854e54edafc7d37b",
+        "references/api.md": "52aba62eb3d23127a8cece8a3fb2d9c2fe29bfd1ba67e6a4e2f8c40491e3d25b",
+        "references/testing.md": "053402c8fc7d96510addb080cea9150ba2ded4feb9c171b72989e078a2b197fc",
+        "scripts/geekbi_temu_goods_image_search.py": "8c4965e0a2c6e034859d87bb3c5d609613a6dee57f16c533d1304d8311f7618d",
+        "scripts/upload_image.py": "b73c9bccfcbcb3f941dab63fc12adbe2162e74e152a78f0154ea3244c043bb52"
+      },
+      "available": true
+    },
+    "geekbi-temu-shop": {
+      "source": "ecommerce-geekbi-temu-shop",
+      "description": "Search and benchmark public Temu shops through GeekBI and Nexscope.",
+      "scripts": [
+        "scripts/geekbi_temu_category_list.py",
+        "scripts/geekbi_temu_mall_search.py",
+        "scripts/geekbi_temu_site_list.py"
+      ],
+      "files": {
+        "SKILL.md": "7672230a5ccdd21a29dfe7bcd5576c02ed18bd886fed43c11e302f348ffa371e",
+        "manifest.json": "474f0eafc2358df36e5d8ba6869505b33b85355c6ffd5f96ea90d3fbc9da28df",
+        "references/api.md": "241006944a65280411530400353f941aa25f3ec2023b794352f2dce031dcc3cf",
+        "references/testing.md": "dfd87fda5e8467d2de9cee72a95e7bf87b2e1c791bb70c405b8643e269a9b95a",
+        "scripts/geekbi_temu_category_list.py": "b9e5128c80c44247ebe99b3e80e9f9e576f31106e1ea8ef335a500252561d0e8",
+        "scripts/geekbi_temu_mall_search.py": "87248ddc84cf18451201eb21fafdfe8bbf45351ac785545e5eba380d6dd0b295",
+        "scripts/geekbi_temu_site_list.py": "1c36028d8bca89650234bef08f687dc5d9336b35ac39cb80a3a92a846918c1d6"
+      },
+      "available": true
+    },
+    "geo-score-check": {
+      "source": "ecommerce-geo-score-check",
+      "description": "geo-score-check",
+      "scripts": [],
+      "files": {
+        "SKILL.md": "61307d83ee437771a7b2b3970be73cc0fc2fa8458f4335dbe4048a6516adda59",
+        "references/report-template.html": "145d9c55134eb672dac32c47289624fc7d1171543ebf306f5446144872ed65a3"
+      },
+      "available": false,
+      "unavailable": {
+        "reason": "The pinned upstream release does not include quick_geo_score.mjs or its scoring-model, platform-handling and report-contract references. The HTML template alone cannot provide the documented scoring workflow.",
+        "requiredResources": [
+          "scripts/quick_geo_score.mjs",
+          "references/scoring-model.md",
+          "references/platform-handling.md",
+          "references/report-contract.md"
+        ]
+      }
+    },
+    "google-ai-mode-search": {
+      "source": "ecommerce-google-ai-mode-search",
+      "description": "Search Google AI Mode results.",
+      "scripts": [
+        "scripts/google_ai_search.py"
+      ],
+      "files": {
+        "SKILL.md": "add28a27af2a04a1046cccf5d850f90e8e11cbc6e710a5e6dc2977b4bbb5fb7c",
+        "references/api.md": "e93bda2425e2b59e21eecd0afe20cb556c009039ada2dfb66ca6c651a5a93f88",
+        "scripts/google_ai_search.py": "ec91b23017f826493ff92e7b464439ee29d1e72e8da951aa25ff548970b404f2"
+      },
+      "available": true
+    },
+    "google-patent-search": {
+      "source": "ecommerce-google-patent-search",
+      "description": "Query Google Patents public search through Nexscope.",
+      "scripts": [
+        "scripts/google_patent_search.py"
+      ],
+      "files": {
+        "SKILL.md": "60aa0b8c3e7fd72d25451a5b9f141d36ac36764fe57bdd9b285d3869e33d3eb1",
+        "manifest.json": "e002e6d0a47fbd26d485ecf26670d27d61d03f50bf935b8c952d8c4e4c99b00c",
+        "references/api.md": "ceeac9ba7febd93a7801b347223ebf20cfba236a9a8677fbb3a176f5fe832c8f",
+        "references/testing.md": "60b82446d879465984c96642c86142562358f7e83434962ead405e79ed550dc5",
+        "scripts/google_patent_search.py": "9b5f1657feb5fba272d12c39856276c1f5d0c13c4b6f03fdeb6eb966cf685246"
+      },
+      "available": true
+    },
+    "google-trends-by-keywords": {
+      "source": "ecommerce-google-trends-by-keywords",
+      "description": "Retrieve Google Trends data for keywords.",
+      "scripts": [
+        "scripts/google_trends_by_keywords.py"
+      ],
+      "files": {
+        "SKILL.md": "5f230c2eb1baaadc52c287ad5622acff608b6316dca851f14c741a3657795f01",
+        "references/api.md": "ec829486b0debcac8767aa5d0cee9fc62f9f0d59092de7d660a697a72a537d71",
+        "scripts/google_trends_by_keywords.py": "e1327882b93d6f2ca13dd2a3fcdbe82243b0cbe39b1c080fa71d388b335252e0"
+      },
+      "available": true
+    },
+    "google-trends-by-time": {
+      "source": "ecommerce-google-trends-by-time",
+      "description": "Retrieve Google Trends data by time range.",
+      "scripts": [
+        "scripts/google_trends_by_time.py"
+      ],
+      "files": {
+        "SKILL.md": "cc9ae58dc76c3c4d80da6c648ea58e014541d5967cc9e67427b96928c020620a",
+        "references/api.md": "48cd1be390a472ac508571adb614a0ce0a912220338754826db56f5e03dd00ba",
+        "scripts/google_trends_by_time.py": "ecafaea45fb670247f8e45379f5d80b6626aeb5746f3eb7044879e1196d1df65"
+      },
+      "available": true
+    },
+    "maidalv-product-tro-detection": {
+      "source": "ecommerce-maidalv-product-tro-detection",
+      "description": "Assess product imagery for TRO, trademark, patent, and copyright infringement risk.",
+      "scripts": [
+        "scripts/maidalv_check_api_flash.py",
+        "scripts/upload_image.py"
+      ],
+      "files": {
+        "SKILL.md": "a3d42b11d119dfddc95eae2ad44bffb4bb75679347871784e2587389e7ee579e",
+        "references/api.json": "d2553df3dec20e12c0bf20cb8f13cb629cbfa7e54944951b6ace9ecff518c3d4",
+        "references/api.md": "becfcc3af5ecd5a8e034356e1a9e8dee3b59cc9f862df5d5a57d505688f7677b",
+        "references/credentials.md": "5858042b0e5a27454fb7659a48f0aee7904aa395198f7e0faf9988479bf46122",
+        "references/testing.md": "cf65a213514b82a2d8c644065ac305f4dc323f9d43d6b60ba3244bf0376b3116",
+        "references/workflow.md": "cc5a2b323f17e026b53fe60c5eda115e4bd6d14a9cd18c05988a52d57f4254ad",
+        "scripts/maidalv_check_api_flash.py": "124d17b45a5148eb7af7d0ee0f850daf7d6a23324232d703db4db015b2fd63d7",
+        "scripts/upload_image.py": "d34a36e5877d2c937ff5fff9aba741ef39967439fb755366fe5453c27295a4ae"
+      },
+      "available": true
+    },
+    "mercado-market-intelligence": {
+      "source": "ecommerce-mercado-market-intelligence",
+      "description": "Query Mercado Libre public market intelligence through Nexscope.",
+      "scripts": [
+        "scripts/damai_mercado_market_intelligence.py",
+        "scripts/upload_image.py"
+      ],
+      "files": {
+        "SKILL.md": "44900ddcafb28cc5f4e8bb29ec08199680527e1b080e054fd52321bd32a8ae6d",
+        "manifest.json": "f8036e735989fbeaa0e65181556602d4a069de0a7b4d975a3e27822d78f08724",
+        "references/api.md": "54ab6ffe93c6275c447dfcc43bc43bdd344a1e1569d7fc5c4cf17246b044dc7e",
+        "references/testing.md": "800dfb414c5f4f0dba2357530a7bb35544d4d973a45ce726c674655e5a26b49a",
+        "scripts/damai_mercado_market_intelligence.py": "7c314d02e97c19330aad20e51c52f357a5c6a1a5152eef898bfe0b2ad3fff167",
+        "scripts/upload_image.py": "44b0648ffdce5292eeec6d53ef8fcfddc74023abc145095a2a2a84fe278f72a2"
+      },
+      "available": true
+    },
+    "mercado-product-selection": {
+      "source": "ecommerce-mercado-product-selection",
+      "description": "Research Mercado Libre products, catalogs, keywords, categories, trends, sellers, and reviews.",
+      "scripts": [
+        "scripts/mercado_product_selection.py"
+      ],
+      "files": {
+        "SKILL.md": "15fa1976f661f44aa6f798350731614ce4b16dff5c1a3be8c3c3e1e50873f8e0",
+        "references/api.md": "e9921d76ae92f4105a525366e0e12bfa14beb2f8224dbfe8b551adf9af2f9b37",
+        "references/mercado-tools.md": "5dcbc0eef529be965f818201d36d103b667f0bb1a204be562fd601d022cb1e39",
+        "scripts/mercado_product_selection.py": "06885784e2b01afea266f024930a9b64ed040396154d4dfde39ba6f3ac621e6e"
+      },
+      "available": true
+    },
+    "multimodal-generate-image": {
+      "source": "ecommerce-multimodal-generate-image",
+      "description": "Generate and edit images using AI-driven image generation with text prompts and optional reference images.",
+      "scripts": [
+        "scripts/multimodal_generate_image.py",
+        "scripts/upload_image.py"
+      ],
+      "files": {
+        "SKILL.md": "8b4ba37c9d8f88312d65d1741c50bb53c9d65943f1e9c747b7a2e498ee6ee85e",
+        "references/api.md": "055263802113dc56bff560fb8ef52ff3c39409381a4bd4fa0449c458d5e7122a",
+        "scripts/multimodal_generate_image.py": "636d1f8e906496514ee53aa85bf426a1ce2952c38e77d5505f4e060fa6141399",
+        "scripts/upload_image.py": "44b0648ffdce5292eeec6d53ef8fcfddc74023abc145095a2a2a84fe278f72a2"
+      },
+      "available": true
+    },
+    "multimodal-recognize-image": {
+      "source": "ecommerce-multimodal-recognize-image",
+      "description": "Analyze and extract information from images using multimodal AI recognition.",
+      "scripts": [
+        "scripts/multimodal_recognize_image.py",
+        "scripts/upload_image.py"
+      ],
+      "files": {
+        "SKILL.md": "8de157c7706642aa2529613ab1dec1f9d0aebee0a10becccf7d91ee0c149c806",
+        "references/api.md": "3a3cfcbd5e7db7b8ba47fd2900e162b2f9aed5ddc0d0cfc11d59b0a48337f902",
+        "scripts/multimodal_recognize_image.py": "e1ed6138985f6bba2ff1461f02ea32a64f493976622e7948ee456f246cd7e450",
+        "scripts/upload_image.py": "44b0648ffdce5292eeec6d53ef8fcfddc74023abc145095a2a2a84fe278f72a2"
+      },
+      "available": true
+    },
+    "ozon-brand-products": {
+      "source": "ecommerce-ozon-brand-products",
+      "description": "Retrieve Ozon products for a brand.",
+      "scripts": [
+        "scripts/ozon_brand_products.py"
+      ],
+      "files": {
+        "SKILL.md": "4b3d3e6ae3c0257e80a4e2d6ec2d72cceba2d18d4ce1035b22d39afe0abcb664",
+        "references/api.md": "0fcde74523f79c0d870763a04bd62ab2db695f5b226e88d698707bc446db4930",
+        "scripts/ozon_brand_products.py": "a735bc9ec59210df317cef91de6f6091a7ebcac8441a2ec986d03fcb2823b4bc"
+      },
+      "available": true
+    },
+    "ozon-category-products": {
+      "source": "ecommerce-ozon-category-products",
+      "description": "Retrieve Ozon products for a category.",
+      "scripts": [
+        "scripts/ozon_category_products.py"
+      ],
+      "files": {
+        "SKILL.md": "648ad091c4986f511e55245ccfdf3c6a1025ed0635ac827d62ee8404ddbbba6c",
+        "references/api.md": "071e03e0334b64eb6795bdb5a8b0d61c3038e889fbb81a39bedb58f84ad75381",
+        "scripts/ozon_category_products.py": "666cbadb8688fb3e5b995e31c30e2a56cf3b0b5e52d4405fd12fa18fff955b28"
+      },
+      "available": true
+    },
+    "ozon-category-search": {
+      "source": "ecommerce-ozon-category-search",
+      "description": "Search Ozon category products.",
+      "scripts": [
+        "scripts/ozon_category_search.py"
+      ],
+      "files": {
+        "SKILL.md": "20327c25ee7b7d442e9c155a65de59d232384a72e374a85ad8068c088455bbd7",
+        "references/api.md": "ae0b02fb9d22c28fa4a756c584bfa201a562eda6f727b5929c7dc197f14c3733",
+        "scripts/ozon_category_search.py": "5d15f1614121e17255b154439bfee011cdfe713f399ba58933658cd8f29f535a"
+      },
+      "available": true
+    },
+    "ozon-keyword-back-search": {
+      "source": "ecommerce-ozon-keyword-back-search",
+      "description": "Find Ozon keywords associated with product SKUs.",
+      "scripts": [
+        "scripts/ozon_keyword_back_search.py"
+      ],
+      "files": {
+        "SKILL.md": "ed5805c4b3fb76cd45796df1565eb17bb5cc889544532b6e3d25712b8538a479",
+        "references/api.md": "83a50a5d51e1369c717ee1e964c9b8e1cf068221baf846e4ce9e49c0e23e616b",
+        "scripts/ozon_keyword_back_search.py": "b9c20ae33e608563d684adfe405ee91225d0028540df2b1959fac47b05164f3d"
+      },
+      "available": true
+    },
+    "ozon-keyword-mining": {
+      "source": "ecommerce-ozon-keyword-mining",
+      "description": "Mine related Ozon search keywords.",
+      "scripts": [
+        "scripts/ozon_keyword_mining.py"
+      ],
+      "files": {
+        "SKILL.md": "8d6cf7c2bb074568bd053d8fbebb1d96206ecd1fb4ac5baab0ed99546f583f5f",
+        "references/api.md": "2bea8defdfddb074c35b9ac089d894c27009c12f0f6897f598287a1be82ba3c1",
+        "scripts/ozon_keyword_mining.py": "2ab0acccb1ca31ecaf30c54d68e997a200b5b4700b793ce9ad9df89a2e4c223a"
+      },
+      "available": true
+    },
+    "ozon-market-keyword-search": {
+      "source": "ecommerce-ozon-market-keyword-search",
+      "description": "Search Ozon marketplace keyword metrics.",
+      "scripts": [
+        "scripts/ozon_market_keyword_search.py"
+      ],
+      "files": {
+        "SKILL.md": "c70a9772325146c005cd18d1b39bd90953a1ba022ffb63bc40a2ab0aa590f4fd",
+        "references/api.md": "fca4bc1613865c8b3b5d33bcc0f9367f2b2e6c6fd3226b98a9121e28ad54e6d1",
+        "scripts/ozon_market_keyword_search.py": "d1640bde3fa955662e5e1b9f4a4aefc4c5d3aa80c8c1e52d6c23c20c49711475"
+      },
+      "available": true
+    },
+    "ozon-product-detail": {
+      "source": "ecommerce-ozon-product-detail",
+      "description": "Retrieve Ozon product details for one SKU per call.",
+      "scripts": [
+        "scripts/ozon_product_detail.py"
+      ],
+      "files": {
+        "SKILL.md": "912847ea34c57c7257664a7afdebd892a9f21fc60297ddea1e7b95c368c33d61",
+        "references/api.md": "17737feb3167b79663706cb2c59dd6befb9dcda407cbee570d0707c71883d019",
+        "scripts/ozon_product_detail.py": "aef33db82e2bf84bd059159bd4c18d7d1c540d2992cfc3af976705b1739c7a2a"
+      },
+      "available": true
+    },
+    "ozon-product-detail-search": {
+      "source": "ecommerce-ozon-product-detail-search",
+      "description": "Retrieve Ozon product detail history.",
+      "scripts": [
+        "scripts/ozon_product_detail_search.py"
+      ],
+      "files": {
+        "SKILL.md": "ce3da6a6d08f7b4977a7583909315d115413698bba0b27f1a432b0e45cc93a53",
+        "references/api.md": "f35bb0ab955a2e51bd1614015c699496bfe98def530ae9e9b148729675a110d5",
+        "scripts/ozon_product_detail_search.py": "27440d3f75463867d277e57c880589f36c086e88cff23665732acea3952a6bb8"
+      },
+      "available": true
+    },
+    "ozon-product-report-search": {
+      "source": "ecommerce-ozon-product-report-search",
+      "description": "Search Ozon product reports.",
+      "scripts": [
+        "scripts/ozon_product_report_search.py"
+      ],
+      "files": {
+        "SKILL.md": "721e23a0c0393024096c00b66bfc18706a554cb7d86c3016f3b35f419b87f0e5",
+        "references/api.md": "8f4e3d46a31dd6c907110b41613baf506ef355bdffd51c8312c7641d7c479578",
+        "scripts/ozon_product_report_search.py": "6a0a8c244a6c7d86467f3016201e828e45505154e6c173ff42c1c9719b546c0c"
+      },
+      "available": true
+    },
+    "ozon-product-search": {
+      "source": "ecommerce-ozon-product-search",
+      "description": "Search Ozon products by keyword or product ID.",
+      "scripts": [
+        "scripts/ozon_product_search.py"
+      ],
+      "files": {
+        "SKILL.md": "8f213c1952c4ff81691e2cff1432759a300097375f4aa71d77754409a7c0dff8",
+        "references/api.md": "9fe2d42e16d1c14562e7a7441e9894d3c5598dd3081d367051a086d05f0afdac",
+        "scripts/ozon_product_search.py": "c7af0831fb1d182dd8b8ec8e7dd256f2416472c50176af671238f0f0b8cbcdb1"
+      },
+      "available": true
+    },
+    "ozon-product-trend": {
+      "source": "ecommerce-ozon-product-trend",
+      "description": "Retrieve daily Ozon product trends.",
+      "scripts": [
+        "scripts/ozon_product_trend.py"
+      ],
+      "files": {
+        "SKILL.md": "5944ed04401462e8b7d1834ba1ecf50852ee9c6eb58d20b28e60ec28d62f5f0d",
+        "references/api.md": "f490266ff0fe218366749197a2a31ab13cf2ec9d122f6dea7853c2c79d20d844",
+        "scripts/ozon_product_trend.py": "3af09f6b2c5bf555c756a9126fb33d8f7fc2213b854793aeab55e7ac492fe9c4"
+      },
+      "available": true
+    },
+    "ozon-seller-products": {
+      "source": "ecommerce-ozon-seller-products",
+      "description": "Retrieve Ozon products for a seller.",
+      "scripts": [
+        "scripts/ozon_seller_products.py"
+      ],
+      "files": {
+        "SKILL.md": "9e377d18330cd5b9b765c2d31cf7db28e3b4de1996f97c4fb300fdaa989a653d",
+        "references/api.md": "110b720d8a91e31420c483549a83b7574ba2c0aaf22b1a7176f86e21932b9040",
+        "scripts/ozon_seller_products.py": "3dbaabf3b35a7e47750d076ce6832ec561d7352e853464c828bde2cd581e2e8a"
+      },
+      "available": true
+    },
+    "ozon-shop-search": {
+      "source": "ecommerce-ozon-shop-search",
+      "description": "Search Ozon shops and seller metrics.",
+      "scripts": [
+        "scripts/ozon_shop_search.py"
+      ],
+      "files": {
+        "SKILL.md": "d35c37aed3f645da123c877d8689b89f436c8d5bc2da896d94d2379e43ff5717",
+        "references/api.md": "616ff17549db06f1d67db2995a9e390bafbe5575bcd1e5195b26961b3abe12b1",
+        "scripts/ozon_shop_search.py": "aa91ad20521afb0f20f3d0529160ecc1e32c41b1dbbabaa1d97d9e672b47a2cf"
+      },
+      "available": true
+    },
+    "patent-abstract-image-data": {
+      "source": "ecommerce-patent-abstract-image-data",
+      "description": "Retrieve patent abstract image data.",
+      "scripts": [
+        "scripts/patent_abstract_image_data.py"
+      ],
+      "files": {
+        "SKILL.md": "59b6005b6e2f6bf67ed300d1a6b31ff100d7a1094be07244654ff697a07c5f25",
+        "references/api.md": "e6fc203522870a7fcb6f626108cc41e51de191497191401109af6c8b3b33857d",
+        "scripts/patent_abstract_image_data.py": "8a1ffe53fd7fa2ff9d7fdcd42a942175e457ab99997352d87e106ecf4c351a23"
+      },
+      "available": true
+    },
+    "patent-cited-by": {
+      "source": "ecommerce-patent-cited-by",
+      "description": "Retrieve patents that cite a specified patent.",
+      "scripts": [
+        "scripts/patent_cited_by.py"
+      ],
+      "files": {
+        "SKILL.md": "4ff5ab2850f3889b9b08a5a1644d1433310e9536776bb12d4afc4bb80f26e04a",
+        "references/api.md": "75808dfb9ce0347f28685b126b05c57d7d8ec069b872993a3845a56452645551",
+        "scripts/patent_cited_by.py": "30eee807ab3c486e9c515771fe58074dfb2f9c70aa435934ce6637ba8e0f2192"
+      },
+      "available": true
+    },
+    "patent-claims": {
+      "source": "ecommerce-patent-claims",
+      "description": "Retrieve original patent claims and claim counts.",
+      "scripts": [
+        "scripts/patent_claims.py"
+      ],
+      "files": {
+        "SKILL.md": "f5a3a8302d1a096af27d61460faae4079201fadd4f2963f4174577d7f2cce383",
+        "references/api.md": "52cc68a3a093697ca0ee725176339ffdd561cb1b9f0f1560417ea799768773c0",
+        "scripts/patent_claims.py": "01dd1653d48c88eea94eec595912ea20536058674545187bdd46275b7115d024"
+      },
+      "available": true
+    },
+    "patent-claims-translation": {
+      "source": "ecommerce-patent-claims-translation",
+      "description": "Retrieve translated patent claims.",
+      "scripts": [
+        "scripts/patent_claims_translation.py"
+      ],
+      "files": {
+        "SKILL.md": "89caf11de52b6695dcbfa4ad0db6a86ae23f2aa33a06585fa364550cbdbd4b23",
+        "references/api.md": "9af8d2a4c1ee416c690d90d51468e9d67bb4fe1c9f1445473b5743addf3a6b36",
+        "scripts/patent_claims_translation.py": "d41cbf2df92f62cd036d79451b45a06bf82ff8ac10fbbd22fa41e698f9dd066b"
+      },
+      "available": true
+    },
+    "patent-core-bibliography": {
+      "source": "ecommerce-patent-core-bibliography",
+      "description": "Retrieve core patent bibliography data.",
+      "scripts": [
+        "scripts/patent_core_bibliography.py"
+      ],
+      "files": {
+        "SKILL.md": "295ece69008884f85f157dd49bcf8508604a2b58d86c5927337ea66b8003025b",
+        "references/api.md": "d724e6be5ecc98c16b1bfd10aa5e6e0a80877341683913b5b11b80183cd2cf15",
+        "scripts/patent_core_bibliography.py": "e8dfd60ca1999677cc1ce985faac2773214ec37707bf937d3d6354cd1c5e35a1"
+      },
+      "available": true
+    },
+    "patent-description-data": {
+      "source": "ecommerce-patent-description-data",
+      "description": "Retrieve original patent description data.",
+      "scripts": [
+        "scripts/patent_description_data.py"
+      ],
+      "files": {
+        "SKILL.md": "ea020bc1aa8c821b18678fcc061b1718cb040ab5dc0568ef7e15f23133a48276",
+        "references/api.md": "fc0162c650dc538d9bf81188fe0c13ae8d5d95eba447d31e93aa83d79a9ac09a",
+        "scripts/patent_description_data.py": "ba93a305b8bb1e210c7aa91d74c606a9379e08ff56a897af416b44d07ec0719e"
+      },
+      "available": true
+    },
+    "patent-description-data-translation": {
+      "source": "ecommerce-patent-description-data-translation",
+      "description": "Retrieve translated patent description data.",
+      "scripts": [
+        "scripts/patent_description_data_translation.py"
+      ],
+      "files": {
+        "SKILL.md": "41fa55b2c18563685b9c0c080fb0e2913d0eb8f4ae28838177cc951219057d5d",
+        "references/api.md": "54ce6b5d653c9153492e4f79f5f77bf10489d0b7eae1ca5bb679c1abac0ba9c2",
+        "scripts/patent_description_data_translation.py": "08e15f672644cf74106d5cd029ff58bce1576abe8d2227ae167c5e8e83047390"
+      },
+      "available": true
+    },
+    "patent-detailed-bibliography": {
+      "source": "ecommerce-patent-detailed-bibliography",
+      "description": "Retrieve detailed patent bibliography data.",
+      "scripts": [
+        "scripts/patent_detailed_bibliography.py"
+      ],
+      "files": {
+        "SKILL.md": "c7b32cec92fa99986306daca85e75879e46500b478c61dfd9ddae997a5c890eb",
+        "references/api.md": "13e0deb67cc70b9481d0b45bdc1de7139dc1ec1598c1781e5bec1c30c8163641",
+        "scripts/patent_detailed_bibliography.py": "f3d07c04850cefd4ae59d5cc518e2a55999700bdc95e78d675285941e153adf1"
+      },
+      "available": true
+    },
+    "patent-family-data": {
+      "source": "ecommerce-patent-family-data",
+      "description": "Retrieve patent family data.",
+      "scripts": [
+        "scripts/patent_family_data.py"
+      ],
+      "files": {
+        "SKILL.md": "db8aa18f99923311530bef31382fff8e9ba35c158963e592c625f2b1c189342a",
+        "references/api.md": "16e75d469e0f4c99489f1ba9eaf0e3b0b7d57295edb5b3d92c105871d7491c35",
+        "scripts/patent_family_data.py": "9ff8e0df08facb8ceb2769a6ed000540f22ed158fcae854754f8dece50636d31"
+      },
+      "available": true
+    },
+    "patent-fulltext-images": {
+      "source": "ecommerce-patent-fulltext-images",
+      "description": "Retrieve patent full-text image data.",
+      "scripts": [
+        "scripts/patent_fulltext_images.py"
+      ],
+      "files": {
+        "SKILL.md": "a443c64bb71abc876e7a2d631d5a6e66ad9ccd4c1bced2b142bb494904d4940a",
+        "references/api.md": "4643b6ecfc4d8aa83bcd65d0e49c628cd730359f7186956f51909f1aff64e2ee",
+        "scripts/patent_fulltext_images.py": "8aa78b8e14a70fdfc5c58fdbe3ca8395396a647943d9ae9afcd2e0a00586365d"
+      },
+      "available": true
+    },
+    "patent-legal-status-data": {
+      "source": "ecommerce-patent-legal-status-data",
+      "description": "Retrieve patent legal status data.",
+      "scripts": [
+        "scripts/patent_legal_status_data.py"
+      ],
+      "files": {
+        "SKILL.md": "cdc9d4fa544954da382cf4ad7d6c3d60883e64029302a06ebb9dda29c1672802",
+        "references/api.md": "233b6dbc52931075c7e7269e0d6da458d156c779ee70248dc1fd1cd9f8ad7640",
+        "scripts/patent_legal_status_data.py": "b327fd10027639cef23ea0718a0d25c8f8c90e248505a26d05294b669dc4f0ec"
+      },
+      "available": true
+    },
+    "patent-references": {
+      "source": "ecommerce-patent-references",
+      "description": "Retrieve references cited by a patent.",
+      "scripts": [
+        "scripts/patent_references.py"
+      ],
+      "files": {
+        "SKILL.md": "4435ded4a73386043bd3440ab132a23680e366a19385b2f028bfab9ba941d7a4",
+        "references/api.md": "aac3989e61438261bf96f9bab6eda5381ec4944d74267045983d5b06cef3052d",
+        "scripts/patent_references.py": "fc8714d3742d3549a08feb1776ce7aa84ec581981d5d8a6b3bc375198fd72067"
+      },
+      "available": true
+    },
+    "patent-search-api": {
+      "source": "ecommerce-patent-search-api",
+      "description": "Search a patent database with Analytics query expressions and return matching patent identifiers and publication numbers.",
+      "scripts": [
+        "scripts/zhihuiya_query_search_patent.py"
+      ],
+      "files": {
+        "SKILL.md": "9aeadd02abdd3cfebea96b374c3dd684213a9fed50873008c56f31f1a18b29aa",
+        "references/api.json": "a8955fca83f9f01e683c0faa6eb9d613b9c024f814ec1fd99af990f4eeb32f68",
+        "references/api.md": "e7bd8f891da33aff875b02925b5756deaeb1c3a7d157b11c249d1d5f3e2ac07f",
+        "references/credentials.md": "5858042b0e5a27454fb7659a48f0aee7904aa395198f7e0faf9988479bf46122",
+        "references/testing.md": "a1fccb810104c540f164ddcb549a0bec280f9722ab0b0b3db2b390551372b87a",
+        "references/workflow.md": "a52e065c833c79ffbbd9832918a2aa02cee270b27b648701bea7c3aa5da264ab",
+        "scripts/zhihuiya_query_search_patent.py": "6b904e5fa42592e6b4d28dddafd5e13b26e7641039b45e875a13dfe2d41e5866"
+      },
+      "available": true
+    },
+    "patent-title-abstract-translation": {
+      "source": "ecommerce-patent-title-abstract-translation",
+      "description": "Retrieve translated patent titles and abstracts.",
+      "scripts": [
+        "scripts/patent_title_abstract_translation.py"
+      ],
+      "files": {
+        "SKILL.md": "6b813b7106159c7c88f18e3c959d526cc88f01c3d530e0770e121b40cd84184a",
+        "references/api.md": "d888c9576169340ed6276cedc682891f62ef841c687a1a8ce2b36c53aa22ffd6",
+        "scripts/patent_title_abstract_translation.py": "5ed50fa4f151eb5de651000e6919715fe4a375fa54eb13d1c7df4e2373862d1b"
+      },
+      "available": true
+    },
+    "product-ai-visibility": {
+      "source": "ecommerce-product-ai-visibility",
+      "description": "product-ai-visibility",
+      "scripts": [
+        "scripts/cli.py",
+        "scripts/profile_builder.py",
+        "scripts/send_report_email.py"
+      ],
+      "files": {
+        "SKILL.md": "c9050003630ce93f6bfcd4b4917f19dec480d532af2e3019a299ea8b79d07321",
+        "assets/config.json": "ef358db30ff537935c9796a7038319038f50948195295dc68f12f50c396b27a6",
+        "assets/prompts/evaluator.md": "01c4780fbcf621ad7bc6ea845453a0b834b027ade211a42204d592120c3adaa1",
+        "scripts/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "scripts/_next_steps.py": "318f1b4c78ffb271ed2a337245fbf267b3b32c3377349a0874d88dc361e02f36",
+        "scripts/api_capture_runner.py": "8c6fd533f79766fcb00e3f2bce56538cee72818f0f2c9c5a93485d2e55b10f4e",
+        "scripts/api_client_base.py": "eb184f450648bc99c07470a9e956a309f3e793ae7f8d4bb0a78a9330a4807b73",
+        "scripts/cli.py": "3af07f1b2f90b324276230902efc857acac1259d2d3376e81e72be1b6dd9caf0",
+        "scripts/evaluator.py": "64f5a99ab6b82d175d5636e89ae0eb1cfb36c74729f145c70abbc76d7566a45f",
+        "scripts/html_report.py": "a2964b174b86dafb73d640a5b3121acd034a078ad83f2fa374af2c352eec8da8",
+        "scripts/loader.py": "1d6a04d0e6ab249a1dbbd9c637b624a95579782f6faab35a8ac9015734e0842e",
+        "scripts/normalizer.py": "0855bde57fc6be087278d01bf1df1a5f655880cffefd92784ba21c6d2503bca6",
+        "scripts/preaggregate.py": "1bdaa7ea902dfa2e2fe5d76e21d141c9b9efb7422083a92621055639ab38158c",
+        "scripts/profile_builder.py": "e2bebfd44e94781e7364dc1eba1a3b6eecd6a75590a4664920a87836c1d16e76",
+        "scripts/send_report_email.py": "746caceddf0c9ec48c8c4f9fc8a2d515e114bee43483c41b33c3c6b741322d39",
+        "scripts/task_builder.py": "acd9995f9a1497cab61944b28fb57697702f22d9da29b36d4a92ff4d18948505",
+        "scripts/test_raw_api.py": "c1408f7f0cdb5cca7b7067165a5a971ce3f3c9f08818513124477a3e6bf6d1b4"
+      },
+      "available": false,
+      "unavailable": {
+        "reason": "This workflow uses a separate MODEL_BASE_URL / MODEL_KEY gateway and profile workspace, not the Nexscope CLI account API. A supported model-gateway integration and portable workspace setup are required before enabling it.",
+        "requiredIntegration": "Nexscope account-authenticated model capture and evaluation"
+      }
+    },
+    "product-description-generator-api": {
+      "source": "ecommerce-product-description-generator-api",
+      "description": "Create asynchronous product-description and text-generation tasks, then query their status and results by taskId.",
+      "scripts": [
+        "scripts/aigc_textgen.py"
+      ],
+      "files": {
+        "SKILL.md": "7152496325427b39ac6fc8b5b4633a4a48aaf509172f6aad1a3004b167091e1e",
+        "references/api.json": "b65999bdc953765bcbeafbdf9ef15b5336f8ec457327cb8a37038acd500c472c",
+        "references/api.md": "2d7a494750513476ebcc7048d55afde2374652effc45cc450f616532d98bb650",
+        "references/credentials.md": "75c3e111bf756f2ecbb1f4d343cd69f8d26ef7f1406ef97d4deb66c4b3f5de11",
+        "references/testing.md": "dae768f23613acb5dce306ec7f6071d6db6cc28ae9c3842717c8e061aed20913",
+        "references/workflow.md": "acbf7b294309a5e13dcff9e4161c3007d5b7a868c526ee67bc54c6aae8ef6a05",
+        "scripts/aigc_textgen.py": "d7687077fa7fc3ed52da6ad12803d2ad66765cfe7be58341ae80d7e76b425b50"
+      },
+      "available": true
+    },
+    "reverse-product-image-search-api": {
+      "source": "ecommerce-reverse-product-image-search-api",
+      "description": "Find visual or keyword-derived competitors from a product image or URL across supported marketplaces.",
+      "scripts": [
+        "scripts/junglescout_sales_estimates.py",
+        "scripts/response_io.py",
+        "scripts/step_3_5_junglescout.py",
+        "scripts/step_4_merge_rank.py"
+      ],
+      "files": {
+        "SKILL.md": "1c7e697ff9fdb7c5f65185cbf0610ec5f1e95c35c2193983ddcbee3cfd079656",
+        "references/api.json": "a7ec36b77436f46188b1b74e73578a201b5187f61ef8aeb8d4188d56a7258f7c",
+        "references/api.md": "caf046daf264065500de526bbd37966e2ae6ef9f8e0755ae8e771e0e67ddc087",
+        "references/credentials.md": "75c3e111bf756f2ecbb1f4d343cd69f8d26ef7f1406ef97d4deb66c4b3f5de11",
+        "references/data-fields.md": "4f212ada9a40d8760b429753644fa1f02e7308e3ef322664ce6f4914d0a94cd3",
+        "references/output-schema.md": "5c9774e70bad5e3aadcc84913e2614aae0b74c280c072a160aa92883d2676ed7",
+        "references/testing.md": "f5e24d19d42a63ee4cc209a503a5a9f12b885dcaff56fd78cd67963e729457d4",
+        "references/workflow.md": "8856b22688ec30580938c3c36700e38d99f11361d56c4e9768c32520f4164988",
+        "scripts/junglescout_sales_estimates.py": "397e91c8091e78a20c9074f21427be35eac76187bafcceaff1edb1c239c45d57",
+        "scripts/nexscope_paths.py": "48a605e94b987759ba2ed1b2693c18a47d4ab44568cfd4a19be8b43f08b0b4a8",
+        "scripts/response_io.py": "0b8ad84cdbcc8a2a3de2ac22de4c04910657489823056b76894867122ce942e0",
+        "scripts/step_3_5_junglescout.py": "e6f77a4a34881074918c9e9f130cad7f33ed7cfb83f29dc8f98b6a4390a8ffe4",
+        "scripts/step_4_merge_rank.py": "e417d9e781ce622e61587c66519af8cab1d52d0b7202bcbc3ee17fd54d4f1e05"
+      },
+      "available": true
+    },
+    "ruiguan-copyright-detection": {
+      "source": "ecommerce-ruiguan-copyright-detection",
+      "description": "Detect image copyright infringement risks by comparing against a database of registered copyrighted works.",
+      "scripts": [
+        "scripts/ruiguan_copyright_detection.py",
+        "scripts/upload_image.py"
+      ],
+      "files": {
+        "SKILL.md": "257e725153be898c3fc95fb9550ebbf9b9c730bb726124b45e3b6c928dd6945e",
+        "references/api.md": "c8c0ba0e881be4a43ebc69c97f7f0bee2a17219e4d0ec01b8ab75de3b56b86f4",
+        "scripts/ruiguan_copyright_detection.py": "32e7897f62195d8fb5f06ff84d837a80851ad50a23213b4b992daf778035920f",
+        "scripts/upload_image.py": "44b0648ffdce5292eeec6d53ef8fcfddc74023abc145095a2a2a84fe278f72a2"
+      },
+      "available": true
+    },
+    "ruiguan-detection-patent-design": {
+      "source": "ecommerce-ruiguan-detection-patent-design",
+      "description": "Detect design patent infringement risks by comparing a product image against a global design patent database across 25+ jurisdictions.",
+      "scripts": [
+        "scripts/ruiguan_detection_patent_design.py",
+        "scripts/upload_image.py"
+      ],
+      "files": {
+        "SKILL.md": "60d12d1b630209e66d2d5b4b2fc8ec6a0906ad141e86d4a21d9347857842e77a",
+        "references/api.md": "aa00ebd85e778d2fe936ee455609b47cf752ca09a752c970586fe6e40608fe81",
+        "scripts/ruiguan_detection_patent_design.py": "880f4896d7146db655075307e9bd28cb40b581849247a1248412b805ff3386bf",
+        "scripts/upload_image.py": "44b0648ffdce5292eeec6d53ef8fcfddc74023abc145095a2a2a84fe278f72a2"
+      },
+      "available": true
+    },
+    "ruiguan-gun-parts-search": {
+      "source": "ecommerce-ruiguan-gun-parts-search",
+      "description": "Check product images against a database of policy-violating items for compliance screening using visual similarity.",
+      "scripts": [
+        "scripts/ruiguan_image_compliance_search.py",
+        "scripts/upload_image.py"
+      ],
+      "files": {
+        "SKILL.md": "b9e625f4854c120176073138c21d651e15a66f3b76b6e13a3218c5188a2d5023",
+        "references/api.md": "25a23f8c5997d5c3a4baa02a39731f65b6709749a1927fc2b57cf55d2ff69b8c",
+        "scripts/ruiguan_image_compliance_search.py": "0ff03d4f93fa5f7070e36733a7bb5f7f7680262e60bdbaed50f09760667296f7",
+        "scripts/upload_image.py": "44b0648ffdce5292eeec6d53ef8fcfddc74023abc145095a2a2a84fe278f72a2"
+      },
+      "available": true
+    },
+    "ruiguan-trademark-graphic-detection": {
+      "source": "ecommerce-ruiguan-trademark-graphic-detection",
+      "description": "Detect graphic trademarks in product images by comparing against registered trademark databases across multiple regions.",
+      "scripts": [
+        "scripts/ruiguan_trademark_graphic_detection.py",
+        "scripts/upload_image.py"
+      ],
+      "files": {
+        "SKILL.md": "befc4a336f471b08706a9774301635f2fc7319174ba6c0242c9c79bd42e00765",
+        "references/api.md": "54db2493805832e40a93cfecd0964b2ac6b0174d9764e780d4f7f77ab37a57c9",
+        "scripts/ruiguan_trademark_graphic_detection.py": "39ecc95e7ded538c456b11803ac892e05859c5266ad56c0d5ad08fb7c127130a",
+        "scripts/upload_image.py": "44b0648ffdce5292eeec6d53ef8fcfddc74023abc145095a2a2a84fe278f72a2"
+      },
+      "available": true
+    },
+    "shopee-product-detail": {
+      "source": "ecommerce-shopee-product-detail",
+      "description": "Retrieve current public details for one Shopee listing URL.",
+      "scripts": [
+        "scripts/shopee_product_detail.py"
+      ],
+      "files": {
+        "SKILL.md": "18debdf180d912dea004a65e816ecec129b99e3aa89db29f61010454817a2d86",
+        "manifest.json": "06be90cad62999758a09fdaccbcd1cada7741d770b85767704bcd21cdfdfdff7",
+        "references/api.md": "f0cfaf9bac31000b3aa7c410fac748fd5d7f3f836555fe48fd79011134646eff",
+        "references/testing.md": "11f9b0f063b3fad712fea373d9bcd6566e987a79304d920d9fe26999c0754354",
+        "scripts/shopee_product_detail.py": "8c14f56def3082fbd490ace20f167a6f11f82357987ae2268dbf75d7746c1193"
+      },
+      "available": true
+    },
+    "shopee-product-search": {
+      "source": "ecommerce-shopee-product-search",
+      "description": "Search Shopee product information and metrics.",
+      "scripts": [
+        "scripts/shopee_product_search.py"
+      ],
+      "files": {
+        "SKILL.md": "1478818fbca61dd4e66024f1254edc79f57c55c1cc60f99d5a3dc499b9bd04f9",
+        "references/api.md": "5d040b1355c288b93c553a4fd0d17807825a099cf900da1aef12fc127df210a8",
+        "scripts/shopee_product_search.py": "a6f40c2bd05f92deae320ebe9b2744f2a9387961325b9351f734000b0b079a98"
+      },
+      "available": true
+    },
+    "shopify-product-query": {
+      "source": "ecommerce-shopify-product-query",
+      "description": "Query Shopify products with filters.",
+      "scripts": [
+        "scripts/shopify_product_query.py"
+      ],
+      "files": {
+        "SKILL.md": "62555ca8147a84f3f90625c33ecbb7d9402fb5e2d749ecb975b6d1851d6ca2c2",
+        "references/api.md": "b481a2755b922e0794603d3aedf7cf0e8793cc0fbb7ee685bc34db9232ac5083",
+        "scripts/shopify_product_query.py": "f8e7b6e92052082aa1d1a0b1d48fb11239728e2cba216b888fb2c9c046c83ed5"
+      },
+      "available": true
+    },
+    "shopify-store-query": {
+      "source": "ecommerce-shopify-store-query",
+      "description": "Query Shopify stores with filters.",
+      "scripts": [
+        "scripts/shopify_store_query.py"
+      ],
+      "files": {
+        "SKILL.md": "c5c7e9d05c8efacd57087690c133cbea1b8b5c41690e90cacddba09659999bda",
+        "references/api.md": "1e16d827434ca020cd46929f986bb594c92a91ae5009de48beadae8a7f22420f",
+        "scripts/shopify_store_query.py": "0778bbc29f742fcf690063088ae7a38a1217453f44f77a6c56988147dae589fb"
+      },
+      "available": true
+    },
+    "temu-category-search": {
+      "source": "ecommerce-temu-category-search",
+      "description": "Search Temu categories.",
+      "scripts": [
+        "scripts/temu_category_search.py"
+      ],
+      "files": {
+        "SKILL.md": "baadc908de7e75dfa83aa8a9d75e99c26cf3b5f8772f4a03c7065d2dd43bed35",
+        "references/api.md": "90a8ec5161a0388e553bb308cc2cfcb4ea94c9aa9abbca4426162edf7c3845fd",
+        "scripts/temu_category_search.py": "1ca7825174c9e4c965bf1a297083ee2e6e22e26322dc2daec9642d4de26f571d"
+      },
+      "available": true
+    },
+    "temu-product-source-query": {
+      "source": "ecommerce-temu-product-source-query",
+      "description": "Query Temu products for sourcing research.",
+      "scripts": [
+        "scripts/temu_product_source_query.py"
+      ],
+      "files": {
+        "SKILL.md": "112998b52d207b70f1d59fc20b78653e7606695bc16fb1d47f413ea90326c1fb",
+        "references/api.md": "9a87816cf72f40468f4461aa419e819e6122f74c63e38107128ada25b6bc8269",
+        "scripts/temu_product_source_query.py": "e184d267426d3d9f1069aa8ceaa33e1b5d7d77f5c468b5578888f215ceb9448d"
+      },
+      "available": true
+    },
+    "temu-store-source-query": {
+      "source": "ecommerce-temu-store-source-query",
+      "description": "Query Temu stores for sourcing research.",
+      "scripts": [
+        "scripts/temu_store_source_query.py"
+      ],
+      "files": {
+        "SKILL.md": "84b4bd595cc1484cd5f1c0c009535a574b00d2bfede39edaff6ca7502edd549c",
+        "references/api.md": "8e07c33c99ae60df6f43d25c81beb6b78c388c38e4e981675c0f4c687ec00724",
+        "scripts/temu_store_source_query.py": "1b8a8930666f3ea0a327be9a27b221346dbd15b84c14a4c1a55dc438fce46eb1"
+      },
+      "available": true
+    },
+    "text-trademark-detector": {
+      "source": "ecommerce-text-trademark-detector",
+      "description": "Detect trademark risks in product title and text.",
+      "scripts": [
+        "scripts/text_trademark_detection.py"
+      ],
+      "files": {
+        "SKILL.md": "20322fff519bf1f93fd631a48b1a8132bb336dac635b4833a5da80a060739271",
+        "references/api.md": "2ce3d4d4a6c48b9639b14660a45728256d10a4a93eb7701beef314f67de1bfaa",
+        "scripts/text_trademark_detection.py": "3504bcf3842875c90f6bd387bfebd4eda41211f998175a6867951b65eed88d1e"
+      },
+      "available": true
+    },
+    "tiktok-batch-product-detail": {
+      "source": "ecommerce-tiktok-batch-product-detail",
+      "description": "Retrieve batch TikTok product details.",
+      "scripts": [
+        "scripts/echotik_batch_product_detail.py"
+      ],
+      "files": {
+        "SKILL.md": "7dfb977fcec1f1e59b0e1a526fa10bdd6dd92c8e6e5a3a2d714e10aae0075f1c",
+        "references/api.md": "937bf10355261423aa914389e1ff11a4a4ecb064b3d7b006f15f34123a464c9a",
+        "scripts/echotik_batch_product_detail.py": "1ecd2083028a49408276100bc2f566b1deea6d47e1d38cf35b4f0851311ebb76"
+      },
+      "available": true
+    },
+    "tiktok-creator-analytics": {
+      "source": "ecommerce-tiktok-creator-analytics",
+      "description": "Retrieve TikTok creator rankings and creator-level analytics.",
+      "scripts": [
+        "scripts/creator_detail.py",
+        "scripts/creator_rank.py"
+      ],
+      "files": {
+        "SKILL.md": "252b0b3949500eb84dc2156b4b8d91b271a72bc914b2391498c7e578bded5f52",
+        "references/api.md": "35b85f49e9cc4cb99b7369f7d02ce7027fa4f07ba424eb07803ef7e7f0696408",
+        "scripts/creator_detail.py": "760f24fa83d9caf1fd70c2b5de2abf5c957d3efbad1c99251afe7ee29917e8b8",
+        "scripts/creator_rank.py": "860e643b33ef26db039d50bd8daf1897d238d3a1821cf624c796e7e8c190af64"
+      },
+      "available": true
+    },
+    "tiktok-creator-search-api": {
+      "source": "ecommerce-tiktok-creator-search-api",
+      "description": "Search TikTok ecommerce creator rankings by market and date range.",
+      "scripts": [
+        "scripts/kalodata_creator_search.py"
+      ],
+      "files": {
+        "SKILL.md": "79147315fbadf3c49b4673f56a7743e2de6f80db8dd1a885572110fbf83b83ed",
+        "references/api.json": "ed27dec5a042e4e36f2cf194807652f4340a8b76c19f2b6c064276292e849575",
+        "references/api.md": "c0c5125b3d7ccd1d7c14eb37fb9ad80272b9397339903d5b13a3c2a9ec2206c6",
+        "references/credentials.md": "5858042b0e5a27454fb7659a48f0aee7904aa395198f7e0faf9988479bf46122",
+        "references/testing.md": "9b3a0e39ececbf52b932fabc0217cd13f59a6607da2f92cc21619bf91732ae70",
+        "references/workflow.md": "d2684ce51a44d3ba6533fc8e9abb020d971a219f319b41f092d71e1f069f054e",
+        "scripts/kalodata_creator_search.py": "594c04776da8ec97481ba84809db476cdbdfec5dfeadf4e3e985bd34b2b54c29"
+      },
+      "available": true
+    },
+    "tiktok-livestream-analytics": {
+      "source": "ecommerce-tiktok-livestream-analytics",
+      "description": "Retrieve TikTok livestream rankings and livestream details.",
+      "scripts": [
+        "scripts/livestream_detail.py",
+        "scripts/livestream_rank.py"
+      ],
+      "files": {
+        "SKILL.md": "b24de33724ac1aa48b4fca71e9fb31299bfccc3897a7e9f40c031d45d99cd3eb",
+        "references/api.md": "17d0de1b75877027fa5d6d37d716b24874746889ff20f4e1fdebba4b5d306237",
+        "scripts/livestream_detail.py": "09d56016f9138d7cee91b63b14222fb43042ae5731e905b68f2ae34d049ddda1",
+        "scripts/livestream_rank.py": "560eced185aa4c1a76ad72a22646b3dfb1c7b7a6759b0fc5185d85d782f1b2a5"
+      },
+      "available": true
+    },
+    "tiktok-new-product-rank": {
+      "source": "ecommerce-tiktok-new-product-rank",
+      "description": "Retrieve TikTok new-product rankings.",
+      "scripts": [
+        "scripts/echotik_list_new_product_rank.py"
+      ],
+      "files": {
+        "SKILL.md": "54cab15e2605a643e9c1d60120b40a9d663750df2adf18ddd4482aa61961c479",
+        "references/api.md": "27ec75651a5a5870d37580be9d6dfce01a5f7a17aa7aa1bb94a1892290125c06",
+        "scripts/echotik_list_new_product_rank.py": "3df9abff768fa9799cce488ce1ba04bfef0f631a3fe7ff3fce451639b47b28bf"
+      },
+      "available": true
+    },
+    "tiktok-product-analytics": {
+      "source": "ecommerce-tiktok-product-analytics",
+      "description": "Retrieve TikTok product rankings and product details.",
+      "scripts": [
+        "scripts/product_detail.py",
+        "scripts/product_rank.py"
+      ],
+      "files": {
+        "SKILL.md": "d381039e4dbea9d2dacb707a3aa820b2840e0ff105a010b5c34bba4392bc4e62",
+        "references/api.md": "99317aedd1fdaab6546fd1084c56f0dc36f5aa89bcf913134b879fb9b07727c9",
+        "scripts/product_detail.py": "41a1f9949d48ba6d439fc378dea8faf4522d9a18f49f8be1bb7ae7eab9166099",
+        "scripts/product_rank.py": "ea809c8bfdea4c08dfb5a827fe9b17208f998dba6105c42389d17e090e9fe406"
+      },
+      "available": true
+    },
+    "tiktok-product-analytics-api": {
+      "source": "ecommerce-tiktok-product-analytics-api",
+      "description": "Retrieve price, sales, revenue, commission, lifecycle, and shop data for a specific TikTok product.",
+      "scripts": [
+        "scripts/kalodata_product_detail.py"
+      ],
+      "files": {
+        "SKILL.md": "b9e627106ab5b07337afa996f985be46a1c5a93e57a67422c615ee1fb0e3427e",
+        "references/api.json": "408026722fea2d91cebd0a2bd71e6e2adedd450a7fc87824acf119b06e5d3094",
+        "references/api.md": "261856bdd340c0eab2f277394c71897dbdaf1586af81d0752bd233fbe8c16408",
+        "references/credentials.md": "5858042b0e5a27454fb7659a48f0aee7904aa395198f7e0faf9988479bf46122",
+        "references/testing.md": "7eda9feec255d9c3f5413599c1bff93c937a92f6bc72ba333ac067591586364f",
+        "references/workflow.md": "e59c9d46b296c5a89c60a4d8c846eac817565d63c9b7f75e9ab69f2edb005413",
+        "scripts/kalodata_product_detail.py": "4fabd8a97feaadfdfae39d7d02a41db51a29047957010eb4d6fdfb349adb8b52"
+      },
+      "available": true
+    },
+    "tiktok-product-discovery": {
+      "source": "ecommerce-tiktok-product-discovery",
+      "description": "Discover TikTok products.",
+      "scripts": [
+        "scripts/tiktok_product_discovery.py"
+      ],
+      "files": {
+        "SKILL.md": "0c15dec847182299c7fb1defdc1ddc554ec66effce30f727404585813bf6c463",
+        "references/api.md": "871ddce797633c07e1b848490bf101c4272ad7f787787b5904b118232bb161de",
+        "scripts/tiktok_product_discovery.py": "ccd344f5ebd6720a74f97d3d4a5aa2a254cbf4d0b14bc41df553f54cba553f5f"
+      },
+      "available": true
+    },
+    "tiktok-product-search": {
+      "source": "ecommerce-tiktok-product-search",
+      "description": "Search TikTok products.",
+      "scripts": [
+        "scripts/echotik_list_product.py"
+      ],
+      "files": {
+        "SKILL.md": "e7590e223ebb9c6e3acb4e105106105426bbc222bedd34394b178d012a2639af",
+        "references/api.md": "e9133b5e29e77c95ac766ece6ae217732e22fe1c789df0c2c556ca51cc14ae6c",
+        "scripts/echotik_list_product.py": "1c5eb7f04ea7c8b32007ff69ebe4ca9d9b8395c6f451807b7d3c887d00ff6c49"
+      },
+      "available": true
+    },
+    "tiktok-seller-detail": {
+      "source": "ecommerce-tiktok-seller-detail",
+      "description": "Get detailed metrics and attributes for one TikTok Shop seller.",
+      "scripts": [
+        "scripts/tiktok_seller_detail.py"
+      ],
+      "files": {
+        "SKILL.md": "643d77c23f95316e70ff080bf194604ddcf9a7dfa824a05468fbc5403e6b0ced",
+        "references/api.md": "be48d207058a39f5498c5e8a38e0bd971e546b76f9f4f410005e944a02523318",
+        "scripts/tiktok_seller_detail.py": "30ff8f3830e41c4ed1ad447a0f844f34a52b5babfbe9b4f3cd945aaaff56fceb"
+      },
+      "available": true
+    },
+    "tiktok-shop-analytics": {
+      "source": "ecommerce-tiktok-shop-analytics",
+      "description": "Retrieve TikTok shop rankings and shop details.",
+      "scripts": [
+        "scripts/shop_detail.py",
+        "scripts/shop_rank.py"
+      ],
+      "files": {
+        "SKILL.md": "c1f96bf4a06c6018953e67d9662a00c32b7248249114944c3bb9120068738965",
+        "references/api.md": "c767c32fa1e03635c81dc442b3e207b46b1ca30397896868be718a10d00c8153",
+        "scripts/shop_detail.py": "c146a12588ceed05466cea7097f969f16473832ccfaa7a86f4a4f73db107a09f",
+        "scripts/shop_rank.py": "c5633adee1ef4cc2a51954e092ec588695c918305494521bff84cb3f31952b3a"
+      },
+      "available": true
+    },
+    "tiktok-shop-product-detail": {
+      "source": "ecommerce-tiktok-shop-product-detail",
+      "description": "Query TikTok Shop public product details through Nexscope.",
+      "scripts": [
+        "scripts/tiktok_shop_product_detail.py"
+      ],
+      "files": {
+        "SKILL.md": "535cd8825b6726dbd88454bc00d865a8e8494fc59407f637573163dba512afdc",
+        "manifest.json": "e8df4ae349439cf4ad218ba2511fa4adb8de4804f511536d8dce6cd241b9121e",
+        "references/api.md": "26afd666f396ecb22b4ce174c52f0365cc601bde8213a718e9b15f7799f88a01",
+        "references/testing.md": "551dd17a5c2c0eac11b7f40b4d18e88d4e25dab00954fa6cc8af4bd888e868bc",
+        "scripts/tiktok_shop_product_detail.py": "7619a8d0ecb6ded943824a552051833bbc62d7c65cc3fe6146152d37118f3f43"
+      },
+      "available": true
+    },
+    "tiktok-top-selling-products": {
+      "source": "ecommerce-tiktok-top-selling-products",
+      "description": "Retrieve TikTok Shop top-selling product rankings.",
+      "scripts": [
+        "scripts/tiktok_top_selling_products.py"
+      ],
+      "files": {
+        "SKILL.md": "5e4b3ebcf272e331c24707c27777f82cfb732e0b39deff08afb9c1ea262e3b6e",
+        "references/api.md": "b5556a9fd7840145a8db807836e49c22cd7b9add877cd10dea3212d0d491f389",
+        "scripts/tiktok_top_selling_products.py": "9e27944e59d61e74234d973a93308a11c7c6fbefe66414387c8c1408f29f0273"
+      },
+      "available": true
+    },
+    "tiktok-video-analytics": {
+      "source": "ecommerce-tiktok-video-analytics",
+      "description": "Retrieve TikTok video rankings and video details.",
+      "scripts": [
+        "scripts/video_detail.py",
+        "scripts/video_rank.py"
+      ],
+      "files": {
+        "SKILL.md": "7afccae4ed10bdb0357b100e76d002f5d79bfcc857552bc773b66db86ce17db6",
+        "references/api.md": "244a451e21d49e03f2d33bf13d5a39b3e4e4191d70283d8087a1e02e542e9ffd",
+        "scripts/video_detail.py": "20cf6b5c95443b80a03b2d8caf0dccaeb871fe8478aa0db82821b393fd153459",
+        "scripts/video_rank.py": "0cbe6d7a15333ff78d90a0728afb72fdcb142e72df2a517b991f5fe8df1ceb15"
+      },
+      "available": true
+    },
+    "tiktok-video-download-url": {
+      "source": "ecommerce-tiktok-video-download-url",
+      "description": "Retrieve a TikTok video download URL.",
+      "scripts": [
+        "scripts/echotik_get_video_download_url.py"
+      ],
+      "files": {
+        "SKILL.md": "51b7d0d8461b62c3c59896f55d1fff47ccdbf374de826391b34ae0903ebf261c",
+        "references/api.md": "e6cd3721e6e9a709bbf865a72c67ef3708a5cebe158890687021065255d0149c",
+        "scripts/echotik_get_video_download_url.py": "8e90428d46b8b8d3d96d507ab3333f5fb4ae8a7a7a1bc6f589666bd216b77075"
+      },
+      "available": true
+    },
+    "tiktok-video-rank": {
+      "source": "ecommerce-tiktok-video-rank",
+      "description": "Query TikTok public video rankings from EchoTik through Nexscope.",
+      "scripts": [
+        "scripts/echotik_list_video_rank.py"
+      ],
+      "files": {
+        "SKILL.md": "0b9032e293181b0862e20d10907a6cd95f6d8673c4d3db535b2b072fdb2b447a",
+        "manifest.json": "d051c929ec1ef024a0e811c32d2deb2c4b5b33edaf7594c1b9679155eaa0a216",
+        "references/api.md": "76fb46dd38863c8e20c5f36c2b76502c8402aa77961d199f2114f755ef487fb5",
+        "references/testing.md": "360e0e9edb95b02275791332ded6bd0cefa40a6b37d4b1cc92dae2eb0f20d07d",
+        "scripts/echotik_list_video_rank.py": "f61d10e60352aab0940ed7ba2ded2ad3369ca3479a2a50a857baa85b6fee6f65"
+      },
+      "available": true
+    },
+    "tiktok-video-search": {
+      "source": "ecommerce-tiktok-video-search",
+      "description": "Search TikTok videos by market, creator, product, engagement, and publication filters.",
+      "scripts": [
+        "scripts/tiktok_video_search.py"
+      ],
+      "files": {
+        "SKILL.md": "1fcd33bb16d947eafd758c31953c1917981aa73d4234b9690ee0adfbe2874296",
+        "references/api.md": "741de2d0f0fc66777d354a0589a1e16cc978c033484ec9a20c356dc6fe78804b",
+        "scripts/tiktok_video_search.py": "d18b8dcb2c42855ab014df015cfeca5e5f03ead7bcdf93ad8fe2f0a81a0a880f"
+      },
+      "available": true
+    },
+    "utility-patent-detector": {
+      "source": "ecommerce-utility-patent-detector",
+      "description": "Check products for utility patent similarity.",
+      "scripts": [
+        "scripts/utility_patent_detector.py"
+      ],
+      "files": {
+        "SKILL.md": "9c553d162f5fa608afa7c1c9d0607d87f88f768d088f5b19c2a02dee66a5ff29",
+        "references/api.md": "23b0ffcf1366f7f8f6ded03a40d9467689a1d3b43fb030f32d56485c4ac9addc",
+        "scripts/utility_patent_detector.py": "ce244b256f6adde949ffa402c38e3a7ccc84a7c811b7c10fc3ef84149a802315"
+      },
+      "available": true
+    },
+    "walmart-category-market": {
+      "source": "ecommerce-walmart-category-market",
+      "description": "Query Walmart US category market research through Nexscope.",
+      "scripts": [
+        "scripts/sorftime_walmart_category_market.py"
+      ],
+      "files": {
+        "SKILL.md": "1937c39d02f307296c36e174d0992c6858b48fc3a62324c4ed8c944a080ff2e5",
+        "manifest.json": "0d19626fc6c531021566114b1f6e14a44e1fdd92f1f251669cabf21d1c2bbfb5",
+        "references/api.md": "e17a97f154ba2f1b44840b38ab309f886c3d1a70060dff7302b68586b49f884a",
+        "references/testing.md": "3353e376e41763ebc1b8d89800bbe4d8920494ef96c9d6142466c86188b10fb4",
+        "scripts/sorftime_walmart_category_market.py": "7ff94c3ac42602cd698ea12164a711cd2b0706fc25886f963c588d2976e20f30"
+      },
+      "available": true
+    },
+    "walmart-keyword-research": {
+      "source": "ecommerce-walmart-keyword-research",
+      "description": "Query Walmart US keyword research through Nexscope.",
+      "scripts": [
+        "scripts/sorftime_walmart_keyword_research.py"
+      ],
+      "files": {
+        "SKILL.md": "b4ee9b5f077bb6fb8f8201300b467bea5fa968666065b19abe99a3a35a35b211",
+        "manifest.json": "ac9d8ab0690f10b3d1070df7e51e69fc9d73c6a4486a90bb9b9501fce9ae097a",
+        "references/api.md": "754953101fd10c2838bf6e86dbb86de267184f653c939d9f7f11ae9dc5482203",
+        "references/testing.md": "8c2e98dad157eac170f790fd8e8d1ef06d1a16097e51b1acc433d31c88e3a5ad",
+        "scripts/sorftime_walmart_keyword_research.py": "d9da5b3c27914b19ec3c69ac03291f2adccec77e7260b2ba6db9075b8ac6fc23"
+      },
+      "available": true
+    },
+    "walmart-product-analysis": {
+      "source": "ecommerce-walmart-product-analysis",
+      "description": "Query Walmart US public product analysis through Nexscope.",
+      "scripts": [
+        "scripts/sorftime_walmart_product_analysis.py"
+      ],
+      "files": {
+        "SKILL.md": "a4695dc7bf9073e87af1cde127a08ac60cd7e38549ce3ad9cbed26cfde7cf7f9",
+        "manifest.json": "d0d01e62d5d9bfb75d92e14b346ce7658af7edacac08584d635fb7c6d27178c4",
+        "references/api.md": "5f2918982e984d4379e83a5fcf2901d83cc9b46eab2cfa8b10ffda6b45c057e4",
+        "references/testing.md": "7c17591648d12e67c26843335060b261aa096a11006e1d58c70eb2924cae379b",
+        "scripts/sorftime_walmart_product_analysis.py": "ec22f87ff8f3d5febe3af1b179e44560239c307862fa75e8e9734a8396e028af"
+      },
+      "available": true
+    },
+    "walmart-product-detail": {
+      "source": "ecommerce-walmart-product-detail",
+      "description": "Retrieve Walmart product details.",
+      "scripts": [
+        "scripts/walmart_product_detail.py"
+      ],
+      "files": {
+        "SKILL.md": "3f47f2dd6c82b4cbbe0dafe73cd460db0bde2a565ad7bd70ac2236074f14e1a1",
+        "references/api.md": "6020180d87b97cf5a2e121e7878206bd4b60c4671c776fcbd76786a9cfe7323b",
+        "scripts/walmart_product_detail.py": "16f21a044abd9b64d3ad4c28bfeb0eddf8e0ca6212ce2b2491089919653e9354"
+      },
+      "available": true
+    },
+    "walmart-search": {
+      "source": "ecommerce-walmart-search",
+      "description": "Search Walmart products.",
+      "scripts": [
+        "scripts/walmart_search.py"
+      ],
+      "files": {
+        "SKILL.md": "a4d61e68b1fc3852e48eff28d588eb969435cb68001e5767b30663206f2c73eb",
+        "references/api.md": "f7af9c983ef85664e6f90b2a15ff36f43bbb7bf2a73300da3f619fd938e976e8",
+        "scripts/walmart_search.py": "522e1655ca868151e68757ffe255de0cd8bdd86edd0b56de2d9f67598d0c9bbe"
+      },
+      "available": true
+    },
+    "web-search": {
+      "source": "ecommerce-web-search",
+      "description": "Search the web for a keyword.",
+      "scripts": [
+        "scripts/web_search.py"
+      ],
+      "files": {
+        "SKILL.md": "d418923b8e6d2c9ffd990073c361d7e95fef79bd6b81607796d25d833c781c68",
+        "references/api.md": "799a56159014a59786c137b3ef7fa0e449b0f1843af76b8b3c71132047bf9120",
+        "scripts/web_search.py": "68f894fb575c7325439e411c4b1d2399e6c078cf0a8b92b375fbd69b2df63455"
+      },
+      "available": true
+    },
+    "zhihuiya-patent-image-search": {
+      "source": "ecommerce-zhihuiya-patent-image-search",
+      "description": "Search for visually similar design patents using an image via the patent database, with filtering by country, legal status, date ranges, and more.",
+      "scripts": [
+        "scripts/upload_image.py",
+        "scripts/zhihuiya_patent_image_search.py"
+      ],
+      "files": {
+        "SKILL.md": "96e4a9619aeec866e11a09a70aa74f34222047548cce3bd31ce341661a4ba4a8",
+        "references/api.md": "c877fb2cd1881a32333ef81de071ee8a7206af15a7bdc10baddeb0d38372bacd",
+        "scripts/upload_image.py": "44b0648ffdce5292eeec6d53ef8fcfddc74023abc145095a2a2a84fe278f72a2",
+        "scripts/zhihuiya_patent_image_search.py": "2c75b49d24367389df1a69c514643b1571074fe57a8775619d56419c2f0d5142"
+      },
+      "available": true
+    },
+    "zhihuiya-utility-patent-image-search": {
+      "source": "ecommerce-zhihuiya-utility-patent-image-search",
+      "description": "Search for visually similar utility model patents using an image via the patent database, with filtering by country, legal status, date ranges, and more.",
+      "scripts": [
+        "scripts/upload_image.py",
+        "scripts/zhihuiya_utility_patent_image_search.py"
+      ],
+      "files": {
+        "SKILL.md": "8847b76e58eab4de74a1dc1eeac3fb0733b250edf265b7cf93bc2a5fb4be9d24",
+        "references/api.md": "c877fb2cd1881a32333ef81de071ee8a7206af15a7bdc10baddeb0d38372bacd",
+        "scripts/upload_image.py": "44b0648ffdce5292eeec6d53ef8fcfddc74023abc145095a2a2a84fe278f72a2",
+        "scripts/zhihuiya_utility_patent_image_search.py": "a5a38701f1f8356e5d286abf4658f12c0f9ce701e2c9f7cdc2c3fbddf2056341"
+      },
+      "available": true
+    }
+  }
+}

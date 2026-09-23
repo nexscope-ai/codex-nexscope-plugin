@@ -1,0 +1,9 @@
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Generated resource SHA-256 hashes; self_check.py verifies each against its file"
+condition = "AND"
+paths = ['''(^|/)cli/nexscope_cli/catalog\.json$''']
+regexTarget = "line"
+regexes = ['''^\s*"[^"\r\n]+": "[a-f0-9]{64}",?\s*$''']
