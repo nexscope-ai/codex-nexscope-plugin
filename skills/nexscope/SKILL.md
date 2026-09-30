@@ -5,8 +5,8 @@ description: Research ecommerce products, keywords, markets, competitors, review
 
 # Nexscope
 
-Use the `nexscope` CLI, version 0.1.0, and its bundled skill catalog.
-Run `nexscope --version`, then `nexscope get-skills core`. If unavailable, install the bundled wheel with `uv tool install <plugin-root>/runtime/nexscope_cli-0.1.0-py3-none-any.whl`. Resolve `<plugin-root>` two directories above this SKILL.md. In a Git checkout where the wheel has not been built, use `uv tool install <plugin-root>` when that directory contains `pyproject.toml`; it installs the same reviewed CLI source. Do not install an unverified package with the same name or claim a public package is published.
+Use the `nexscope` CLI, version 0.1.1, and its bundled skill catalog.
+Run `nexscope --version`, then `nexscope get-skills core`. If unavailable, install the bundled wheel with `uv tool install <plugin-root>/runtime/nexscope_cli-0.1.1-py3-none-any.whl`. Resolve `<plugin-root>` two directories above this SKILL.md. In a Git checkout where the wheel has not been built, use `uv tool install <plugin-root>` when that directory contains `pyproject.toml`; it installs the same reviewed CLI source. Do not install an unverified package with the same name or claim a public package is published.
 
 1. The catalog separates available skills from unavailable upstream workflows. If the requested skill is unavailable, explain its reported prerequisites and stop; do not execute its raw files, request unrelated credentials, or claim it is migrated. Select the relevant available skill from the catalog and run `nexscope get-skills <skill>`.
 2. Check `nexscope auth status`. For a missing or revoked credential, run `nexscope auth login` and show the returned `loginUrl` as a clickable link. Explain its expiry. Ask the user to finish connecting on the webpage and reply **done**. Stop until they reply. Never request or display API keys, poll secrets, passwords, or session storage.
