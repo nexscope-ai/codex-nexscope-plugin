@@ -1,13 +1,13 @@
 {
   "name": "codex-nexscope-plugin",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Research ecommerce products, keywords, competitors and advertising with Nexscope.",
   "author": {
     "name": "Nexscope",
     "url": "https://www.nexscope.ai",
     "email": "service@nexscope.ai"
   },
-  "homepage": "https://nexscope.ai/?co-from=codex&utm_source=codex&utm_medium=referral&utm_campaign=nexscope_plugin&utm_content=plugin_link",
+  "homepage": "https://www.nexscope.ai/?co-from=codex&utm_source=codex&utm_medium=referral&utm_campaign=nexscope_plugin&utm_content=plugin_link",
   "license": "LicenseRef-Proprietary",
   "keywords": [
     "ecommerce",
@@ -19,10 +19,10 @@
   "interface": {
     "displayName": "Nexscope",
     "shortDescription": "Ecommerce research and data",
-    "longDescription": "Research ecommerce products, keywords, markets and competitors. Connect your Nexscope account from the conversation and save results as files. API usage consumes Nexscope credits.",
+    "longDescription": "Research ecommerce products, keywords, markets and competitors. Connect your Nexscope account from the conversation and save results as files.",
     "developerName": "Nexscope",
     "category": "Data & Analytics",
-    "websiteURL": "https://nexscope.ai/?co-from=codex&utm_source=codex&utm_medium=referral&utm_campaign=nexscope_plugin&utm_content=plugin_link",
+    "websiteURL": "https://www.nexscope.ai/?co-from=codex&utm_source=codex&utm_medium=referral&utm_campaign=nexscope_plugin&utm_content=plugin_link",
     "privacyPolicyURL": "https://www.nexscope.ai/privacy?co-from=codex&utm_source=codex&utm_medium=referral&utm_campaign=nexscope_plugin&utm_content=plugin_link",
     "termsOfServiceURL": "https://www.nexscope.ai/terms?co-from=codex&utm_source=codex&utm_medium=referral&utm_campaign=nexscope_plugin&utm_content=plugin_link",
     "defaultPrompt": [
