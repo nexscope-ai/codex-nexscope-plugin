@@ -1,4 +1,4 @@
-# Seerfar Ozon Product Report Search API Reference
+# Nexscope Ozon Product Report Search API Reference
 
 ## API Specification
 
@@ -26,7 +26,7 @@ POST Body (JSON). The following fields are consistent with the interface `inputS
 |------|------|------|------|
 | skus | array<integer> | No | SKU array (max 10), for precise lookup of specified products |
 | keywords | array<string> | No | Keyword array, filters by product title |
-| categoryIds | array<string> | No | Category ID array (Seerfar category IDs, not category names) |
+| categoryIds | array<string> | No | Category ID array (Nexscope category IDs, not category names) |
 | sellerName | array<string> | No | Seller name array |
 | brand | object | No | Brand filter: `{brandName: array<string>, type: integer}`; `type` takes `0` include brand, `1` exclude brand, `2` unbranded |
 | fulfillment | array<string> | No | Fulfillment method array, fixed options: `OZON`, `FBO`, `FBS`, `RFBS`, `FBP` |

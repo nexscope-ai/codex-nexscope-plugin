@@ -9,9 +9,9 @@
         "scripts/1688_product_billboard.py"
       ],
       "files": {
-        "SKILL.md": "45b0498aa4fad215f1eeb399bce623f01b0c1cf7f4c487c0f4740b5caa22be7c",
-        "references/api.md": "9a1e11abf2f27982cf93378eee3adf61bdfcf294a5152506574a0de929820ea1",
-        "scripts/1688_product_billboard.py": "6655ed48f69d63aa85d04fbfdb70213495c7ca897307534cab54c4b41819792e"
+        "SKILL.md": "bc7cd904e9020675f70ed9cf98b83221f658fe8cdab82976562df5b5bc446066",
+        "references/api.md": "ddc9c12fb5616d7aac2e60896f462ccc2e41259385f966f9251924f6c51d1fd3",
+        "scripts/1688_product_billboard.py": "993782872481ea04b837c72d57aa671bd9fa1abc6c1ee81b1c3bb37ac637fedc"
       },
       "available": true
     },
@@ -22,11 +22,11 @@
         "scripts/alibaba1688_product_detail.py"
       ],
       "files": {
-        "SKILL.md": "61ada4b6bb044a8272ea339a635815c7e26f60c37e3ce700476c06dd188b5e10",
-        "manifest.json": "6eb0442e2d04933c6d1434fd33864c357a3ad2588f304be176c72d84ededdfba",
-        "references/api.md": "ea5cdc7df564c314e2319855ff17cacd71f229d915f068ed3e0bc39240d9195d",
-        "references/testing.md": "10fa47e74044854996ad9771f076ab4daf2b25688ee195d90b03941678901980",
-        "scripts/alibaba1688_product_detail.py": "ed4588ff173eb9172ef874e202a8d2825d2fd9932c0a0a10788dfa767beb0930"
+        "SKILL.md": "9ae492f71617d53f6cb537eec19bd8f08f249a4e6c5fd91faec52211cdc0cd78",
+        "manifest.json": "e07d1ffca7f2f5b8d4ab8d8c1817b662b806756f42ce849e018244199d35da81",
+        "references/api.md": "6c242f450f78abae5164281036f5a219fbf6dd186fe88dc83fb9141798d87cb1",
+        "references/testing.md": "e9550b3b8d79d5344a1d2f29afb3917412fd5ebefe44a6cade5065188890f525",
+        "scripts/alibaba1688_product_detail.py": "e7364592cf4c1529f8547e3a48300095e52523185552eec4b6270f9facf0bbd1"
       },
       "available": true
     },
@@ -37,9 +37,9 @@
         "scripts/1688_product_search.py"
       ],
       "files": {
-        "SKILL.md": "886b872c1794e1d8c085bc51ab2380dc6a49c46c8b829dca4c35d0c98927c0e4",
-        "references/api.md": "70a5b297bb839e48e8661f654ede8f4aa81bcb99006ee676975d4eac568fb9d7",
-        "scripts/1688_product_search.py": "87c9f2f16e62c2cdf6dadc87891d01b031b215fc40d80327fea903e0b4c62136"
+        "SKILL.md": "c3a77fd194bee659070ae1470229e60a452ea802d3011f85f8d048533b2780a9",
+        "references/api.md": "6305a5a19bcd24bdc05b9c9cadcfd0804c0dd5030b1977feb567272ea2be39ed",
+        "scripts/1688_product_search.py": "c40dfc554c134a33d9172e5fb7d5af59b7e68d36af04e5c8934e4ead41036499"
       },
       "available": true
     },
@@ -51,10 +51,10 @@
         "scripts/upload_image.py"
       ],
       "files": {
-        "SKILL.md": "10477a58a893b651e328b2507ee6889ebc56d74dd72873f48d6a6ec335067bef",
-        "references/api.md": "01f8a98bccca1c686fad0647aa6cb28e2307245063f8f2c6e1442ec87ffb0866",
-        "scripts/alibaba1688_image_search.py": "094189bce90eedc7412f9285e898dd449d3c8ca222210b4fcd593445556a97a5",
-        "scripts/upload_image.py": "44b0648ffdce5292eeec6d53ef8fcfddc74023abc145095a2a2a84fe278f72a2"
+        "SKILL.md": "a80ba34c8a85de5f91d4675e70e76e2712ddb358b20968a6d0983d3f06dabedd",
+        "references/api.md": "db179ed3705a2aa21ddf5cc3a2858bf48c19250d9dd5034bd2c28fd59c6eda96",
+        "scripts/alibaba1688_image_search.py": "982dd2001ea1a0c0e87679ce42c73001a51bed0a0ce686913b5b40127681de91",
+        "scripts/upload_image.py": "cc185db8e2f56df6b1175e7f5d248e5c400f0644a1f5c5db9b2030e05e774321"
       },
       "available": true
     },
@@ -65,11 +65,11 @@
         "scripts/amazon_connection.py"
       ],
       "files": {
-        "SKILL.md": "49f84d58ecc4889b7384780deb7a2762c70e9c5173b7b5a0d98a98018b215941",
-        "references/api.json": "2ba362a70980955a6de960077e60b079c7f8ed8882fa00a32f2be5b0b924ddc8",
-        "references/api.md": "48db5c849746c744a3099a538558bdc5ef5c3e6d45a33de6024774ac9d6e0fc4",
-        "references/testing.md": "7eb7a88cf4843dac252e9ca2341ce7a0aa37d7f1e0b4b07175fdbb881689fb34",
-        "scripts/amazon_connection.py": "5e964a0bd6b4cb5c8e573c2bf692d3d73e65278ce4a9c284ec27c511549c73a1"
+        "SKILL.md": "ff43391be69586e63f36dcdafb833d03cada4bc58f6e8898bc4c9a6a1c614841",
+        "references/api.json": "33e46f1c2b5f5fabd0a3d2774de9d8e13925d5c718a8f2154faad3773a2dbda6",
+        "references/api.md": "bdeae9380590788e47c1e2d45819cc8e7054de2f1a1faab789c354719fb7b305",
+        "references/testing.md": "3d1a1979c422e50f21763cb853bc18ae337afa1ea7221864a9b1641d50e51f25",
+        "scripts/amazon_connection.py": "711ce734cf94e511b7e025e4950f561c135fcc3da65b9ff1fa4f873c2dab32c2"
       },
       "available": true
     },
@@ -80,11 +80,11 @@
         "scripts/amazon_api.py"
       ],
       "files": {
-        "SKILL.md": "3c680718d32bfb944e09556f25263c2cc42fa179e88fa687fd60e765e7970dc6",
-        "references/api.json": "f6c6d398e8d60ee732edbc3f50038cec3fcb55a03b44a96c80237bf7d0db65cf",
-        "references/api.md": "cc336b5d2e45fba13ab35e30322a71fd2a15c38b33d2a0b65b68e453c84923c9",
-        "references/testing.md": "57235056f8f23e96092b2be41ac75df8c345ce94a348b89e5bb96d29e3478c19",
-        "scripts/amazon_api.py": "8cac22af461a665c59048523a96fb69341e6219e527ffeda761e77a7a5924979"
+        "SKILL.md": "185e84c06e551d0445debbec62a8f6c813a4314924f660ae7b027badb2c9d9c1",
+        "references/api.json": "7d640c2967a27e332ce51651ebe57af92530016f0a0046c6c0f3472e6537d7f3",
+        "references/api.md": "a667c62390cef3505660c377b4d5183f609b0c5e9c2f3a6a7c8f89450f88b5ab",
+        "references/testing.md": "629181dc6f0a9a164814e1f328bc038ea75ebceb601cc84951604e83bd240022",
+        "scripts/amazon_api.py": "c9e20a31e94045afb93aaf874fde57d57201c230f2482b3e3cd9b1c410cf57bb"
       },
       "available": true
     },
@@ -95,12 +95,12 @@
         "scripts/amazon_ads_report_workflow.py"
       ],
       "files": {
-        "SKILL.md": "ffb7f28a022a3f619abfa0bc970e8293637f8dc97ea9c557b9d01e2eb07a7440",
-        "references/ads-report-types.json": "61a295109fd986cd889e0b15018dec8f2f420b50dd7e684a3d57a03830d3c34d",
-        "references/api.json": "97637dc2e9109ce9b3b475f41f0292ccc5053b3379efd24a54c7f968368fe672",
-        "references/api.md": "27f836474920b612456d60764bdc4ee38e9017265acba2c16f6942863be17d2b",
-        "references/testing.md": "94ba87ddf2a9877cea65426374f0da4ea5e44fa77be05686d2db6c6402811db8",
-        "scripts/amazon_ads_report_workflow.py": "daaa4df66da2fb7b97666812bd32818d969ba41c63f6d21053f735e219930f58"
+        "SKILL.md": "ed45dde98405e5434e05bc845e2536d96ef539fedc970206fc44e412482a370b",
+        "references/ads-report-types.json": "c2375897cab8dde64dcd1cfc1321702efc432896dbe62968629d62975260a61a",
+        "references/api.json": "779fb0fbfd2317687b9e410efc28bd1fd72cb7868cc3757bf14a685cd6974723",
+        "references/api.md": "127f616498956bbc2ba8427a8cb6cccd9552aec8624c9fb63b7636b6c3df7f96",
+        "references/testing.md": "0d14f688d70727e8d19f9bf9cf21dffc42df15d5aeac7b2b3e47185db90d0278",
+        "scripts/amazon_ads_report_workflow.py": "5310bb4147797a7ee2aa9ec5cfca64cef028bc9603eecc414b1dee28313fc1a9"
       },
       "available": true
     },
@@ -113,17 +113,17 @@
         "scripts/get_sp_search_impression_share.py"
       ],
       "files": {
-        "SKILL.md": "fe8e488c8319940da20a72da175bf4d6446504c220f821ce41c3d001065b38f4",
-        "manifest.json": "1e10f17a1dc384665a6e9d4673d8de51baee1e93be339e1d821435c30a2163e9",
-        "references/api.json": "1a86e51f14cd9a40d4c8b5bea10f759a2b5416f308ae05c3b50725c5ec1e18ce",
-        "references/api.md": "cd25e0951957eb5c75c2fac601951c93e34a37185f5259e818c74dd3d4818d3f",
-        "references/sp-audience-reporting-v1.md": "dd32bee0e012963b56a72f1b5d31533deecf63606bac2c1b00803b5311495798",
-        "references/sp-search-impression-share-v1.md": "5c26cd4fa4f5709bd29c38f69ce57dc6da0af165d9dfae29608a2a7628064546",
-        "references/testing.md": "92bea804eef4afb74ad1739b8e878d6f8fac5cbddfc476204b10830b2fc70b21",
-        "scripts/check_auth_dependency.py": "fc169493a0f6e23467129adbb8f9584ca9eb104403f69648d499a56fd6582497",
-        "scripts/get_sp_audience_report.py": "55c8a792f613eb2ecd27f54a47cd1919e1a1e23dd610619f1aa972fdafe577e0",
-        "scripts/get_sp_search_impression_share.py": "26c691d1931c9142d8f367a857526d64df98f450bf9b8d49366258d48e2f50af",
-        "scripts/reporting_v1_workflow.py": "f45c4444a15d1726d9d558ed3c30e1ee6dad5b34fdd7d975ddea3de4aeca55e9"
+        "SKILL.md": "ccb6a3218575faece682d3ffb4ca28f43eee61dacec1c58b9604e3cee5c28ecb",
+        "manifest.json": "be72f68fb7e63cfbd119cf935665192f8c69061319e1eadef2411b7c6b80f34a",
+        "references/api.json": "26468ed76b4f3c474796ecf5cb36f1bc5333d7c623794c32e43357232697c55b",
+        "references/api.md": "48dfb9707cdd1607052f8cb1b742c02e028fdc9ec43171af1725a7147fa3f1f9",
+        "references/sp-audience-reporting-v1.md": "39723c84ba97896190f86575af8f997727310d7a48269ca209ce7aace0ebec6c",
+        "references/sp-search-impression-share-v1.md": "c0db0432efffb846866ec7bb1e9bca493db7e994ed98582a96f579bfde7b866e",
+        "references/testing.md": "5f9135a7c2e87ae0ee1bd259c38e05aedd6dd86154fa5c58933109ecfcec6ae3",
+        "scripts/check_auth_dependency.py": "472089da59b5d88c7cdfcf35749727b3349fdb5673d82b219ef467049ac4aa84",
+        "scripts/get_sp_audience_report.py": "1e1941c7c4430dd5b8d74d8877767c0a34b4597a79cdbb1ba0a1fbec9e2bccee",
+        "scripts/get_sp_search_impression_share.py": "1ce01a46695aefe98947ba89a2523d8ae7f44d44f99e8765e51c82c90ae03c10",
+        "scripts/reporting_v1_workflow.py": "7be980d34ca84b3d1a7d45e1f1a755490743e30b83bd5d53f39ac707345c74e5"
       },
       "available": true
     },
@@ -136,14 +136,14 @@
         "scripts/amazon_connection.py"
       ],
       "files": {
-        "SKILL.md": "a6a664886bfa003e598c573e09f312b322584c78f9528d72a5086d2fcfa046e2",
-        "references/ads-report-types.json": "61a295109fd986cd889e0b15018dec8f2f420b50dd7e684a3d57a03830d3c34d",
-        "references/api.json": "d7e3aee0023de983b44eefb9a373b3394e84e5832783c5f375be0869514e7d89",
-        "references/api.md": "d4fc96ea67cde95c98b1d2078da360bcd866d814387f06bc2ea1106ca0ae0cb4",
-        "references/testing.md": "9f9f947793a669618bff2460b04665cd8e8e87eff475eb8206e56860e3112d67",
-        "scripts/amazon_ads_report_workflow.py": "daaa4df66da2fb7b97666812bd32818d969ba41c63f6d21053f735e219930f58",
-        "scripts/amazon_api.py": "8cac22af461a665c59048523a96fb69341e6219e527ffeda761e77a7a5924979",
-        "scripts/amazon_connection.py": "5e964a0bd6b4cb5c8e573c2bf692d3d73e65278ce4a9c284ec27c511549c73a1"
+        "SKILL.md": "848dfaa089c5bd9bc51f13e4a4b54965757ef24041def9cf2da2f9c500ba3889",
+        "references/ads-report-types.json": "c2375897cab8dde64dcd1cfc1321702efc432896dbe62968629d62975260a61a",
+        "references/api.json": "7f31b12a298d109f579d7d735b58286260c90c2cbdd3af07642e06186298a0fc",
+        "references/api.md": "1d2da40e63482751db860c4cd6a52da8853a0288eba9291061715302253ee2b9",
+        "references/testing.md": "402974c7456402794e32005bb83704c6c8b5229cae6cf032d31f985a0b48c62a",
+        "scripts/amazon_ads_report_workflow.py": "5310bb4147797a7ee2aa9ec5cfca64cef028bc9603eecc414b1dee28313fc1a9",
+        "scripts/amazon_api.py": "c9e20a31e94045afb93aaf874fde57d57201c230f2482b3e3cd9b1c410cf57bb",
+        "scripts/amazon_connection.py": "711ce734cf94e511b7e025e4950f561c135fcc3da65b9ff1fa4f873c2dab32c2"
       },
       "available": true
     },
@@ -154,9 +154,9 @@
         "scripts/amazon_alexa_search.py"
       ],
       "files": {
-        "SKILL.md": "6374cde21a63b7f1679d27a7859127ccb80d30d32d9b1bcd39421b42ac93c8ff",
-        "references/api.md": "2e888b71841c7ba77802ac58c5e2f3d01f24d85a0a517cc181df110d84135ea7",
-        "scripts/amazon_alexa_search.py": "562ee22025b07575d96e13280fd9ef65befe9304f8a7d5cb9084d3f48e25381b"
+        "SKILL.md": "ab4e19b53888c6df178bf44af3bd8d57a25149a8192e13f4551355131901230d",
+        "references/api.md": "2564ef54a4f1307378677ba83964910566c4b4d872fa84e9744de4621fb14dba",
+        "scripts/amazon_alexa_search.py": "91baf9f14d780a30b93eec21517914a3da3afb64156ec8add6fa90baf72dc58f"
       },
       "available": true
     },
@@ -167,9 +167,9 @@
         "scripts/amazon_asin_keywords.py"
       ],
       "files": {
-        "SKILL.md": "18c09c7ed7b66428f2bf4e1cb9298cca2ffd6359f13dbe75edba0ddbcea974d2",
-        "references/api.md": "8cec857ba66036f0362e574ddacc9b8b84fa2990228739ecdf555ae31af2f334",
-        "scripts/amazon_asin_keywords.py": "db5670088ab3804ea3613f685eda3e6388b545ae774b0da06659665d1e964c73"
+        "SKILL.md": "ba0daca37b613fc34c2342d05f199680abc75c2af8fcd4286f0f95c2e7993c3d",
+        "references/api.md": "3ec29fd57eaf7825b487afa1bbb77c5b76fec875373edb72815a77a012d68d6d",
+        "scripts/amazon_asin_keywords.py": "a9a1e2185ddb55bb7ac13c6fe7697e45a7f6edea7bce259ce81fdc351f330fc0"
       },
       "available": true
     },
@@ -180,9 +180,9 @@
         "scripts/amazon_asin_traffic_summary.py"
       ],
       "files": {
-        "SKILL.md": "ddd36a68f885a66d6bbddd8c1bc45465f5721b0e501266dc34f81f7c2b4d0374",
-        "references/api.md": "f5ad0a535268394f338d692dfbc9f376b5aab2d56c54d8559c6584bef2603e70",
-        "scripts/amazon_asin_traffic_summary.py": "9f0457c3aa0ccfe911c1a079d781ea8e31c3a9a86318d1e6140f7a2c10ac1856"
+        "SKILL.md": "801694a8802b418da7828d95708d52aced8b03587fcd8d255d25109d60d5106f",
+        "references/api.md": "1454389f96affa8a70c48d55f7587cddddb9fbcc62b1409d8505ca799dcbbf5d",
+        "scripts/amazon_asin_traffic_summary.py": "f17bdfd7b941b1c7514dc0420d782e49b6d74d9d3218f1d86bb5dc8a9fe83265"
       },
       "available": true
     },
@@ -193,9 +193,9 @@
         "scripts/amazon_broad_product_search.py"
       ],
       "files": {
-        "SKILL.md": "eeaa423a78fcb82578ff6b81055758342e16470fd71d6e496a49574afd58628e",
-        "references/api.md": "fcf64f148935c7b21ea6842ed3cc470453bdafa17eab9a8cf49b78779d9677e8",
-        "scripts/amazon_broad_product_search.py": "6d349ef1ee17be3fd47eb0bacc16b52b9210975193ddc6e7fe643623a36af470"
+        "SKILL.md": "99e496d5a06e8aa8e9b17c022c4411599a07683c0601991463009c5b59233194",
+        "references/api.md": "324be993fd2ed82b06685e4ff3f479858e1dfb46b8e4dc5a31bff5766247c4c1",
+        "scripts/amazon_broad_product_search.py": "91e8dda77dd3e1007906ae96fe96025f893b68c84a3b5a4cf5562c5a31550c5d"
       },
       "available": true
     },
@@ -206,13 +206,13 @@
         "scripts/amazon_category_lookup.py"
       ],
       "files": {
-        "SKILL.md": "49c3251479c42fa1eb670f537c8cf45d09a6b724315769d5e624626305df8cd1",
-        "references/api.json": "0a5c2918b73133eaf1c06e6959b78daca129fce790edc826bce5315cd5b7ca19",
-        "references/api.md": "3d2c06053ac4468334e2c0915607287fcff9ca830eb734cca98b8e5afe58919e",
-        "references/credentials.md": "75c3e111bf756f2ecbb1f4d343cd69f8d26ef7f1406ef97d4deb66c4b3f5de11",
-        "references/testing.md": "64038e2a6f9d36baee184d05bd59e02cafcb1b70806a8ba7fe27802886406723",
-        "references/workflow.md": "b0c55335ac5688154d0aa9e4acdd529fdf0f717b8312227ed8e402eb3ee42fa8",
-        "scripts/amazon_category_lookup.py": "dc7d7cb9b37fd91425a39f957691efb52e2459ffcb529bc7e402d416d83b4c83"
+        "SKILL.md": "b8d07069d247dcc8914fbf01be4158d81f3ffade1a70ad102a1257e483b0058a",
+        "references/api.json": "5509f66b70efd471c966e70882254e74e1125e797e697a2c7766cb31fbd6d048",
+        "references/api.md": "0dba6929d1c3a4c07fe3eef588cae07fdb4c044699e78d68941fb051f98071d4",
+        "references/credentials.md": "5d5fe03e5601f999dd1e817101fda84f5bcc8f923a3d43ed6431d73a75064923",
+        "references/testing.md": "b139d3eedec689ece0750fdac763f47f6b708810eff7d64e43f19da58da1351a",
+        "references/workflow.md": "c3847e96b64989a331f23f5d54b036be5269c36ce7824a1531e7f426972d336b",
+        "scripts/amazon_category_lookup.py": "452d8d74f3a3186b1151d28f201ab7ce6b01260ebf706bab70f9f546a05ebd41"
       },
       "available": true
     },
@@ -223,9 +223,9 @@
         "scripts/amazon_competitor_lookup.py"
       ],
       "files": {
-        "SKILL.md": "891e63d1dd4745826f5d5d3997470b560284c50c53f8c8bb7278189df4d53cbb",
-        "references/api.md": "df18b3e1c6b063faa553f76537673935b7d3f296557169747f916c1ba80486df",
-        "scripts/amazon_competitor_lookup.py": "e52395d2b7af30a1a50a2d9266a4422e2b5f25edb4d9430477e8cb6f12667c37"
+        "SKILL.md": "94ffbd481e26529d2959c1d163bbd2976b7afc8c90c6ca5c0edeb7004425c2fb",
+        "references/api.md": "b98d6c4b627cb1b580fe31bc359e50065ed64c21291c6d57c62c752f5f7dc379",
+        "scripts/amazon_competitor_lookup.py": "7a075ed685c92fa1f80d3595ae122845d45c78d348ac22851d0aaf924c6ecda6"
       },
       "available": true
     },
@@ -236,9 +236,9 @@
         "scripts/amazon_keyword_expansion.py"
       ],
       "files": {
-        "SKILL.md": "bb196d161a54d8fa927ad0e19b152ba70170a537ada599b0f5e41e8b45c0b2fe",
-        "references/api.md": "a086aa99d56aa95aa65270d763e0a16c8efe30f419fa03d00419afa94f53c1ec",
-        "scripts/amazon_keyword_expansion.py": "f402c972e52381bd5252988fda2c7d613d1d0743824eecba6d5cea5c4b608138"
+        "SKILL.md": "1489fd5f5c4e28035371674c9b391a1b37990b36f0b5aeab74036c6664ed0e81",
+        "references/api.md": "4e3ef9822079cb5042e7004f8bc3f0f97bbe22f562bfbc019815beb9212c535d",
+        "scripts/amazon_keyword_expansion.py": "596df836f29172002ac0cf7136e634884d52393e9ca5e20e27507cc827fa2af0"
       },
       "available": true
     },
@@ -249,9 +249,9 @@
         "scripts/aba_query.py"
       ],
       "files": {
-        "SKILL.md": "8e769ab07c7928adcf3e3d37950daea137fef123c3766235f1d3b0e60633a327",
-        "references/api.md": "fa05f50b3a905a899047d3c4f11c9b8e486ec5d7c920cec5c122c75f9725c212",
-        "scripts/aba_query.py": "cc69308db3a1bed470301484c311d4dc31466aa5665e2550f88c3f97f45bed94"
+        "SKILL.md": "9d12e9366f483667658f6823ee437c2081567dcf5dfadc267897590ab265d3f4",
+        "references/api.md": "574d6e926e7442d4cc3c6499be1726f32fc1d9cc33b31523501a025dce348c47",
+        "scripts/aba_query.py": "5870474fd98f4966a2e26726acbe9cf5b1f9290a5c99907f6827febca99059d8"
       },
       "available": true
     },
@@ -262,9 +262,9 @@
         "scripts/amazon_keyword_overview.py"
       ],
       "files": {
-        "SKILL.md": "43d844344357e12ce1c50ce0311dc28bb17e2a14aa47a04f283fcc7ac144f5a1",
-        "references/api.md": "71018ddba9e860574a3fa0de1c1f2c77749eb3de6c941a953d00f4ff387bf624",
-        "scripts/amazon_keyword_overview.py": "4fd7209bc3cbcd1621a06387831c101394576705e3b845c706b6b080d645b180"
+        "SKILL.md": "361f5fb0c2afbff22b21d21c6d72cc08fcb9ecf8717ef0cd0c02e7dc8c9fea65",
+        "references/api.md": "c61e0ad43ba64f592d7c382ff053543df17b6730ba437ad574214c1c7f901404",
+        "scripts/amazon_keyword_overview.py": "8e6fafa23d116370a5cf39b07f98d3c0d283bead48fedbd343652fbd3eb19e5d"
       },
       "available": true
     },
@@ -275,9 +275,9 @@
         "scripts/amazon_keyword_search_history.py"
       ],
       "files": {
-        "SKILL.md": "8c64ff28a955d4853c2932178f8ce4bb9ff79a277ce6128a0a85cb7f46aad876",
-        "references/api.md": "266defbb41134dec315fedbac77c19a1743e52ad360b07d111a29af6c0d5a408",
-        "scripts/amazon_keyword_search_history.py": "3cd35c5af659ea365e931087d6ae697408597f656ec972afb79d7cd71850ba27"
+        "SKILL.md": "7bc02a4219adeaac912b9dd9e4514b9c4c90b1ff185e14c182bba96a47072e80",
+        "references/api.md": "3e1a953c854bce51235c57ebba53a80f107c98dcfa2700b8047842991528ce94",
+        "scripts/amazon_keyword_search_history.py": "82f39634abd487a39c5d7c2a90bc44f768985efb22a5a9a1f99a4794729422fc"
       },
       "available": true
     },
@@ -288,9 +288,9 @@
         "scripts/amazon_keyword_share_of_voice.py"
       ],
       "files": {
-        "SKILL.md": "089537e359832e9034315bbe66052efef053a09aafcf2d55e662664023c41ef9",
-        "references/api.md": "badf2caf5cc17702000f7385f8382cc2544c775e51b9e06308983264a964c27a",
-        "scripts/amazon_keyword_share_of_voice.py": "6fe4780ede15a4e9daa7feebf0c563a50a4b222c7d1c4b934a88959223df7a86"
+        "SKILL.md": "50b6159a517856d97fd621b565aa9174ad68628e900c0eec09c26d9ab9a90ae0",
+        "references/api.md": "424d1aed7a876df082f049ebe26136c4c59b0160c34fa473d2f0fe72db4d466d",
+        "scripts/amazon_keyword_share_of_voice.py": "9554512eb167a99f6fd19fb7c72fbb1fe33a6bdceb6aef2773a1fd83253f5add"
       },
       "available": true
     },
@@ -301,9 +301,9 @@
         "scripts/amazon_keyword_summary.py"
       ],
       "files": {
-        "SKILL.md": "a29e3bfe972c4a13c3ce350669ebccadb6797a3e09481bbe607cf245ea08c67e",
-        "references/api.md": "cd06c8fc29b9c4dd9151c8f8dfe1e7126742c15380c73d72e61b8bf8b2e44f00",
-        "scripts/amazon_keyword_summary.py": "704ee0f6c24adca586800feaf3ff24ece4c48326502f3ff1be69e377a7c05a6b"
+        "SKILL.md": "0d2dafc68901977f5bdf0ee57dfc354d397c744eae1d8b99c130bcf245df8de3",
+        "references/api.md": "4c789d485db79d3e27147163e3b3ebbf0817b4c984c998536bef2f24eae450ed",
+        "scripts/amazon_keyword_summary.py": "4756a0154a4b5d330779f43448d2f25891771cd0bf98a6331e8217887494a73a"
       },
       "available": true
     },
@@ -314,9 +314,9 @@
         "scripts/amazon_market_product_detail.py"
       ],
       "files": {
-        "SKILL.md": "a0f854a815046cff75c3428b689584a210dad9710a73131de360fba7785943ef",
-        "references/api.md": "eafa5c86ee13448f266a1b365c4f54a27e45e13865932652d78a76f3c590ee54",
-        "scripts/amazon_market_product_detail.py": "2b21032098a36b5a4c5f54cd535bf9d8aa19aa607289b10d61455b4418501487"
+        "SKILL.md": "c02668ace33eb452fbf2e101f0cf7ead670f95e1da29340de1b9356910944053",
+        "references/api.md": "06eef2a7b26d21b27cfecc8680b3885d84cbd5f126698ecf35bedb67efea3430",
+        "scripts/amazon_market_product_detail.py": "a3c6ec860311407b85203f71937949e286f32ebd5cb30ef8f47d786dabade465"
       },
       "available": true
     },
@@ -327,9 +327,9 @@
         "scripts/amazon_market_product_search.py"
       ],
       "files": {
-        "SKILL.md": "fb0b161cf14734cd5ad75732b8a9ce7471852c61c4e155a46800827c22d1444e",
-        "references/api.md": "bc36e793ed15b1cd40d85b53060597cad7dcb42ff2bcd9d6c5ca094638023584",
-        "scripts/amazon_market_product_search.py": "756cf4755bc82ccc89f878b4c45dfee6590c8d2ed63edbc812b9df3ea5eca530"
+        "SKILL.md": "840e9471e591137fcb74164af0f620758bb98f219beee5a07ce35eeebd0b73d8",
+        "references/api.md": "7a0bcdfe850a8872b7f839c8c3712ebba34177d2ed997e20c977cb1d679fc2b4",
+        "scripts/amazon_market_product_search.py": "9f5ada307a976ab84c4746ecbc5baf7ba77ca698b59c8fd9b66a00c08e1a3311"
       },
       "available": true
     },
@@ -340,9 +340,9 @@
         "scripts/amazon_market_research.py"
       ],
       "files": {
-        "SKILL.md": "01bbf2b8f379ea7b9a3962cac619d5b41fcbb58c8b5f446eb3adee84fbab8c04",
-        "references/api.md": "2206809517ee5381384ec38bf173a3a3f4df464590c25c4ec534ff6ec81bc823",
-        "scripts/amazon_market_research.py": "84a2a4e09b27e25e9f49e8ee7d0d0ee0b58cf6d3bba28792d5dcd12a69f0f23f"
+        "SKILL.md": "bc167929d1fd533cc514c9e69d12c72f0c6ecf3e0ecdd32a4f403863e8611e6c",
+        "references/api.md": "71a0d75d2f17d36dbf8100be56fbdadc4e1be20034ccd20cdea881a5e4d3fcd8",
+        "scripts/amazon_market_research.py": "41c4b3df1a02433c57214b9c5c752e59079036cb416f627ee5f0ff8c76f24aba"
       },
       "available": true
     },
@@ -353,9 +353,9 @@
         "scripts/amazon_market_statistics.py"
       ],
       "files": {
-        "SKILL.md": "c15dfcf534ab5ae714f5dbac34e5126ff41b9acc53d5435524e98e7738edd199",
-        "references/api.md": "678e940ccb622036a48750c78a4d7b42307579fc33822844d27a825f88d5965c",
-        "scripts/amazon_market_statistics.py": "cfe136e1235f530abf0e34e592af7677be935e900fe5da597b65332ba87bde04"
+        "SKILL.md": "a020fef09f9a10f6ca8b4836694746b4494e53e69fa69ff30558e38a511d794a",
+        "references/api.md": "9504b052ebcba83893aff5b12734dfdfac80101b1cdd6e10623f79b6d3b049e5",
+        "scripts/amazon_market_statistics.py": "cbaf70434864b6328d62442b3beaf921328146215e6b91506e3e1e80e97b9fb9"
       },
       "available": true
     },
@@ -366,9 +366,9 @@
         "scripts/amazon_niche_info.py"
       ],
       "files": {
-        "SKILL.md": "dc30a32ccb6a932b56f90643c8f486584e60688f9f067791ebfed2503eb38871",
-        "references/api.md": "f423c7bc39bfb9b6a373c892844dc423f8bf0a53a1270ced765ad77e0a051ee4",
-        "scripts/amazon_niche_info.py": "bbfdd6e707b4591dc6b9153836efc343467f0db408154ed4dda4ffaa9cc0c0e7"
+        "SKILL.md": "95f54ae1262fa91a4496ff348ca0ada2dd64343e2fb1092a986b160913df2f80",
+        "references/api.md": "f92ef7b93677b49f71d0d14327596272ec70f87bad0e28ef5cad8a43581cc195",
+        "scripts/amazon_niche_info.py": "b7b13f26e1369c2ec3fd2ff56873c1f67db0802d27470d774276c3dc9deefaaa"
       },
       "available": true
     },
@@ -379,9 +379,9 @@
         "scripts/amazon_niche_info_by_asin.py"
       ],
       "files": {
-        "SKILL.md": "e48bc622fc9ccfc7bfd0d5b7f800ec157db3ae5f67bec7d310d6729e6e240550",
-        "references/api.md": "cb44e919da3a0010e8207ee278d8709daeb09203b666fe7d5dd976e383178f96",
-        "scripts/amazon_niche_info_by_asin.py": "9fde918fd9df36b651b3eea6d48a31adaef077bb47d1cae09053c9956e12198f"
+        "SKILL.md": "600b1a67969a9d84505af44d5f81a48b5630d920b899d2043df2dbb40a007e0a",
+        "references/api.md": "93b207a7649f3c3bbec36ff6c7fd0ac0502dffaf80f30ba191495ce5a94cea3d",
+        "scripts/amazon_niche_info_by_asin.py": "9623a5d4020c986c5fc1c122d8bb85a7adb815641cf207a10fe463841ddb9ef4"
       },
       "available": true
     },
@@ -392,9 +392,9 @@
         "scripts/amazon_niche_info_by_keyword.py"
       ],
       "files": {
-        "SKILL.md": "e2169af600619a2c8f034c4bae702d86e8952fb42a53a8374d2bbf4e62b71ea9",
-        "references/api.md": "420cecabf7510641f3c3844786531fd52042daf715c952c3579b407526dcaff6",
-        "scripts/amazon_niche_info_by_keyword.py": "c0f5d69e4ad4cac2ab26e47ce9dd5c5e298a1767eb4621c659182e5c1b831b03"
+        "SKILL.md": "2ccc1ef41b8c6cb8630078fa93592a45dd53e4aa085217fe2b2daa8faea15fd8",
+        "references/api.md": "43a68e7c4e46213f9e61a6011e7394179a42cb27be042b0008ce18eec1bc73a1",
+        "scripts/amazon_niche_info_by_keyword.py": "5abf6029ed20f32cc3280d874b324ce3a70536ed8f232992d805bf456301c9cc"
       },
       "available": true
     },
@@ -405,9 +405,9 @@
         "scripts/amazon_niche_reviews_by_keyword.py"
       ],
       "files": {
-        "SKILL.md": "a6397910a5d24be00c23587afb4fac7a24121ef60c1e9737b28f008773f91a12",
-        "references/api.md": "4e16aea2ed33ceecfb3a18f342c36762f7cd8f40057d28e4847fc71fbe25b427",
-        "scripts/amazon_niche_reviews_by_keyword.py": "b5ed9e30e03a33a6c56d5d7f17d6445d049b36c149d74486ad5aa515578ee496"
+        "SKILL.md": "493ef330ea3a84ce0b2050f313e6c3782d7bb5c398930c25df515868c98f8667",
+        "references/api.md": "496a45e5d54dbbec06f04f3290fed5f2d4f087cbf0d76903e72653276b06a3d1",
+        "scripts/amazon_niche_reviews_by_keyword.py": "3e10fc6ae13fd4b72ed743f7efb5208151b320597a2ff8d6b9e4dd07abaa3b0c"
       },
       "available": true
     },
@@ -418,9 +418,9 @@
         "scripts/amazon_opportunity_report.py"
       ],
       "files": {
-        "SKILL.md": "5b7e6d012d4f1ff6a5d318ddbeb5af90a98dccfa0670c6df06e97e1d07db7c12",
-        "references/api.md": "42ab4e3b27b4496bbfbfd622fb9c56cdea59199aaa58f29378a2029c97242de1",
-        "scripts/amazon_opportunity_report.py": "cbe46b7a478b1d373f8f8e147f93607dd7c8c82324a03a3c639b319481d13dbc"
+        "SKILL.md": "937893af6b0afbae916c8aec75f5e16e027b4c19f423e76eb5f0729a096c74be",
+        "references/api.md": "c3fb945775707651be11543876213400a8af2ac4faf31e1186a50e209fc3a28c",
+        "scripts/amazon_opportunity_report.py": "8f4d04208f3b0ab6faf138b2154933fb8ac177303a6a3d9b6e5407a6e08917cd"
       },
       "available": true
     },
@@ -431,9 +431,9 @@
         "scripts/amazon_opportunity_screener.py"
       ],
       "files": {
-        "SKILL.md": "077e84705495ee17dc9b7897ab13eaf331b5ff34060002b900a5ee0f7ec561f8",
-        "references/api.md": "cfde951bcb507bba722833a24760ca10a02d3e2748348c873757904c209c0c96",
-        "scripts/amazon_opportunity_screener.py": "b8482ecf055e1d7414e3fff027987c8378c004bbb8fb0ea3b937e5c8774087bf"
+        "SKILL.md": "ee35c1029a885cddf67a2723321695e2eca04f6c3cf7bd854651fbbd8ba2c9d5",
+        "references/api.md": "2294e2bbb2855895bbdeb7150698b5e087b66aa0b89d6e05552b770742f22e31",
+        "scripts/amazon_opportunity_screener.py": "224746dcb977d81bbbb0ad13bcc30f7fb9ed7e7c53fbda3edf8ad9367458ec69"
       },
       "available": true
     },
@@ -445,10 +445,10 @@
         "scripts/amazon_policy_feed_detail.py"
       ],
       "files": {
-        "SKILL.md": "97f20342a145a687b4a1646c71cacee668ab7639dcef9f89ff506fcd9a840416",
-        "references/api.md": "c92624a1f15e2660ce93aff140853bc5df07503706b72035add1b86599a21006",
-        "scripts/amazon_policy_feed.py": "f12d727aee969b5406ab8428298482c50fe344bdd5d5781caa1abb910672b179",
-        "scripts/amazon_policy_feed_detail.py": "2b6a78a5aaa0f5d0df5185c9a9f63213a45ab5f0925e3d2251f82e607a7a3214"
+        "SKILL.md": "de7f09a8cd4342b500cb6d47b3d75a1c9c0e92feca9aee01e25885c9f57fe6c3",
+        "references/api.md": "dbb0452aa4bbf8e50a46892f612cd0f0f44dd78a00d85ac4f49c53c662457496",
+        "scripts/amazon_policy_feed.py": "74b234488fd8b7a9c53dfbbe28479a70534eb199203d97514a9df2dddab79513",
+        "scripts/amazon_policy_feed_detail.py": "e60b9a974efa17fdb86ef929d3b71f54dfd4200d37b58e1ab47c815b8e934774"
       },
       "available": true
     },
@@ -459,9 +459,9 @@
         "scripts/amazon_product_database.py"
       ],
       "files": {
-        "SKILL.md": "71d388e5c610981c572ffa5aa0794c9a0e4e8f5d8a14b347f3ef4c6d32545693",
-        "references/api.md": "d5c1cf424ce666563ed0ec43c344f1da1ff2672c0edfe56bb8aefb8cab4d3946",
-        "scripts/amazon_product_database.py": "f9133734ac509b7c90367d00460019ea64d1279814a65ca25749b5b4615e1374"
+        "SKILL.md": "97ef9d78cc6532a2b5bc7038cfc5fe03a1fcbd6e4767aab214fc33543d652e26",
+        "references/api.md": "973bc223f23919e6cf7000a7707d827022ac23fcd6f868a07d164d86eab3e013",
+        "scripts/amazon_product_database.py": "cbfdb462424d6006967d6c422f41fa17bf9ba1f7e7ee7ceb4d1aa824d9c6185d"
       },
       "available": true
     },
@@ -472,9 +472,9 @@
         "scripts/amazon_product_database_search.py"
       ],
       "files": {
-        "SKILL.md": "b470fd31d8605d14f100a41aebe04b89f32c654f5d8a6d1bebeafce10aa101e9",
-        "references/api.md": "3444140b5418f48ab2a8b66d0c3c07fcd733526300d65856ad275aea7317bb57",
-        "scripts/amazon_product_database_search.py": "c56fad240735dbd99f6f49fe1eb432c670b55b6c4fd57061498c6273d2ba0b9b"
+        "SKILL.md": "e72645e9e168a69852e4f8447f3b67d4bd6025355d38d18f4f6460376b94ff9b",
+        "references/api.md": "4aea08510d5facec3ba974484c2db43ee5819bf85f5011a55ad3a7f756f70f34",
+        "scripts/amazon_product_database_search.py": "90d09c16f65a47b102f9b46e370ecfb80e63fc4f7f92b97ea512940054cebb40"
       },
       "available": true
     },
@@ -485,9 +485,9 @@
         "scripts/amazon_product_detail.py"
       ],
       "files": {
-        "SKILL.md": "980fb37ce3ca866ca8d282e320c7e2160f14c36d9dbdf7a022f675c07beb5a31",
-        "references/api.md": "c4c3be6ed351dc82c611883ff60fc7e5eae4a10bc69361c2f12ae9b00af97755",
-        "scripts/amazon_product_detail.py": "d1d0ddea54a3e1f95bf0206b4e5fd6cfbabdc83229512f991d1d7834353c9d12"
+        "SKILL.md": "187590f10792b30b61fe1ffe3cdd09367b63aa65a0d28757737847464273ee19",
+        "references/api.md": "83c402142bca18b154de549fe8c168bfcbf6265826a49f35f4ffe24a6b84b1a3",
+        "scripts/amazon_product_detail.py": "03f7faf40baaeb736cb97e05bd2ee72dc09723fcc21a3d778ea5fa759eb846da"
       },
       "available": true
     },
@@ -498,9 +498,9 @@
         "scripts/amazon_product_discovery.py"
       ],
       "files": {
-        "SKILL.md": "ae1f794e75e2056f13e2031c4ce2bc1a2bb800a2c3f4b93ab29fa590a5928f5b",
-        "references/api.md": "f50fa637b985b86a2e068a9d78e46d74d4eb3c085067f1673524f27ca8ac503c",
-        "scripts/amazon_product_discovery.py": "4cf7fa87213ee546638d2ba94cf25b64ead29e6fc5a7b5cff24d435a164f851e"
+        "SKILL.md": "2a0fa5004c967d36f4efb8c381c67dad526bb9e3b84e0543966e4b99d06deb6a",
+        "references/api.md": "197eb0d7b11a10f52f3334f3c3262c1824b18768d345ecaab62dbaefe221c3bc",
+        "scripts/amazon_product_discovery.py": "188dd3fa3242e73e3062c85951859140269f797cc96fa66c0c2e9122e1df6a2c"
       },
       "available": true
     },
@@ -511,9 +511,9 @@
         "scripts/amazon_product_history.py"
       ],
       "files": {
-        "SKILL.md": "50fdc748c83b3de07a845df7f11740b4cc09259f96a92310685659343a3dc517",
-        "references/api.md": "6e1f2c5fb087f08fb04374b539529042d3da5d4a57fead21aebd839b5dd57075",
-        "scripts/amazon_product_history.py": "fa238b2cb3cf09eb6cce593b62a344f65b69a70b883552e2a76f776a67fafcf8"
+        "SKILL.md": "8e7f7add721a738ba971243ed36cfca214fe595d4ce8e2f26b16f3e3ce5e84f1",
+        "references/api.md": "34b888fff893eed587612e4704c8709c865923f260d43c5ad46b3e62e538744a",
+        "scripts/amazon_product_history.py": "8c84edad86ea6e04ee11b651acbdce74bc9ae8fd02bf724a5cb38fb8634862f8"
       },
       "available": true
     },
@@ -524,9 +524,9 @@
         "scripts/amazon_product_price_series.py"
       ],
       "files": {
-        "SKILL.md": "900aa2cad779e59053eb92326d7bdbf269717efeac03c49fca81e518e1ec351b",
-        "references/api.md": "33920bf8d1b5e819fad498a654d0b785bfcc2cc7a60970c03803ea6d4fdf1cf2",
-        "scripts/amazon_product_price_series.py": "7eab6cb5ddf1663470c291e213a9f44daf0496f97c76c724585ec401f1768050"
+        "SKILL.md": "186112c19f4d486c644367592fa753afb24fb8e7ac35aa02eb538644c434fbdf",
+        "references/api.md": "b87fbb336c9cc648e64734b71baa7938c44d7052e5f3e9256b52a8b1f2680738",
+        "scripts/amazon_product_price_series.py": "f9d30cddddc9ea85973d9c49d0da617e90df87c340abe0673c53763bb9ff5f7d"
       },
       "available": true
     },
@@ -571,81 +571,81 @@
         "scripts/upload_image.py"
       ],
       "files": {
-        "SKILL.md": "a94f7b437e3767b399a1a5ea5560fc7dbc9f881aeab3042f7816be03840025a7",
-        "references/aba-intelligent-query.md": "915352a31aa4b224523c0c7727a29e80d8c51be84bc645a93aabe140d3e6fdf7",
-        "references/amazon-alexa-search.md": "38f8aeffd75b9da34da7cee6259de231f5cc87f3379217a1b6798bbac05579cc",
-        "references/amazon-opportunity-report-by-keyword.md": "1c43edeffbce03569ceacf768e60c2da35f466a6aebd7eb286c3ea640c02a22e",
-        "references/amazon-opportunity-search-by-metrics.md": "dbf760c156e30e6339517da1f81a91167f52d0dc5254975bb33b1dae6efc77b3",
-        "references/amazon-product-detail.md": "278c1e1ccee71649e3169f0c839322a6c3644c7a6e221dac87652893d196b647",
-        "references/amazon-reviews-list.md": "129437b2a45366f99a31cf0e3048aa58cf4253c348438b694e8d4e92234f8a90",
-        "references/amazon-search-by-image.md": "365352e123c4e33bafc36570dc2a732072b1cf276784a5ff9f633e800e95974e",
-        "references/amazon-search.md": "de2f6b9b8a4d901c580b38a6f522e61565cf43a01501f047d8807095c973da1e",
-        "references/api.json": "54860c565b4028e196bbccb1aef1041e7e28874e534724dd1248bdafd9b7c03c",
-        "references/api.md": "f94aa7fedb88d8d211a208fa6a0d5a2c0c005766c4ab6f63ac0d43e532338e7f",
-        "references/credentials.md": "7909e1225e483b7526a4c5ad974f39aa703ec3fa85710c7628a48a25405423f8",
-        "references/jiimore-get-niche-info-by-keyword.md": "b8f1e1027fa96c7a534c24a200a18daf2d27d5af967c867d236ac7b6319f5952",
-        "references/jiimore-get-niche-info.md": "8fec9a113cda0c3b9792dc0fce5db25ea781d0e6db1bb5a68b1b49bcf6696bd4",
-        "references/jiimore-get-niche-review-from-keyword.md": "93bf3083b5d485a1d0fd6bb2ebfb59a4d9e42144577eb4be04f95900f49763d6",
-        "references/jiimore-page-asins-by-asin.md": "4badeb866927f5ba8233bdc7f9c6ad611b4fc43d00c4c8ac4ecaea7d1274c7a9",
-        "references/jiimore-product-discovery.md": "18c0d99519e8f8773cd0a3ee6b7a343ade88e70d8feb7740c17dbba112ed734d",
-        "references/junglescout-keyword-by-asin.md": "2084b03739f7b72c0bc78a3bc121314d8be72c0285beeaa9f5c6ada4cc46d8ac",
-        "references/junglescout-keyword-by-keyword.md": "04aa55e45426fb3d985ada6aa31414314ee7cfdff3606112c7f381f67bada079",
-        "references/junglescout-keyword-history.md": "4af5d4a6b23092e836abd593fc0786c728571c980e6f63aba6d7d81efbb05356",
-        "references/junglescout-keyword-share-of-voice.md": "51e877bf8cd2a24ad27f782784e991376283212fed827c0f122bd7fcd130affe",
-        "references/junglescout-product-database.md": "e41d8e8eba1b4adbdc399eb479d0b3430a3169e913e38c4780f4b64a7c6e8056",
-        "references/junglescout-sales-estimates.md": "69a4ca1a7cc36df0dfaee9947278a5d3631b5a3541b8c4e0df6331e3fbfe8d2c",
-        "references/keepa-product-request.md": "0a2a1a760801ed6f9d35b2bf01bc996e5c22fafeeb850c3ddc7d700ff8ab3155",
-        "references/keepa-product-search.md": "98f12fad6efce9fdd691a94a7678e779100e60ff3d7ed3ce736d23fb6c3ecfc2",
-        "references/keepa-product-series.md": "b5ac05524a5c5c8a8a78fdc7307dbb03f754af4f6424138a15c05df54541c431",
-        "references/onboarding.md": "faa92b6bc6913b5eeffecbaf184b2ba591579a877e550be7bd99df19565d886b",
-        "references/sellersprite-competitor-lookup.md": "0091afe41737d950db42f42617ac4f9b86d9a2c6d8ed22b4ff52949d097d1576",
-        "references/sellersprite-market-research.md": "a51ec9365b40c0b45215d80dc3c322bcce79b2c2b85a5235561b9a8a359241b5",
-        "references/sellersprite-market-statistics.md": "1d232698855a9aba90b2302fb3950fbf1b986e9158092e7e15d8d2159633a8f2",
-        "references/sellersprite-product-search.md": "9539dc00adcbcbd464c7a9eec14b5e2aaefa2a8963f6e77b6a8a507fc6a4702f",
-        "references/sellersprite-traffic-keyword.md": "d54eca272efc25f45b0f5b2dc0536524b1bc9c3d508ca266beafdf9972e02bc8",
-        "references/sif-asin-keywords.md": "1dda38c1801b6db413a80716c1098fd64bcd82b7f42615d486207e8ae4d4b8c5",
-        "references/sif-asin-summary.md": "2ce7cff38ac88c1560e1c13a724f70782117dbacbebaaa042d110c88bfaec58b",
-        "references/sif-keyword-overview.md": "85b388011d75929fad9b4ad2246976fd382d343a682ebfe0d701f553e99c788a",
-        "references/sif-keyword-summary.md": "d7194f0d1adafd39377e13166737418be16f4daf7af1c30ff9d689868ee87e4d",
-        "references/sorftime-amazon-product-detail.md": "164060fb3ef26ccdaaec42611f93c3b00535d3b9f2fb947f95139fe53aa9f553",
-        "references/sorftime-amazon-product-query.md": "02a43d76ce38b041aff7060c3726ac11d8054d6bc9f7b439f1dd9e4d16221e83",
-        "references/testing.md": "93334e47991ce017363ca154a997457834166c9cc35a71ae28ee954318149ccb",
-        "references/workflow.md": "15594bc35a274967e9c47b093e1247737b31984cf6bfe679e268184a8da751f0",
-        "scripts/aba_query.py": "e8b4bf07f7f1eb6daaf25ef0c9c6959e8d85f6824ce930aa69984488cdeae2e1",
-        "scripts/amazon_alexa_search.py": "711ba568bfee67df7ca567c904cbfca4e4e5e7d635d52b6b3176ad0269e9ff9d",
-        "scripts/amazon_opportunity_report.py": "319dec01629caabaf0d44203daff25ed802fe3b3b14e04eee23242849ee504b3",
-        "scripts/amazon_opportunity_screener.py": "5c2152bd0530303d65eb56cbaf168d1d8f7be73e3e7a33909fd70c6ae009b5ca",
-        "scripts/amazon_product_detail.py": "7fe82109cb58e2d4fb7745870b603fe9073757869b4c0ac765d4aaa790d9cc7b",
-        "scripts/amazon_reviews.py": "1c544ba934ff09b207b54213d9279ae5d988d658cd87e976b65ca499fa4e4c22",
-        "scripts/amazon_search.py": "b80420ddd6af3f5e7861d2b01ae5bac4e5c0bf15e4c320518c12cb973599569a",
-        "scripts/amazon_search_by_image.py": "b58c6524e863b2f92aaae6ab642baf632224868c4aecab79d2f03f49c89fdb8d",
-        "scripts/jiimore_get_niche_info.py": "1f1c91d68bfe003ff7bb82abbefa99ae4af9991c3525ee814da2765839b4165d",
-        "scripts/jiimore_get_niche_info_by_keyword.py": "ec8319f8d08e08d7d5fcd500fb276e5f89a75fe446ff599e2e135e3bbdd62bad",
-        "scripts/jiimore_get_niche_review.py": "1c2558c67523fb59d1177bce95c704f08b543d899ffaebe10bc62ef454217aae",
-        "scripts/jiimore_page_asins_by_asin.py": "9c275cdf0f72e2102a73375ea6eaa0500c2f7ac048c3ab8596ccf1e03badf2e3",
-        "scripts/jiimore_product_discovery.py": "52057a8e9a31cf26f53a94946148f60e98d4f2729c8e90549eacafe1107dce2c",
-        "scripts/junglescout_keyword_by_asin.py": "3196ac4d5abd4afc72fcf83c98d98fc8ab4a80e8bda8abec9d8442b670eb85a1",
-        "scripts/junglescout_keyword_by_keyword.py": "d26c62f5772f7a0699cdf7141848e7dfc64e4907dfe64801c329f77450524825",
-        "scripts/junglescout_keyword_history.py": "8500d7e5321f0dfe10941ab620fa8d19f29a2b39c0d8a0e4ba98fae7c24911af",
-        "scripts/junglescout_keyword_sov.py": "4228e84ff48b262c3c6810909dfcf0bd3752398ff4cc3223c29afa6fbe88b9c8",
-        "scripts/junglescout_product_database.py": "595e0f207ea7b4be95664775a03aeb36564747ff9fff6de55a4b9bafe9c1e0b0",
-        "scripts/junglescout_sales_estimates.py": "397e91c8091e78a20c9074f21427be35eac76187bafcceaff1edb1c239c45d57",
-        "scripts/keepa_product_detail.py": "6557c9a99c0580736d4ec7124e237f6ebf8b97bf6655369b1dadb292b9907adf",
-        "scripts/keepa_product_history.py": "7edd82e3934f1422ff1fda92e44ea54392a136cf37ce30aa5e17358eeb581283",
-        "scripts/keepa_product_search.py": "6b1be625aed25d828bab8a40927745eaede61ec99a754d5089349918e4f8b467",
-        "scripts/onboarding.py": "2141e6038f149aca910f686fab274fd3c18581c7710911f0a9c4812c0c54b99e",
-        "scripts/sellersprite_competitor_lookup.py": "41e8525bf190ad644a4c658230d0a9f8f2698a71c5fc68ebdd0bc58e49a33c0a",
-        "scripts/sellersprite_market_research.py": "b9f2094c99d85b21fe62efbcf5354356e4e808006c6486bc037847ea7904fc47",
-        "scripts/sellersprite_market_statistics.py": "a18995f9733e4c66437b8876f42d65a5ec2adf7d04683863ccddf0637e04ad88",
-        "scripts/sellersprite_product_search.py": "be6916a20fe0387149992bc78b3ad71aafc5a6877207f3444888ad56c59b7b47",
-        "scripts/sellersprite_traffic_keyword.py": "d995b0c406f82743527caf2a0fb3ed3f7882333198375cb7b640e1a3a3d3c7e0",
-        "scripts/sif_asin_keywords.py": "690693e03cc7d34c3ed05eead5b2a2e0ef7671a94772fc5fa52c7fd34f4b5991",
-        "scripts/sif_asin_summary.py": "5f8613d5a292df0eb20a1a869a659ad6c0ffae84f3d8f9e5b9c0ff51a9f08581",
-        "scripts/sif_keyword_overview.py": "5875802be74ef7fb0e28247520608a97fa230767535c112a40f3533565b2e19f",
-        "scripts/sif_keyword_traffic.py": "446598cef18e02af4aea2ad2718204705d016457741eccb74cf337f5be852b8d",
-        "scripts/sorftime_product_detail.py": "f03a17b98291352c70da38859b4a0b7157918da8ca2e72e24a81f0ab4ca1c228",
-        "scripts/sorftime_product_search.py": "a8aeec3cab18da5d73f5b1f53539c6da67cf0e22fcf7893b4e4c83245cece91c",
-        "scripts/upload_image.py": "167f3a55f2b80023435b52a22ad368861680adbfe8e803febe6c0247f82a03d2"
+        "SKILL.md": "9fe5cee3a1aaba87cc4d44cfd0e4d254f288c8674cbd3015bf01b2437bca21ae",
+        "references/aba-intelligent-query.md": "35119a2388b37ee96b972a8a9035edad9908c1d516adcc216e2ba1f099c5b252",
+        "references/amazon-alexa-search.md": "62516701a615e6abb979106ce894cc4d32cb4a42a9d83a99f81baad62dccd4c0",
+        "references/amazon-opportunity-report-by-keyword.md": "2bf2f04792e539d53cf5682bd92286ef1195b0e0b6668083215beed4e4d10d69",
+        "references/amazon-opportunity-search-by-metrics.md": "f440e6ff67faccc7b33468cf173e3cb6d3f211cee6989dde8a3d30a00f8f49e9",
+        "references/amazon-product-detail.md": "f0bc11f8e7c2ed98f1e5c25561501981ab99921e63d6c9403eaa38c2fc2c1d41",
+        "references/amazon-reviews-list.md": "b4788eb4f06b0a0b2624a64deb60dbd5bd5519d6843a9f43a5fba4acd60d39bf",
+        "references/amazon-search-by-image.md": "e8c2d0f28c9797f86d361ca5b45c2861d2fd9b67965be0cc1ec9f1799edd1853",
+        "references/amazon-search.md": "daadc42dbe806a3e1e0343904154dafaa8d167852d8855534c399b891c91c828",
+        "references/api.json": "311afbff7cafdbb16e22419058cd5d9af13987ebe77429e8b527aab619d65c4b",
+        "references/api.md": "9283b32e9e794e8ed67b9d7a0de722793199c7f8a7780eb79aeda32e76bf1000",
+        "references/credentials.md": "094d879c6e4fd1bc183cc6e0986634993183ff6aa941d9be260a148f89f0f6f2",
+        "references/jiimore-get-niche-info-by-keyword.md": "be20b6a37e4a0589625253049a92a6e650a63cadf146bc403a86952c452bb6a9",
+        "references/jiimore-get-niche-info.md": "768a1c38ec13885a5f9efcf3cbeef7bc2299355c798e0e0e939680435b6acee5",
+        "references/jiimore-get-niche-review-from-keyword.md": "84a93504a8302cf2732b8bfb1a80cb129a71f384c3b8711dde74f4c86d75fc66",
+        "references/jiimore-page-asins-by-asin.md": "b0362d9cb3bd8302e589a2e2feb8df8a8e4b8c031f1142fa7e6affd36b9755c8",
+        "references/jiimore-product-discovery.md": "6bc644bdb9e848df622a86d48c9a0f897ad9cf1984dcc29db52ef51bce0bc495",
+        "references/junglescout-keyword-by-asin.md": "13423d32801685b34be89da82a017eb4d407acd14ca2256445d4d97a30cd0b57",
+        "references/junglescout-keyword-by-keyword.md": "5f736da6ccb5d9924001e72d8b0b7ec1ec51a3ab0b662a2c540c2720b0696298",
+        "references/junglescout-keyword-history.md": "40579ac12fd76be200293d4b359ef1f4b9e2dab68aea28758405e86578015da4",
+        "references/junglescout-keyword-share-of-voice.md": "4d632b0b55d28a351df7596e32f520e8cd2d163f1de13c5ba2ac033da64ec2ea",
+        "references/junglescout-product-database.md": "736258a035ba1cc70a99a931dfe04656bed6c98522b1839a5dd1f3618f1cf786",
+        "references/junglescout-sales-estimates.md": "76a3fffbe1d5d54562d3912bd277cf00cf25d66746e3114991b1269e4a3509cc",
+        "references/keepa-product-request.md": "0c86aa2b1e163ad0ed4b58a830e82b367850238060938d5553ba0f4df4db58ce",
+        "references/keepa-product-search.md": "320dffa1cbe51b4d217cd2edfb34f02079626d08392b89f6602fa0e8a34a800b",
+        "references/keepa-product-series.md": "8ff1d5fb240f50c62c2f94ed3dc2169db6766f35df4bbddd571c72d9b3f116e1",
+        "references/onboarding.md": "52896d2c3888ac04f4f07b34b6b0ce5868e9e6e1fe348b39dbcebc393dd6e0c1",
+        "references/sellersprite-competitor-lookup.md": "b6807c94d2635208351d058cfde9eeff29586d8dd911396ea90989b3f9633510",
+        "references/sellersprite-market-research.md": "30a9dae46ba56426f057e1ea4ad49b9443bd0cbe7037285637261db318d47814",
+        "references/sellersprite-market-statistics.md": "23f102dce8961701f45bafb0973a96e795fd1bc794b98785fe4da8187b450bae",
+        "references/sellersprite-product-search.md": "77aed29d2599e8e8b5882665a3b511d42dfae5f3629a5914727405e75cb3610f",
+        "references/sellersprite-traffic-keyword.md": "5b3eb4384ebcfc97377050cedf0b6825976bab994f3c272a0f09e83f19e844b5",
+        "references/sif-asin-keywords.md": "7b04cbc39b892b7ec742d97240d850b540edcb42d754c3300236d190b9ddc7fd",
+        "references/sif-asin-summary.md": "d436868b9146730951799802f571b59952562ee0a7c12f2a8edc6d64698f1b23",
+        "references/sif-keyword-overview.md": "2e8703878524e42cfec5cbdc245bfa4d77a9ba3c82796a4b29cb09c738374c17",
+        "references/sif-keyword-summary.md": "2e08ad5dd58a46685a8015c4efd4cf9fdb75363305636a31f1034a9deb43020b",
+        "references/sorftime-amazon-product-detail.md": "b786efe79363e138033aaa0203446a8ff84c3afe53fd275e49c3b343146c1877",
+        "references/sorftime-amazon-product-query.md": "b13bc9d56fb80599dad993dd34d0e21470a72b14457991c122f062c60198553f",
+        "references/testing.md": "a970209443bd53413c44bd0668c573d4f7114843e72bb6c29a09a03a20d52060",
+        "references/workflow.md": "af88be20edaed2f7613c598cf64d0d3cdccdf63ccc092bdda95204847357c15b",
+        "scripts/aba_query.py": "ad6b091aad4d677311781cd0f0d7da1e7b0720f6cc0b1145c3e9cb225802e858",
+        "scripts/amazon_alexa_search.py": "2e83f96bdfcf266e3fbdb7a86a9ceaae0be265fbe4ec27da4b5d7c58a5d0c1f3",
+        "scripts/amazon_opportunity_report.py": "50dafd0dffe4a45a056af7a2822f095fee7dff16db0c0460df9d2d513cf745af",
+        "scripts/amazon_opportunity_screener.py": "6f94bbccb5563e89649c96afaf2c2e69f0695be9e561ce28593b5db65cf6db3a",
+        "scripts/amazon_product_detail.py": "4e759e590e686a74c83b814a21feac454bd796551946f51bf8627c0a29791fd6",
+        "scripts/amazon_reviews.py": "0d72341b15c6ea72c91dd8704d63078c7b99631b0187634331076898528e4785",
+        "scripts/amazon_search.py": "8ce0b0cd023b11f05e105417df858c657f98aef9bb73c999158c4c69391b3474",
+        "scripts/amazon_search_by_image.py": "12d8cc231bba4daaddd8cfaf1f983f4c978354442e508e3d15c903ab48965e7f",
+        "scripts/jiimore_get_niche_info.py": "017af38a90dd4a1c0fa5c765ecd1aea36e8ec91c470cabb8dedc355a847f949c",
+        "scripts/jiimore_get_niche_info_by_keyword.py": "dab8bc97da5ab7757a79e08ca0bc86155ed351f8545168cf316000662cbe5eff",
+        "scripts/jiimore_get_niche_review.py": "b76c7fee91b6abf797d5d2eb8dcd24b98ca3a7ddb9cde1ad9387e304d748c529",
+        "scripts/jiimore_page_asins_by_asin.py": "a67559542eedd9a834859ba631ae30a9226889274bba56017bcc0c0e2e2e822c",
+        "scripts/jiimore_product_discovery.py": "52a546f7c43ef28a4316f03ec392787d7f9c897a8460ecddda59bf21b3997681",
+        "scripts/junglescout_keyword_by_asin.py": "4d528a94bf2bb4df44f0b9ec59fe87c58b181e4b2ebbabf563c59905474c7f13",
+        "scripts/junglescout_keyword_by_keyword.py": "238bd9bfe642f48893599bbc45661e5ea0f41753354e36133156ac8b005fcfa6",
+        "scripts/junglescout_keyword_history.py": "bb8b0fe35695b7659e2796fef269971191ceed418be62f111533054a83e71505",
+        "scripts/junglescout_keyword_sov.py": "79118c9550c8ea81268b315f644aa3ca4f4e050ceaf56cd73ed12cdb88428cd1",
+        "scripts/junglescout_product_database.py": "ab41587f9a5dac301bf7a623ae5f17dcd124b41d918e7d7645e213a636a2e649",
+        "scripts/junglescout_sales_estimates.py": "465f1b78448123b3f48fb45cb449082b5028918b6df2ff3547c7c4d9bafe6dd0",
+        "scripts/keepa_product_detail.py": "1710344a2052b2ffe3e86d532c78651759e140686c0b95b404c6dfdbe092f9c3",
+        "scripts/keepa_product_history.py": "a879d20407b4a775b9ea581ea696eb49fb490a337c1ccf492b2135d25bc1471b",
+        "scripts/keepa_product_search.py": "c02790c4f1ec0d57ba75b0ccae20b3c21c562d3c30fbe68653e525e9ed70c2e0",
+        "scripts/onboarding.py": "db21a7b41edcdfa1f2325193fa513830d1d027a93365281bb8ac2ffc975d9988",
+        "scripts/sellersprite_competitor_lookup.py": "fffd21690ee139e7c185fc8f4cc100b20dc6c2d50f8e022a45f011ab586b9bc2",
+        "scripts/sellersprite_market_research.py": "1075ae5c1f5688f69e8b762f95c8595b6bcfe3eb6af45bdc9b9dc67e24eebac8",
+        "scripts/sellersprite_market_statistics.py": "ef216ba103b5c31f0945e9dacdf1f5a3d4b325c26ed05ab9981c543086f20cc7",
+        "scripts/sellersprite_product_search.py": "9bb29356cdf2d578a9bbb763f726ea640ece7b237dccfa1de02c45336ae142e6",
+        "scripts/sellersprite_traffic_keyword.py": "cf43645946b9314e2d894739201e2c779e0b95c9f9e15640ba8e32c9f1dee246",
+        "scripts/sif_asin_keywords.py": "e9a52ea247c08726884f5ef1eb81d30fcc79f7178c08556cec55ecbabf3b9db2",
+        "scripts/sif_asin_summary.py": "6cd1646171ed6b9580e9829289802805c7b710a209a68729ed64f585d282c4ea",
+        "scripts/sif_keyword_overview.py": "b2df695f2431cf94405e076af2116025c7afe213b3ceecf8ca8192525fa5d91c",
+        "scripts/sif_keyword_traffic.py": "09ec852c343f6fa0b8e57a89c9e3da7957ad72a5235717b4517bb19699b186b4",
+        "scripts/sorftime_product_detail.py": "40cfbfcf70156509dbb4ee849eb1c98f764d7a3d34744752e72c339e3af32400",
+        "scripts/sorftime_product_search.py": "a4f4f45a179ac8bc337bed0fcb486ca48af8efb246dc04b977431c902268dc80",
+        "scripts/upload_image.py": "9336ad550309855891562a3a154a02badfdd4574d4df3b76cb2a57f5e4be3d9a"
       },
       "available": true
     },
@@ -656,9 +656,9 @@
         "scripts/amazon_related_asins.py"
       ],
       "files": {
-        "SKILL.md": "f74bf65af2e57ac7919f0b24e8fd4eb7d7f42b81d3774426267718a2d9a67532",
-        "references/api.md": "4680af415f2a129444520c19810b2e7a184f188f913261420fa294cd55b25765",
-        "scripts/amazon_related_asins.py": "2c5e9f05d3c482abdbd902f2a2c7bb93a4e08b4a385706d8a7504d3871999121"
+        "SKILL.md": "9f2aa9d8520c742369f7cb899428a0d90537cae3ee42db153fb01988b2c913e5",
+        "references/api.md": "bfb56599bea5d022aba7310fa9df05eba0adb0c0c7b37ca04c6e4fd81a14f40a",
+        "scripts/amazon_related_asins.py": "3e758c009c152f9da21fdaff4429e19512fe00251d6985c7bc0c5dba0a82b6bc"
       },
       "available": true
     },
@@ -669,9 +669,9 @@
         "scripts/amazon_reviews.py"
       ],
       "files": {
-        "SKILL.md": "8e0bb4040fc287191b6e8c69cf98970c432b1a2159c7f3049eb9d983c9bf4b9a",
-        "references/api.md": "0915258ba986520e3bbaf86fc89dad7a23169b4573850ff5c785f09dbcaf9b09",
-        "scripts/amazon_reviews.py": "7f33c351ae297dfae2a3662f52c8da42f16d9592e783ecc8cc616ae033b83ea8"
+        "SKILL.md": "80f1ae853c821014e53aa614d2e5382042df17b2bf78f64b95548673c54eb75d",
+        "references/api.md": "c4f6ccf3cbee4e75b06e299be12e8cbb89375299d4bab48ac42f82515cdecf23",
+        "scripts/amazon_reviews.py": "697eb471336e56280cf5f7b805a4c90c84ade933c9050ebffdf08080bd55b319"
       },
       "available": true
     },
@@ -682,9 +682,9 @@
         "scripts/amazon_sales_estimates.py"
       ],
       "files": {
-        "SKILL.md": "b4e0d5e6aaf018dd4e66f2527b5c4304924fced96ce2742fda06b3b1e35fd289",
-        "references/api.md": "077ac621cee0e12bc1d8387e97f62cf6ec0c9acf4aef5cafd2f296553b2935d8",
-        "scripts/amazon_sales_estimates.py": "bf6c1e0886d89352769f34082631503779b86a1b9baf7566f2037ed5d21f117e"
+        "SKILL.md": "28dcc80515e2a143a29a781de21fce8481c91ca839806d0fb30e4f9b94a4b9df",
+        "references/api.md": "26d1b0f8b4cf2c21fdcab893ab6231e615ad6961d4eecd909c130706dd9f7aac",
+        "scripts/amazon_sales_estimates.py": "b857ea3e5a2dcc00c7caa7c8ebf55ca885498e7d37cc24dd3c2954f889ad03bf"
       },
       "available": true
     },
@@ -695,9 +695,9 @@
         "scripts/amazon_search.py"
       ],
       "files": {
-        "SKILL.md": "a1a93bca7c7c5db7b991fdc5287aaa1d0768c032bc99192d9e677e0432581cff",
-        "references/api.md": "8cc820dc17824f11a22036ba3e2960b993cc8f52699daf815ed4f74279eaf8bb",
-        "scripts/amazon_search.py": "2a1cf2c1fb8ff10995d4b344a17b8ad9e246ebc1a8bc9a30ff2436b90e9cc88d"
+        "SKILL.md": "5dd314d522b5d95d17724c750779ee0837e85014383fe5a9161c648f16dd665d",
+        "references/api.md": "d008a39e775c417ba200f37cb9beac89756aef89ef6ea80f98895cf4d69dc7e7",
+        "scripts/amazon_search.py": "52ee62c4433a4189162211035cd7817815412f15cce5875d7d233a515fdaf6e6"
       },
       "available": true
     },
@@ -709,10 +709,10 @@
         "scripts/upload_image.py"
       ],
       "files": {
-        "SKILL.md": "ec1e9351340c93f1472a1b23b8b948fe30ab273e4c4d7f608e1a5ff666d8f912",
-        "references/api.md": "a6f05eff2b49eaa7c670d38fbf7430ea9309ab40cfd5cc8e53adf0065e081eb1",
-        "scripts/amazon_search_by_image.py": "61cca37ca63c2af558f20c099ebd7448681fe022e5eab80bb3d61d804e2eb526",
-        "scripts/upload_image.py": "44b0648ffdce5292eeec6d53ef8fcfddc74023abc145095a2a2a84fe278f72a2"
+        "SKILL.md": "f8efec8e538e11bf19e59fa6018afb009416a0047c18fbf72cbb223539450e6e",
+        "references/api.md": "8bfe3a9691cde3c130be5722c69540852ef96a0fc20ad7b17939f4cc033a05e0",
+        "scripts/amazon_search_by_image.py": "6b4dcd258532643de4615cb840b708c2ddec44464a3a840cbd15f27ab70e3a07",
+        "scripts/upload_image.py": "cc185db8e2f56df6b1175e7f5d248e5c400f0644a1f5c5db9b2030e05e774321"
       },
       "available": true
     },
@@ -723,15 +723,15 @@
         "scripts/amazon_traffic_keywords.py"
       ],
       "files": {
-        "SKILL.md": "569fabaed98cfc54d4a0e24745bc020ac086106a8bcdce39e25b316af62002c6",
-        "references/api.md": "2affeffad41d7630d0baf87c5442d450e002e3005b233f470a9fdfceab9e7603",
-        "scripts/amazon_traffic_keywords.py": "4364efb5f6d80afd73e4f7696864ad64e237cc7c372863286b5650dc21d767c6"
+        "SKILL.md": "1a0f5113f71f4bcb87b7eb3f87669a15cccfa592a4b5601a5ba63af0377fff22",
+        "references/api.md": "f001d8c66deb908811efb810caf69eb003861eff6af5301e73820e71f31efe3e",
+        "scripts/amazon_traffic_keywords.py": "396ec2fb9cac0ed73bd26e1b15eb25df626d32c7e662d94ab5133b75cb1791c0"
       },
       "available": true
     },
     "chuhaijiang-tiktok-ads": {
       "source": "ecommerce-chuhaijiang-tiktok-ads",
-      "description": "Research public TikTok ads and creative assets through Chuhaijiang and Nexscope.",
+      "description": "Research public TikTok ads and creative assets through Nexscope.",
       "scripts": [
         "scripts/chuhaijiang_ad_detail.py",
         "scripts/chuhaijiang_ad_related_products.py",
@@ -740,21 +740,21 @@
         "scripts/chuhaijiang_creative_search.py"
       ],
       "files": {
-        "SKILL.md": "1369a1373759fcaa356a3801bfe78bef37e6def05b019b00343b3e034b13da53",
-        "manifest.json": "c8720eec768375be6dadff13c82eb86d1dc29a18c56ff8e7de9100160c47e0f1",
-        "references/api.md": "f6fe47c0c3db40340c05c76f9b011d588a3fe72c2bb4f275adbb254ca2e79dc0",
-        "references/testing.md": "d92dcac2b27a5b803c2acae7447e13786f7f6623579cf11d2cb4fe2b6990ad23",
-        "scripts/chuhaijiang_ad_detail.py": "bf8239587a54f02d0bfbde0e08845e3f295a147f104f51fd811f037556c6e298",
-        "scripts/chuhaijiang_ad_related_products.py": "6b49eb08ea2a1dccd436e4ad837fa7048415ef4298a68683e54df4349d347126",
-        "scripts/chuhaijiang_ad_search.py": "f82fb0b88c3fcb2113702e78f1fb633cbb3639a9cf965c9fb0470783e134ca12",
-        "scripts/chuhaijiang_creative_detail.py": "2553b2d4f6dea52bfc9ff6586cbd31004f458524fc71f0e7dbf95fb605f58715",
-        "scripts/chuhaijiang_creative_search.py": "5088781a712c024001151997a2609d35db80c5f91db927e1343224b7c021152f"
+        "SKILL.md": "2b2ff46f54d0ada8f8116c4b6c20ad10e03741d35dded01de04cb05d00785184",
+        "manifest.json": "1bbb990469f42c0cc30bd021fc0037b7ee5da5087ae4ed3dfd73f693c6daf6c1",
+        "references/api.md": "b8d206eeaf496bba66d45c6d93b3948d6d66321bb94147860d231a8a37a6454e",
+        "references/testing.md": "e03841c06ed21982820b73c5e27bb2e4626be0fc3323adcee595fbf751634876",
+        "scripts/chuhaijiang_ad_detail.py": "71136a645022d6f474c63fdd2ef00548fd669f665bb2db58405da390e4ed7a1c",
+        "scripts/chuhaijiang_ad_related_products.py": "7d3c942097a1dfff3a039a46bf8d67ecd6fe74dedea380c9642dc3c5ec6d5fc0",
+        "scripts/chuhaijiang_ad_search.py": "ded93e6b70c933c345795a2dff8c98ea966dbe1c0e9281f4de3ca13aaf6c9876",
+        "scripts/chuhaijiang_creative_detail.py": "fe89417c4dde77373cf132af6f0b89ccba4a83cbf5d513f46f30308ec54aa1c2",
+        "scripts/chuhaijiang_creative_search.py": "800fd6cbdbc99501135b1677b793ebee466991ae708d308a56635a02b26bcce3"
       },
       "available": true
     },
     "chuhaijiang-tiktok-creator": {
       "source": "ecommerce-chuhaijiang-tiktok-creator",
-      "description": "Research public TikTok creators and commerce relationships through Chuhaijiang and Nexscope.",
+      "description": "Research public TikTok creators and commerce relationships through Nexscope.",
       "scripts": [
         "scripts/chuhaijiang_creator_detail.py",
         "scripts/chuhaijiang_creator_rank_agencies.py",
@@ -766,43 +766,43 @@
         "scripts/chuhaijiang_creator_search.py"
       ],
       "files": {
-        "SKILL.md": "5c3630f775c9c57b96b69fd646008a3acc7c1798ad86d3af7f7e2e252c54b12a",
-        "manifest.json": "b820cb549e66653d140515f8aed123cb4a06e7161cf14f23d35c9b9b2a9c365d",
-        "references/api.md": "85fc6de61848e23420bb79280090445cddeb2a4ec3f28ece416b9422bfaad859",
-        "references/testing.md": "8ed02428292f4859797355edf823f188c4f1b8e1d8ea4b0032d6fad3e31f106b",
-        "scripts/chuhaijiang_creator_detail.py": "4fa7e03643091a6de52da5240cf65817d0c573cca75eeed6fa085709a9ec7db2",
-        "scripts/chuhaijiang_creator_rank_agencies.py": "3e3f219008cc9f6a4eb2bc5a7d2a34952d6169d7822898ebaffd7efb234ce8d9",
-        "scripts/chuhaijiang_creator_rank_commercial.py": "9225320d50eae68677b8d3735ea06cd4aefda0b4ab1ccfd1ba4a15774306c97e",
-        "scripts/chuhaijiang_creator_rank_growth.py": "dd69f987925faaed0fc1d789e09617870681aca8e341a06f5d22a230bb4ff9a9",
-        "scripts/chuhaijiang_creator_related_lives.py": "a83ed8fb10d0d39b96d0e3ffd3d9d9eea6b5a3ea21b8956c62b6cdb9c6ccc8fb",
-        "scripts/chuhaijiang_creator_related_products.py": "a0c33746efefc49f65e05281609c48af8bc21ddd3d2871cd9a7ced6313d5fc4d",
-        "scripts/chuhaijiang_creator_related_videos.py": "a078ad91a82573d1edadb2f3f28ff7d0fde34b160b815ff5e058d63d953c90ce",
-        "scripts/chuhaijiang_creator_search.py": "c1eb92e4c0a48ae57c49f906171fdbd2d5f299c0c0f6f472ea42862d840793c5"
+        "SKILL.md": "c629936ff1cb70d357537ed087281f7aaf4792833be1c67959b13ef61d2fce72",
+        "manifest.json": "106c87fd285533f3db050cd2dd0ac4e8aabf265bb02577895c69efd066d08657",
+        "references/api.md": "52d1b10e8113fc24b518e69bad09994256b4e71e47ec8e6562eba54c9f4f76e1",
+        "references/testing.md": "fea0e26a2ad4b8ef221b4825f11c400cb9d89b26329b8b1a2a3ac72eabfe3dc0",
+        "scripts/chuhaijiang_creator_detail.py": "db2104149e1462233e2b8ac81b6a68f7a05dedd9fa29c0f51cd89f608e9b7bde",
+        "scripts/chuhaijiang_creator_rank_agencies.py": "47c6ea3eb7a148db1f3223c033087639e670ea0816cba8b3db53c5d41077c27a",
+        "scripts/chuhaijiang_creator_rank_commercial.py": "2653dc54469b7d931f31e602939750757108d77e7c84be832e4697cd9d836269",
+        "scripts/chuhaijiang_creator_rank_growth.py": "0c83eb89a521f7a9bc8def2a2affcb5fe86754ae0b681e350ada10cb5c88bdf5",
+        "scripts/chuhaijiang_creator_related_lives.py": "21d026beaa2e15c863beb2703264ed13aa3fea0a21b1ec5ebfe3ceb61026d55d",
+        "scripts/chuhaijiang_creator_related_products.py": "db11a13d987e625873378c00ab1a4b1f4623954905d06d284e4e440313c30e0a",
+        "scripts/chuhaijiang_creator_related_videos.py": "a3932c7b2f408e0b4c5b0ce5665bb5735a3b2747bb12f04f1037755af73e6398",
+        "scripts/chuhaijiang_creator_search.py": "6870d30478e5a63d7098cb9cbd5fb54ab4fb8bf3f59c71142f96f740a1ea9048"
       },
       "available": true
     },
     "chuhaijiang-tiktok-live": {
       "source": "ecommerce-chuhaijiang-tiktok-live",
-      "description": "Research public TikTok commerce livestreams through Chuhaijiang and Nexscope.",
+      "description": "Research public TikTok commerce livestreams through Nexscope.",
       "scripts": [
         "scripts/chuhaijiang_live_detail.py",
         "scripts/chuhaijiang_live_related_products.py",
         "scripts/chuhaijiang_live_search.py"
       ],
       "files": {
-        "SKILL.md": "5bc613408a1c30f669fd082ece2275b27f53ab4c43b60484bb68cc60a9ad79d1",
-        "manifest.json": "2af3dee3836185268b3020183f926ab39180fcb7eda557f05e9189a1d614c6b3",
-        "references/api.md": "30a1a947c03c9e28efe2e335e005f61d97c030d586025d7b886348904a51e6fb",
-        "references/testing.md": "bb63517e3e6f27022299f457f7bd6496c28c1aebe62a1d668b7ebaf18df7ad1a",
-        "scripts/chuhaijiang_live_detail.py": "cd9bddd042a29a86c0b83842dea172954d5c55066dda0850d1eb85afe5adc761",
-        "scripts/chuhaijiang_live_related_products.py": "3c867d0c169bf9554777c66226b6870eca51d5a285b00702ebcc48508cb58135",
-        "scripts/chuhaijiang_live_search.py": "50cb733d1381fc0505f655a1d652e75a76524d64ce42527473d73c068282d1db"
+        "SKILL.md": "884a41a645522ad36b8e301966773a29280df5e9271b90d98ced8356ae7a517e",
+        "manifest.json": "667526b5942bdd2311ea3a2524a05afd442b4a0f58bbeace1aa4b5756478f628",
+        "references/api.md": "0c2508f6d679a1cecdd0b90683c38ec3e9988f9d60ffed51d79e29ba8a16edef",
+        "references/testing.md": "50d1df4958f3154ac42ccd777d30ea3446ac2aabe2889b3d446ff04949525de3",
+        "scripts/chuhaijiang_live_detail.py": "016110174eb12823494bbf7a5914bc30132452f258c9f834f7b0e85bb6f50b59",
+        "scripts/chuhaijiang_live_related_products.py": "aff0fbf716e43d5dccd3375d06f2b7cfb0b70570bbc3f6c4126bf857a0a56547",
+        "scripts/chuhaijiang_live_search.py": "1889e6cfc0ab6be6304f25df2bd228087bb4885660c0411d5d128fb002474523"
       },
       "available": true
     },
     "chuhaijiang-tiktok-product": {
       "source": "ecommerce-chuhaijiang-tiktok-product",
-      "description": "Research public TikTok Shop products and related market entities through Chuhaijiang and Nexscope.",
+      "description": "Research public TikTok Shop products and related market entities through Nexscope.",
       "scripts": [
         "scripts/chuhaijiang_product_detail.py",
         "scripts/chuhaijiang_product_image_search.py",
@@ -817,27 +817,27 @@
         "scripts/upload_image.py"
       ],
       "files": {
-        "SKILL.md": "da97140c2b88aae8c12a6379356031171a1d9631a3b2312e4d526631daaa740a",
-        "manifest.json": "78fd9214703e0970f085879593b58f8dd5ee2ec424883560972fb240d8926bac",
-        "references/api.md": "8adc997e5a4de2ed01a28c59bd78d9d3e4d03680ebed9207b8eb3ba3c5c246f5",
-        "references/testing.md": "3c0d1c6d289c191ad1253721fc301633d96f8ef0783da0fb76b0cf9051880eb5",
-        "scripts/chuhaijiang_product_detail.py": "4e3bc022330e4ce99e7931d7a674ebd47a2d1902b397589124dd6e488e964a94",
-        "scripts/chuhaijiang_product_image_search.py": "09ad28c581fa3b8ece4afc7f5e533e70ea2cfe6eb4467bdd1a86a27ed6e37832",
-        "scripts/chuhaijiang_product_rank_most_promoted.py": "5e876e9a406d31886d1a36116af5373440d7b32191044cbe57cd9b9bdf114783",
-        "scripts/chuhaijiang_product_rank_new_arrivals.py": "70f2c5f18d8c67a57b944a90ab1221254369cd0ffb78ff6e9c8f0c73eb3f082f",
-        "scripts/chuhaijiang_product_rank_top_selling.py": "a6b23394b7f508191c2cf2ae1ff418956fdd73672409cd0c6a4e16252151a81e",
-        "scripts/chuhaijiang_product_related_creators.py": "536c3dc15ea3eea7efcf37f908d8abb6aa104263a0aad790e69ea54349cc7f67",
-        "scripts/chuhaijiang_product_related_lives.py": "c457c14b2612d18d4678c6d89a742b20aa4b9de802c9922ddaad4ab225e69aac",
-        "scripts/chuhaijiang_product_related_videos.py": "e13e14a51566728e36c5c748f0859c1726c5bf3b14b42a0e7c329dc7acc5f942",
-        "scripts/chuhaijiang_product_reviews.py": "fd9a4225e396afb5a21881b1d08012a88e74d1c39e49a235f1180f9f0ecb47dc",
-        "scripts/chuhaijiang_product_search.py": "421fcc8ab29e47d96529c7dc6ae49357a3d46bf5bf64b4fc21314bd8b0f9cea6",
-        "scripts/upload_image.py": "f77ed43af516a9f9f6d61fbeaaedcfd232eb1b5a14a30e80a4676eab47bb6707"
+        "SKILL.md": "5b9c78496854876d1ceb7051731cb3e2b25531e19b492f1eb7fe24e2d9cc780b",
+        "manifest.json": "fb141fe2b533c7b8874763f8205f65a6aedc812537d1c333860dc9b8dd8d5da1",
+        "references/api.md": "b15d9bae2aff779ed0150148cc6637d509ba88b702a6a4441fae2294811f53b9",
+        "references/testing.md": "f269533b63263181c762049145bef452190929bab2257b9faddad9d3fd182e66",
+        "scripts/chuhaijiang_product_detail.py": "4af797f939378eebce01c2a0cd8706dfd9ae7711815a9f97ad6141bc1cd127a8",
+        "scripts/chuhaijiang_product_image_search.py": "acc5b7b763f62c220f22bf621f374169f4f37c7788b1f4f4ef52f817bf029e1c",
+        "scripts/chuhaijiang_product_rank_most_promoted.py": "6ed98916bd9e3293abd3c08729972e90fa32be6daf231c7477bdfba6f7084ac6",
+        "scripts/chuhaijiang_product_rank_new_arrivals.py": "efff9e949af41ab754646ba8bc70401740c43955aeac3f00930997d31c215fa7",
+        "scripts/chuhaijiang_product_rank_top_selling.py": "88091d37560cb0aedf3a1f5718ca0a9420b3775987f672721c292d263d00b154",
+        "scripts/chuhaijiang_product_related_creators.py": "deb009d0b70aa4f590b88e2c87da087ffb7ad9d61de9ccc4cc9c3e047fe784db",
+        "scripts/chuhaijiang_product_related_lives.py": "2354c3bf6b9f36b78b3e776589021c05430b2e16a70c4f5d77b1fcb92b9c5c41",
+        "scripts/chuhaijiang_product_related_videos.py": "235dc5c948bd0424e2f05f1c405a38973a2cd8359d3d7ec6de90ab73e83dd0fd",
+        "scripts/chuhaijiang_product_reviews.py": "4227b5c1d929451fb82c135913cfc67ece550d67930d5156c36b105ee938af6a",
+        "scripts/chuhaijiang_product_search.py": "7cf404943b7d23874d9b845744efa7463d1ac43a32f5c7fc5815edd15924f971",
+        "scripts/upload_image.py": "4af8396dae4156553f0e4921e187a8f1aae85c9e1cbe9a5f948d82889fa17a7e"
       },
       "available": true
     },
     "chuhaijiang-tiktok-shop": {
       "source": "ecommerce-chuhaijiang-tiktok-shop",
-      "description": "Research public TikTok Shop stores and related entities through Chuhaijiang and Nexscope.",
+      "description": "Research public TikTok Shop stores and related entities through Nexscope.",
       "scripts": [
         "scripts/chuhaijiang_seller_detail.py",
         "scripts/chuhaijiang_seller_rank_most_promoted.py",
@@ -848,23 +848,23 @@
         "scripts/chuhaijiang_seller_search.py"
       ],
       "files": {
-        "SKILL.md": "ca16266e1173ebe3a3a88b01e3c4c3468d1873ebb232f6d3d1a15b0fd25f75e6",
-        "manifest.json": "157272ad75517363f28c8e13ae527c95d5e8fd4d9052f15066fb5acfefca8754",
-        "references/api.md": "14cc2dd5b6743b0e109ebeca5c1a64e525ac6a58ee67ddf65adbf804e6b90564",
-        "references/testing.md": "bbe4c686b83624da61f2ac2d8cccd9af293a5ec6edf72df90b60d51d7fcd4f87",
-        "scripts/chuhaijiang_seller_detail.py": "1379b1421d0b418cf5cd6ac3efadcf94f6798d26b14ea4081d1202be2df04abf",
-        "scripts/chuhaijiang_seller_rank_most_promoted.py": "c13ffffebbe3e4ce23c52166c7d97ef9d014d99a92045365047d7ff20d318e43",
-        "scripts/chuhaijiang_seller_rank_top_selling.py": "62595023aecbdffabfd0cf0abce2bba1e2fc797b1451104274341a4591c14f6b",
-        "scripts/chuhaijiang_seller_related_creators.py": "3d08d773bc8f6694562a7cb18d33d451811834df76cab487ce125cf2f754552d",
-        "scripts/chuhaijiang_seller_related_products.py": "cbb629789993de57d3ff30982dcf17cb60256a50b8268450d6e45133de273509",
-        "scripts/chuhaijiang_seller_related_videos.py": "d2e0abcc40596f8f9f695a41321e87546c449bbaaeebccc5450f1da43ad509e5",
-        "scripts/chuhaijiang_seller_search.py": "ee45cf3ba7115a30452822fa0c1bff22de7229c614876901ffb072d6b1d8aebd"
+        "SKILL.md": "eaaf3a5a10cbe4c395d2bf7857b0a66d54890c5318faef48e5bfced50d9cf33f",
+        "manifest.json": "86c6ca70009811041568451d261ed78cc5a66fa5375010128447e9079f76245f",
+        "references/api.md": "d31495cbebfa2c24c33da5424af2c0bc26a6f112e84ecc8687a1930444e4d669",
+        "references/testing.md": "c757451444356ebcbf254b79f23f514c8004294c53d7d477894f679146d120e3",
+        "scripts/chuhaijiang_seller_detail.py": "9ba78f65fe039e13d0064be8f0b8bf142c6f5d2be39f2380742e43cafc775456",
+        "scripts/chuhaijiang_seller_rank_most_promoted.py": "af301ab538bc431bf8f49ea90a7ab74b04eb85c01ceeb226080cb657313c522e",
+        "scripts/chuhaijiang_seller_rank_top_selling.py": "b657c5e4206f518156785a0ed4b5e5a8650c929ef4de6df5e9dc5e9ed853b0bc",
+        "scripts/chuhaijiang_seller_related_creators.py": "8fac75aad30c3242fa7c90a9ee0ae6dd6c6d2ed89063af9d7ea8ffb31fd3886a",
+        "scripts/chuhaijiang_seller_related_products.py": "0ae5202841269a15b3b6bedb422c763700274aff58091ce508c8f1c7d077a3b4",
+        "scripts/chuhaijiang_seller_related_videos.py": "1e6b4c1e8a36e17a2faf9630af0a4f579a4f4f715330a4579af105dd8255c014",
+        "scripts/chuhaijiang_seller_search.py": "b7a93a664c41424882c9215fbee59f4a0a4378ec260b1df45a54c88dbc4d3286"
       },
       "available": true
     },
     "chuhaijiang-tiktok-video": {
       "source": "ecommerce-chuhaijiang-tiktok-video",
-      "description": "Research public TikTok videos and commerce relationships through Chuhaijiang and Nexscope.",
+      "description": "Research public TikTok videos and commerce relationships through Nexscope.",
       "scripts": [
         "scripts/chuhaijiang_video_detail.py",
         "scripts/chuhaijiang_video_related_products.py",
@@ -872,14 +872,14 @@
         "scripts/chuhaijiang_video_search.py"
       ],
       "files": {
-        "SKILL.md": "d46b677d47e4c026702569204f5f671af127653e44cb764d11b69fb52cc0e39c",
-        "manifest.json": "d99bb42b3953cdf169333729f5046762f11cb06a1b44960f2a67871df54ce134",
-        "references/api.md": "6f58739822aa5899f703b25335a22325e37d8a0242dd143cb89d69ab0ca67704",
-        "references/testing.md": "dea056475fc88d11bc25b4f1048b2cd0efe70f691b6841819caeef33d658bc29",
-        "scripts/chuhaijiang_video_detail.py": "756ebf641c5f02e28837a0f60794cf6f84b65285c83fffc194ddb2d6bd05667b",
-        "scripts/chuhaijiang_video_related_products.py": "7865cd65dbadf273fcad026520e4e23e94038f3ec71dd0ced5e569d5e9308fd9",
-        "scripts/chuhaijiang_video_reviews.py": "87818f6f55223b75e587d0484eaad0e6ffdb76214633d46549a260128073a2e9",
-        "scripts/chuhaijiang_video_search.py": "9a6db5c6a0fca6669e79d6ecd367153d0b6e6e180ccff40f877d7ca7d0d769e8"
+        "SKILL.md": "0465aef0f056f96459edd41b577c92f4f51fedaf3a6427656e6e3df2060c2518",
+        "manifest.json": "4db691f05d85af09d04d92d28af47992ee4f1b09379c616f51f430c3585c7233",
+        "references/api.md": "2c950b2221472de32aa9acc7da31fa0763d8844371218ca05d0e38efe9cee406",
+        "references/testing.md": "a5240fe645891bc18f223f2ecffe5f4d4e5b9c01db095f84a9ed2f19ba005ce0",
+        "scripts/chuhaijiang_video_detail.py": "6c1cc63f402181a149d514c6f90c350afc067b248d8d83dd66709c80623180be",
+        "scripts/chuhaijiang_video_related_products.py": "6857ae85742aa5e90593ae0945cf8cfcc871832507de07dbd3cf13bccc35aba8",
+        "scripts/chuhaijiang_video_reviews.py": "e506ee98fced1b74dc31d7b59ae61227ccd27415c68814b268a545206739f4f7",
+        "scripts/chuhaijiang_video_search.py": "ea00644d62527081c359f901236f0653248630332cd5bf68395dce9e12248c88"
       },
       "available": true
     },
@@ -890,9 +890,9 @@
         "scripts/ebay_search.py"
       ],
       "files": {
-        "SKILL.md": "d82cdae9be0878b4409684fd6fca41205f6d8d04c6ed72792a16209b7c4ca89c",
-        "references/api.md": "ce7e623c33a1a8b68e1184d3a6869cdc9486d267416707fed540a9151258e67e",
-        "scripts/ebay_search.py": "f6af8a2c0683c9621af21c0e2cf9bd01373cce7ad6b3a5b96533ae9513a8591f"
+        "SKILL.md": "0f3d6aa60b74989825f3ad46a203d66afce65598ac09239d8e5ff92656314a22",
+        "references/api.md": "2dad4a74ed2c47552511c4d836c935dc8290421b615d8babf742cf54735ebc3f",
+        "scripts/ebay_search.py": "a39a75186be1d9ed43bc469cfdbf94c547728e75405f4ff4f154d31510cfb200"
       },
       "available": true
     },
@@ -903,9 +903,9 @@
         "scripts/etsy_category_search.py"
       ],
       "files": {
-        "SKILL.md": "53a2e91f96113e4627c461128565edc5c79364b8c2418a9d8fe329a72148671f",
-        "references/api.md": "ec4c6662bd2073872f9eb748194ece03c92347eee4f684f70948f82a86223b39",
-        "scripts/etsy_category_search.py": "ac7581ee3d314dd9ff3e3fe0ea9a74240ff5879dfd81523fc45521334d1fd727"
+        "SKILL.md": "33596a918ae848dc3a507e88f09fff542f4a911c0d6f8dcc4d038723e9cdc91b",
+        "references/api.md": "9e78d84bdf9854a95c93b191947baedcfbd806cc45df0f21fd22ef679cfc6b25",
+        "scripts/etsy_category_search.py": "3a1599c6b910b637bb20bf90644c9c90737855ce5d680cf57151343a7bc3e7cc"
       },
       "available": true
     },
@@ -916,11 +916,11 @@
         "scripts/etsy_product_detail.py"
       ],
       "files": {
-        "SKILL.md": "ca94bc8d2e9942186f39207494ce92f66d6dfa5534ebaa5f4b7dabe4481f7eb8",
-        "manifest.json": "220a8d8abb8d1d5337b4c21a9d177bbd16f0c30672192593d401515cc36cf582",
-        "references/api.md": "a7a4737f71cab6c5115689fc3d837ef26d94bd5e988b6d37e88efbe4ce697e40",
-        "references/testing.md": "4a54860cf1dc5dc157c14d4ed2e449754e2038e3f0a2de1fb70a055140dcdd16",
-        "scripts/etsy_product_detail.py": "1d8b60075c6dac7483ada0a6433890382e301d87c6464dabf730fdf3fceb0dfe"
+        "SKILL.md": "3bc2cb7913373c206f955bfbe7b51a37c48cd03f6a29241f34f3aa0ff5f3915b",
+        "manifest.json": "ccefacb6f3c4bd0f39a2e85f6203c695c2dc8a00deaeddb4ad597ac475a65eb5",
+        "references/api.md": "86691f9cc3047095d086d09938598cb44393ecd8bdb06e511a1b1137758755d0",
+        "references/testing.md": "3bc28aa3aab525afb7ae9eb96442327bde4eda5f594ac8fdf75fdf113cddc97a",
+        "scripts/etsy_product_detail.py": "eebef146738fee76b0a447fda747dc987083f0cdc6e5de151a79fe516d6db674"
       },
       "available": true
     },
@@ -931,9 +931,9 @@
         "scripts/etsy_product_query.py"
       ],
       "files": {
-        "SKILL.md": "91712c5c69458f4803a911178ccb61d818c96ebca4c84e74264b0b3ae669d7a3",
-        "references/api.md": "860afa7b63828df16bc34bd67cafb52aaeb7a8a792e20e5a906659274a797d79",
-        "scripts/etsy_product_query.py": "9aab4e30f5b25cd61217e159edf12f311671383ab904352d27b82f5513fe18e8"
+        "SKILL.md": "5a327dde2fbb6d37db4c583185b03cc0d126d6666dd79088f6edbfd4e23528dc",
+        "references/api.md": "168e24653519e61094e896e9e76e2b9c5269a94119c363b3b0435f05b26249c6",
+        "scripts/etsy_product_query.py": "10e9c82ebd6cc56838e31c2e9bea83cf1f332210d8048be83b225a488b0dfc28"
       },
       "available": true
     },
@@ -944,15 +944,15 @@
         "scripts/etsy_store_query.py"
       ],
       "files": {
-        "SKILL.md": "bca13ac3d38eff5e932ecd449dee4bfe7f0043b54918e7df24c8dcbb84c6ebe8",
-        "references/api.md": "424e1ca2e4a8b06d8b28af7023c0a225bd72bc94e6ff29bfc9f31aa999539c76",
-        "scripts/etsy_store_query.py": "bf687c5474973590e0d89c17eb5b4c4c1b967e72b92ebc48530d1da0529cf712"
+        "SKILL.md": "16e78a30b6c1bb0ce0f8a7684320f95cf98f12f74737a535cc1505f2d8b75b76",
+        "references/api.md": "474e8783aa1af6c1e110918ececc72da531bd4b24b7f91108e15b6f088e8edd6",
+        "scripts/etsy_store_query.py": "54bdea6dceedd82a88d74faf6f4f804aa23a68a9adcebc5f20a53e23c8103cc2"
       },
       "available": true
     },
     "geekbi-temu-market-research": {
       "source": "ecommerce-geekbi-temu-market-research",
-      "description": "Analyze public Temu category opportunities and keyword demand through GeekBI and Nexscope.",
+      "description": "Analyze public Temu category opportunities and keyword demand through Nexscope.",
       "scripts": [
         "scripts/geekbi_temu_category_list.py",
         "scripts/geekbi_temu_category_search.py",
@@ -960,20 +960,20 @@
         "scripts/geekbi_temu_site_list.py"
       ],
       "files": {
-        "SKILL.md": "a6c131a21a2b22761e955c01abdefcec05d6c0651b6fa5d8aaf0a0873bca95e4",
-        "manifest.json": "57b5dc2f25c41b61cd840efabb43625fe77c3b29f0deae12543bb31b26850f8c",
-        "references/api.md": "c1e912e42d2927732cc1ca26926e33486d33d2051c3bc33724f911648b58aa28",
-        "references/testing.md": "74687765186fcb8dd4af55224ee6ceb95e3dce2f15e848aec7ae923c6d2e195f",
-        "scripts/geekbi_temu_category_list.py": "ac6f075e74ec10bfb1cddb65aa69a0b52f767d52e98fe8719e9c5886cec73875",
-        "scripts/geekbi_temu_category_search.py": "56f8153175a03f50858909435abaad49ce21fbdf74982ad2abe17e896e48fc01",
-        "scripts/geekbi_temu_keyword_search.py": "78382fc2c855addf6c7099aef9bef6cba9e839552d8df784d8af21998949431f",
-        "scripts/geekbi_temu_site_list.py": "de64b334d48862787ab469a7d3554c91b57188efcc639401c364f2b45fab2fce"
+        "SKILL.md": "fe43201b7c71a26b5827d4c27013d97653243913a1babb47139b5f2767868fcb",
+        "manifest.json": "865440fe43e4f41dc639ba9c701975a9e40842d9f61bb72cb04482e8a2fd3c2c",
+        "references/api.md": "ccea2975fd0b5296f8fd84f917e4688ca500675346c4167a96b3e9aa3c621ca8",
+        "references/testing.md": "31eff3f4cda168f5f670c2ce52c24a3762b89fd493a90e72cb92c4daefb2ab22",
+        "scripts/geekbi_temu_category_list.py": "2d9322ccdba306f20ba871baea4e708e0b9030245778d96a2fdae987048bbbda",
+        "scripts/geekbi_temu_category_search.py": "b103061946f99f2fc48f4c246b8e64f0f98ac6f79bc8ef08af34545e2f6fdd4c",
+        "scripts/geekbi_temu_keyword_search.py": "c24a05d080b7be4bfee1653bdf529a0bbe321cb8c573e65a708225b695b3a72e",
+        "scripts/geekbi_temu_site_list.py": "e545a8d4ac0cbbd79083c0b79c8af63efd713fc9b8e3227d928fbbab27668c5e"
       },
       "available": true
     },
     "geekbi-temu-product": {
       "source": "ecommerce-geekbi-temu-product",
-      "description": "Search public Temu products and inspect product details and recent history through GeekBI and Nexscope.",
+      "description": "Search public Temu products and inspect product details and recent history through Nexscope.",
       "scripts": [
         "scripts/geekbi_temu_category_list.py",
         "scripts/geekbi_temu_goods_detail.py",
@@ -981,50 +981,50 @@
         "scripts/geekbi_temu_site_list.py"
       ],
       "files": {
-        "SKILL.md": "4ffce7555547bf4a6875346a69907cfcc1f391623238a57a2bfadd5155b590a1",
-        "manifest.json": "5ca45da8302355a68c327967d23e455cdfc1ebd3741907574b0a85cf8cd3c476",
-        "references/api.md": "7434a584c3c2a3f668e6ae279c8767c8ffef8fd6a93e2ce6299587b9fa60bb96",
-        "references/testing.md": "f9431c7943df549bdbd41ae951f8c22e4d323827d19660956b7ce53245d09b94",
-        "scripts/geekbi_temu_category_list.py": "86f903d96d8e4bdf115f46bceaaf0138d5237d87a4dd519f43de470d51fde98e",
-        "scripts/geekbi_temu_goods_detail.py": "952847fa7d700535f91ee9b3525d24a18650453c6c2fae6ae066a1037479ff5d",
-        "scripts/geekbi_temu_goods_search.py": "2ef32dad7136d33390dddf429dea250b5139d99ff5eb99f97dc8d913aadf0cfc",
-        "scripts/geekbi_temu_site_list.py": "d72b9ddd22a3f4ca8f2d58b0afaef2d114564538b48ea8a8ced67e2d99a3ef51"
+        "SKILL.md": "33a61ae3e29904144e420708c1fecfa54513bae69bf5d8319e2c219f0b83b13a",
+        "manifest.json": "3d2ab3d7df22ab6ec21b19d61d30598917cbcd4d49b9a34d4ae7a0cfc4519cd4",
+        "references/api.md": "e81eeceb2e4b39b4c0f266a72e81b7031c31da6deb3c8024133427289d92f509",
+        "references/testing.md": "23b5c72253e6c0d2b6c7197b2a353345f551934dbd19f75c2b29abd73eb77841",
+        "scripts/geekbi_temu_category_list.py": "c85402b6b0f27cd22af816f9b4662fdfcac55db88cb8a4011d3396b4d32380f5",
+        "scripts/geekbi_temu_goods_detail.py": "823d1fa75a570e8cb52157ffee4972064471eca9db958e29659af22a568fa04a",
+        "scripts/geekbi_temu_goods_search.py": "eb01b6833e8adb17158f3062bf645b749e44d45b5f479478d228c9445f0061c3",
+        "scripts/geekbi_temu_site_list.py": "675d269bd336ccbcf712539e35cb123831b8ef89f5ff008c40ec8dd788a51170"
       },
       "available": true
     },
     "geekbi-temu-search-by-image": {
       "source": "ecommerce-geekbi-temu-search-by-image",
-      "description": "Find visually similar products in the public Temu marketplace through GeekBI and Nexscope.",
+      "description": "Find visually similar products in the public Temu marketplace through Nexscope.",
       "scripts": [
         "scripts/geekbi_temu_goods_image_search.py",
         "scripts/upload_image.py"
       ],
       "files": {
-        "SKILL.md": "e1067013cb6d9c8104971bae17c876cc7278a86c34163d447badea9d327425e8",
-        "manifest.json": "7fbbac14e1e1721890a1d183358790e80a5fbb2a9bc1af58854e54edafc7d37b",
-        "references/api.md": "52aba62eb3d23127a8cece8a3fb2d9c2fe29bfd1ba67e6a4e2f8c40491e3d25b",
-        "references/testing.md": "053402c8fc7d96510addb080cea9150ba2ded4feb9c171b72989e078a2b197fc",
-        "scripts/geekbi_temu_goods_image_search.py": "8c4965e0a2c6e034859d87bb3c5d609613a6dee57f16c533d1304d8311f7618d",
-        "scripts/upload_image.py": "b73c9bccfcbcb3f941dab63fc12adbe2162e74e152a78f0154ea3244c043bb52"
+        "SKILL.md": "77f64ceceab7ab2eea0ee5cfb64f44d431cbe3fb3c9d65b8fec4dbcb8be6ce27",
+        "manifest.json": "e252165ad2aba6f0facb7ec800e1e47004dcf7faeb5c6572787c7842a0ba24bd",
+        "references/api.md": "33097904562494bc5519464874f83e5237f7b198d673c6f89b34a76f68649cd2",
+        "references/testing.md": "3386ac456c27c0d7ffb430fadc7f19c3927f6d4f46b5a58e958b496b5d67e508",
+        "scripts/geekbi_temu_goods_image_search.py": "63a26b414f610b7a6a2cf802052c217b3d64f96e2b2f83db2174cd8271206e8c",
+        "scripts/upload_image.py": "7edb52f80c98c2c3fd8b5ce3c2804b194f8f4007ddd4498d4750bdbdf187e38b"
       },
       "available": true
     },
     "geekbi-temu-shop": {
       "source": "ecommerce-geekbi-temu-shop",
-      "description": "Search and benchmark public Temu shops through GeekBI and Nexscope.",
+      "description": "Search and benchmark public Temu shops through Nexscope.",
       "scripts": [
         "scripts/geekbi_temu_category_list.py",
         "scripts/geekbi_temu_mall_search.py",
         "scripts/geekbi_temu_site_list.py"
       ],
       "files": {
-        "SKILL.md": "7672230a5ccdd21a29dfe7bcd5576c02ed18bd886fed43c11e302f348ffa371e",
-        "manifest.json": "474f0eafc2358df36e5d8ba6869505b33b85355c6ffd5f96ea90d3fbc9da28df",
-        "references/api.md": "241006944a65280411530400353f941aa25f3ec2023b794352f2dce031dcc3cf",
-        "references/testing.md": "dfd87fda5e8467d2de9cee72a95e7bf87b2e1c791bb70c405b8643e269a9b95a",
-        "scripts/geekbi_temu_category_list.py": "b9e5128c80c44247ebe99b3e80e9f9e576f31106e1ea8ef335a500252561d0e8",
-        "scripts/geekbi_temu_mall_search.py": "87248ddc84cf18451201eb21fafdfe8bbf45351ac785545e5eba380d6dd0b295",
-        "scripts/geekbi_temu_site_list.py": "1c36028d8bca89650234bef08f687dc5d9336b35ac39cb80a3a92a846918c1d6"
+        "SKILL.md": "baceb6feb8c3ab090a48cd4b080ad88acd13c89aa578f870fdddbb02439ead20",
+        "manifest.json": "458bb6e90f8d29e08573ad825bc36b263a34693cf4c66aeed86c84ba60d72659",
+        "references/api.md": "cb0ac3fde088d66e8bb2459c1bb54c7c7eff199abbe2812f4829b8b4b078b32c",
+        "references/testing.md": "1f38e0304faed62d2ee08d05aec06417a7a06e9bbfd47d28f2591e530d12cede",
+        "scripts/geekbi_temu_category_list.py": "1008a900a74535208d88ee63980aef589984839e4d8a93d662843b16925be3be",
+        "scripts/geekbi_temu_mall_search.py": "92403e2970dfbec9dd0e4edab21d8905c1dcfc32aac7a1e8727d30e2f5c026e8",
+        "scripts/geekbi_temu_site_list.py": "e6bec3e5e6750e9d68cf27b27648e406c2466aebe3c2ecf8b03bf8c4d1d4eafa"
       },
       "available": true
     },
@@ -1033,8 +1033,8 @@
       "description": "geo-score-check",
       "scripts": [],
       "files": {
-        "SKILL.md": "61307d83ee437771a7b2b3970be73cc0fc2fa8458f4335dbe4048a6516adda59",
-        "references/report-template.html": "145d9c55134eb672dac32c47289624fc7d1171543ebf306f5446144872ed65a3"
+        "SKILL.md": "729913720a3cb7aa3fa5f40148dbc20c96dfa3f2cd639fd08a716ce6e80eb4dc",
+        "references/report-template.html": "f30122ba6abf8134fd294ff6a63f0c1020f4d874751670392bf26a7e90c360bf"
       },
       "available": false,
       "unavailable": {
@@ -1054,9 +1054,9 @@
         "scripts/google_ai_search.py"
       ],
       "files": {
-        "SKILL.md": "add28a27af2a04a1046cccf5d850f90e8e11cbc6e710a5e6dc2977b4bbb5fb7c",
-        "references/api.md": "e93bda2425e2b59e21eecd0afe20cb556c009039ada2dfb66ca6c651a5a93f88",
-        "scripts/google_ai_search.py": "ec91b23017f826493ff92e7b464439ee29d1e72e8da951aa25ff548970b404f2"
+        "SKILL.md": "b2d56e0ec9be8b038e298f9f666e938a40442ea50a0e6b4561ccff3984b54a93",
+        "references/api.md": "a629fbf50dc4a5c4e068ca3886502c13c1aab8ba82b9652112fee1cdcae12b9a",
+        "scripts/google_ai_search.py": "e6c288f9da0deca3e4a73849d2beecb29599cd8b223bc7069bd57e3de640befc"
       },
       "available": true
     },
@@ -1067,11 +1067,11 @@
         "scripts/google_patent_search.py"
       ],
       "files": {
-        "SKILL.md": "60aa0b8c3e7fd72d25451a5b9f141d36ac36764fe57bdd9b285d3869e33d3eb1",
-        "manifest.json": "e002e6d0a47fbd26d485ecf26670d27d61d03f50bf935b8c952d8c4e4c99b00c",
-        "references/api.md": "ceeac9ba7febd93a7801b347223ebf20cfba236a9a8677fbb3a176f5fe832c8f",
-        "references/testing.md": "60b82446d879465984c96642c86142562358f7e83434962ead405e79ed550dc5",
-        "scripts/google_patent_search.py": "9b5f1657feb5fba272d12c39856276c1f5d0c13c4b6f03fdeb6eb966cf685246"
+        "SKILL.md": "b2b1eb0cd00cde0cbbf811a852f162d5b82cb660d4a9f989440ee5d1b25d6e28",
+        "manifest.json": "7f1cbc5df37b1c7aff938883603ce33723caee1f4c4b943e52268a24148d932d",
+        "references/api.md": "fa122eba7113a66c5d25949191798f88d116ca4f28710ea238a4e30f16f04c4e",
+        "references/testing.md": "06ba9e891483a53afe97215fc0487aece1609fe61661483bf0458b06383164de",
+        "scripts/google_patent_search.py": "600c8fe605c21ae62833a7c26d9d2d0d948d8cb30c5eb2e7a88a4865def7b622"
       },
       "available": true
     },
@@ -1082,9 +1082,9 @@
         "scripts/google_trends_by_keywords.py"
       ],
       "files": {
-        "SKILL.md": "5f230c2eb1baaadc52c287ad5622acff608b6316dca851f14c741a3657795f01",
-        "references/api.md": "ec829486b0debcac8767aa5d0cee9fc62f9f0d59092de7d660a697a72a537d71",
-        "scripts/google_trends_by_keywords.py": "e1327882b93d6f2ca13dd2a3fcdbe82243b0cbe39b1c080fa71d388b335252e0"
+        "SKILL.md": "5f7839891a4dab89720b24d58a58dac08cfcae915b3f619983797fcb301387bd",
+        "references/api.md": "5934104cdfb46fd8ff70852b9d1c9e90925d11e1ec4f5d95f2ce9b023e34040c",
+        "scripts/google_trends_by_keywords.py": "7fb5f57cf9fd1ced4324e15835e1fde8b691f98263a4e1e06546c3c1d9253695"
       },
       "available": true
     },
@@ -1095,9 +1095,9 @@
         "scripts/google_trends_by_time.py"
       ],
       "files": {
-        "SKILL.md": "cc9ae58dc76c3c4d80da6c648ea58e014541d5967cc9e67427b96928c020620a",
-        "references/api.md": "48cd1be390a472ac508571adb614a0ce0a912220338754826db56f5e03dd00ba",
-        "scripts/google_trends_by_time.py": "ecafaea45fb670247f8e45379f5d80b6626aeb5746f3eb7044879e1196d1df65"
+        "SKILL.md": "7c54627e0aa49daf62c6012df1ad193596437d66c5549c170907e7e5ae8cc4a2",
+        "references/api.md": "69700664b0c4abe76bd192607d9424448a811d720dd242c7489e6b8f4ab51686",
+        "scripts/google_trends_by_time.py": "a189c95b8ca5b195dada938ffd32f136da93ef3af830942417b4547f5c89476a"
       },
       "available": true
     },
@@ -1109,14 +1109,14 @@
         "scripts/upload_image.py"
       ],
       "files": {
-        "SKILL.md": "a3d42b11d119dfddc95eae2ad44bffb4bb75679347871784e2587389e7ee579e",
-        "references/api.json": "d2553df3dec20e12c0bf20cb8f13cb629cbfa7e54944951b6ace9ecff518c3d4",
-        "references/api.md": "becfcc3af5ecd5a8e034356e1a9e8dee3b59cc9f862df5d5a57d505688f7677b",
-        "references/credentials.md": "5858042b0e5a27454fb7659a48f0aee7904aa395198f7e0faf9988479bf46122",
-        "references/testing.md": "cf65a213514b82a2d8c644065ac305f4dc323f9d43d6b60ba3244bf0376b3116",
-        "references/workflow.md": "cc5a2b323f17e026b53fe60c5eda115e4bd6d14a9cd18c05988a52d57f4254ad",
-        "scripts/maidalv_check_api_flash.py": "124d17b45a5148eb7af7d0ee0f850daf7d6a23324232d703db4db015b2fd63d7",
-        "scripts/upload_image.py": "d34a36e5877d2c937ff5fff9aba741ef39967439fb755366fe5453c27295a4ae"
+        "SKILL.md": "2d47ec2c29ea9d3a9dc157593c1dda2fb2245dc291bedac39c04a265b2b32c98",
+        "references/api.json": "919b4300b5dbc0a5d2bcd89950e7bcbd8cb6189549eb4e9d6fd4e7810739c058",
+        "references/api.md": "8bfc91dd0177b06ff113d2f8a187ba24607486167cedbbdc574a7173802f1895",
+        "references/credentials.md": "f78678e950f2259264d62813360933e26e1e4793c6d84e9ca082ea784121c7cf",
+        "references/testing.md": "32acc48037f997938153905c04cc95e04e15b28abd0101970b059d5c86b42f3f",
+        "references/workflow.md": "90dae960d8d2cfee69702478c92f227a0ed07179016b59e88ec817d83cf1bf46",
+        "scripts/maidalv_check_api_flash.py": "1910b48f79f7b411d6b6de34772df30b0c251e55928f1535413c7df5d741731e",
+        "scripts/upload_image.py": "f5094adf6413b444f051b723d116c25aceebbdb97c37a8533e81ccdcb9772f4c"
       },
       "available": true
     },
@@ -1128,12 +1128,12 @@
         "scripts/upload_image.py"
       ],
       "files": {
-        "SKILL.md": "44900ddcafb28cc5f4e8bb29ec08199680527e1b080e054fd52321bd32a8ae6d",
-        "manifest.json": "f8036e735989fbeaa0e65181556602d4a069de0a7b4d975a3e27822d78f08724",
-        "references/api.md": "54ab6ffe93c6275c447dfcc43bc43bdd344a1e1569d7fc5c4cf17246b044dc7e",
-        "references/testing.md": "800dfb414c5f4f0dba2357530a7bb35544d4d973a45ce726c674655e5a26b49a",
-        "scripts/damai_mercado_market_intelligence.py": "7c314d02e97c19330aad20e51c52f357a5c6a1a5152eef898bfe0b2ad3fff167",
-        "scripts/upload_image.py": "44b0648ffdce5292eeec6d53ef8fcfddc74023abc145095a2a2a84fe278f72a2"
+        "SKILL.md": "bbb9d404a914b881fb13b31c50fd81c740928959f0657af016c7ec3dda70d31f",
+        "manifest.json": "c85c9b7e816d09afdd5e3020c01a6360676c26b8aeba44ec7cde85826f6e2078",
+        "references/api.md": "707610905b1a09d896826b63f7e08d1ae0dfb3142538e7b1a4d387155928ad42",
+        "references/testing.md": "15db35bd4e9ca3da8cb7e7e07469e9ac240392593fd5e2473871b4e968ef03b5",
+        "scripts/damai_mercado_market_intelligence.py": "64d4d2d90f9110ab7fedc7d601d8cde05b8cdfb6792c9898398492d46b095f4c",
+        "scripts/upload_image.py": "cc185db8e2f56df6b1175e7f5d248e5c400f0644a1f5c5db9b2030e05e774321"
       },
       "available": true
     },
@@ -1144,10 +1144,10 @@
         "scripts/mercado_product_selection.py"
       ],
       "files": {
-        "SKILL.md": "15fa1976f661f44aa6f798350731614ce4b16dff5c1a3be8c3c3e1e50873f8e0",
-        "references/api.md": "e9921d76ae92f4105a525366e0e12bfa14beb2f8224dbfe8b551adf9af2f9b37",
-        "references/mercado-tools.md": "5dcbc0eef529be965f818201d36d103b667f0bb1a204be562fd601d022cb1e39",
-        "scripts/mercado_product_selection.py": "06885784e2b01afea266f024930a9b64ed040396154d4dfde39ba6f3ac621e6e"
+        "SKILL.md": "183972d2c062b9c39e45e6823ee82b92efae798a48243a226f6b064e01a5b2a1",
+        "references/api.md": "740e1aba939e9dc3ca213eb5f9a01c9c9664a22064626229055721dfd142ead2",
+        "references/mercado-tools.md": "bd65c0a60d0dca84490de41c02a5a303479bf40d53f97ebe211d4fae20bd951a",
+        "scripts/mercado_product_selection.py": "ea95f380a37897db0815ff3e4ef79f905656823096415d280b2d077445539e38"
       },
       "available": true
     },
@@ -1159,10 +1159,10 @@
         "scripts/upload_image.py"
       ],
       "files": {
-        "SKILL.md": "8b4ba37c9d8f88312d65d1741c50bb53c9d65943f1e9c747b7a2e498ee6ee85e",
-        "references/api.md": "055263802113dc56bff560fb8ef52ff3c39409381a4bd4fa0449c458d5e7122a",
-        "scripts/multimodal_generate_image.py": "636d1f8e906496514ee53aa85bf426a1ce2952c38e77d5505f4e060fa6141399",
-        "scripts/upload_image.py": "44b0648ffdce5292eeec6d53ef8fcfddc74023abc145095a2a2a84fe278f72a2"
+        "SKILL.md": "59298531f5d031394f5cd03824f7c2c4ee159bec393ba5bf599a502ae6756745",
+        "references/api.md": "37ddb451bea7fb12353ea40eb17ddfabc6966cc5c07b098dd6bbfc3dded13f16",
+        "scripts/multimodal_generate_image.py": "16e31f7f09c7e04d6a2a3e3700d0fe087bd6d2d7c1b00a75f3cdcf0cc1356139",
+        "scripts/upload_image.py": "cc185db8e2f56df6b1175e7f5d248e5c400f0644a1f5c5db9b2030e05e774321"
       },
       "available": true
     },
@@ -1174,10 +1174,10 @@
         "scripts/upload_image.py"
       ],
       "files": {
-        "SKILL.md": "8de157c7706642aa2529613ab1dec1f9d0aebee0a10becccf7d91ee0c149c806",
-        "references/api.md": "3a3cfcbd5e7db7b8ba47fd2900e162b2f9aed5ddc0d0cfc11d59b0a48337f902",
-        "scripts/multimodal_recognize_image.py": "e1ed6138985f6bba2ff1461f02ea32a64f493976622e7948ee456f246cd7e450",
-        "scripts/upload_image.py": "44b0648ffdce5292eeec6d53ef8fcfddc74023abc145095a2a2a84fe278f72a2"
+        "SKILL.md": "1a79e2759c81614ba1b5ffc0c7c2dbc172d27f88f77552bdfc9c89800b744e3b",
+        "references/api.md": "80695eadf937d9b5b76018dc48fa47af4e8a55304614432340fe70eb8e7a35df",
+        "scripts/multimodal_recognize_image.py": "839baaed7758441b51bb784f38192e7ca2e6443c10156731d84d8c9ffa9afde6",
+        "scripts/upload_image.py": "cc185db8e2f56df6b1175e7f5d248e5c400f0644a1f5c5db9b2030e05e774321"
       },
       "available": true
     },
@@ -1188,9 +1188,9 @@
         "scripts/ozon_brand_products.py"
       ],
       "files": {
-        "SKILL.md": "4b3d3e6ae3c0257e80a4e2d6ec2d72cceba2d18d4ce1035b22d39afe0abcb664",
-        "references/api.md": "0fcde74523f79c0d870763a04bd62ab2db695f5b226e88d698707bc446db4930",
-        "scripts/ozon_brand_products.py": "a735bc9ec59210df317cef91de6f6091a7ebcac8441a2ec986d03fcb2823b4bc"
+        "SKILL.md": "49a00d90ae6b9ae8522fcbac1ffa5a1a5dc3c9363e26a96eb2a7fb6d18345701",
+        "references/api.md": "f6bd2ad66e7f1eb374e1799282e81cd6627893fafd7d230add5682a427c374f3",
+        "scripts/ozon_brand_products.py": "7f2e4b30293f5a5f4b3d8abfb6b5413c90829b9ec997c49b643390c1954bccf4"
       },
       "available": true
     },
@@ -1201,9 +1201,9 @@
         "scripts/ozon_category_products.py"
       ],
       "files": {
-        "SKILL.md": "648ad091c4986f511e55245ccfdf3c6a1025ed0635ac827d62ee8404ddbbba6c",
-        "references/api.md": "071e03e0334b64eb6795bdb5a8b0d61c3038e889fbb81a39bedb58f84ad75381",
-        "scripts/ozon_category_products.py": "666cbadb8688fb3e5b995e31c30e2a56cf3b0b5e52d4405fd12fa18fff955b28"
+        "SKILL.md": "e461a24413233180ca58349ee3665352f3606375e794c56f235482321aab5c47",
+        "references/api.md": "ac7e165d574cd967e30fc21c2d2dc0afe27d672962ee9f51cb9fcfa6d590921e",
+        "scripts/ozon_category_products.py": "ef4c1e5db92b0eaac5f14cc5ed3bb592ff5dc67d3102ec42012297a9ecfb8811"
       },
       "available": true
     },
@@ -1214,9 +1214,9 @@
         "scripts/ozon_category_search.py"
       ],
       "files": {
-        "SKILL.md": "20327c25ee7b7d442e9c155a65de59d232384a72e374a85ad8068c088455bbd7",
-        "references/api.md": "ae0b02fb9d22c28fa4a756c584bfa201a562eda6f727b5929c7dc197f14c3733",
-        "scripts/ozon_category_search.py": "5d15f1614121e17255b154439bfee011cdfe713f399ba58933658cd8f29f535a"
+        "SKILL.md": "e1085f7793997d0b7644533808fff8972ca27b0e1108f089745fb589a5fddc44",
+        "references/api.md": "091222975243020448da30af1fb97edc5e0d8fb3a1e03745c80f7fa75e5114d3",
+        "scripts/ozon_category_search.py": "ae1587052985f856680750d00e642fe357cd05c552723ae78172d266f05e887c"
       },
       "available": true
     },
@@ -1227,9 +1227,9 @@
         "scripts/ozon_keyword_back_search.py"
       ],
       "files": {
-        "SKILL.md": "ed5805c4b3fb76cd45796df1565eb17bb5cc889544532b6e3d25712b8538a479",
-        "references/api.md": "83a50a5d51e1369c717ee1e964c9b8e1cf068221baf846e4ce9e49c0e23e616b",
-        "scripts/ozon_keyword_back_search.py": "b9c20ae33e608563d684adfe405ee91225d0028540df2b1959fac47b05164f3d"
+        "SKILL.md": "16952ec1ebf3bea4e9ce7d53e68cf4063516d055d422c9a53983552ce720a8cb",
+        "references/api.md": "828aa81a6f845e968834ff1328a2a00999c45aa6312d7b80fee69307078825cc",
+        "scripts/ozon_keyword_back_search.py": "50be2deee4213012c691b88152a93a02502b1116a0010f96fba10692c9f8c675"
       },
       "available": true
     },
@@ -1240,9 +1240,9 @@
         "scripts/ozon_keyword_mining.py"
       ],
       "files": {
-        "SKILL.md": "8d6cf7c2bb074568bd053d8fbebb1d96206ecd1fb4ac5baab0ed99546f583f5f",
-        "references/api.md": "2bea8defdfddb074c35b9ac089d894c27009c12f0f6897f598287a1be82ba3c1",
-        "scripts/ozon_keyword_mining.py": "2ab0acccb1ca31ecaf30c54d68e997a200b5b4700b793ce9ad9df89a2e4c223a"
+        "SKILL.md": "5ade4d45b2bfff00b5f447f7ee88b4e859dcb8110b598431a2667b2c488ccac4",
+        "references/api.md": "12414dd43d3f35308033a1372d61c31f4b13b7cf1ffbd217ab3f53fd15936469",
+        "scripts/ozon_keyword_mining.py": "37b1d3a548724e7c1440f3c3401b6ad1ec5502a74229d173265b5f7f6fa03dfd"
       },
       "available": true
     },
@@ -1253,9 +1253,9 @@
         "scripts/ozon_market_keyword_search.py"
       ],
       "files": {
-        "SKILL.md": "c70a9772325146c005cd18d1b39bd90953a1ba022ffb63bc40a2ab0aa590f4fd",
-        "references/api.md": "fca4bc1613865c8b3b5d33bcc0f9367f2b2e6c6fd3226b98a9121e28ad54e6d1",
-        "scripts/ozon_market_keyword_search.py": "d1640bde3fa955662e5e1b9f4a4aefc4c5d3aa80c8c1e52d6c23c20c49711475"
+        "SKILL.md": "3154cdd508244b2b7a6f621db6aca98c073c4231024dd2308a52c21c4666008f",
+        "references/api.md": "6181bab796280e4cab9a587c7ec83bc31e167785085f084a276712a15d209df5",
+        "scripts/ozon_market_keyword_search.py": "a579d67a75c66252e06f1b0fb45c66f69e02bd4d75e11226fe1420f32e362dee"
       },
       "available": true
     },
@@ -1266,9 +1266,9 @@
         "scripts/ozon_product_detail.py"
       ],
       "files": {
-        "SKILL.md": "912847ea34c57c7257664a7afdebd892a9f21fc60297ddea1e7b95c368c33d61",
-        "references/api.md": "17737feb3167b79663706cb2c59dd6befb9dcda407cbee570d0707c71883d019",
-        "scripts/ozon_product_detail.py": "aef33db82e2bf84bd059159bd4c18d7d1c540d2992cfc3af976705b1739c7a2a"
+        "SKILL.md": "9c17debdffcd134a46da321798e6244dcd4690e6b701762b67ec6be8380ebedb",
+        "references/api.md": "275bf89a50bfddfc48fbd5ad03c28b995a54bd3c950dc50becae16203f65dd63",
+        "scripts/ozon_product_detail.py": "fef571248456f7f9323eb26348e0fe1ffe9e89a865f4fe977dd02117403a3e1f"
       },
       "available": true
     },
@@ -1279,9 +1279,9 @@
         "scripts/ozon_product_detail_search.py"
       ],
       "files": {
-        "SKILL.md": "ce3da6a6d08f7b4977a7583909315d115413698bba0b27f1a432b0e45cc93a53",
-        "references/api.md": "f35bb0ab955a2e51bd1614015c699496bfe98def530ae9e9b148729675a110d5",
-        "scripts/ozon_product_detail_search.py": "27440d3f75463867d277e57c880589f36c086e88cff23665732acea3952a6bb8"
+        "SKILL.md": "59b844b0319d9af6319a663330c0f32c1f34a18c00b4792693dfe08dc78401bb",
+        "references/api.md": "53c6e0492db8e232ccfc5a1245d6f3b1064ad20ff63b41877b2f2e27006b4fbd",
+        "scripts/ozon_product_detail_search.py": "0caa117eaa165aaa70e3699476d40a5167fe1cdeb5adf7beaea003a9edfc5d4b"
       },
       "available": true
     },
@@ -1292,9 +1292,9 @@
         "scripts/ozon_product_report_search.py"
       ],
       "files": {
-        "SKILL.md": "721e23a0c0393024096c00b66bfc18706a554cb7d86c3016f3b35f419b87f0e5",
-        "references/api.md": "8f4e3d46a31dd6c907110b41613baf506ef355bdffd51c8312c7641d7c479578",
-        "scripts/ozon_product_report_search.py": "6a0a8c244a6c7d86467f3016201e828e45505154e6c173ff42c1c9719b546c0c"
+        "SKILL.md": "f591742d0b3300aa9b5548b99fa50acf93dbe3a084f4919c25f46fe7db9ee72b",
+        "references/api.md": "acc34841aba4b2b2fb9ec3f43f3b5529197c5042de8d6c57aad60a030ddd9fb8",
+        "scripts/ozon_product_report_search.py": "5454163566882ae2e932ebce2fc9a22be40fd358d07721503cf97523fbd5f00d"
       },
       "available": true
     },
@@ -1305,9 +1305,9 @@
         "scripts/ozon_product_search.py"
       ],
       "files": {
-        "SKILL.md": "8f213c1952c4ff81691e2cff1432759a300097375f4aa71d77754409a7c0dff8",
-        "references/api.md": "9fe2d42e16d1c14562e7a7441e9894d3c5598dd3081d367051a086d05f0afdac",
-        "scripts/ozon_product_search.py": "c7af0831fb1d182dd8b8ec8e7dd256f2416472c50176af671238f0f0b8cbcdb1"
+        "SKILL.md": "c3710a0e90a6125bd006f399d8b8330fff42b8128fe907fc8ed10b0a82d92dcf",
+        "references/api.md": "4dd0334f9be2e98e97f54abbc6ef4b6ef39eb5666c92eb9dedf7712230d4ad02",
+        "scripts/ozon_product_search.py": "0d66ebf9f57c86402f638e2f5f3a3e5f40128db7e0904ad14367c540d287269d"
       },
       "available": true
     },
@@ -1318,9 +1318,9 @@
         "scripts/ozon_product_trend.py"
       ],
       "files": {
-        "SKILL.md": "5944ed04401462e8b7d1834ba1ecf50852ee9c6eb58d20b28e60ec28d62f5f0d",
-        "references/api.md": "f490266ff0fe218366749197a2a31ab13cf2ec9d122f6dea7853c2c79d20d844",
-        "scripts/ozon_product_trend.py": "3af09f6b2c5bf555c756a9126fb33d8f7fc2213b854793aeab55e7ac492fe9c4"
+        "SKILL.md": "07ce84da1e84cd66ea8367970b521d81cc94030b61b3cf21e132692fa8ad5d10",
+        "references/api.md": "37c97a8aa0128ce715c866d1dc26e5fa52e728de56ed2e88057ed44d8404b868",
+        "scripts/ozon_product_trend.py": "780eba2f2dd4d842241d47ad2e06b9667ecb932ca90712a758501b871bfa8be5"
       },
       "available": true
     },
@@ -1331,9 +1331,9 @@
         "scripts/ozon_seller_products.py"
       ],
       "files": {
-        "SKILL.md": "9e377d18330cd5b9b765c2d31cf7db28e3b4de1996f97c4fb300fdaa989a653d",
-        "references/api.md": "110b720d8a91e31420c483549a83b7574ba2c0aaf22b1a7176f86e21932b9040",
-        "scripts/ozon_seller_products.py": "3dbaabf3b35a7e47750d076ce6832ec561d7352e853464c828bde2cd581e2e8a"
+        "SKILL.md": "0eba166f2f1c097c5ba0b800989513121c69579c8dc8cd2b84f9504ca1743c0b",
+        "references/api.md": "f7a2c38eed8b0233c725a69a2867360dcda319a4827ae813b7bcbe32841320ba",
+        "scripts/ozon_seller_products.py": "dfb0b89c3646f71181502ae24b3374d7cc405426995e069ec95d7347cc254afd"
       },
       "available": true
     },
@@ -1344,9 +1344,9 @@
         "scripts/ozon_shop_search.py"
       ],
       "files": {
-        "SKILL.md": "d35c37aed3f645da123c877d8689b89f436c8d5bc2da896d94d2379e43ff5717",
-        "references/api.md": "616ff17549db06f1d67db2995a9e390bafbe5575bcd1e5195b26961b3abe12b1",
-        "scripts/ozon_shop_search.py": "aa91ad20521afb0f20f3d0529160ecc1e32c41b1dbbabaa1d97d9e672b47a2cf"
+        "SKILL.md": "07e4492b694f198ec32173e90fa08fdc8b971193a0e8a3f97b1dc0349bacfd84",
+        "references/api.md": "1a44f996523a59ea54cb90082c8f9442f0cf448f01932b23b1c9caf256c0b594",
+        "scripts/ozon_shop_search.py": "976a4e69e8dfdd5b94f7f721050e6797773f0d053eb5598621eef641f0d6ec53"
       },
       "available": true
     },
@@ -1357,9 +1357,9 @@
         "scripts/patent_abstract_image_data.py"
       ],
       "files": {
-        "SKILL.md": "59b6005b6e2f6bf67ed300d1a6b31ff100d7a1094be07244654ff697a07c5f25",
-        "references/api.md": "e6fc203522870a7fcb6f626108cc41e51de191497191401109af6c8b3b33857d",
-        "scripts/patent_abstract_image_data.py": "8a1ffe53fd7fa2ff9d7fdcd42a942175e457ab99997352d87e106ecf4c351a23"
+        "SKILL.md": "f0666002b05b9900e89302402b5556953cdcf97b2ea043673e685077894ca864",
+        "references/api.md": "eaff90f999c808f19315887746b7f3173a3c5b2a73f8bf13306720a7a9f7e7b1",
+        "scripts/patent_abstract_image_data.py": "9b522dffe4f4daa755d9789dfa9d078af00e83068b5ba3a6d33e4d662620f9f9"
       },
       "available": true
     },
@@ -1370,9 +1370,9 @@
         "scripts/patent_cited_by.py"
       ],
       "files": {
-        "SKILL.md": "4ff5ab2850f3889b9b08a5a1644d1433310e9536776bb12d4afc4bb80f26e04a",
-        "references/api.md": "75808dfb9ce0347f28685b126b05c57d7d8ec069b872993a3845a56452645551",
-        "scripts/patent_cited_by.py": "30eee807ab3c486e9c515771fe58074dfb2f9c70aa435934ce6637ba8e0f2192"
+        "SKILL.md": "8b3582807d1f9f9b92c6e2d1220a7bbbb2618ffd991e0789eb2c194f56b7431b",
+        "references/api.md": "4e9b22fe15d3bdff1adb9cd3df5c83bb7fa7a1d12efd6a5d27e29b3b80c62f50",
+        "scripts/patent_cited_by.py": "cad7de662d591e643f5c44317f2bc12cd462a13e0b9727bc2e222cab641423d9"
       },
       "available": true
     },
@@ -1383,9 +1383,9 @@
         "scripts/patent_claims.py"
       ],
       "files": {
-        "SKILL.md": "f5a3a8302d1a096af27d61460faae4079201fadd4f2963f4174577d7f2cce383",
-        "references/api.md": "52cc68a3a093697ca0ee725176339ffdd561cb1b9f0f1560417ea799768773c0",
-        "scripts/patent_claims.py": "01dd1653d48c88eea94eec595912ea20536058674545187bdd46275b7115d024"
+        "SKILL.md": "a881ef30f837714082cc47dac38fda85c5fd77c921b68b98a4c5678be78cd844",
+        "references/api.md": "7868e4451a73c1ce02afdecd651da77d4dc6e6217742ab25a0439672448569f3",
+        "scripts/patent_claims.py": "69de16706e85eaec05811add31105cf3890e520973e4de1c62de80dae71359e1"
       },
       "available": true
     },
@@ -1396,9 +1396,9 @@
         "scripts/patent_claims_translation.py"
       ],
       "files": {
-        "SKILL.md": "89caf11de52b6695dcbfa4ad0db6a86ae23f2aa33a06585fa364550cbdbd4b23",
-        "references/api.md": "9af8d2a4c1ee416c690d90d51468e9d67bb4fe1c9f1445473b5743addf3a6b36",
-        "scripts/patent_claims_translation.py": "d41cbf2df92f62cd036d79451b45a06bf82ff8ac10fbbd22fa41e698f9dd066b"
+        "SKILL.md": "2edad0f38f2d883bf1ae77a900e9c9b72b140573e3a308b12c32d863dba00b7a",
+        "references/api.md": "ed963a432d68af003afb938be730b6f7f2a7a03c220c63de5bfa27ccd042f388",
+        "scripts/patent_claims_translation.py": "bb121f6f726b4f79321ccaf24a1886f90df856166a6ac6a1bbf54b3b111e2be7"
       },
       "available": true
     },
@@ -1409,9 +1409,9 @@
         "scripts/patent_core_bibliography.py"
       ],
       "files": {
-        "SKILL.md": "295ece69008884f85f157dd49bcf8508604a2b58d86c5927337ea66b8003025b",
-        "references/api.md": "d724e6be5ecc98c16b1bfd10aa5e6e0a80877341683913b5b11b80183cd2cf15",
-        "scripts/patent_core_bibliography.py": "e8dfd60ca1999677cc1ce985faac2773214ec37707bf937d3d6354cd1c5e35a1"
+        "SKILL.md": "d44053b3c94d37452b4e4f0db6f71289acdb9876a5df0f4c93be11351401594c",
+        "references/api.md": "032b93b56dd8127ba5ad7ce75fc69119f87444d0f0162b14946314685c41e72d",
+        "scripts/patent_core_bibliography.py": "92d3d1bea70a0a623b501031c7da7200eff061456f38c93b4b0e5c5bc42d5073"
       },
       "available": true
     },
@@ -1422,9 +1422,9 @@
         "scripts/patent_description_data.py"
       ],
       "files": {
-        "SKILL.md": "ea020bc1aa8c821b18678fcc061b1718cb040ab5dc0568ef7e15f23133a48276",
-        "references/api.md": "fc0162c650dc538d9bf81188fe0c13ae8d5d95eba447d31e93aa83d79a9ac09a",
-        "scripts/patent_description_data.py": "ba93a305b8bb1e210c7aa91d74c606a9379e08ff56a897af416b44d07ec0719e"
+        "SKILL.md": "49ebe4e2e0057e2d241feef3e4a4ce62e4aec1e253e878ad94ef4a444553dc32",
+        "references/api.md": "06b83e35847e68cb20f2d87a0b5a9d49dc22ff477b9e6e41658cfc10fb23b87f",
+        "scripts/patent_description_data.py": "e62a99bd5e6fd851ac0cd64c20377067cffebfbb255cab04a44935c360ac2ee6"
       },
       "available": true
     },
@@ -1435,9 +1435,9 @@
         "scripts/patent_description_data_translation.py"
       ],
       "files": {
-        "SKILL.md": "41fa55b2c18563685b9c0c080fb0e2913d0eb8f4ae28838177cc951219057d5d",
-        "references/api.md": "54ce6b5d653c9153492e4f79f5f77bf10489d0b7eae1ca5bb679c1abac0ba9c2",
-        "scripts/patent_description_data_translation.py": "08e15f672644cf74106d5cd029ff58bce1576abe8d2227ae167c5e8e83047390"
+        "SKILL.md": "d6edae22b32d898e735fc621460fcec7d05614567f5bc50586cb55919bf1225e",
+        "references/api.md": "16185c1b5e1e95e05ed6def7d87336c9d2183356e9a88e0bc5034e8ea5743715",
+        "scripts/patent_description_data_translation.py": "c3f7f1969e601a6b37ae1d4a32c29750b56956170114f5267fb3701b37c4f68b"
       },
       "available": true
     },
@@ -1448,9 +1448,9 @@
         "scripts/patent_detailed_bibliography.py"
       ],
       "files": {
-        "SKILL.md": "c7b32cec92fa99986306daca85e75879e46500b478c61dfd9ddae997a5c890eb",
-        "references/api.md": "13e0deb67cc70b9481d0b45bdc1de7139dc1ec1598c1781e5bec1c30c8163641",
-        "scripts/patent_detailed_bibliography.py": "f3d07c04850cefd4ae59d5cc518e2a55999700bdc95e78d675285941e153adf1"
+        "SKILL.md": "603c3d68a2795ee42c70e482315c384242f3597223194e5da0eb56f8a77ca7c2",
+        "references/api.md": "dd9b19196752a86723533f29a22c7fb64e19e71f416fe2131ce644ae24258967",
+        "scripts/patent_detailed_bibliography.py": "b84b35c25335e17e655e8bd87ca12629d723eb4c9865af3cd1b26f46f3c660f0"
       },
       "available": true
     },
@@ -1461,9 +1461,9 @@
         "scripts/patent_family_data.py"
       ],
       "files": {
-        "SKILL.md": "db8aa18f99923311530bef31382fff8e9ba35c158963e592c625f2b1c189342a",
-        "references/api.md": "16e75d469e0f4c99489f1ba9eaf0e3b0b7d57295edb5b3d92c105871d7491c35",
-        "scripts/patent_family_data.py": "9ff8e0df08facb8ceb2769a6ed000540f22ed158fcae854754f8dece50636d31"
+        "SKILL.md": "d1f61373c2b15231891340da7b38d18260bffe4ef381b9ed3e30131be1378b1b",
+        "references/api.md": "878ccf6c396f061bfc52c2c7f28421690e947b2d9860dcac48e4ed919622309c",
+        "scripts/patent_family_data.py": "2b8b0a85f2b7197409499c623e0912e5636187cf7990270fc22119eae25854fd"
       },
       "available": true
     },
@@ -1474,9 +1474,9 @@
         "scripts/patent_fulltext_images.py"
       ],
       "files": {
-        "SKILL.md": "a443c64bb71abc876e7a2d631d5a6e66ad9ccd4c1bced2b142bb494904d4940a",
-        "references/api.md": "4643b6ecfc4d8aa83bcd65d0e49c628cd730359f7186956f51909f1aff64e2ee",
-        "scripts/patent_fulltext_images.py": "8aa78b8e14a70fdfc5c58fdbe3ca8395396a647943d9ae9afcd2e0a00586365d"
+        "SKILL.md": "c97f004e2417de64bacc186d1710e80fdc039e57385415b930ea2d5c78e11d7b",
+        "references/api.md": "32bc8bd7df2997a7dfdd76da67bbf388f7d20feccc36df55bf9f0c1afbf0cf66",
+        "scripts/patent_fulltext_images.py": "9873ef12ce18f312f80f840a7020b22499bfe46acb017a58c1fd020c36a74ce6"
       },
       "available": true
     },
@@ -1487,9 +1487,9 @@
         "scripts/patent_legal_status_data.py"
       ],
       "files": {
-        "SKILL.md": "cdc9d4fa544954da382cf4ad7d6c3d60883e64029302a06ebb9dda29c1672802",
-        "references/api.md": "233b6dbc52931075c7e7269e0d6da458d156c779ee70248dc1fd1cd9f8ad7640",
-        "scripts/patent_legal_status_data.py": "b327fd10027639cef23ea0718a0d25c8f8c90e248505a26d05294b669dc4f0ec"
+        "SKILL.md": "4c2ebcb224bcb37eb3df6b92f090edd089ec0f17ed3b3c7b8032e583c963f03a",
+        "references/api.md": "dfd32d7c2faa1968521867321b7935f6a0a6faedd5d4983ed87389ce127d111f",
+        "scripts/patent_legal_status_data.py": "e345d17a7b5b4bd0f974044e0f1ee53627c83dfc0dbe194ecabdcf780ed5a099"
       },
       "available": true
     },
@@ -1500,9 +1500,9 @@
         "scripts/patent_references.py"
       ],
       "files": {
-        "SKILL.md": "4435ded4a73386043bd3440ab132a23680e366a19385b2f028bfab9ba941d7a4",
-        "references/api.md": "aac3989e61438261bf96f9bab6eda5381ec4944d74267045983d5b06cef3052d",
-        "scripts/patent_references.py": "fc8714d3742d3549a08feb1776ce7aa84ec581981d5d8a6b3bc375198fd72067"
+        "SKILL.md": "89352edc25f087070aaf369207a9038d4de2778234bc4f27d68da04474ab4fa3",
+        "references/api.md": "955d432f6b15ad30dc49143ce6999386981698f3057d81bdc57051aba16f351f",
+        "scripts/patent_references.py": "a7c2bae5f44d473cfb926b858c30ca8f4406ef6a038a369b49799d6cab854df8"
       },
       "available": true
     },
@@ -1513,13 +1513,13 @@
         "scripts/zhihuiya_query_search_patent.py"
       ],
       "files": {
-        "SKILL.md": "9aeadd02abdd3cfebea96b374c3dd684213a9fed50873008c56f31f1a18b29aa",
-        "references/api.json": "a8955fca83f9f01e683c0faa6eb9d613b9c024f814ec1fd99af990f4eeb32f68",
-        "references/api.md": "e7bd8f891da33aff875b02925b5756deaeb1c3a7d157b11c249d1d5f3e2ac07f",
-        "references/credentials.md": "5858042b0e5a27454fb7659a48f0aee7904aa395198f7e0faf9988479bf46122",
-        "references/testing.md": "a1fccb810104c540f164ddcb549a0bec280f9722ab0b0b3db2b390551372b87a",
-        "references/workflow.md": "a52e065c833c79ffbbd9832918a2aa02cee270b27b648701bea7c3aa5da264ab",
-        "scripts/zhihuiya_query_search_patent.py": "6b904e5fa42592e6b4d28dddafd5e13b26e7641039b45e875a13dfe2d41e5866"
+        "SKILL.md": "84ed0d778f42b11563e55f1fbc771f0f30371f11a32f41eedb4e16bd681dc671",
+        "references/api.json": "d6f7b6425df9f9a74f531af0b28193301c4c39891040c7a5d22502c9017809cb",
+        "references/api.md": "6aa2d4a8e12b920ba50472d1030a2ad399408af1670968b983ec8c7c48a40e03",
+        "references/credentials.md": "f78678e950f2259264d62813360933e26e1e4793c6d84e9ca082ea784121c7cf",
+        "references/testing.md": "96e8d5022fc053b05cb8fc3a63692f8abdf6f301099c0d11f94e294422537acb",
+        "references/workflow.md": "56dc55d5db35b641ac483838a784d112fcf215da96410a503060682e498f0ef1",
+        "scripts/zhihuiya_query_search_patent.py": "b129888e00fa632150c427065dbe5d2b9181e1d238184527106c45e3c057d20f"
       },
       "available": true
     },
@@ -1530,9 +1530,9 @@
         "scripts/patent_title_abstract_translation.py"
       ],
       "files": {
-        "SKILL.md": "6b813b7106159c7c88f18e3c959d526cc88f01c3d530e0770e121b40cd84184a",
-        "references/api.md": "d888c9576169340ed6276cedc682891f62ef841c687a1a8ce2b36c53aa22ffd6",
-        "scripts/patent_title_abstract_translation.py": "5ed50fa4f151eb5de651000e6919715fe4a375fa54eb13d1c7df4e2373862d1b"
+        "SKILL.md": "da450051142da5d489d501ff4a4c40d8938d88426cfe07b8ee400ceb3625c58d",
+        "references/api.md": "426813393b175d5a325da00aaede83faf86c2561ae08b1bca48b028facc700ab",
+        "scripts/patent_title_abstract_translation.py": "fbfa9fd08300498dd22855fd7d3dbaf542777ee44e5c1ccf85b3315f448cd851"
       },
       "available": true
     },
@@ -1545,23 +1545,23 @@
         "scripts/send_report_email.py"
       ],
       "files": {
-        "SKILL.md": "c9050003630ce93f6bfcd4b4917f19dec480d532af2e3019a299ea8b79d07321",
-        "assets/config.json": "ef358db30ff537935c9796a7038319038f50948195295dc68f12f50c396b27a6",
-        "assets/prompts/evaluator.md": "01c4780fbcf621ad7bc6ea845453a0b834b027ade211a42204d592120c3adaa1",
-        "scripts/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
-        "scripts/_next_steps.py": "318f1b4c78ffb271ed2a337245fbf267b3b32c3377349a0874d88dc361e02f36",
-        "scripts/api_capture_runner.py": "8c6fd533f79766fcb00e3f2bce56538cee72818f0f2c9c5a93485d2e55b10f4e",
-        "scripts/api_client_base.py": "eb184f450648bc99c07470a9e956a309f3e793ae7f8d4bb0a78a9330a4807b73",
-        "scripts/cli.py": "3af07f1b2f90b324276230902efc857acac1259d2d3376e81e72be1b6dd9caf0",
-        "scripts/evaluator.py": "64f5a99ab6b82d175d5636e89ae0eb1cfb36c74729f145c70abbc76d7566a45f",
-        "scripts/html_report.py": "a2964b174b86dafb73d640a5b3121acd034a078ad83f2fa374af2c352eec8da8",
-        "scripts/loader.py": "1d6a04d0e6ab249a1dbbd9c637b624a95579782f6faab35a8ac9015734e0842e",
-        "scripts/normalizer.py": "0855bde57fc6be087278d01bf1df1a5f655880cffefd92784ba21c6d2503bca6",
-        "scripts/preaggregate.py": "1bdaa7ea902dfa2e2fe5d76e21d141c9b9efb7422083a92621055639ab38158c",
-        "scripts/profile_builder.py": "e2bebfd44e94781e7364dc1eba1a3b6eecd6a75590a4664920a87836c1d16e76",
-        "scripts/send_report_email.py": "746caceddf0c9ec48c8c4f9fc8a2d515e114bee43483c41b33c3c6b741322d39",
-        "scripts/task_builder.py": "acd9995f9a1497cab61944b28fb57697702f22d9da29b36d4a92ff4d18948505",
-        "scripts/test_raw_api.py": "c1408f7f0cdb5cca7b7067165a5a971ce3f3c9f08818513124477a3e6bf6d1b4"
+        "SKILL.md": "07b0f1fd56115ce9a3f673641b244bfde52fcd40e868dfb6c3001acf82347381",
+        "assets/config.json": "291be93e8c9e3545dcadc25078703e1c2a365f0f7edba0aa4ceed1cfcf64451e",
+        "assets/prompts/evaluator.md": "7f812e235dda169463b3b0c7a2c20100cc28ca1bbcfd29e44f66e50f1bdef1ec",
+        "scripts/__init__.py": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+        "scripts/_next_steps.py": "05e9752569ec8bb2ae68605cd4e2a5a502a6e21e6e796815b091c4f800430b0d",
+        "scripts/api_capture_runner.py": "375f821314ef360019cc099a6937e1cd77221e519f995f3ba6a24a4bca602192",
+        "scripts/api_client_base.py": "4862c4e7a6e52e447a15197a8495d537d9108e9bbeca59f9734c3c83a3d7ec22",
+        "scripts/cli.py": "580c852a308aa8a97b16a38f5516069d79c2b6aea27f88d36bca450e7ddd5bcd",
+        "scripts/evaluator.py": "2a4a3fd7e8373ee2bfe4f0ed181d79f34ae2126170614d6aa044b97491bef8d0",
+        "scripts/html_report.py": "d2082c2b55d1a876172192c0b10d74a098ce99d8168db4d1c176dda9ae531a0c",
+        "scripts/loader.py": "3bec34f1c79981f84f659cd21e6d2832f1d82b6a38c155d6244e0dc315058a13",
+        "scripts/normalizer.py": "bd94b816b03e971f988a81b41ea4c25003574800d579778217a177f29f1072f0",
+        "scripts/preaggregate.py": "983acfa81b7593ebbc47b078f36132433d2b4a70e4fc09d3d0b624778d10196c",
+        "scripts/profile_builder.py": "ee87bb47ff8005d8b59e4d0db24463185c37aee93894e77a181cf2b642ab0daa",
+        "scripts/send_report_email.py": "e0a5e874de22cac6df0511e63465de5631564c6d513c6bd580224a5892ee29fc",
+        "scripts/task_builder.py": "7abc0c63db2aeda6cb92970527011f45e1b0e38440a3078ca020300526a68c46",
+        "scripts/test_raw_api.py": "f804666758bfc2ae682e2531f85c9808e621120f6bef9e71f5d37bc1c95d60bf"
       },
       "available": false,
       "unavailable": {
@@ -1576,13 +1576,13 @@
         "scripts/aigc_textgen.py"
       ],
       "files": {
-        "SKILL.md": "7152496325427b39ac6fc8b5b4633a4a48aaf509172f6aad1a3004b167091e1e",
-        "references/api.json": "b65999bdc953765bcbeafbdf9ef15b5336f8ec457327cb8a37038acd500c472c",
-        "references/api.md": "2d7a494750513476ebcc7048d55afde2374652effc45cc450f616532d98bb650",
-        "references/credentials.md": "75c3e111bf756f2ecbb1f4d343cd69f8d26ef7f1406ef97d4deb66c4b3f5de11",
-        "references/testing.md": "dae768f23613acb5dce306ec7f6071d6db6cc28ae9c3842717c8e061aed20913",
-        "references/workflow.md": "acbf7b294309a5e13dcff9e4161c3007d5b7a868c526ee67bc54c6aae8ef6a05",
-        "scripts/aigc_textgen.py": "d7687077fa7fc3ed52da6ad12803d2ad66765cfe7be58341ae80d7e76b425b50"
+        "SKILL.md": "c947856e53c0ea115a46eb04f5f8a9b5157a4eb58eab132f86591495a29a2fcc",
+        "references/api.json": "5a0c74424ea9a8b77e223e68c45d11991e8d7d6217b2a8ecc23195becea4d1e7",
+        "references/api.md": "224af9103c1351c8a1c24ef99c8d8c088fa76db756c2c9b4f1c3aef4c478bb4d",
+        "references/credentials.md": "5d5fe03e5601f999dd1e817101fda84f5bcc8f923a3d43ed6431d73a75064923",
+        "references/testing.md": "27498b8c2465e371bc56a9bac0492832a2bec29ca740907bf5341a0f471c5412",
+        "references/workflow.md": "38beef7e972c8bd02995e7a1790e7e555336851358b7bd5739cb0e8f6bddee2b",
+        "scripts/aigc_textgen.py": "3172b15f3f24f76bbfb2f0b53d9f0c7c47542e298949aa9a2fe92641eabece9b"
       },
       "available": true
     },
@@ -1596,19 +1596,19 @@
         "scripts/step_4_merge_rank.py"
       ],
       "files": {
-        "SKILL.md": "1c7e697ff9fdb7c5f65185cbf0610ec5f1e95c35c2193983ddcbee3cfd079656",
-        "references/api.json": "a7ec36b77436f46188b1b74e73578a201b5187f61ef8aeb8d4188d56a7258f7c",
-        "references/api.md": "caf046daf264065500de526bbd37966e2ae6ef9f8e0755ae8e771e0e67ddc087",
-        "references/credentials.md": "75c3e111bf756f2ecbb1f4d343cd69f8d26ef7f1406ef97d4deb66c4b3f5de11",
-        "references/data-fields.md": "4f212ada9a40d8760b429753644fa1f02e7308e3ef322664ce6f4914d0a94cd3",
-        "references/output-schema.md": "5c9774e70bad5e3aadcc84913e2614aae0b74c280c072a160aa92883d2676ed7",
-        "references/testing.md": "f5e24d19d42a63ee4cc209a503a5a9f12b885dcaff56fd78cd67963e729457d4",
-        "references/workflow.md": "8856b22688ec30580938c3c36700e38d99f11361d56c4e9768c32520f4164988",
-        "scripts/junglescout_sales_estimates.py": "397e91c8091e78a20c9074f21427be35eac76187bafcceaff1edb1c239c45d57",
-        "scripts/nexscope_paths.py": "48a605e94b987759ba2ed1b2693c18a47d4ab44568cfd4a19be8b43f08b0b4a8",
-        "scripts/response_io.py": "0b8ad84cdbcc8a2a3de2ac22de4c04910657489823056b76894867122ce942e0",
-        "scripts/step_3_5_junglescout.py": "e6f77a4a34881074918c9e9f130cad7f33ed7cfb83f29dc8f98b6a4390a8ffe4",
-        "scripts/step_4_merge_rank.py": "e417d9e781ce622e61587c66519af8cab1d52d0b7202bcbc3ee17fd54d4f1e05"
+        "SKILL.md": "35d1c32a0d4e279f9b2672c3b5ab929f1cca784ced5c42dd3f96e530db1c3940",
+        "references/api.json": "6cf4eeb35c241ccbe6dd9fccbf1741c210f049cefd902aca5689ce96241f37fd",
+        "references/api.md": "61d6ad72c261fdeddced55eea87eb548b525c2eec28196f8fd596c79f22a8d25",
+        "references/credentials.md": "5d5fe03e5601f999dd1e817101fda84f5bcc8f923a3d43ed6431d73a75064923",
+        "references/data-fields.md": "9b89950518cebaf6a7ae38260bc126462760bddb9d35fc942b45caf52c45c2f3",
+        "references/output-schema.md": "589a7c64bbb30d310feb8bffb9245f8e5d58d1dfa63b76cb10b4f15bf56040fe",
+        "references/testing.md": "ae08214071cf6f6493136da00d5f722c0eccff16f4cf73d3a719bc08d8b0d692",
+        "references/workflow.md": "13fd84144817624f0a3010eb7cc5cc990ae2d657813c266ab48980c13a8dc999",
+        "scripts/junglescout_sales_estimates.py": "465f1b78448123b3f48fb45cb449082b5028918b6df2ff3547c7c4d9bafe6dd0",
+        "scripts/nexscope_paths.py": "d6f91dcfe57fe89f4be7291f3197541b55c928e0ce18203f880a4d538038e17c",
+        "scripts/response_io.py": "bbe0aa842b859f8e229d55a2cc4f2937c9ad8ba1d615f34542c190e4dfdc45f5",
+        "scripts/step_3_5_junglescout.py": "e78296d3fe08331498dffc77af2bd785a47088c8c5e27e6f6395cef5361ace68",
+        "scripts/step_4_merge_rank.py": "c0f1a78f23116ae73d8fc6c0e3db9c7f73aa55d42720d112fc7f497167e68792"
       },
       "available": true
     },
@@ -1620,10 +1620,10 @@
         "scripts/upload_image.py"
       ],
       "files": {
-        "SKILL.md": "257e725153be898c3fc95fb9550ebbf9b9c730bb726124b45e3b6c928dd6945e",
-        "references/api.md": "c8c0ba0e881be4a43ebc69c97f7f0bee2a17219e4d0ec01b8ab75de3b56b86f4",
-        "scripts/ruiguan_copyright_detection.py": "32e7897f62195d8fb5f06ff84d837a80851ad50a23213b4b992daf778035920f",
-        "scripts/upload_image.py": "44b0648ffdce5292eeec6d53ef8fcfddc74023abc145095a2a2a84fe278f72a2"
+        "SKILL.md": "7b62476c00e34cc2cacc54ab7274e522b8f7299f7b13b6b2c36b27356c7fdb26",
+        "references/api.md": "5884cb9933a10aa83ce9d340fc612bef90f021515a964f38a63cefa4c1ca4c9e",
+        "scripts/ruiguan_copyright_detection.py": "aaa96aeeb8d52cc1a9b9506b15eeb34640ca93bad30aeb8063cc284baad29098",
+        "scripts/upload_image.py": "cc185db8e2f56df6b1175e7f5d248e5c400f0644a1f5c5db9b2030e05e774321"
       },
       "available": true
     },
@@ -1635,10 +1635,10 @@
         "scripts/upload_image.py"
       ],
       "files": {
-        "SKILL.md": "60d12d1b630209e66d2d5b4b2fc8ec6a0906ad141e86d4a21d9347857842e77a",
-        "references/api.md": "aa00ebd85e778d2fe936ee455609b47cf752ca09a752c970586fe6e40608fe81",
-        "scripts/ruiguan_detection_patent_design.py": "880f4896d7146db655075307e9bd28cb40b581849247a1248412b805ff3386bf",
-        "scripts/upload_image.py": "44b0648ffdce5292eeec6d53ef8fcfddc74023abc145095a2a2a84fe278f72a2"
+        "SKILL.md": "f611d162497478affd7e9c51d29c72432c112b4ad1981b388aa2f26b5bce501a",
+        "references/api.md": "c6010327214f43da5b3afed03d5b1d1e66f4d70050607a4209987741a0183935",
+        "scripts/ruiguan_detection_patent_design.py": "fe0fee5803aa2ec8ddd6225bcba9b923e35b427596e8c4945ee8053936017f2d",
+        "scripts/upload_image.py": "cc185db8e2f56df6b1175e7f5d248e5c400f0644a1f5c5db9b2030e05e774321"
       },
       "available": true
     },
@@ -1650,10 +1650,10 @@
         "scripts/upload_image.py"
       ],
       "files": {
-        "SKILL.md": "b9e625f4854c120176073138c21d651e15a66f3b76b6e13a3218c5188a2d5023",
-        "references/api.md": "25a23f8c5997d5c3a4baa02a39731f65b6709749a1927fc2b57cf55d2ff69b8c",
-        "scripts/ruiguan_image_compliance_search.py": "0ff03d4f93fa5f7070e36733a7bb5f7f7680262e60bdbaed50f09760667296f7",
-        "scripts/upload_image.py": "44b0648ffdce5292eeec6d53ef8fcfddc74023abc145095a2a2a84fe278f72a2"
+        "SKILL.md": "da00f24864e3fa9453d17f4619fd4debc2ceb8b592d4827018e65d3ed5779827",
+        "references/api.md": "a66d1bcac1fcfee835bc8af16fa4ed728d8cb67dbb331e69bf3cfcbf9fb96266",
+        "scripts/ruiguan_image_compliance_search.py": "6028af46d8d4d8df3b6a4a04ee372c2c00ee9f172d6285d1c84dd47f1e7f2bd8",
+        "scripts/upload_image.py": "cc185db8e2f56df6b1175e7f5d248e5c400f0644a1f5c5db9b2030e05e774321"
       },
       "available": true
     },
@@ -1665,10 +1665,10 @@
         "scripts/upload_image.py"
       ],
       "files": {
-        "SKILL.md": "befc4a336f471b08706a9774301635f2fc7319174ba6c0242c9c79bd42e00765",
-        "references/api.md": "54db2493805832e40a93cfecd0964b2ac6b0174d9764e780d4f7f77ab37a57c9",
-        "scripts/ruiguan_trademark_graphic_detection.py": "39ecc95e7ded538c456b11803ac892e05859c5266ad56c0d5ad08fb7c127130a",
-        "scripts/upload_image.py": "44b0648ffdce5292eeec6d53ef8fcfddc74023abc145095a2a2a84fe278f72a2"
+        "SKILL.md": "621d0abb3adacd1af5b3c399f09c98c4c5c60fe292cd344567945d93ea687c6b",
+        "references/api.md": "11b63fd10007f82b1b1a356947cc0d3e01d91f79023be3a68763795b7df80728",
+        "scripts/ruiguan_trademark_graphic_detection.py": "5eb6c07172f830661465b3a74947f9dcb5f75af91c91035a8745d2ff7272bff1",
+        "scripts/upload_image.py": "cc185db8e2f56df6b1175e7f5d248e5c400f0644a1f5c5db9b2030e05e774321"
       },
       "available": true
     },
@@ -1679,11 +1679,11 @@
         "scripts/shopee_product_detail.py"
       ],
       "files": {
-        "SKILL.md": "18debdf180d912dea004a65e816ecec129b99e3aa89db29f61010454817a2d86",
-        "manifest.json": "06be90cad62999758a09fdaccbcd1cada7741d770b85767704bcd21cdfdfdff7",
-        "references/api.md": "f0cfaf9bac31000b3aa7c410fac748fd5d7f3f836555fe48fd79011134646eff",
-        "references/testing.md": "11f9b0f063b3fad712fea373d9bcd6566e987a79304d920d9fe26999c0754354",
-        "scripts/shopee_product_detail.py": "8c14f56def3082fbd490ace20f167a6f11f82357987ae2268dbf75d7746c1193"
+        "SKILL.md": "5ef394825b6a3f4e864feb341427f2a290ef10877e67c1e6d5534efa8057125f",
+        "manifest.json": "5967c0a9757c6cb8a1b322e60f187671549704adcdc10e147c0b68be2e5f8982",
+        "references/api.md": "00eff09aba2da6936e7120d572fb9b1e48a724ff2db71ed02505c11763ed70a9",
+        "references/testing.md": "3476a8d0b69e2577ba51b4bea5be50e000e80e0d7845548dc4a19db2ab31e480",
+        "scripts/shopee_product_detail.py": "e6dce2f40a476017a48a4857a0172f56ce248588af588f6d5300a1c6285c852d"
       },
       "available": true
     },
@@ -1694,9 +1694,9 @@
         "scripts/shopee_product_search.py"
       ],
       "files": {
-        "SKILL.md": "1478818fbca61dd4e66024f1254edc79f57c55c1cc60f99d5a3dc499b9bd04f9",
-        "references/api.md": "5d040b1355c288b93c553a4fd0d17807825a099cf900da1aef12fc127df210a8",
-        "scripts/shopee_product_search.py": "a6f40c2bd05f92deae320ebe9b2744f2a9387961325b9351f734000b0b079a98"
+        "SKILL.md": "6af6d1f399a8ea3d3fc24a54c2f2db323730615d2697ce9f45cc2c2d88374216",
+        "references/api.md": "b03b7513a23d86a04558e4a22be2bf71632992dd3a62cda3b48912ea225ef7d2",
+        "scripts/shopee_product_search.py": "cfe24d229cfbc02538c2baf3e319cbfd481975bd5de09c2ae43c3866251f4789"
       },
       "available": true
     },
@@ -1707,9 +1707,9 @@
         "scripts/shopify_product_query.py"
       ],
       "files": {
-        "SKILL.md": "62555ca8147a84f3f90625c33ecbb7d9402fb5e2d749ecb975b6d1851d6ca2c2",
-        "references/api.md": "b481a2755b922e0794603d3aedf7cf0e8793cc0fbb7ee685bc34db9232ac5083",
-        "scripts/shopify_product_query.py": "f8e7b6e92052082aa1d1a0b1d48fb11239728e2cba216b888fb2c9c046c83ed5"
+        "SKILL.md": "7105e92c5200df2ccc3c01211d4f2f09b13ed94edfa98ba2ea41c0372b5e0ae3",
+        "references/api.md": "e38df2a9dce2cbc827699bc442201231749d481d2bab3665974e883bcda679ec",
+        "scripts/shopify_product_query.py": "ac11a33706704df3d54d49a81d8874eb17b43474f80f371e00c17cc75455e7f7"
       },
       "available": true
     },
@@ -1720,9 +1720,9 @@
         "scripts/shopify_store_query.py"
       ],
       "files": {
-        "SKILL.md": "c5c7e9d05c8efacd57087690c133cbea1b8b5c41690e90cacddba09659999bda",
-        "references/api.md": "1e16d827434ca020cd46929f986bb594c92a91ae5009de48beadae8a7f22420f",
-        "scripts/shopify_store_query.py": "0778bbc29f742fcf690063088ae7a38a1217453f44f77a6c56988147dae589fb"
+        "SKILL.md": "473fb52f3fd810375b8c7b15564b48bfe506979ca625adae9880214c34d10189",
+        "references/api.md": "54439493d19a0023052e98063204c209dab836c15c33999d993ea5cd2121a30f",
+        "scripts/shopify_store_query.py": "82ac1c190eb09a6fddeace8bc6344fdebbbdfb09ac2b14cd3d26ba0593e43c5f"
       },
       "available": true
     },
@@ -1733,9 +1733,9 @@
         "scripts/temu_category_search.py"
       ],
       "files": {
-        "SKILL.md": "baadc908de7e75dfa83aa8a9d75e99c26cf3b5f8772f4a03c7065d2dd43bed35",
-        "references/api.md": "90a8ec5161a0388e553bb308cc2cfcb4ea94c9aa9abbca4426162edf7c3845fd",
-        "scripts/temu_category_search.py": "1ca7825174c9e4c965bf1a297083ee2e6e22e26322dc2daec9642d4de26f571d"
+        "SKILL.md": "4cbeb54167a0f1d566fbb3cb7211c4dfda72299d6916fec2bf49a3032cd7ae37",
+        "references/api.md": "a5d32fd6bab30a830ccae5f6738f11979be5b7e90249f113617a783000eeac70",
+        "scripts/temu_category_search.py": "82755d83e0a87d81675ba7c6859f99ffe212e69def3743cac48a29f8bfe25a94"
       },
       "available": true
     },
@@ -1746,9 +1746,9 @@
         "scripts/temu_product_source_query.py"
       ],
       "files": {
-        "SKILL.md": "112998b52d207b70f1d59fc20b78653e7606695bc16fb1d47f413ea90326c1fb",
-        "references/api.md": "9a87816cf72f40468f4461aa419e819e6122f74c63e38107128ada25b6bc8269",
-        "scripts/temu_product_source_query.py": "e184d267426d3d9f1069aa8ceaa33e1b5d7d77f5c468b5578888f215ceb9448d"
+        "SKILL.md": "1be7f6aaf779c69ba3699def82dac3b1e09a73ac691d159e8aa630c768e749e6",
+        "references/api.md": "c3557d55e3e97c0f5f64236503a2884a2b309a0c7b6f9a481aba4395ccf5b3f0",
+        "scripts/temu_product_source_query.py": "b087d3e1cb15e793b447a4dccfb724a217ce25afaeeab50fc36baf275ddf74b1"
       },
       "available": true
     },
@@ -1759,9 +1759,9 @@
         "scripts/temu_store_source_query.py"
       ],
       "files": {
-        "SKILL.md": "84b4bd595cc1484cd5f1c0c009535a574b00d2bfede39edaff6ca7502edd549c",
-        "references/api.md": "8e07c33c99ae60df6f43d25c81beb6b78c388c38e4e981675c0f4c687ec00724",
-        "scripts/temu_store_source_query.py": "1b8a8930666f3ea0a327be9a27b221346dbd15b84c14a4c1a55dc438fce46eb1"
+        "SKILL.md": "00ecb60f269c8bee6e6d9b85ca1ae3fd35a79f8243c00406f232797f1425ebcb",
+        "references/api.md": "288fbca9db592fb32ad53c255a179e276b5b1ede9fbae2a4c6ca393135fdc168",
+        "scripts/temu_store_source_query.py": "620cffa65dc4f6cd3fb1646a376f63e179101b902caad5a8b50ff2ba546ef46d"
       },
       "available": true
     },
@@ -1772,9 +1772,9 @@
         "scripts/text_trademark_detection.py"
       ],
       "files": {
-        "SKILL.md": "20322fff519bf1f93fd631a48b1a8132bb336dac635b4833a5da80a060739271",
-        "references/api.md": "2ce3d4d4a6c48b9639b14660a45728256d10a4a93eb7701beef314f67de1bfaa",
-        "scripts/text_trademark_detection.py": "3504bcf3842875c90f6bd387bfebd4eda41211f998175a6867951b65eed88d1e"
+        "SKILL.md": "1dd0d5eec928f0ec5297da0f78fa9b90f9082cd045fc08bda72450278d6240e6",
+        "references/api.md": "11b4627efa01b44c86524307886bee3aa53b6aa8199395346f2ff3fea35dba52",
+        "scripts/text_trademark_detection.py": "724f440d8ebfb26e6e88a75135948afba4f32ca25628e914d76c04de9ac62d2b"
       },
       "available": true
     },
@@ -1785,9 +1785,9 @@
         "scripts/echotik_batch_product_detail.py"
       ],
       "files": {
-        "SKILL.md": "7dfb977fcec1f1e59b0e1a526fa10bdd6dd92c8e6e5a3a2d714e10aae0075f1c",
-        "references/api.md": "937bf10355261423aa914389e1ff11a4a4ecb064b3d7b006f15f34123a464c9a",
-        "scripts/echotik_batch_product_detail.py": "1ecd2083028a49408276100bc2f566b1deea6d47e1d38cf35b4f0851311ebb76"
+        "SKILL.md": "a5c38b7de091d577aeb9aea4b6f4fb66f1affd5591d6e76b5f743886bc9c83ab",
+        "references/api.md": "38e86220c059ade2dd833c7d40e90aa098648f748232d681f2fa9526ba7008ca",
+        "scripts/echotik_batch_product_detail.py": "070a1926343850aa3c3f954010aedff942a331abe8dd587f0a2ac2e1a9de99cb"
       },
       "available": true
     },
@@ -1799,10 +1799,10 @@
         "scripts/creator_rank.py"
       ],
       "files": {
-        "SKILL.md": "252b0b3949500eb84dc2156b4b8d91b271a72bc914b2391498c7e578bded5f52",
-        "references/api.md": "35b85f49e9cc4cb99b7369f7d02ce7027fa4f07ba424eb07803ef7e7f0696408",
-        "scripts/creator_detail.py": "760f24fa83d9caf1fd70c2b5de2abf5c957d3efbad1c99251afe7ee29917e8b8",
-        "scripts/creator_rank.py": "860e643b33ef26db039d50bd8daf1897d238d3a1821cf624c796e7e8c190af64"
+        "SKILL.md": "845293ce0175dcd5ae80b3b3ad7d98d47d97d0018389b5add3963744b70aa27f",
+        "references/api.md": "2968d19b966bc83b3bedf978f38d3f01083cb730bd248aaf5df01d2550c75c4f",
+        "scripts/creator_detail.py": "a7225b164d2b236e8836dcfbd4a9a5d7549f47054e8382bc99d4bb1698ea415b",
+        "scripts/creator_rank.py": "2ed25108c7b3f313880f1dde19d8cf5c9cc389537c58c80ba4ec684e38cb7653"
       },
       "available": true
     },
@@ -1813,13 +1813,13 @@
         "scripts/kalodata_creator_search.py"
       ],
       "files": {
-        "SKILL.md": "79147315fbadf3c49b4673f56a7743e2de6f80db8dd1a885572110fbf83b83ed",
-        "references/api.json": "ed27dec5a042e4e36f2cf194807652f4340a8b76c19f2b6c064276292e849575",
-        "references/api.md": "c0c5125b3d7ccd1d7c14eb37fb9ad80272b9397339903d5b13a3c2a9ec2206c6",
-        "references/credentials.md": "5858042b0e5a27454fb7659a48f0aee7904aa395198f7e0faf9988479bf46122",
-        "references/testing.md": "9b3a0e39ececbf52b932fabc0217cd13f59a6607da2f92cc21619bf91732ae70",
-        "references/workflow.md": "d2684ce51a44d3ba6533fc8e9abb020d971a219f319b41f092d71e1f069f054e",
-        "scripts/kalodata_creator_search.py": "594c04776da8ec97481ba84809db476cdbdfec5dfeadf4e3e985bd34b2b54c29"
+        "SKILL.md": "c9e4acd0ca8624ffa849c1ceaa8d0b2fb927b05760dc7b25353fb76c30f76cf9",
+        "references/api.json": "fe85e9eb91acd5161118e3950a2673d29e37a9235146e14379364c1ff0798344",
+        "references/api.md": "eca108eaa66cb2f33cee2a8079a9523b7e03cc12e21364b2720634dbcc26a88a",
+        "references/credentials.md": "f78678e950f2259264d62813360933e26e1e4793c6d84e9ca082ea784121c7cf",
+        "references/testing.md": "3aff5ec5a8b9b91e388babdf875d954c5b918167e4b1656120f81bdfcad5bdda",
+        "references/workflow.md": "9af490b6705512ab241782a7ea61c4971ffe4e0f1c1b5bf39a9b91989f233beb",
+        "scripts/kalodata_creator_search.py": "5ee63d00970bc256f06c6995dcc6751e1b06c898b919d378da2b0a2885bc4465"
       },
       "available": true
     },
@@ -1831,10 +1831,10 @@
         "scripts/livestream_rank.py"
       ],
       "files": {
-        "SKILL.md": "b24de33724ac1aa48b4fca71e9fb31299bfccc3897a7e9f40c031d45d99cd3eb",
-        "references/api.md": "17d0de1b75877027fa5d6d37d716b24874746889ff20f4e1fdebba4b5d306237",
-        "scripts/livestream_detail.py": "09d56016f9138d7cee91b63b14222fb43042ae5731e905b68f2ae34d049ddda1",
-        "scripts/livestream_rank.py": "560eced185aa4c1a76ad72a22646b3dfb1c7b7a6759b0fc5185d85d782f1b2a5"
+        "SKILL.md": "b0b0fee95d45af0c56a4fef8c07b6b9a727d5ba93b60c477a33f85a64f464ccb",
+        "references/api.md": "2d0b8c89e7ea68364217434ff437fa563e5efacdd2f073ee18edd976fa9bb7a9",
+        "scripts/livestream_detail.py": "f30272174ce62e5d824010353cea43aac2aee430f85c5eaf989a351f5db0595e",
+        "scripts/livestream_rank.py": "1a90af98cd9edf3c4870de7cdfee0c2d4d6c805254b85ec06fdcebbc453f0bf5"
       },
       "available": true
     },
@@ -1845,9 +1845,9 @@
         "scripts/echotik_list_new_product_rank.py"
       ],
       "files": {
-        "SKILL.md": "54cab15e2605a643e9c1d60120b40a9d663750df2adf18ddd4482aa61961c479",
-        "references/api.md": "27ec75651a5a5870d37580be9d6dfce01a5f7a17aa7aa1bb94a1892290125c06",
-        "scripts/echotik_list_new_product_rank.py": "3df9abff768fa9799cce488ce1ba04bfef0f631a3fe7ff3fce451639b47b28bf"
+        "SKILL.md": "7a06cd4fca0a764d3f0071abe9e649e87c84bfce57dcecbffc33b81231c7e878",
+        "references/api.md": "a054f68bb1a549de19ed9fc7e21b0225973adabc2ce3a7c627092b7822f2d6c7",
+        "scripts/echotik_list_new_product_rank.py": "a9581046c9b1414022ba8a9400f99069771e72d688790e726fc7856294c0946a"
       },
       "available": true
     },
@@ -1859,10 +1859,10 @@
         "scripts/product_rank.py"
       ],
       "files": {
-        "SKILL.md": "d381039e4dbea9d2dacb707a3aa820b2840e0ff105a010b5c34bba4392bc4e62",
-        "references/api.md": "99317aedd1fdaab6546fd1084c56f0dc36f5aa89bcf913134b879fb9b07727c9",
-        "scripts/product_detail.py": "41a1f9949d48ba6d439fc378dea8faf4522d9a18f49f8be1bb7ae7eab9166099",
-        "scripts/product_rank.py": "ea809c8bfdea4c08dfb5a827fe9b17208f998dba6105c42389d17e090e9fe406"
+        "SKILL.md": "d18ac6270bfd26f99312737b050fd075798044f34a1fcb989c16743d359d93c5",
+        "references/api.md": "cd5757f47d6bf29f5ca7acce5a394203dbfca1da3ef405ee104c164e5240af1e",
+        "scripts/product_detail.py": "2630c1f10b9713568c07591b15f115da9905823c05d434f95df7d857dc8768d2",
+        "scripts/product_rank.py": "f85d5f94f9511766f2298ef526b3a9adf5287a7b25386f87e586ab0b207f5a26"
       },
       "available": true
     },
@@ -1873,13 +1873,13 @@
         "scripts/kalodata_product_detail.py"
       ],
       "files": {
-        "SKILL.md": "b9e627106ab5b07337afa996f985be46a1c5a93e57a67422c615ee1fb0e3427e",
-        "references/api.json": "408026722fea2d91cebd0a2bd71e6e2adedd450a7fc87824acf119b06e5d3094",
-        "references/api.md": "261856bdd340c0eab2f277394c71897dbdaf1586af81d0752bd233fbe8c16408",
-        "references/credentials.md": "5858042b0e5a27454fb7659a48f0aee7904aa395198f7e0faf9988479bf46122",
-        "references/testing.md": "7eda9feec255d9c3f5413599c1bff93c937a92f6bc72ba333ac067591586364f",
-        "references/workflow.md": "e59c9d46b296c5a89c60a4d8c846eac817565d63c9b7f75e9ab69f2edb005413",
-        "scripts/kalodata_product_detail.py": "4fabd8a97feaadfdfae39d7d02a41db51a29047957010eb4d6fdfb349adb8b52"
+        "SKILL.md": "5ec53ca0efdec977b6bda304a1984dd75bf18160ee6cc12f5536df91ad2529d1",
+        "references/api.json": "669060b881b457ebb77e255e119fc451d9f8dc39cd4af81181d23c59a3b721c6",
+        "references/api.md": "33d69099b59bc07c1f94a33bb877d61c065c88012422dbd37dca339c91026b1d",
+        "references/credentials.md": "f78678e950f2259264d62813360933e26e1e4793c6d84e9ca082ea784121c7cf",
+        "references/testing.md": "d3a22134b8f980aabd24c0fc69812395711e5b90d8cf5ae97a1ea78529f02b63",
+        "references/workflow.md": "f9756e2bff9a971d43ae0b0165a7398bbc1e6e0580e610e92059d46989d09941",
+        "scripts/kalodata_product_detail.py": "b47ed20fb4912f1b0d9e05dd9c0e12d0995a5e80845f05028bceb0185062b55d"
       },
       "available": true
     },
@@ -1890,9 +1890,9 @@
         "scripts/tiktok_product_discovery.py"
       ],
       "files": {
-        "SKILL.md": "0c15dec847182299c7fb1defdc1ddc554ec66effce30f727404585813bf6c463",
-        "references/api.md": "871ddce797633c07e1b848490bf101c4272ad7f787787b5904b118232bb161de",
-        "scripts/tiktok_product_discovery.py": "ccd344f5ebd6720a74f97d3d4a5aa2a254cbf4d0b14bc41df553f54cba553f5f"
+        "SKILL.md": "4f63cc5de8266a2ee1b0a1f7b6c4b4537a58f791f6c6aa09aa9ddb1e3cd2daa2",
+        "references/api.md": "d361dff4acc8acf2cbb3ff00fac749df25b40a89cfae87801d25b6f6758c8008",
+        "scripts/tiktok_product_discovery.py": "d700a3329d4760fde3f85ef427cadc6e60fd730f74d90e9648d47e5077166c7d"
       },
       "available": true
     },
@@ -1903,9 +1903,9 @@
         "scripts/echotik_list_product.py"
       ],
       "files": {
-        "SKILL.md": "e7590e223ebb9c6e3acb4e105106105426bbc222bedd34394b178d012a2639af",
-        "references/api.md": "e9133b5e29e77c95ac766ece6ae217732e22fe1c789df0c2c556ca51cc14ae6c",
-        "scripts/echotik_list_product.py": "1c5eb7f04ea7c8b32007ff69ebe4ca9d9b8395c6f451807b7d3c887d00ff6c49"
+        "SKILL.md": "91b54a1dc537e87a55a5c02a6505c6d3503d6cfa04aee4ba9ae2c7218c76afd4",
+        "references/api.md": "90304485bfd9ce01a39e972b39a05c67c16220af8d7b66943da91f771a4f8b4c",
+        "scripts/echotik_list_product.py": "089d12a61f530b0723d0249491aed8b7bd6fd89f960395371c56563b2c8c7268"
       },
       "available": true
     },
@@ -1916,9 +1916,9 @@
         "scripts/tiktok_seller_detail.py"
       ],
       "files": {
-        "SKILL.md": "643d77c23f95316e70ff080bf194604ddcf9a7dfa824a05468fbc5403e6b0ced",
-        "references/api.md": "be48d207058a39f5498c5e8a38e0bd971e546b76f9f4f410005e944a02523318",
-        "scripts/tiktok_seller_detail.py": "30ff8f3830e41c4ed1ad447a0f844f34a52b5babfbe9b4f3cd945aaaff56fceb"
+        "SKILL.md": "ad291b466de0fa8c1fbc3c9f7511d2647d37242e639c46241c05fcbd3553f9e2",
+        "references/api.md": "8e3aaf472fbf77a44e1caef78e0fba78ac528e1bca87b0d094cd51d8fb92e1a9",
+        "scripts/tiktok_seller_detail.py": "71e81909d922805dda53529757d388cdd97a706f5c91c155aff307c4c3b9bb3f"
       },
       "available": true
     },
@@ -1930,10 +1930,10 @@
         "scripts/shop_rank.py"
       ],
       "files": {
-        "SKILL.md": "c1f96bf4a06c6018953e67d9662a00c32b7248249114944c3bb9120068738965",
-        "references/api.md": "c767c32fa1e03635c81dc442b3e207b46b1ca30397896868be718a10d00c8153",
-        "scripts/shop_detail.py": "c146a12588ceed05466cea7097f969f16473832ccfaa7a86f4a4f73db107a09f",
-        "scripts/shop_rank.py": "c5633adee1ef4cc2a51954e092ec588695c918305494521bff84cb3f31952b3a"
+        "SKILL.md": "f473af58df7bfbbc798b7490b4dc68a302f27b7267e8b6f533da79a7ae1e9bc2",
+        "references/api.md": "842a4a3514eee43eef1b077f74232655794dc2719b209d46a625e3aa886bbf1c",
+        "scripts/shop_detail.py": "b83c457beaf1163029589cebcbddef0b287d955f56e6ea1c40b26395273cf684",
+        "scripts/shop_rank.py": "da8aa6f60dfc4f674ba01bff3e41484749d361929f433250a5d8050a8caa8652"
       },
       "available": true
     },
@@ -1944,11 +1944,11 @@
         "scripts/tiktok_shop_product_detail.py"
       ],
       "files": {
-        "SKILL.md": "535cd8825b6726dbd88454bc00d865a8e8494fc59407f637573163dba512afdc",
-        "manifest.json": "e8df4ae349439cf4ad218ba2511fa4adb8de4804f511536d8dce6cd241b9121e",
-        "references/api.md": "26afd666f396ecb22b4ce174c52f0365cc601bde8213a718e9b15f7799f88a01",
-        "references/testing.md": "551dd17a5c2c0eac11b7f40b4d18e88d4e25dab00954fa6cc8af4bd888e868bc",
-        "scripts/tiktok_shop_product_detail.py": "7619a8d0ecb6ded943824a552051833bbc62d7c65cc3fe6146152d37118f3f43"
+        "SKILL.md": "2813966a0a21c4441c4446c5dc85adcb056d55b7e1df421304914f7d5352ca57",
+        "manifest.json": "7030b48ed3d2adbe23cb4713e1463809e1a4fbd6b8ece146fd0b7dba3d31ca22",
+        "references/api.md": "e535d729fcc453e2003a8a872a2e919465e9a791fe5831a24cdde733babd24a5",
+        "references/testing.md": "57ba8ee976a8e1e8c9e73a201ca7e1bcb71e17eb79b136ffd61974790a7d9b26",
+        "scripts/tiktok_shop_product_detail.py": "35b64bc07d0df4ac0208a28c1e13368d6a43793a667482235f798aa1c14f8b4a"
       },
       "available": true
     },
@@ -1959,9 +1959,9 @@
         "scripts/tiktok_top_selling_products.py"
       ],
       "files": {
-        "SKILL.md": "5e4b3ebcf272e331c24707c27777f82cfb732e0b39deff08afb9c1ea262e3b6e",
-        "references/api.md": "b5556a9fd7840145a8db807836e49c22cd7b9add877cd10dea3212d0d491f389",
-        "scripts/tiktok_top_selling_products.py": "9e27944e59d61e74234d973a93308a11c7c6fbefe66414387c8c1408f29f0273"
+        "SKILL.md": "2a49de2abc58529d38fba4ffe98eca17159b371c51221c2ccf39450af6c7df2a",
+        "references/api.md": "965eeee0c8e50a72680365c5ffe49303c75b50cad2bb983746cf54875e7d9a70",
+        "scripts/tiktok_top_selling_products.py": "c8fe70539cfa8a3fcfe1b82f1f783d65d763fbe907c676cf09baf8f6a15a219c"
       },
       "available": true
     },
@@ -1973,10 +1973,10 @@
         "scripts/video_rank.py"
       ],
       "files": {
-        "SKILL.md": "7afccae4ed10bdb0357b100e76d002f5d79bfcc857552bc773b66db86ce17db6",
-        "references/api.md": "244a451e21d49e03f2d33bf13d5a39b3e4e4191d70283d8087a1e02e542e9ffd",
-        "scripts/video_detail.py": "20cf6b5c95443b80a03b2d8caf0dccaeb871fe8478aa0db82821b393fd153459",
-        "scripts/video_rank.py": "0cbe6d7a15333ff78d90a0728afb72fdcb142e72df2a517b991f5fe8df1ceb15"
+        "SKILL.md": "5f8064b7c4ec0c38d2648fd1e817ca1d024bc537d096d2a56713e61ef9d02ed0",
+        "references/api.md": "209cd19a1607107d3d10d2a5dbf3c9fb2e8cb969cddb0acaede91cc15a3ba0f6",
+        "scripts/video_detail.py": "a788067d2d326d471c9d496de617612e77f4b81f076c677e91b15eb9cff0a94d",
+        "scripts/video_rank.py": "a16a58fb5149ba218983ec9c3b16b95b1ed980768116bb619e7d3bf5bd0a14f8"
       },
       "available": true
     },
@@ -1987,24 +1987,24 @@
         "scripts/echotik_get_video_download_url.py"
       ],
       "files": {
-        "SKILL.md": "51b7d0d8461b62c3c59896f55d1fff47ccdbf374de826391b34ae0903ebf261c",
-        "references/api.md": "e6cd3721e6e9a709bbf865a72c67ef3708a5cebe158890687021065255d0149c",
-        "scripts/echotik_get_video_download_url.py": "8e90428d46b8b8d3d96d507ab3333f5fb4ae8a7a7a1bc6f589666bd216b77075"
+        "SKILL.md": "7ada9873b7f5eb69e67ad3d28cf4ea658aa8b0c7317756c974296413430f8847",
+        "references/api.md": "85db3d777bba2903817236003ed1cc738f21c8bd7fca47e26c0e11c2d5332322",
+        "scripts/echotik_get_video_download_url.py": "d2d5672619af3c9914dc82bdd06d871f6bcacc67051ef05dda3caa9ad2bbe0f4"
       },
       "available": true
     },
     "tiktok-video-rank": {
       "source": "ecommerce-tiktok-video-rank",
-      "description": "Query TikTok public video rankings from EchoTik through Nexscope.",
+      "description": "Query TikTok public video rankings from Nexscope.",
       "scripts": [
         "scripts/echotik_list_video_rank.py"
       ],
       "files": {
-        "SKILL.md": "0b9032e293181b0862e20d10907a6cd95f6d8673c4d3db535b2b072fdb2b447a",
-        "manifest.json": "d051c929ec1ef024a0e811c32d2deb2c4b5b33edaf7594c1b9679155eaa0a216",
-        "references/api.md": "76fb46dd38863c8e20c5f36c2b76502c8402aa77961d199f2114f755ef487fb5",
-        "references/testing.md": "360e0e9edb95b02275791332ded6bd0cefa40a6b37d4b1cc92dae2eb0f20d07d",
-        "scripts/echotik_list_video_rank.py": "f61d10e60352aab0940ed7ba2ded2ad3369ca3479a2a50a857baa85b6fee6f65"
+        "SKILL.md": "5cbbebd756c3bd5fe1e10b0a230966ab116a6475f74f7faa3779cd5491073f9a",
+        "manifest.json": "24ed755c6ad62668714cd4c7376fbf80a6113347485bb71746037bd3477c40ef",
+        "references/api.md": "37f746d35c4dd8be66235387405f9a764d3d5a99e4d0dd9b081a5b420b88f07b",
+        "references/testing.md": "ab3711acde2dab8961a7029181b2bae5cc9f5e02bab1225d53c3480c4a850365",
+        "scripts/echotik_list_video_rank.py": "815dc615d81c4bb5cf3847ffac227026b71b4ab923b18a1e46a36129cd4b5349"
       },
       "available": true
     },
@@ -2015,9 +2015,9 @@
         "scripts/tiktok_video_search.py"
       ],
       "files": {
-        "SKILL.md": "1fcd33bb16d947eafd758c31953c1917981aa73d4234b9690ee0adfbe2874296",
-        "references/api.md": "741de2d0f0fc66777d354a0589a1e16cc978c033484ec9a20c356dc6fe78804b",
-        "scripts/tiktok_video_search.py": "d18b8dcb2c42855ab014df015cfeca5e5f03ead7bcdf93ad8fe2f0a81a0a880f"
+        "SKILL.md": "50e5fa2f64782daedce43bd1210032f58e2127fe9819d8716f07f72821085ec2",
+        "references/api.md": "a943f1a32793111e89ec68366de3790ff483fa09189695e34baf392c79b3c957",
+        "scripts/tiktok_video_search.py": "b15944da96f51287a0365a35f2dc2dacac82af883b87c1efa7e753152f3bca39"
       },
       "available": true
     },
@@ -2028,9 +2028,9 @@
         "scripts/utility_patent_detector.py"
       ],
       "files": {
-        "SKILL.md": "9c553d162f5fa608afa7c1c9d0607d87f88f768d088f5b19c2a02dee66a5ff29",
-        "references/api.md": "23b0ffcf1366f7f8f6ded03a40d9467689a1d3b43fb030f32d56485c4ac9addc",
-        "scripts/utility_patent_detector.py": "ce244b256f6adde949ffa402c38e3a7ccc84a7c811b7c10fc3ef84149a802315"
+        "SKILL.md": "e2b9c8c559a894761d5d151d7eb4326ac1e3241a1cbe50ccc9f6bd8082d47018",
+        "references/api.md": "2c8d114be917f22bcca354ca3aaaa525c0692519450daaaf624307c05e69a721",
+        "scripts/utility_patent_detector.py": "5917bbc151d1566689599f6bc9baf4dcc144f2c6a98fbefc8da58d38492c4165"
       },
       "available": true
     },
@@ -2041,11 +2041,11 @@
         "scripts/sorftime_walmart_category_market.py"
       ],
       "files": {
-        "SKILL.md": "1937c39d02f307296c36e174d0992c6858b48fc3a62324c4ed8c944a080ff2e5",
-        "manifest.json": "0d19626fc6c531021566114b1f6e14a44e1fdd92f1f251669cabf21d1c2bbfb5",
-        "references/api.md": "e17a97f154ba2f1b44840b38ab309f886c3d1a70060dff7302b68586b49f884a",
-        "references/testing.md": "3353e376e41763ebc1b8d89800bbe4d8920494ef96c9d6142466c86188b10fb4",
-        "scripts/sorftime_walmart_category_market.py": "7ff94c3ac42602cd698ea12164a711cd2b0706fc25886f963c588d2976e20f30"
+        "SKILL.md": "19b2e1c18c3395d68c90c89d34a63177b825f09fe581c125b9ffaf484ebeaeb3",
+        "manifest.json": "43644ffa6352af6fdd6a7db052ba7d8deecd9c72f037137f9ecc22520d6ff24b",
+        "references/api.md": "70ffff7513c19471612bd593e2148b2a4f355b8affe08184c9d6819df1c69db8",
+        "references/testing.md": "eb43490e78741ffabfb450ac4c238b84dce1263b2125d16919cdea8babd7fb66",
+        "scripts/sorftime_walmart_category_market.py": "2accb80a094f4d68534c2a580f5bedbbc6956ae4995c1e964aefc404d661b962"
       },
       "available": true
     },
@@ -2056,11 +2056,11 @@
         "scripts/sorftime_walmart_keyword_research.py"
       ],
       "files": {
-        "SKILL.md": "b4ee9b5f077bb6fb8f8201300b467bea5fa968666065b19abe99a3a35a35b211",
-        "manifest.json": "ac9d8ab0690f10b3d1070df7e51e69fc9d73c6a4486a90bb9b9501fce9ae097a",
-        "references/api.md": "754953101fd10c2838bf6e86dbb86de267184f653c939d9f7f11ae9dc5482203",
-        "references/testing.md": "8c2e98dad157eac170f790fd8e8d1ef06d1a16097e51b1acc433d31c88e3a5ad",
-        "scripts/sorftime_walmart_keyword_research.py": "d9da5b3c27914b19ec3c69ac03291f2adccec77e7260b2ba6db9075b8ac6fc23"
+        "SKILL.md": "a4da648b2d11ebaf2c3f8677daadea5511cf0caf7b5137111508b99d3b890eee",
+        "manifest.json": "8e2baac6cc84148b877efabee78b2855eb100355e0807df7366dc4e7e0574507",
+        "references/api.md": "ffb0f1e1d85a815fcdb2d9f042694a969bf0325100af1540924a943a8e352f44",
+        "references/testing.md": "7c59b266f3bdff2dcf8458a5c7109b2b84664530683614526c5d84c812c30421",
+        "scripts/sorftime_walmart_keyword_research.py": "97bc0a02b9a78aa59c3d5c63df44e7bfc03ad83c784a994aa0a9c59e340584d1"
       },
       "available": true
     },
@@ -2071,11 +2071,11 @@
         "scripts/sorftime_walmart_product_analysis.py"
       ],
       "files": {
-        "SKILL.md": "a4695dc7bf9073e87af1cde127a08ac60cd7e38549ce3ad9cbed26cfde7cf7f9",
-        "manifest.json": "d0d01e62d5d9bfb75d92e14b346ce7658af7edacac08584d635fb7c6d27178c4",
-        "references/api.md": "5f2918982e984d4379e83a5fcf2901d83cc9b46eab2cfa8b10ffda6b45c057e4",
-        "references/testing.md": "7c17591648d12e67c26843335060b261aa096a11006e1d58c70eb2924cae379b",
-        "scripts/sorftime_walmart_product_analysis.py": "ec22f87ff8f3d5febe3af1b179e44560239c307862fa75e8e9734a8396e028af"
+        "SKILL.md": "e0a9ab4eeda6a330631e3b88254165afc38cf423c5b852a55ffd69758f515973",
+        "manifest.json": "c58f54154d7fec43b7fa5379f8bf7f595f147cc2f99037aea6d66c0ad5f01d4a",
+        "references/api.md": "7a556b2e54bbbead21184f5cd9d9b231066a247b6ecb7676a6a94db24f184433",
+        "references/testing.md": "b837b31e39469a28652935223de63585912835cac7d2f6309274eb7fed81eabe",
+        "scripts/sorftime_walmart_product_analysis.py": "0ac69399b677046b984f296e3e667b4fb19b7db3080a1b044a1001339be2516d"
       },
       "available": true
     },
@@ -2086,9 +2086,9 @@
         "scripts/walmart_product_detail.py"
       ],
       "files": {
-        "SKILL.md": "3f47f2dd6c82b4cbbe0dafe73cd460db0bde2a565ad7bd70ac2236074f14e1a1",
-        "references/api.md": "6020180d87b97cf5a2e121e7878206bd4b60c4671c776fcbd76786a9cfe7323b",
-        "scripts/walmart_product_detail.py": "16f21a044abd9b64d3ad4c28bfeb0eddf8e0ca6212ce2b2491089919653e9354"
+        "SKILL.md": "9b57ef0e1090f3b3f333ed30a7683fec4fc950530a5b1f79ebad6b040f883e1f",
+        "references/api.md": "9fff3ce4c7d8a25d3204d8377cbe8628f50351ff4bb24aa024dc86cf25af7cc1",
+        "scripts/walmart_product_detail.py": "f308a2edf391283805f7ce55da6074af43217e5fe4cf7b4b2e46403e6a99de41"
       },
       "available": true
     },
@@ -2099,9 +2099,9 @@
         "scripts/walmart_search.py"
       ],
       "files": {
-        "SKILL.md": "a4d61e68b1fc3852e48eff28d588eb969435cb68001e5767b30663206f2c73eb",
-        "references/api.md": "f7af9c983ef85664e6f90b2a15ff36f43bbb7bf2a73300da3f619fd938e976e8",
-        "scripts/walmart_search.py": "522e1655ca868151e68757ffe255de0cd8bdd86edd0b56de2d9f67598d0c9bbe"
+        "SKILL.md": "366366417a26789f52e72d23d43e7b3efc1c505b624657f03054fc290f7a721b",
+        "references/api.md": "5b06cdb5705d083484df1dd23d7440a39436af986db8c63a864598f16cdcae2e",
+        "scripts/walmart_search.py": "544ba1c8555a0624f963ec575f7f53769a645e51de8d8428a3392428a6f5f9d1"
       },
       "available": true
     },
@@ -2112,9 +2112,9 @@
         "scripts/web_search.py"
       ],
       "files": {
-        "SKILL.md": "d418923b8e6d2c9ffd990073c361d7e95fef79bd6b81607796d25d833c781c68",
-        "references/api.md": "799a56159014a59786c137b3ef7fa0e449b0f1843af76b8b3c71132047bf9120",
-        "scripts/web_search.py": "68f894fb575c7325439e411c4b1d2399e6c078cf0a8b92b375fbd69b2df63455"
+        "SKILL.md": "94c0aea0f2ef2566da4297afa4182f058429b995b7156e2295b6a04a6ccb86ea",
+        "references/api.md": "a2e64b6b255e43d92f7a7bff6d41328b06ab5db675321b53237cfa64cb6a0161",
+        "scripts/web_search.py": "3c0363986ff9f93e70742eff8b3f4f3864329f548a4e7c9cff4bba8fdf211f7e"
       },
       "available": true
     },
@@ -2126,10 +2126,10 @@
         "scripts/zhihuiya_patent_image_search.py"
       ],
       "files": {
-        "SKILL.md": "96e4a9619aeec866e11a09a70aa74f34222047548cce3bd31ce341661a4ba4a8",
-        "references/api.md": "c877fb2cd1881a32333ef81de071ee8a7206af15a7bdc10baddeb0d38372bacd",
-        "scripts/upload_image.py": "44b0648ffdce5292eeec6d53ef8fcfddc74023abc145095a2a2a84fe278f72a2",
-        "scripts/zhihuiya_patent_image_search.py": "2c75b49d24367389df1a69c514643b1571074fe57a8775619d56419c2f0d5142"
+        "SKILL.md": "ca464b65c045cf565c0128ed91251741d5990886959556778686a80ab43a15f0",
+        "references/api.md": "a5887046c280b126e5ebe5151db5d7a345950d2d09591fb2048eaa8a7bb01a1b",
+        "scripts/upload_image.py": "cc185db8e2f56df6b1175e7f5d248e5c400f0644a1f5c5db9b2030e05e774321",
+        "scripts/zhihuiya_patent_image_search.py": "50616ae8ce0b3284af78457d54c20a2f1f72c5d4436c3ede8e5c7a4761a83375"
       },
       "available": true
     },
@@ -2141,10 +2141,10 @@
         "scripts/zhihuiya_utility_patent_image_search.py"
       ],
       "files": {
-        "SKILL.md": "8847b76e58eab4de74a1dc1eeac3fb0733b250edf265b7cf93bc2a5fb4be9d24",
-        "references/api.md": "c877fb2cd1881a32333ef81de071ee8a7206af15a7bdc10baddeb0d38372bacd",
-        "scripts/upload_image.py": "44b0648ffdce5292eeec6d53ef8fcfddc74023abc145095a2a2a84fe278f72a2",
-        "scripts/zhihuiya_utility_patent_image_search.py": "a5a38701f1f8356e5d286abf4658f12c0f9ce701e2c9f7cdc2c3fbddf2056341"
+        "SKILL.md": "f0479fd25eb9b79d5e98a328a0bf7a04e078cae8c82e9252139d8c3b338c447c",
+        "references/api.md": "a5887046c280b126e5ebe5151db5d7a345950d2d09591fb2048eaa8a7bb01a1b",
+        "scripts/upload_image.py": "cc185db8e2f56df6b1175e7f5d248e5c400f0644a1f5c5db9b2030e05e774321",
+        "scripts/zhihuiya_utility_patent_image_search.py": "2f78cfad8aeb943650099a10f4947b6d120b3466ec96aa0d1e4df7e4af163b9b"
       },
       "available": true
     }

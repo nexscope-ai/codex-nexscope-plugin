@@ -1,9 +1,9 @@
 ---
 name: ecommerce.chuhaijiang-tiktok-product
-description: Research public TikTok Shop products and related market entities through Chuhaijiang and Nexscope.
+description: Research public TikTok Shop products and related market entities through Nexscope.
 ---
 
-# Chuhaijiang TikTok Product Intelligence
+# Nexscope TikTok Product Intelligence
 
 ## Scope
 

@@ -1,4 +1,4 @@
-# SIF - Keyword Traffic Sources API Reference
+# Nexscope - Keyword Traffic Sources API Reference
 
 ## API Specification
 
@@ -45,7 +45,7 @@ Metadata includes string `ts` (epoch milliseconds), string `cost` (elapsed milli
 
 | Field | Type | Description |
 |------|------|------|
-| code | string | SIF business response code; `"1"` indicates success |
+| code | string | Nexscope business response code; `"1"` indicates success |
 | msg | string | Message |
 | total | integer | Number of data records actually returned |
 | data | array | Return data, array of product keyword traffic data objects |

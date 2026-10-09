@@ -1,4 +1,4 @@
-# PatSnap Claim Data Query API Reference
+# Nexscope Claim Data Query API Reference
 
 ## API Specification
 
@@ -12,7 +12,7 @@ POST Body (JSON):
 
 | Parameter | Type | Required | Description |
 |------|------|------|------|
-| patentId | string | No* | PatSnap internal patent ID. Only a single value is supported; multiple values separated by commas are not allowed. Max length 60000 characters |
+| patentId | string | No* | Nexscope internal patent ID. Only a single value is supported; multiple values separated by commas are not allowed. Max length 60000 characters |
 | patentNumber | string | No* | Publication/announcement number. Only a single value is supported; multiple values separated by commas are not allowed. Max length 60000 characters |
 | replaceByRelated | string | No | Whether to substitute with a family patent's claims when the current patent's claims are unavailable: `1` yes, `0` no. Max length 1000 characters |
 

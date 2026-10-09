@@ -1,15 +1,15 @@
 ---
 name: ecommerce.patent-abstract-image-data
-description: Retrieves patent abstract images (drawings) from the Zhihuiya (PatSnap) patent database by patent ID or publication number. Trigger when the user mentions patent abstract drawings, patent diagrams, patent figures, patent images, abstract drawing retrieval, patent image lookup, patent abstract images, patent drawings, patent illustrations, PatSnap, abstract image lookup. Also trigger when the user needs to view the drawings or figures in patent documents, even without explicitly mentioning PatSnap.
+description: Retrieves patent abstract images (drawings) from the Nexscope (Nexscope) patent database by patent ID or publication number. Trigger when the user mentions patent abstract drawings, patent diagrams, patent figures, patent images, abstract drawing retrieval, patent image lookup, patent abstract images, patent drawings, patent illustrations, Nexscope, abstract image lookup. Also trigger when the user needs to view the drawings or figures in patent documents, even without explicitly mentioning Nexscope.
 ---
 
-# Zhihuiya Patent Abstract Image
+# Nexscope Patent Abstract Image
 
-This skill guides you on how to retrieve abstract images (drawings) from the Zhihuiya patent database, helping users quickly obtain the illustrative figures associated with specific patents.
+This skill guides you on how to retrieve abstract images (drawings) from the Nexscope patent database, helping users quickly obtain the illustrative figures associated with specific patents.
 
 ## Core Concepts
 
-Abstract images (abstract drawings) are the representative figures attached to a patent document's abstract section. They provide a quick visual overview of the invention. This tool queries the Zhihuiya patent database and returns download paths for these images.
+Abstract images (abstract drawings) are the representative figures attached to a patent document's abstract section. They provide a quick visual overview of the invention. This tool queries the Nexscope patent database and returns download paths for these images.
 
 **Lookup logic**: You must provide at least one of two identifiers -- a patent ID or a publication number. If both are provided, patent ID takes priority. Only one patent may be passed per request; do not pass comma-separated multiple patents.
 

@@ -6,6 +6,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+from public_copy import clean
 
 
 def sync(source, target):
@@ -56,6 +57,7 @@ def sync(source, target):
                     text = text.replace(term, replacement)
                 if text != original:
                     text += '\n> Localization note: Example response strings and observed messages are translated into English. Actual provider responses may use their original locale. Request enums shown as JSON Unicode escapes must be sent with their decoded values.\n'
+                text = clean(text)
                 text = '\n'.join(line.rstrip() for line in text.splitlines()).rstrip() + '\n'
                 data = text.encode('utf-8')
             if f.suffix == '.py':
@@ -70,7 +72,7 @@ def sync(source, target):
         blocked = availability.get(name)
         if not entrypoints and not blocked:
             raise ValueError(f'Missing runnable entrypoint: {name}; declare its prerequisites before packaging')
-        catalog[name] = {'source': folder.name, 'description': manifest.get('description', name),
+        catalog[name] = {'source': folder.name, 'description': clean(manifest.get('description', name)),
                          'scripts': entrypoints, 'files': hashes, 'available': blocked is None}
         if blocked:
             catalog[name]['unavailable'] = blocked
