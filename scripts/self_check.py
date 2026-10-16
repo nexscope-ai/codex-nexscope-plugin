@@ -125,5 +125,12 @@ for name in ('geo-score-check', 'product-ai-visibility'):
     try: run(argparse.Namespace(skill=name, script=None), NoAccount())
     except Failure as error: assert str(error).startswith('UNAVAILABLE:')
     else: raise AssertionError('Unavailable skill was executed')
-assert len(guide('core')['skills']) == 136
-print('PASS: 136 routable skills; incomplete workflows fail before credential access or execution')
+assert len(guide('core')['skills']) == 138
+for name, script in (
+    ('amazon-traffic-gap-analyst', 'scripts/traffic_gap.py'),
+    ('design-similarity-search', 'scripts/design_similarity.py'),
+):
+    bundled = guide(name)
+    assert bundled['scripts'] == [script]
+    assert bundled['instructions']
+print('PASS: 138 routable skills; incomplete workflows fail before credential access or execution')

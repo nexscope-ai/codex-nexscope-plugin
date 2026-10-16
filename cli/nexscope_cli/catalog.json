@@ -716,6 +716,21 @@
       },
       "available": true
     },
+    "amazon-traffic-gap-analyst": {
+      "source": "ecommerce-amazon-traffic-gap-analyst",
+      "description": "Compare Amazon traffic gaps and generate an evidence-linked local report.",
+      "scripts": [
+        "scripts/traffic_gap.py"
+      ],
+      "files": {
+        "SKILL.md": "6e503188961d4f676366b34cc063cf3da5d94f1cd53bb2ae455bf60b12a826ab",
+        "references/api.md": "f600c2d8b94faf9e3d87e6968dffb98daa679c5bab88218066432454b282f8a2",
+        "references/report.md": "cc0a2900297b4d6b97d01265b19af711f8995272f25bf63b3ba5250e3f747e94",
+        "scripts/traffic_gap.py": "98d942b7aa3a97d78410087da15d0eaf5ffc6b808316252e174474a8ea874928"
+      },
+      "available": true,
+      "sourceRevision": "742ccef80fc605842b0249864051e4f690adcabb"
+    },
     "amazon-traffic-keywords": {
       "source": "ecommerce-amazon-traffic-keywords",
       "description": "Research Amazon traffic keywords.",
@@ -882,6 +897,20 @@
         "scripts/chuhaijiang_video_search.py": "ea00644d62527081c359f901236f0653248630332cd5bf68395dce9e12248c88"
       },
       "available": true
+    },
+    "design-similarity-search": {
+      "source": "ecommerce-design-similarity-search",
+      "description": "Find similar design-registration candidates from a product image.",
+      "scripts": [
+        "scripts/design_similarity.py"
+      ],
+      "files": {
+        "SKILL.md": "7998cb5ca992813ed3a0b7356cf4cb59c9cccd48274dcc4afdb483b89e6f9f69",
+        "references/api.md": "b43bd0ef167cea885765b039ede45063c263220bf03f0c9ca82370c69e0d4d66",
+        "scripts/design_similarity.py": "be47ef17a03630ab1faada8a11307689482579e1951b68f4c96e0a019037ca8a"
+      },
+      "available": true,
+      "sourceRevision": "742ccef80fc605842b0249864051e4f690adcabb"
     },
     "ebay-search": {
       "source": "ecommerce-ebay-search",

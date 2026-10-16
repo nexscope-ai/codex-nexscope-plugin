@@ -134,7 +134,7 @@ def guide(name):
         raise Failure('Unknown skill; use get-skills core.')
     if not skills[name].get('available', True):
         return {'status': 'UNAVAILABLE', 'skill': name, **skills[name]['unavailable']}
-    return {'skill': name, 'resourceDirectory': str(ROOT / 'skills' / name), 'scripts': skills[name]['scripts'], 'instructions': (ROOT / 'skills' / name / 'SKILL.md').read_text(),
+    return {'skill': name, 'resourceDirectory': str(ROOT / 'skills' / name), 'scripts': skills[name]['scripts'], 'instructions': (ROOT / 'skills' / name / 'SKILL.md').read_text(encoding='utf-8'),
             'execution': 'Replace python script.py with nexscope run ' + name + ' --script <listed script> -- . Relative input paths must be absolute because runs use isolated output directories.'}
 
 
