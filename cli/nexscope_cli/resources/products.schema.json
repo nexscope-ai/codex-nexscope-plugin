@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nexscope user-owned product comparison input",
+  "description": "JSON array input. The CLI additionally checks unique marketplace/product_id pairs, rating <= scale, credential-free source URLs and file size. Null/empty optional fields are treated as missing.",
+  "type": "array", "minItems": 1, "maxItems": 10000,
+  "items": {
+    "type": "object", "required": ["product_id", "title"],
+    "properties": {
+      "product_id": {"type": "string", "pattern": "\\S"},
+      "title": {"type": "string", "pattern": "\\S"},
+      "marketplace": {"type": ["string", "null"]},
+      "price": {"anyOf": [{"type":"number","minimum":0},{"type":"string"},{"type":"null"}]},
+      "currency": {"type": ["string", "null"], "description": "Three uppercase letters when supplied; required with price."},
+      "rating": {"anyOf": [{"type":"number","minimum":0},{"type":"string"},{"type":"null"}]},
+      "rating_scale": {"anyOf": [{"type":"number","exclusiveMinimum":0},{"type":"string"},{"type":"null"}]},
+      "review_count": {"anyOf": [{"type":"integer","minimum":0},{"type":"string"},{"type":"null"}]},
+      "source_url": {"type": ["string", "null"]},
+      "observed_at": {"type": ["string", "null"], "description": "ISO 8601 with timezone when supplied."}
+    },
+    "additionalProperties": true
+  }
+}

@@ -1,34 +1,33 @@
 {
   "name": "codex-nexscope-plugin",
-  "version": "0.1.1",
-  "description": "Research ecommerce products, keywords, competitors and advertising with Nexscope.",
+  "version": "0.1.2-dev.7",
+  "description": "Compare Amazon products and user-owned CSV/JSON data with source-checkable reports.",
   "author": {
     "name": "Nexscope",
     "url": "https://www.nexscope.ai",
     "email": "service@nexscope.ai"
   },
   "homepage": "https://www.nexscope.ai/?co-from=codex&utm_source=codex&utm_medium=referral&utm_campaign=nexscope_plugin&utm_content=plugin_link",
-  "license": "LicenseRef-Proprietary",
+  "license": "Apache-2.0",
   "keywords": [
     "ecommerce",
     "amazon",
-    "research",
-    "advertising"
+    "product-comparison",
+    "data"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Nexscope",
-    "shortDescription": "Ecommerce research and data",
-    "longDescription": "Research ecommerce products, keywords, markets and competitors. Connect your Nexscope account from the conversation and save results as files.",
+    "shortDescription": "Product comparison and reports",
+    "longDescription": "Search Amazon products, retrieve details and compare products with HTML, CSV and Markdown reports. Import your own data offline.",
     "developerName": "Nexscope",
     "category": "Data & Analytics",
     "websiteURL": "https://www.nexscope.ai/?co-from=codex&utm_source=codex&utm_medium=referral&utm_campaign=nexscope_plugin&utm_content=plugin_link",
     "privacyPolicyURL": "https://www.nexscope.ai/privacy?co-from=codex&utm_source=codex&utm_medium=referral&utm_campaign=nexscope_plugin&utm_content=plugin_link",
     "termsOfServiceURL": "https://www.nexscope.ai/terms?co-from=codex&utm_source=codex&utm_medium=referral&utm_campaign=nexscope_plugin&utm_content=plugin_link",
     "defaultPrompt": [
-      "Find Amazon US wireless headphones and save a CSV.",
-      "Compare keywords for my Amazon competitors.",
-      "Analyze the market for insulated water bottles."
+      "Compare these three Amazon products with a source-checkable report.",
+      "Compare my CSV file offline."
     ],
     "brandColor": "#7C3AED",
     "composerIcon": "./assets/icon.png",

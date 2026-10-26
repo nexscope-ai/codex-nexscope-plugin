@@ -1,3 +1,5 @@
+# Copyright 2026 Nexscope
+# SPDX-License-Identifier: Apache-2.0
 """Run a bundled script with authenticated redirects disabled."""
 import os
 import runpy

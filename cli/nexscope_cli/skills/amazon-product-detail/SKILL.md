@@ -57,14 +57,24 @@ This tool performs front-end simulation of Amazon product pages to extract struc
 
 Default marketplace is **amazon.com** (US). Use `amazon.com` when the user does not specify a marketplace.
 
+## Local migration candidate dependency
+
+This unpublished candidate requires Python 3.11+ and exactly `nexscope-cli==0.1.2.dev7` (compatibility API 1). Install the paired wheel into the same Python interpreter before replacing this Skill directory. Do not fetch an unverified similarly named package or auto-install dependencies while running a query. The delivery bundle contains a wheelhouse and requirements.txt; for this stdlib-only independent path use `python -m pip install --no-index --no-deps --require-hashes --find-links <bundle>/wheelhouse -r <bundle>/requirements.txt`. This intentionally omits optional online/plugin dependencies; it is not a full plugin installation.
+
+The original `NEXSCOPE_API_KEY`, `NEXSCOPE_PROXY_BASE`, JSON object argument, `--inline` and `--no-cache` remain supported. No OS keyring, browser login, or `/api/cli/account` preflight is required. Search page numbers and batch detail parameters are forwarded once without the pilot workflow's one-page/three-ASIN limit. Inspect outer response code/error: JSON API failures preserve the legacy output and exit-code behavior.
+
+Use an HTTPS API origin (HTTP loopback is supported for local tests). Redirects are refused. Missing/wrong dependencies fail before any request. Missing credentials, invalid output paths and malformed JSON also fail without calling the service. Never silently fall back to the old implementation. Cache is isolated to the selected credential context and process; existing `.cache` files are left untouched but ignored. Payloads above 2 MiB are refused; ambiguous failures are never retried.
+
+Upgrade the wheel first, then replace the entire Skill directory. Roll back the Skill directory first, then restore the previous wheel if needed. Use the paired rollback artifacts, preserve user output/credentials, and use `--no-cache` with old scripts when switching Keys. This candidate has only local mock verification; no production or paid validation and no public release is claimed.
+
 ## API Invocation
 
 - **API Endpoint**: `POST /amazon/product/detail` (full parameters/responses/error codes see `references/api.md`)
 - **Python Script**: `python scripts/amazon_product_detail.py '<JSON params>' [--inline]`
-- **Cost Constraint**: This tool consumes credits; the same parameter combination is called only once per session by default, with a 24h local cache in the script. Do not automatically retry with different keywords, pagination, or zip codes after failures/empty results; inform the user about additional cost before continuing.
+- **Cost Constraint**: Invoking this Skill consumes credits. No automatic retry, pagination or scope expansion. The migrated adapter uses only in-memory session caching; a new script process makes a new request, even with identical parameters. The old 24h disk cache is not read or written. Keep --no-cache for an explicit cache bypass. Obtain user scope before additional paid queries.
 
 **Output Strategy (default script behavior)**:
-- **Always** write the full response to `<cwd>/nexscope/<YYYY-MM-DD>/<session>/data/nexscope-amazon-product-detail-<timestamp>.json` (`<cwd>` is the working directory at script execution time, which in Claude Code is the current project directory; `<session>` is taken from the `SESSION_ID` environment variable, auto-grouped by user task; **do NOT write to /tmp** -- error out if the current directory is not writable)
+- **Always** write the full response to `<cwd>/nexscope/<YYYY-MM-DD>/<session>/data/ecommerce.amazon-product-detail-amazon_product_detail-<timestamp>.json`. The current directory must be writable; output is reserved before requesting data. No home/temp fallback. SESSION_ID, if supplied, must be a safe directory name.
 - Response body <= 8 KB: after writing to disk, print the full JSON to stdout
 - Response body > 8 KB: after writing to disk, stdout outputs only a summary (top-level fields, common counts like `total`/`costToken`, length of the largest list field + first 3 samples)
 - Add `--inline` to force full output to stdout (while still writing to disk)

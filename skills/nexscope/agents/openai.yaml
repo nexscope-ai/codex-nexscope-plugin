@@ -1,4 +1,4 @@
 interface:
   display_name: "Nexscope"
-  short_description: "Ecommerce research and data"
-  default_prompt: "Use Nexscope to research ecommerce products and save the results."
+  short_description: "Product comparison and reports"
+  default_prompt: "Compare products or my CSV/JSON data with source-checkable reports."

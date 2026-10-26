@@ -68,14 +68,24 @@ Default marketplace is **amazon.com**. Use amazon.com when the user doesn't spec
 | date-desc-rank | Newest Arrivals |
 | exact-aware-popularity-rank | Best Sellers |
 
+## Local migration candidate dependency
+
+This unpublished candidate requires Python 3.11+ and exactly `nexscope-cli==0.1.2.dev7` (compatibility API 1). Install the paired wheel into the same Python interpreter before replacing this Skill directory. Do not fetch an unverified similarly named package or auto-install dependencies while running a query. The delivery bundle contains a wheelhouse and requirements.txt; for this stdlib-only independent path use `python -m pip install --no-index --no-deps --require-hashes --find-links <bundle>/wheelhouse -r <bundle>/requirements.txt`. This intentionally omits optional online/plugin dependencies; it is not a full plugin installation.
+
+The original `NEXSCOPE_API_KEY`, `NEXSCOPE_PROXY_BASE`, JSON object argument, `--inline` and `--no-cache` remain supported. No OS keyring, browser login, or `/api/cli/account` preflight is required. Search page numbers and batch detail parameters are forwarded once without the pilot workflow's one-page/three-ASIN limit. Inspect outer response code/error: JSON API failures preserve the legacy output and exit-code behavior.
+
+Use an HTTPS API origin (HTTP loopback is supported for local tests). Redirects are refused. Missing/wrong dependencies fail before any request. Missing credentials, invalid output paths and malformed JSON also fail without calling the service. Never silently fall back to the old implementation. Cache is isolated to the selected credential context and process; existing `.cache` files are left untouched but ignored. Payloads above 2 MiB are refused; ambiguous failures are never retried.
+
+Upgrade the wheel first, then replace the entire Skill directory. Roll back the Skill directory first, then restore the previous wheel if needed. Use the paired rollback artifacts, preserve user output/credentials, and use `--no-cache` with old scripts when switching Keys. This candidate has only local mock verification; no production or paid validation and no public release is claimed.
+
 ## Usage
 
 - **API Endpoint**: `POST /amazon/search` (see `references/api.md` for full parameters/response/error codes)
 - **Python Script**: `python scripts/amazon_search.py '<JSON params>' [--inline]`
-- **Cost Constraint**: This tool consumes credits. The same session+parameter combination is called only once by default; the script has a 24h local cache. Do not auto-retry with different keywords, pages, or zip codes on failure/empty results. Ask the user before additional queries that will incur cost.
+- **Cost Constraint**: Invoking this Skill consumes credits. No automatic retry, pagination or scope expansion. The migrated adapter uses only in-memory session caching; a new script process makes a new request, even with identical parameters. The old 24h disk cache is not read or written. Keep --no-cache for an explicit cache bypass. Obtain user scope before additional paid queries.
 
 **Output Strategy (default script behavior)**:
-- **Always** write the full response to `<cwd>/nexscope/<YYYY-MM-DD>/<session>/data/nexscope-amazon-search-<timestamp>.json` (`<cwd>` is the current working directory; `<session>` is from `SESSION_ID` env var, auto-grouped by user task; **do not write to /tmp**, error if current directory is not writable)
+- **Always** write the full response to `<cwd>/nexscope/<YYYY-MM-DD>/<session>/data/ecommerce.amazon-search-amazon_search-<timestamp>.json`. The current directory must be writable; output is reserved before requesting data. No home/temp fallback. SESSION_ID, if supplied, must be a safe directory name.
 - Response ≤ 8 KB: print full JSON to stdout after saving
 - Response > 8 KB: stdout prints only a summary (top-level fields, counts like `total`/`costToken`, length of largest list fields + first 3 samples)
 - Add `--inline` to force full stdout output (still saves to disk)

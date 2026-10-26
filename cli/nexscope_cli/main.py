@@ -1,39 +1,27 @@
+# Copyright 2026 Nexscope
+# SPDX-License-Identifier: Apache-2.0
 """Independent, OS-keyring-backed Nexscope CLI. Never prints credentials."""
 import argparse
 import csv
 import json
-import os
 from pathlib import Path
 import subprocess
 import sys
 import uuid
 from urllib.error import HTTPError, URLError
-from urllib.parse import urlsplit
 from urllib.request import Request, build_opener, HTTPRedirectHandler
 
 from . import __version__
+from .core.datasets import DatasetError
+from .core.auth import DEFAULT_ORIGIN, MODES, origin, resolve_auth
+from .core.errors import AuthRequired, Failure
 
 ROOT = Path(__file__).parent
-
-
-class Failure(Exception):
-    pass
-
-
-class AuthRequired(Failure):
-    pass
 
 
 class NoRedirect(HTTPRedirectHandler):
     def redirect_request(self, req, fp, code, msg, headers, newurl):
         raise Failure('Redirect refused; check the API origin.')
-
-
-def origin(value):
-    p = urlsplit(value)
-    if (p.scheme != 'https' and not (p.scheme == 'http' and p.hostname in ('localhost', '127.0.0.1'))) or not p.hostname or p.username or p.password or p.query or p.fragment or p.path not in ('', '/'):
-        raise Failure('Use an HTTPS API origin (HTTP is allowed only on loopback).')
-    return value.rstrip('/')
 
 
 class Client:
@@ -59,18 +47,19 @@ class Client:
         if self.load(name) is not None:
             self.store.delete_password(self.service, name)
 
-    def api(self, path, body=None, authenticated=False):
+    def api(self, path, body=None, authenticated=False, context=None):
         headers = {'Accept': 'application/json', 'Content-Type': 'application/json'}
         if authenticated:
-            credential = self.load('credential')
-            if not credential:
-                raise Failure('AUTH_REQUIRED: run nexscope auth login.')
-            headers['Authorization'] = 'Bearer ' + credential['apiKey']
+            context = context or resolve_auth('browser-account', base=self.base, credential_loader=lambda: self.load('credential'))
+            if context.mode != 'browser-account' or context.base != self.base:
+                raise Failure('Browser API requires its own origin-bound browser-account context.')
+            headers['Authorization'] = context.authorization()
         req = Request(self.base + '/api/cli/' + path, data=None if body is None else json.dumps(body).encode(), headers=headers)
         try:
             with build_opener(NoRedirect()).open(req, timeout=30) as response:
                 result = json.load(response)
         except HTTPError as e:
+            e.close()
             if e.code == 401 and authenticated:
                 raise AuthRequired('AUTH_REQUIRED: reconnect with nexscope auth login.') from None
             raise Failure(f'HTTP {e.code}; request not retried.') from None
@@ -84,7 +73,7 @@ class Client:
             raise Failure(f"API error {result.get('code')}; request not retried.")
         return result.get('data')
 
-    def auth(self, action):
+    def auth(self, action, attribution=None):
         if action == 'login':
             if self.load('credential'):
                 try:
@@ -94,7 +83,7 @@ class Client:
             pending = self.load('pending')
             import time
             if not pending or int(pending['expiresAt']) <= time.time() * 1000:
-                pending = self.api('auth/start', {})
+                pending = self.api('auth/start', {} if attribution is None else {'attribution': attribution})
                 self.save('pending', pending)
             return {k: v for k, v in pending.items() if k != 'pollSecret'}
         if action == 'poll':
@@ -147,23 +136,22 @@ def run(args, client):
     script = args.script or (entry['scripts'][0] if len(entry['scripts']) == 1 else None)
     if script not in entry['scripts']:
         raise Failure('Choose --script from get-skills output.')
-    account = client.api('account', authenticated=True)
-    credential = client.load('credential')
+    context = resolve_auth('browser-account', base=client.base, credential_loader=lambda: client.load('credential'))
+    account = client.api('account', authenticated=True, context=context)
     folder = Path(args.output).resolve() / str(uuid.uuid4())
     folder.mkdir(parents=True, mode=0o700)
-    env = dict(os.environ, NEXSCOPE_API_KEY=credential['apiKey'], NEXSCOPE_PROXY_BASE=client.base)
-    env.pop('PYTHONPATH', None)
+    env = context.script_environment()
     arguments = args.arguments[1:] if args.arguments[:1] == ['--'] else args.arguments
     # No automatic replay: scripts may create reports, change ads, or consume credits.
     result = subprocess.run([sys.executable, str(ROOT / 'runner.py'), str(ROOT / 'skills' / args.skill / script), *arguments], cwd=folder, env=env, capture_output=True, text=True)
-    output = (result.stdout + result.stderr).replace(credential['apiKey'], '[REDACTED]')
+    output = context.redact(result.stdout + result.stderr)
     (folder / 'output.txt').write_text(output)
     files = list(folder.rglob('*.json'))
     failures = []
     for path in files:
         try:
             raw = path.read_text()
-            cleaned = raw.replace(credential['apiKey'], '[REDACTED]')
+            cleaned = context.redact(raw)
             if raw != cleaned:
                 path.write_text(cleaned)
             data = json.loads(cleaned)
@@ -196,30 +184,112 @@ def export(args):
 
 
 def main():
+    from .capabilities.mock import SCENARIOS
     parser = argparse.ArgumentParser(prog='nexscope')
     parser.add_argument('--version', action='version', version=__version__)
-    parser.add_argument('--api-base', default='https://api.nexscope.ai')
+    parser.add_argument('--api-base', default=None)
     commands = parser.add_subparsers(dest='command', required=True)
+    doctor = commands.add_parser('doctor', help='Local diagnostics; no network or stored credential access.')
+    doctor.add_argument('--profile', choices=['offline', 'independent', 'plugin'], default='offline')
+    doctor.add_argument('--check-output', help='Probe an existing directory with a temporary file, then remove the probe.')
+    doctor.add_argument('--json', action='store_true', help='JSON is the default output format.')
     commands.add_parser('get-skills').add_argument('skill', nargs='?', default='core')
-    commands.add_parser('auth').add_argument('action', choices=['login', 'poll', 'status', 'logout'])
+    auth_parser = commands.add_parser('auth')
+    auth_parser.add_argument('action', choices=['login', 'poll', 'status', 'logout'])
+    auth_parser.add_argument('--source-client', choices=['python-cli', 'codex-plugin', 'claude-code'])
+    auth_parser.add_argument('--source-channel', choices=['github', 'marketplace', 'local', 'unknown'], default='unknown')
+    auth_parser.add_argument('--source-entrypoint', choices=['cli', 'plugin', 'report'], default='cli')
     commands.add_parser('account')
+    capabilities = commands.add_parser('capabilities', help='Offline, versioned pilot capability descriptions.')
+    describe_capability = capabilities.add_subparsers(dest='capability_action', required=True).add_parser('describe')
+    describe_capability.add_argument('capability')
+    describe_capability.add_argument('--json', action='store_true', help='JSON is the default output format.')
+    data = commands.add_parser('data', help='Plan bounded data requests without network or credentials.')
+    data_run = data.add_subparsers(dest='data_action', required=True).add_parser('run')
+    data_run.add_argument('capability')
+    data_run.add_argument('--input', required=True)
+    execution = data_run.add_mutually_exclusive_group(required=True)
+    execution.add_argument('--dry-run', action='store_true')
+    execution.add_argument('--execute', action='store_true', help='Execute an explicit mock scenario or authorized remote scope.')
+    data_run.add_argument('--mock', choices=SCENARIOS)
+    data_run.add_argument('--allow-paid', action='store_true', help='Explicitly authorize bounded remote calls; max-calls is not a monetary cap.')
+    data_run.add_argument('--out', help='New evidence directory for mock execution.')
+    data_run.add_argument('--auth-mode', choices=MODES, default='browser-account')
+    data_run.add_argument('--max-calls', type=int, default=3)
+    data_run.add_argument('--json', action='store_true', help='JSON is the default output format.')
+    workflows = commands.add_parser('workflow', help='Product comparison workflow; remote calls require --execute --allow-paid.')
+    workflow = workflows.add_subparsers(dest='workflow_action', required=True).add_parser('compare')
+    inputs = workflow.add_mutually_exclusive_group(required=True)
+    inputs.add_argument('--asins')
+    inputs.add_argument('--keyword')
+    workflow.add_argument('--select-asins')
+    workflow.add_argument('--market', default='amazon.com')
+    workflow.add_argument('--auth-mode', choices=MODES, default='browser-account')
+    workflow.add_argument('--max-calls', type=int, default=4)
+    workflow.add_argument('--out', help='New output directory; never overwrite existing evidence.')
+    workflow.add_argument('--format', choices=['html', 'csv', 'markdown', 'all'], default='html')
+    workflow.add_argument('--mock', choices=SCENARIOS)
+    workflow.add_argument('--allow-paid', action='store_true', help='Explicitly authorize bounded remote calls; never retries.')
+    workflow.add_argument('--json', action='store_true')
+    workflow_execution = workflow.add_mutually_exclusive_group(required=True)
+    workflow_execution.add_argument('--dry-run', action='store_true')
+    workflow_execution.add_argument('--execute', action='store_true')
     r = commands.add_parser('run')
     r.add_argument('skill'); r.add_argument('--script'); r.add_argument('--output', default='nexscope')
     e = commands.add_parser('export')
     e.add_argument('input'); e.add_argument('--path', default=''); e.add_argument('--output', required=True)
+    report = commands.add_parser('report', help='Offline reports from your own data; no account needed.')
+    reports = report.add_subparsers(dest='report_action', required=True)
+    describe = reports.add_parser('describe', help='Describe input fields, formats and local limits.')
+    describe.add_argument('--schema', action='store_true', help='Print the JSON input schema.')
+    template = reports.add_parser('template', help='Export a blank standard CSV template.')
+    template.add_argument('--format', choices=['csv'], default='csv')
+    template.add_argument('--out', required=True)
+    demo = reports.add_parser('demo', help='Export fictional sample data (not live market data).')
+    demo.add_argument('--format', choices=['csv', 'json'], default='csv')
+    demo.add_argument('--out', required=True)
+    compare = reports.add_parser('compare', help='Compare a user CSV or JSON array offline.')
+    compare.add_argument('--input', required=True)
+    compare.add_argument('--format', choices=['html', 'csv', 'markdown'], default='html')
+    compare.add_argument('--out', required=True)
+    compare.add_argument('--dry-run', action='store_true', help='Validate and describe outputs without writing.')
     # Split script arguments explicitly so option names cannot change CLI behavior.
     argv = sys.argv[1:]
     tail = argv.index('--') if '--' in argv else len(argv)
     args = parser.parse_args(argv[:tail])
     args.arguments = argv[tail + 1:]
     try:
-        if args.command == 'get-skills': value = guide(args.skill)
+        if args.command == 'doctor':
+            from .doctor import diagnose
+            value = diagnose(args.profile, args.check_output, args.api_base)
+        elif args.command == 'get-skills': value = guide(args.skill)
         elif args.command == 'export': value = export(args)
+        elif args.command == 'report':
+            from .reports.compare import command
+            value = command(args)
+        elif args.command == 'capabilities':
+            from .capabilities.catalog import describe
+            value = describe(args.capability)
+        elif args.command == 'data':
+            from .capabilities.plan import command
+            value = command(args)
+        elif args.command == 'workflow':
+            from .workflows.compare import command
+            value = command(args)
         else:
-            client = Client(args.api_base)
-            value = run(args, client) if args.command == 'run' else client.auth(args.action if args.command == 'auth' else 'status')
+            client = Client(DEFAULT_ORIGIN if args.api_base is None else args.api_base)
+            source = None
+            if args.command == 'auth' and args.source_client:
+                if args.action != 'login':
+                    raise Failure('Source options are supported only for auth login.')
+                source = {'version': 1, 'client': args.source_client, 'channel': args.source_channel,
+                          'campaign': 'cli-data-release', 'entrypoint': args.source_entrypoint}
+            value = run(args, client) if args.command == 'run' else client.auth(args.action if args.command == 'auth' else 'status', source)
         print(json.dumps(value, ensure_ascii=False, indent=2))
-        return 1 if value.get('status') in ('REVIEW_REQUIRED', 'UNAVAILABLE') else 0
+        return 1 if value.get('status') in ('REVIEW_REQUIRED', 'UNAVAILABLE', 'PARTIAL', 'FAILED', 'INSUFFICIENT_DATA') else 0
+    except DatasetError as e:
+        print(json.dumps({'status': 'INVALID_INPUT', 'message': str(e), 'issues': e.issues}))
+        return 1
     except (Failure, OSError, ValueError, KeyError) as e:
         print(json.dumps({'status': 'ERROR', 'message': str(e)}))
         return 1
