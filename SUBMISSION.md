@@ -1,5 +1,16 @@
 # Release prerequisites
 
+- This companion candidate is not a publication. Use the distinct
+  `codex-nexscope-plugin-0.1.1-companion-candidate.zip`; do not overwrite a released
+  same-name/version package. Review/publisher authorization remains required.
+- Verify `.codex-plugin/companion.json` source revision, SHA-256 and Apache
+  license, both separately packaged wheels, and offline installation in a fresh
+  plugin-scoped environment. The bundled wheelhouse is Windows x64/CPython 3.12;
+  other target platforms require their own verified offline dependency artifacts.
+- Run `scripts/self_check.py` with the scoped Python, including old/new package
+  isolation, source selection, dry-run, direct/partial/resume and free reports.
+  Mock completion is not live Codex/Claude host, payment or successful upstream
+  search acceptance. The authoritative Claude plugin entry remains unconfirmed.
 - Deploy and verify the backend and web candidate together; no database migration is required.
 - Confirm production website origin, actual privacy/terms URLs, publisher identity and support contact.
 - Exercise email/Google/GitHub registration, confirmation, denial, expiry, repeated polling, interrupted credential delivery and revocation in a test environment.
