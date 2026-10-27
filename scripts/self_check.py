@@ -63,7 +63,9 @@ assert origin('http://127.0.0.1:8080/') == 'http://127.0.0.1:8080'
 for name, skill in catalog().items():
     for path, digest in skill['files'].items():
         file = ROOT / 'skills' / name / path
-        assert hashlib.sha256(file.read_bytes()).hexdigest() == digest, file
+        content = file.read_bytes()
+        # Git can check out these reviewed text resources with Windows line endings.
+        assert digest in {hashlib.sha256(content).hexdigest(), hashlib.sha256(content.replace(b'\r\n', b'\n')).hexdigest()}, file
     assert all(path in skill['files'] for path in skill['scripts'])
 with tempfile.TemporaryDirectory() as tmp:
     source, output = Path(tmp) / 'data.json', Path(tmp) / 'data.csv'
@@ -134,3 +136,7 @@ for name, script in (
     assert bundled['scripts'] == [script]
     assert bundled['instructions']
 print('PASS: 138 routable skills; incomplete workflows fail before credential access or execution')
+
+# The companion runs in a different interpreter, never in this legacy import path.
+import subprocess
+subprocess.run([sys.executable, str(Path(__file__).with_name('check_companion.py'))], check=True)

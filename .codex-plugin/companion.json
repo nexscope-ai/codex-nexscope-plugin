@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "distribution": "nexscope-cli",
+  "module": "nexscope_cli",
+  "version": "0.1.1",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/nexscope-ai/nexscope-cli",
+  "sourceRevision": "b78bcf460113eacdfa5af2f5d5489d4ad8665254",
+  "wheel": "runtime/companion/nexscope_cli-0.1.1-py3-none-any.whl",
+  "sha256": "38220114193b886af2fafcd282db1cfe2f1cd0606afb74e60f76fd9dabf5e114",
+  "bundledDependencyPlatform": "Windows x64 CPython 3.12; other platforms require an explicit offline wheelhouse matching dependencies.lock"
+}
