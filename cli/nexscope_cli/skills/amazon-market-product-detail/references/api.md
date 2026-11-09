@@ -18,11 +18,21 @@ POST Body (JSON):
 | queryTrendStartDate | string | No | Trend start date, format `yyyy-MM-dd`. Default returns only the last 15 days; querying more than 15 days doubles the cost |
 | queryTrendEndDate | string | No | Trend end date, format `yyyy-MM-dd` |
 
+## Listing date and age
+
+Read `products[].availableDate` only when present and nonempty. The date is a data-source listing/first-available date, not a verified brand launch date. It is optional and may be absent or empty. The source timezone is unspecified; use a consistent calendar-date basis for age calculations and leave missing dates unknown. Do not automatically make additional paid calls when a date is missing.
+
+ASIN date lookup example:
+
+```json
+{"asin":"B085S2CD7Y","marketplace":"us","includeTrend":2}
+```
+
 ## Nexscope response envelope
 
 These research endpoints return a platform object with numeric `code`, nullable `msg`, and business `data`. Only outer `code: 0` means success; `200`, string codes, missing codes, and HTTP 200 alone do not. A nonzero code is a platform error: show `msg` and do not interpret the payload as a successful result.
 
-`msg` preserves the upstream message when available; Chinese messages are translated to English by Nexscope. A successful response without a message has `msg: null`. Do not infer success or retry behavior from the message text. Root provider `errcode`, `errmsg`, and `errorCode` are removed from the business payload; nested business `code` and `status` retain their own meanings.
+`msg` preserves the upstream message when available; Chinese messages are translated to English by Nexscope. A successful response without a message has `msg: null`. Do not infer success or retry behavior from the message text. On both success and failure, the direct fields `code`, `errcode`, `errorCode`, `msg`, `errmsg`, `message`, and `errorMsg` are removed from public `data`. Read the message only from outer `msg`; deeper business fields are preserved, including nested `code` and `status`.
 
 Business field tables and abbreviated business examples below describe `data`, unless explicitly labeled as a complete platform response. For example, a business `products` field is at HTTP `data.products`, and a business `data` array is at HTTP `data.data`. The research endpoints already had this outer envelope; no additional wrapper is added.
 
@@ -38,8 +48,6 @@ Metadata includes string `ts` (epoch milliseconds), string `cost` (elapsed milli
 
 | Field | Type | Description |
 |------|------|------|
-| code | integer | Provider business value retained inside `data`; not the outer platform status |
-| msg | string | Response message |
 | total | integer | Total result count |
 | costTime | integer | Latency (ms) |
 | costToken | integer | Tokens consumed |
@@ -87,7 +95,7 @@ Trend arrays use an interleaved format: even indices are dates (yyyyMMdd), odd i
 | salesRank | integer | BSR rank, main category rank |
 | category | array | Main category, [category name, NodeId] |
 | bsrCategory | array | Subcategory rank list, each entry containing nodeId (node ID), name (category name), rank (rank), date (date, format yyyyMMdd) |
-| availableDate | string | Listing time, format yyyy-MM-dd |
+| availableDate | string | Optional listing/first-available date (yyyy-MM-dd); may be absent or empty; not a verified launch date |
 | onlineDays | integer | Days since listing |
 | rating | number | Current rating (0.0-5.0, e.g. 4.70) |
 | ratings | integer | Number of ratings |

@@ -1,5 +1,5 @@
 ---
-name: ecommerce.1688-search-by-image
+name: ecommerce-1688-search-by-image
 description: Perform image-based product search on the 1688 platform. Use an image URL to find visually similar supplier products, returning title, price, minimum order quantity, monthly sales, repurchase rate, trade score, and seller identity. Triggered when users mention 1688 image search, 1688 visual search, find supplier by image, reverse image search 1688, 1688 product sourcing by image, or Alibaba 1688 image search. Even if the user does not explicitly mention "image search," this skill should be triggered whenever a user provides an image URL and wants to find matching or similar products on the 1688 wholesale platform.
 ---
 
@@ -40,7 +40,7 @@ This skill performs visual product searches on the 1688 platform using an image 
 **Image Rules:**
 1. Only png, jpg, jpeg formats are supported. webp, gif, and other formats are NOT supported.
 2. Base64 string must be pure encoded content WITHOUT the `data:image/jpeg;base64,` prefix.
-3. Image source — one of imageUrl, imageBase64, or imageId must be provided (at least one required).
+3. Image source — exactly one of imageUrl, imageBase64, or imageId must be provided.
 
 | Parameter | Required | Default | Description |
 |-----------|----------|---------|-------------|
@@ -52,7 +52,7 @@ This skill performs visual product searches on the 1688 platform using an image 
 | priceStart | No | - | Min price filter (CNY) |
 | priceEnd | No | - | Max price filter (CNY) |
 | filter | No | - | Filter conditions, comma-separated (see supported filters below) |
-| sort | No | {"monthSold":"desc"} | Sort as JSON: {field: direction} (see supported sort fields below) |
+| sort | No | {"monthSold":"desc"} | JSON-encoded string, e.g. `"{\"price\":\"asc\"}"` (see supported sort fields below) |
 | keyword | No | - | Keyword to further filter results |
 | productCollectionId | No | - | Product collection ID (see supported IDs below) |
 
@@ -100,7 +100,7 @@ Multiple filters can be combined with commas (e.g. `1688Selection,totalEpScoreLv
 | monthSold | asc/desc | Monthly sales ascending/descending |
 | rePurchaseRate | asc/desc | Repurchase rate ascending/descending |
 
-Sort format example: `{"price":"asc"}` for price low to high.
+Request example: `{"imageId":"example-image-id","sort":"{\"price\":\"asc\"}","page":2}`. `sort` is a JSON-encoded string, not an object.
 
 ### Supported Product Collection IDs
 
@@ -119,11 +119,11 @@ Sort format example: `{"price":"asc"}` for price low to high.
 
 ## Usage
 
-- **API Endpoint**: `POST /alibaba1688/imageSearch` (see `references/api.md` for full parameters, responses, and error codes)
+- **API Endpoint**: `POST /api/v1/tools/research/alibaba1688/imageSearch` (see `references/api.md` for full parameters, responses, and error codes)
 - **Python Script**: `python scripts/alibaba1688_image_search.py '<JSON parameters>'`
 
 **Output strategy (script default behavior)**:
-- Prints the full JSON response to stdout
+- Saves the full response under `nexscope/<date>/<session>/data/`; prints full JSON up to 8 KB and a summary for larger responses. `--inline` prints all JSON; `--no-cache` requests live results. The default local query cache lasts 24 hours.
 
 **Data reading tip**: Use `jq` or `ConvertFrom-Json` to extract specific fields from the response as needed.
 
@@ -169,7 +169,7 @@ Search 1688 for products similar to this image: https://example.com/product.jpg 
 
 1. **Data real-time nature**: Results are live searches, not stored in any database.
 2. **Logic constraint**: If the user requests sort or filter conditions not in the preset supported list, do NOT call any other tool or logic to compensate.
-3. **Image input**: One of imageUrl, imageBase64, or imageId is required. For page > 1, prefer passing imageId from the first page result to speed up queries.
+3. **Image input**: Exactly one of imageUrl, imageBase64, or imageId is required. For page > 1, prefer passing imageId from the first page result to speed up queries.
 4. **Image format**: Only png, jpg, jpeg are supported. webp, gif, and other formats will be rejected.
 5. **Base64 format**: The imageBase64 value must be the raw Base64 string only — do NOT include the `data:image/jpeg;base64,` prefix.
 6. **Page size**: Maximum 50 results per page.
@@ -192,7 +192,7 @@ Search 1688 for products similar to this image: https://example.com/product.jpg 
 
 - Text/keyword-based 1688 search
 - 1688 product rankings/trending
-- Amazon image search (use ecommerce.amazon-search-by-image)
+- Amazon image search (use ecommerce-amazon-search-by-image)
 - Image generation or editing
 - Product review analysis
 - Price history or trend analysis
@@ -202,3 +202,11 @@ Search 1688 for products similar to this image: https://example.com/product.jpg 
 ## Authentication
 
 Set `NEXSCOPE_API_KEY`. Visit https://www.nexscope.ai/help/skills-external-access?co-from=skillNS to manage credits.
+
+Local images may be uploaded with `scripts/upload_image.py`, then searched using the returned public URL. Supply only PNG/JPEG images; convert other formats before uploading. A new upload does not itself run image search. Set `NEXSCOPE_PROXY_BASE` for the upload helper.
+
+HTTP 401 means Nexscope authentication failed; HTTP 402 means insufficient credits. Invoking this Skill consumes credits. `NEXSCOPE_PROXY_BASE` defaults to `https://api.nexscope.ai` for the query script. Do not automatically repeat paid calls or substitute a buyer/store after marketplace authorization failure.
+
+## User-facing language
+
+Use English for all user-facing explanations, examples, confirmations, results and error guidance. Translate provider-localized product titles, descriptions and business messages into English for presentation. Preserve identifiers, monetary values, units, URLs and original source data in saved artifacts. Keep official buyer, recipient, address and invoice details unchanged in API payloads; do not translate legal names or address records just to change their display language.

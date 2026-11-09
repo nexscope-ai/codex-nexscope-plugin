@@ -127,7 +127,7 @@ for name in ('geo-score-check', 'product-ai-visibility'):
     try: run(argparse.Namespace(skill=name, script=None), NoAccount())
     except Failure as error: assert str(error).startswith('UNAVAILABLE:')
     else: raise AssertionError('Unavailable skill was executed')
-assert len(guide('core')['skills']) == 138
+assert len(guide('core')['skills']) == 139
 for name, script in (
     ('amazon-traffic-gap-analyst', 'scripts/traffic_gap.py'),
     ('design-similarity-search', 'scripts/design_similarity.py'),
@@ -135,8 +135,14 @@ for name, script in (
     bundled = guide(name)
     assert bundled['scripts'] == [script]
     assert bundled['instructions']
-print('PASS: 138 routable skills; incomplete workflows fail before credential access or execution')
+print('PASS: 139 routable skills; incomplete workflows fail before credential access or execution')
 
 # The companion runs in a different interpreter, never in this legacy import path.
 import subprocess
-subprocess.run([sys.executable, str(Path(__file__).with_name('check_companion.py'))], check=True)
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--legacy-only', action='store_true', help='Check the legacy catalog only; does not qualify a companion release')
+options = parser.parse_args()
+if options.legacy_only:
+    print('NOT RUN: companion isolation checks (legacy-only scope); full candidate release still requires them')
+else:
+    subprocess.run([sys.executable, str(Path(__file__).with_name('check_companion.py'))], check=True)

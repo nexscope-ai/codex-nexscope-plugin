@@ -4,7 +4,9 @@
 
 - **Endpoint**: `${NEXSCOPE_PROXY_BASE}/api/v1/tools/research/dld/productBillboard`
 - **HTTP Method**: POST, Content-Type: application/json
-- **Authentication**: Header `Authorization: <api_key>`, api_key is read from environment variable `NEXSCOPE_API_KEY` or `NEXSCOPE_API_KEY` (if not configured, follow the **## Resolving Authentication and Credits Issues** section in SKILL.md)
+- **Authentication**: Header `Authorization: Bearer <api_key>`, api_key is read from environment variable `NEXSCOPE_API_KEY` (if not configured, follow the authentication guidance in SKILL.md)
+
+`NEXSCOPE_PROXY_BASE` defaults to `https://api.nexscope.ai`. Invoking this Skill consumes credits. HTTP 401 means Nexscope authentication failed; HTTP 402 means insufficient credits. Do not substitute another buyer/store after marketplace authorization failure or automatically retry paid requests.
 
 ## Request Parameters
 
@@ -42,9 +44,9 @@ POST Body (JSON):
 | sendTime | string | No | Delivery time (multi-select), comma-separated. Options: `24` (24 hours), `48` (48 hours), `72` (72 hours) |
 | proxyRights | string | No | Dropship rights (multi-select), comma-separated. Options: `4360897` (one-piece dropship with free shipping), `449154` (procure now, pay later) |
 | shopService | string | No | Seller services (multi-select), comma-separated. Options: `4057409` (Safe Buy), `888777` (Deep Verification Report) |
-| buyerProtections | string | No | Buyer protections (multi-select), comma-separated. Options: `\u5546\u54c1\u5305\u90ae` (free shipping), `7\u5929\u5305\u9000\u8d27` (7-day free return), `\u652f\u6301\u8fd0\u8d39\u9669` (shipping insurance supported) |
+| buyerProtections | string | No | Comma-separated provider-localized labels. English meanings: free shipping, 7-day free returns, shipping insurance. Translate to exact Chinese provider values before sending; these English meanings are not wire enum values. |
 | faceToFaceSupport | string | No | Waybill support (multi-select), comma-separated. Options: `441218` (Taobao), `386434` (Douyin), `422914` (Pinduoduo), `422978` (Xiaohongshu), `386370` (Kuaishou) |
-| productIds | string | No | Product IDs, separated by Chinese comma for multiple, max 20 |
+| productIds | string | No | Product IDs, separated by the Chinese enumeration delimiter `、` for multiple, max 20 |
 | goodsUrl | string | No | Product link URL |
 
 
@@ -52,7 +54,7 @@ POST Body (JSON):
 
 These research endpoints return a platform object with numeric `code`, nullable `msg`, and business `data`. Only outer `code: 0` means success; `200`, string codes, missing codes, and HTTP 200 alone do not. A nonzero code is a platform error: show `msg` and do not interpret the payload as a successful result.
 
-`msg` preserves the upstream message when available; Chinese messages are translated to English by Nexscope. A successful response without a message has `msg: null`. Do not infer success or retry behavior from the message text. Root provider `errcode`, `errmsg`, and `errorCode` are removed from the business payload; nested business `code` and `status` retain their own meanings.
+`msg` preserves the upstream message when available; Chinese messages are translated to English by Nexscope. A successful response without a message has `msg: null`. Do not infer success or retry behavior from the message text. On both success and failure, the direct fields `code`, `errcode`, `errorCode`, `msg`, `errmsg`, `message`, and `errorMsg` are removed from public `data`. Read the message only from outer `msg`; deeper business fields are preserved, including nested `code` and `status`.
 
 Business field tables and abbreviated business examples below describe `data`, unless explicitly labeled as a complete platform response. For example, a business `products` field is at HTTP `data.products`, and a business `data` array is at HTTP `data.data`. The research endpoints already had this outer envelope; no additional wrapper is added.
 
@@ -107,17 +109,19 @@ HTTP 200 does not prove business success. Read only the numeric outer platform `
 
 | Condition | Action |
 |---|---|
-| Authentication failed | HTTP 401 or authorized error: follow the **## Resolving Authentication and Credits Issues** section in SKILL.md. |
-| Insufficient credits | HTTP 402: follow the **## Resolving Authentication and Credits Issues** section in SKILL.md. |
+| Authentication failed | HTTP 401 or authorized error: follow the authentication guidance in SKILL.md. |
+| Insufficient credits | HTTP 402: follow the authentication guidance in SKILL.md. |
 
 ## curl Example
 
+This product-ID lookup can be sent without keyword translation. For an English keyword request, the Agent first translates the keyword into Simplified Chinese, then sends the prepared payload.
+
 ```bash
-curl -X POST ${NEXSCOPE_PROXY_BASE}/api/v1/tools/research/dld/productBillboard \
+curl -X POST ${NEXSCOPE_PROXY_BASE:-https://api.nexscope.ai}/api/v1/tools/research/dld/productBillboard \
   -H "Authorization: Bearer ${NEXSCOPE_API_KEY}" \
   -H "Content-Type: application/json" \
   -d '{
-    "keyWord": "phone case",
+    "productIds": "805578065498",
     "pageType": 3,
     "date": "2026-03-01",
     "sortField": "orderCount",
@@ -128,5 +132,3 @@ curl -X POST ${NEXSCOPE_PROXY_BASE}/api/v1/tools/research/dld/productBillboard \
 ```
 
 ---
-
-> Localization note: Example response strings and observed messages are translated into English. Actual provider responses may use their original locale. Request enums shown as JSON Unicode escapes must be sent with their decoded values.

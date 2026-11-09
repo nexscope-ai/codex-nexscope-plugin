@@ -25,8 +25,8 @@ This checkout/ZIP is a candidate; it has not updated a published Codex or Claude
 plugin. The MCP canvas plugin is a separate product.
 
 Both distributions are named `nexscope-cli`, import `nexscope_cli`, expose
-`nexscope`, and report version `0.1.1`. Do not replace one with the other globally.
-The original proprietary wheel remains at `runtime/nexscope_cli-0.1.1-py3-none-any.whl`;
+`nexscope`. The research CLI is version `0.1.2`; the pinned companion remains `0.1.1`. Do not replace one with the other globally.
+The original proprietary wheel remains at `runtime/nexscope_cli-0.1.2-py3-none-any.whl`;
 the Apache-2.0 companion wheel is under `runtime/companion/`. Its exact official
 artifact is pinned in [.codex-plugin/companion.json](.codex-plugin/companion.json):
 
@@ -78,8 +78,26 @@ keyring records remain in place; do not delete or migrate them. Old `run`,
 Local verification uses `scripts/self_check.py` with the scoped Python after
 offline setup (it supplies the existing legacy test's `requests` prerequisite).
 Build with `python scripts/build_plugin.py`; the output is
-`dist/codex-nexscope-plugin-0.1.1-companion-candidate.zip`. No installed venv is
+`dist/codex-nexscope-plugin-0.1.2-companion-candidate.zip`. No installed venv is
 included, and the existing `codex-nexscope-plugin-0.1.1.zip` is not overwritten.
+
+## Released sourcing workflows
+
+The bundled catalog contains 141 skills, including 139 routable workflows. This
+release adds `1688-procurement` 1.0.3 and refreshes four 1688 discovery and four
+Amazon research skills from the published Nexscope packages. Run
+`nexscope get-skills 1688-procurement` to read its 14 operation entrypoints,
+authorization instructions, translated screenshot, parameter examples and
+individual confirmation rules before use. Authorization is supported by LinkFox
+Agent, Nexscope's strategic partner in China. Browser translation can help with
+the Chinese 1688 page; authorization and account selection remain with the user.
+
+Catalog entries record each refreshed skill version and source revision. A
+scoped sync preserves unrelated catalog entries and their original provenance.
+For source-only validation, `python scripts/self_check.py --legacy-only` checks
+the research catalog without the optional companion artifacts. It does not
+replace full companion installation/isolation checks before packaging a complete
+plugin candidate. A Git checkout does not contain the ignored runtime wheels.
 
 ## Original CLI requirements
 

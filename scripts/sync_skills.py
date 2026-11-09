@@ -1,5 +1,6 @@
 """Vendor declared skill resources from a reviewed checkout; never run upstream code."""
 import ast
+import argparse
 import hashlib
 import json
 from pathlib import Path
@@ -9,13 +10,19 @@ import sys
 from public_copy import clean
 
 
-def sync(source, target):
-    catalog = {}
+def sync(source, target, selected=None):
+    previous = json.loads((target / 'catalog.json').read_text(encoding='utf-8')) if selected else {}
+    catalog = dict(previous.get('skills', {}))
+    revision = subprocess.check_output(['git', '-C', str(source), 'rev-parse', 'HEAD'], text=True).strip()
+    seen = set()
     translations = json.loads(Path(__file__).with_name("english_reference_replacements.json").read_text())
     availability = json.loads(Path(__file__).with_name("skill_availability.json").read_text())
     for guide in sorted(source.glob('ecommerce-*/SKILL.md')):
         folder = guide.parent
         name = folder.name.removeprefix('ecommerce-')
+        if selected and name not in selected:
+            continue
+        seen.add(name)
         manifest_path = folder / 'manifest.json'
         if not manifest_path.exists():
             manifest_path = folder / '.nexscope-manifest.json'
@@ -31,15 +38,17 @@ def sync(source, target):
             if not f.is_relative_to(folder.resolve()):
                 raise ValueError(f'Unsafe file: {folder.name}')
             if f.is_dir():
-                files.update(str(x.relative_to(folder.resolve())) for x in f.rglob('*') if x.is_file())
+                files.update(x.relative_to(folder.resolve()).as_posix() for x in f.rglob('*') if x.is_file())
             elif f.is_file():
-                files.add(str(f.relative_to(folder.resolve())))
+                files.add(f.relative_to(folder.resolve()).as_posix())
         # Older manifests omit companion scripts. Include source/resources, not run data.
         for dirname in ['scripts', 'references', 'assets']:
             for f in (folder / dirname).rglob('*'):
-                if f.is_file(): files.add(str(f.relative_to(folder)))
+                if f.is_file(): files.add(f.relative_to(folder).as_posix())
         if (folder / 'requirements.txt').is_file(): files.add('requirements.txt')
         dest = target / 'skills' / name
+        if not dest.resolve().is_relative_to((target / 'skills').resolve()):
+            raise ValueError('Destination escapes the bundled skills directory')
         if dest.exists(): shutil.rmtree(dest)
         entrypoints = []
         hashes = {}
@@ -73,14 +82,24 @@ def sync(source, target):
         if not entrypoints and not blocked:
             raise ValueError(f'Missing runnable entrypoint: {name}; declare its prerequisites before packaging')
         catalog[name] = {'source': folder.name, 'description': clean(manifest.get('description', name)),
-                         'scripts': entrypoints, 'files': hashes, 'available': blocked is None}
+                         'scripts': entrypoints, 'files': hashes, 'available': blocked is None,
+                         'version': manifest.get('version'), 'sourceRevision': revision}
         if blocked:
             catalog[name]['unavailable'] = blocked
-    revision = subprocess.check_output(['git', '-C', str(source), 'rev-parse', 'HEAD'], text=True).strip()
-    (target / 'catalog.json').write_text(json.dumps({'source': 'https://github.com/nexscope-ai/nexscope-ecommerce-skills',
-        'revision': revision, 'skills': catalog}, indent=2) + '\n')
-    print(f'Vendored {len(catalog)} skills at {revision}')
+    if selected and seen != set(selected):
+        raise ValueError('Missing requested skills: ' + ', '.join(sorted(set(selected) - seen)))
+    result = {'source': 'https://github.com/nexscope-ai/nexscope-ecommerce-skills',
+              'revision': previous.get('revision', revision), 'skills': catalog}
+    if selected:
+        update = {'revision': revision, 'skills': sorted(seen)}
+        result['scopedUpdates'] = [item for item in previous.get('scopedUpdates', []) if item != update] + [update]
+    (target / 'catalog.json').write_text(json.dumps(result, indent=2) + '\n', encoding='utf-8')
+    print(f'Vendored {len(seen)} selected skills at {revision}; catalog contains {len(catalog)} skills')
 
 
 if __name__ == '__main__':
-    sync(Path(sys.argv[1]).resolve(), Path(__file__).resolve().parents[1] / 'cli/nexscope_cli')
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('source')
+    parser.add_argument('--skills', nargs='+', help='Update only these published skill names; preserve other entries')
+    args = parser.parse_args()
+    sync(Path(args.source).resolve(), Path(__file__).resolve().parents[1] / 'cli/nexscope_cli', args.skills)

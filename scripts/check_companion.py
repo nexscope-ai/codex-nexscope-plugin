@@ -10,6 +10,7 @@ import sys
 import tempfile
 from unittest.mock import patch
 import venv
+import tomllib
 
 from companion import ROOT, environment_python, launch, source_arguments, verified_wheel
 
@@ -25,6 +26,8 @@ def cli(*arguments, expected=0, environment=None):
     return json.loads(run([sys.executable, '-I', ROOT / 'scripts/companion.py', *arguments], expected, environment))
 
 
+legacy_version = tomllib.loads((ROOT / 'pyproject.toml').read_text(encoding='utf-8'))['project']['version']
+legacy_wheel = ROOT / f'runtime/nexscope_cli-{legacy_version}-py3-none-any.whl'
 wheel, manifest = verified_wheel()
 assert cli('--verify-companion')['sha256'] == manifest['sha256']
 assert cli('get-skills', 'product-comparison')['ruleSource'] == 'nexscope_cli.workflows.compare'
@@ -37,12 +40,12 @@ assert 'already exists' in refused
 
 with tempfile.TemporaryDirectory(prefix='nexscope-companion-check-') as temporary:
     work = Path(temporary)
-    # A same-named/versioned proprietary wheel must fail even if its digest is supplied.
+    # A same-named proprietary wheel must fail even if its digest is supplied.
     fake = work / 'fake'
     (fake / '.codex-plugin').mkdir(parents=True)
     fake_wheel = fake / manifest['wheel']
     fake_wheel.parent.mkdir(parents=True)
-    shutil.copyfile(ROOT / 'runtime/nexscope_cli-0.1.1-py3-none-any.whl', fake_wheel)
+    shutil.copyfile(legacy_wheel, fake_wheel)
     tampered = dict(manifest, sha256=hashlib.sha256(fake_wheel.read_bytes()).hexdigest())
     (fake / '.codex-plugin/companion.json').write_text(json.dumps(tampered))
     with patch('companion.subprocess.run', side_effect=AssertionError('Unverified code launched')):
@@ -61,8 +64,8 @@ with tempfile.TemporaryDirectory(prefix='nexscope-companion-check-') as temporar
     venv.EnvBuilder(with_pip=False, symlinks=os.name != 'nt').create(legacy)
     legacy_python = legacy / ('Scripts/python.exe' if os.name == 'nt' else 'bin/python')
     run([uv, 'pip', 'install', '--offline', '--no-index', '--no-deps', '--python', legacy_python,
-         ROOT / 'runtime/nexscope_cli-0.1.1-py3-none-any.whl'])
-    assert launch(['--version'], fake) == 1  # Valid wheel, wrong same-version installed package.
+         legacy_wheel])
+    assert launch(['--version'], fake) == 1  # Valid wheel, wrong installed distribution.
     legacy_guide = [legacy_python, '-I', '-c', 'from nexscope_cli.main import guide; import json; print(json.dumps(guide("core")))']
     before = run(legacy_guide)
     assert 'product-comparison' not in json.loads(before).get('workflows', {})
