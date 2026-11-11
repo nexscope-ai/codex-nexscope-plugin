@@ -2220,11 +2220,11 @@
         "scripts/sku.py"
       ],
       "files": {
-        "SKILL.md": "a97bda9ba8da6c33b3110240d6117bb43e776b870df9b9c3d6fb6ded44a5d7b1",
-        "manifest.json": "1ddf9d48237501e515e011cd59c1d2dae7449708aecf8ab63f6be2daff2cb3d6",
+        "SKILL.md": "7baeb4bf9cdb769b1dd8bf4e525be24e177eb15b96aea2156ffb0109cf9a364a",
+        "manifest.json": "ad00b4e326e94888b7a51c5808f324dbfa0b37b17b1c7002286adbb16b4a9539",
         "references/1688-authorization-reference-en.png": "c14ae9566fc2575e88e0b3b8aaea8945c2aec8c8fbfbeef44167f9d56977812f",
-        "references/api.md": "e3ec13828875b2d352b9d3184346389fe45b7824065e0e484658a0f971e5798b",
-        "references/workflow.md": "ec82d0ea39c3e641dbaed14ad8be2a789d76a3cf6697361ccdf1fb7ad2aa8c95",
+        "references/api.md": "37c856ae6aee5f6dfbce8deeb92465382c647a273738e63d399ccf4a00e46150",
+        "references/workflow.md": "5a4564a55f7742a4ff9464cef0bd1a6f65a157c62991caa958652ae579b2d4a3",
         "scripts/_alibaba1688_common.py": "e5713e6d50386de498ba31b083de77a69eeff97150f027b6cc91734745e05589",
         "scripts/authorize_url.py": "19c88cafbc3885cdd1e23d652e07be2200543b69449ab9529fb00f03315f041c",
         "scripts/authorized_stores.py": "d56d7ed66640adbf04cc01d6874ae9aaaa1e86c870fcd7d1dfc02215639ff689",
@@ -2242,8 +2242,8 @@
         "scripts/sku.py": "1e5abc2e46214ed7207a7e5b9a97b5069187983efc2976799578bf13c24df385"
       },
       "available": true,
-      "version": "1.0.3",
-      "sourceRevision": "39491308194e23f37e14d0e61533e34d30856ad6"
+      "version": "1.0.4",
+      "sourceRevision": "a4b149d47a3ee7e71744df9494d507dd35ae26c7"
     }
   },
   "scopedUpdates": [
@@ -2259,6 +2259,12 @@
         "amazon-product-detail",
         "amazon-product-history",
         "amazon-search"
+      ]
+    },
+    {
+      "revision": "a4b149d47a3ee7e71744df9494d507dd35ae26c7",
+      "skills": [
+        "1688-procurement"
       ]
     }
   ]

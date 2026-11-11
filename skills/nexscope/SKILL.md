@@ -72,7 +72,9 @@ Nexscope's strategic partner in China providing authorization support; the guide
 includes an English reference screenshot and browser translation instructions.
 Never treat the authorization result page as proof of a usable buyer account:
 check `authorizedStores` through `scripts/authorized_stores.py` and require `ACTIVE` with `expired=false`. That check
-costs credits. Preserve account selection, all operation-specific confirmation
+costs credits. Remind the buyer to bind Alipay to that same 1688 account on 1688
+before previewing or creating an order; authorization does not verify this setup.
+Preserve account selection, all operation-specific confirmation
 flags, and the user's scope; example identifiers are placeholders. Use data only
 for the agreed purpose and in accordance with applicable local laws. Discovery
 search terms may need translation into Chinese before requesting 1688 data.

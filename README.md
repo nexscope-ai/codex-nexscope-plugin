@@ -84,8 +84,10 @@ included, and the existing `codex-nexscope-plugin-0.1.1.zip` is not overwritten.
 ## Released sourcing workflows
 
 The bundled catalog contains 141 skills, including 139 routable workflows. This
-release adds `1688-procurement` 1.0.3 and refreshes four 1688 discovery and four
-Amazon research skills from the published Nexscope packages. Run
+source update embeds `1688-procurement` 1.0.4 from the GitHub distribution
+repository. The other four 1688 discovery and four Amazon research skills retain
+their previously published versions. This repository update does not upgrade the
+production Skill directory or an installed plugin. Run
 `nexscope get-skills 1688-procurement` to read its 14 operation entrypoints,
 authorization instructions, translated screenshot, parameter examples and
 individual confirmation rules before use. Authorization is supported by LinkFox
