@@ -2,6 +2,8 @@
 
 Ecommerce research in Codex with [Nexscope](https://www.nexscope.ai). Research products, keywords, markets, competitors, reviews, and advertising, then save the results as files.
 
+[Browse Nexscope MCP tools](https://www.nexscope.ai/mcp?co-from=github-codex-plugin&utm_source=github&utm_medium=referral&utm_campaign=github_mcp_launch&utm_content=codex-nexscope-plugin_readme_tools) · [MCP connection guide](https://www.nexscope.ai/mcp-map?co-from=github-codex-plugin&utm_source=github&utm_medium=referral&utm_campaign=github_mcp_launch&utm_content=codex-nexscope-plugin_readme_setup)
+
 The repository root is the plugin root. Codex discovers the Nexscope Skill in `skills/`.
 
 ## Skill
