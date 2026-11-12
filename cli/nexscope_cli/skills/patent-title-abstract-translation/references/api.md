@@ -12,20 +12,20 @@ POST Body (JSON):
 
 | Parameter | Type | Required | Description |
 |------|------|------|------|
-| patentId | string | At least one of patentId and patentNumber is required | Nexscope internal patent ID. Only a single value is supported; multiple values separated by commas are not allowed. Max length: 60,000 characters |
-| patentNumber | string | At least one of patentId and patentNumber is required | Publication (grant) number. Only a single value is supported; multiple values separated by commas are not allowed. Max length: 60,000 characters |
+| patentId | string | At least one of patentId and patentNumber is required | Nexscope internal patent ID. Multiple values separated by English commas are supported. Max length: 60,000 characters |
+| patentNumber | string | At least one of patentId and patentNumber is required | Publication (grant) number. Multiple values separated by English commas are supported. Max length: 60,000 characters |
 | replaceByRelated | integer | No | Whether to substitute with a family patent's abstract when the abstract is unavailable: `1` Yes, `0` No. Default `0` |
 | lang | string | No | Target translation language. Options: `en` (English, default), `cn` (Chinese), `jp` (Japanese). Max length: 1,000 characters |
 
 - At least one of `patentId` and `patentNumber` must be provided. If both are present, `patentId` takes priority
 
-> **Single patent limit**: This API consumes significant credits. To query multiple patents, you must obtain explicit user consent and make separate requests. Only 1 patent per request.
+> **Skill single-patent policy**: This API consumes credits. To query multiple patents, you must obtain explicit user consent and make separate requests. This Skill sends one patent per call to control credits; the gateway accepts comma-separated identifiers.
 
 ## Nexscope response envelope
 
 These research endpoints return a platform object with numeric `code`, nullable `msg`, and business `data`. Only outer `code: 0` means success; `200`, string codes, missing codes, and HTTP 200 alone do not. A nonzero code is a platform error: show `msg` and do not interpret the payload as a successful result.
 
-`msg` preserves the upstream message when available; Chinese messages are translated to English by Nexscope. A successful response without a message has `msg: null`. Do not infer success or retry behavior from the message text. Root provider `errcode`, `errmsg`, and `errorCode` are removed from the business payload; nested business `code` and `status` retain their own meanings.
+`msg` preserves the upstream message when available; Chinese messages are translated to English by Nexscope. A successful response without a message has `msg: null`. Do not infer success or retry behavior from the message text. On both success and failure, the direct fields `code`, `errcode`, `errorCode`, `msg`, `errmsg`, `message`, and `errorMsg` are removed from public `data`. Read the message only from outer `msg`; deeper business fields are preserved, including nested `code` and `status`.
 
 Business field tables and abbreviated business examples below describe `data`, unless explicitly labeled as a complete platform response. For example, a business `products` field is at HTTP `data.products`, and a business `data` array is at HTTP `data.data`. The research endpoints already had this outer envelope; no additional wrapper is added.
 
@@ -71,3 +71,9 @@ curl -X POST ${NEXSCOPE_PROXY_BASE}/api/v1/tools/research/zhihuiya/abstractDataT
 ```
 
 ---
+
+## API Key request rate and retries
+
+All API Keys of one Nexscope user share the public API execution request-rate allowance, measured in any rolling 1-second window. The allowed RPS depends on that user's entitlements; it is not a universal 1 RPS. One Skill operation may issue multiple public API requests, each of which uses the allowance.
+
+HTTP 429 with Nexscope outer code `13012` means request-rate exhaustion: honor the response's `Retry-After`. Outer code `13013` means concurrent-request exhaustion, not rate exhaustion; honor `Retry-After` when supplied. Check the HTTP status and outer JSON code separately. Do not automatically replay writes or requests with uncertain outcomes; first reconcile the operation's state.

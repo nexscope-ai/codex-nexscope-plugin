@@ -9,7 +9,7 @@ This skill fetches the full product card for one Ozon (Russia) SKU per call via 
 
 ## Core Concepts
 
-**Single-SKU constraint**: `productIds` remains an array for upstream compatibility, but it must contain exactly **one** Ozon product ID. Multiple IDs are currently rejected. When several SKUs are requested, call the tool once per SKU and inform the user that each call consumes credits.
+**Single-SKU constraint**: `productId` is a single Ozon product ID (integer or string). The former `productIds` array is deprecated and rejected. When several SKUs are requested, call the tool once per SKU and inform the user that each call consumes credits.
 
 **Fulfillment model per SKU**: Each product card carries `deliveryScheme`:
 - `FBO` — Fulfillment by Ozon (stock in Ozon warehouses)
@@ -27,7 +27,7 @@ Pass `includeFbs: true` to allow FBS SKUs and FBS-scoped metrics into the respon
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
-| productIds | array<integer\|string> | yes | Exactly one Ozon SKU ID, for example `[1786874757]` |
+| productId | integer\|string | yes | One Ozon SKU ID, for example `1786874757` |
 | startDate | string | no | Stats window start, `YYYY-MM-DD`; latest = yesterday |
 | endDate | string | no | Stats window end, `YYYY-MM-DD`; latest = yesterday |
 | includeFbs | boolean | no | `true` to include FBS data; `false` = FBO-only |
@@ -62,13 +62,13 @@ If you encounter authentication or credit issues:
 
 **1. Single-SKU detail**
 ```json
-{"productIds": [1786874757]}
+{"productId": 1786874757}
 ```
 
 **2. Single-SKU lookup with period**
 ```json
 {
-  "productIds": [1786874757],
+  "productId": 1786874757,
   "startDate": "2025-03-01",
   "endDate": "2025-03-31",
   "includeFbs": true
@@ -77,12 +77,12 @@ If you encounter authentication or credit issues:
 
 **3. FBO-only snapshot**
 ```json
-{"productIds": [1786874757], "includeFbs": false}
+{"productId": 1786874757, "includeFbs": false}
 ```
 
 **4. SKUs discovered upstream — full card**
 ```json
-{"productIds": [<one productId from ecommerce.ozon-product-search>]}
+{"productId": <one productId from ecommerce.ozon-product-search>}
 ```
 
 ## How to Chain with Other Ozon Skills
@@ -103,7 +103,7 @@ If you encounter authentication or credit issues:
 
 ## Important Limitations
 
-- **One SKU per call** — `productIds` must contain exactly one item. Never send several IDs in one request.
+- **One SKU per call** — Send one `productId` per request. Never send an array or the deprecated `productIds` field.
 - **Ozon-only** — this tool does not cover Wildberries or other Russian marketplaces.
 - **T-1 data** — `endDate` must not be today or future.
 - **FBS coverage** — some categories have partial FBS coverage; if the input set is FBS-heavy, expect sparser cards.
@@ -129,3 +129,9 @@ If you encounter authentication or credit issues:
 - Brand / category / seller drill-down with filters → use the matching drill-down skill
 
 **Boundary judgment**: If the user already has a SKU and wants sales / price / stock / rating, this is the skill. For a list, process one SKU per call without silently multiplying paid requests. If they don't yet have SKUs, route through the search or drill-down skills first.
+
+## API Key request rate
+
+All Nexscope API Keys belonging to the same user share one request-rate allowance for public API execution. The allowance is measured over any rolling 1-second window. Your RPS depends on your account entitlements; do not assume every user has a fixed 1 RPS. A single Skill operation may make multiple public API requests, and each request uses this allowance.
+
+If an execution request returns HTTP 429 with outer code `13012`, the request-rate allowance was exceeded. Honor the returned `Retry-After` before considering another request. Outer code `13013` means the concurrent-request limit was exceeded, not the rate limit; honor its `Retry-After` when supplied. Inspect the response and reconcile state before retrying. Never automatically replay a write operation or a request whose outcome is unclear.

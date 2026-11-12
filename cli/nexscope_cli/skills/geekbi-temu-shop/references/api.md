@@ -27,7 +27,7 @@
 
 These research endpoints return a platform object with numeric `code`, nullable `msg`, and business `data`. Only outer `code: 0` means success; `200`, string codes, missing codes, and HTTP 200 alone do not. A nonzero code is a platform error: show `msg` and do not interpret the payload as a successful result.
 
-`msg` preserves the upstream message when available; Chinese messages are translated to English by Nexscope. A successful response without a message has `msg: null`. Do not infer success or retry behavior from the message text. Root provider `errcode`, `errmsg`, and `errorCode` are removed from the business payload; nested business `code` and `status` retain their own meanings.
+`msg` preserves the upstream message when available; Chinese messages are translated to English by Nexscope. A successful response without a message has `msg: null`. Do not infer success or retry behavior from the message text. On both success and failure, the direct fields `code`, `errcode`, `errorCode`, `msg`, `errmsg`, `message`, and `errorMsg` are removed from public `data`. Read the message only from outer `msg`; deeper business fields are preserved, including nested `code` and `status`.
 
 Package scripts unwrap this platform object for their business output and retain its `code`, `msg`, and timing metadata under `_nexscope`; for those outputs, inspect `_nexscope.code` / `_nexscope.msg`. Business `code` or `error` fields are not platform success markers.
 
@@ -191,7 +191,7 @@ curl -X POST "${NEXSCOPE_PROXY_BASE}/api/v1/tools/research/geekbi/temu/siteList"
 | `title` / `sourceType` / `sourceTool` / `type` | string | `Temu Site List` (Temu site list) / `temu` / `geekbi_temu` / `tableListWorkbenches` |
 | `columns` | array | Render column definitions |
 
-`sites[]` fields: `siteId` (internal ID, not used for filtering), `regionId`, `name`, `cnName` (Chinese name; the sample value means United States), `lang`, `currency`, `extraFields`. Business fields may be null; filter out empty `regionId` values before chained calls.
+`sites[]` fields: `siteId` (integer or string internal ID, not used for filtering), `regionId` (positive integer used by other endpoints), `name` (site name), `cnName` (Chinese name; the sample value means United States), `lang`, `currency`, and optional object `extraFields`. Business fields may be null; filter out empty `regionId` values before chained calls.
 
 ### Category List: `POST /api/v1/tools/research/geekbi/temu/categoryList`
 
@@ -246,5 +246,11 @@ HTTP 200 does not prove business success. Read only the numeric outer platform `
 Shop search rejects `regionId<1`, `page<1`, `size` outside 1–200, `page*size>10000`, invalid `hostingMode/order`, `mallStar` outside 0–5, and any minimum exceeding its maximum. Null values in `catIds` are filtered out; callers should send only valid integers.
 
 Legacy local cache: a still-valid cache created before this response contract remains usable without a new paid request. The scripts mark its copied metadata as `_nexscope.responseContract = "legacy-cache"`, with `_nexscope.code` and `_nexscope.msg` set to `null` because the original platform status/message is unavailable. Do not infer platform success from business `errcode`, `code`, or `status`. Existing business data, billing metadata, cache contents and expiration are preserved; the marker is added only to the in-memory output.
+
+## API Key request rate and retries
+
+All API Keys of one Nexscope user share the public API execution request-rate allowance, measured in any rolling 1-second window. The allowed RPS depends on that user's entitlements; it is not a universal 1 RPS. One Skill operation may issue multiple public API requests, each of which uses the allowance.
+
+HTTP 429 with Nexscope outer code `13012` means request-rate exhaustion: honor the response's `Retry-After`. Outer code `13013` means concurrent-request exhaustion, not rate exhaustion; honor `Retry-After` when supplied. Check the HTTP status and outer JSON code separately. Do not automatically replay writes or requests with uncertain outcomes; first reconcile the operation's state.
 
 > Localization note: Example response strings and observed messages are translated into English. Actual provider responses may use their original locale. Request enums shown as JSON Unicode escapes must be sent with their decoded values.

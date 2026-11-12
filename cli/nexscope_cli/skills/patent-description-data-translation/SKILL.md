@@ -17,8 +17,8 @@ When a patent's description is unavailable, the tool can optionally substitute i
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
-| patentId | string | Conditionally | Patent ID. At least one of `patentId` or `patentNumber` must be provided. If both are given, `patentId` takes priority. Single patent ID only. Do NOT pass comma-separated multiple IDs. |
-| patentNumber | string | Conditionally | Publication (announcement) number. At least one of `patentId` or `patentNumber` must be provided. Single publication/announcement number only. Do NOT pass comma-separated multiple numbers. |
+| patentId | string | Conditionally | Patent ID. At least one of `patentId` or `patentNumber` must be provided. If both are given, `patentId` takes priority. This Skill sends one patent ID per call; the gateway accepts up to 100 comma-separated IDs. |
+| patentNumber | string | Conditionally | Publication (announcement) number. At least one of `patentId` or `patentNumber` must be provided. This Skill sends one publication number per call; the gateway accepts up to 100 comma-separated numbers. |
 | lang | string | No | Target translation language. Supported values: `en` (English, default), `cn` (Chinese), `jp` (Japanese). |
 | replaceByRelated | integer | No | Whether to substitute with a patent family member's description when the original is unavailable. `1` = yes, `0` = no (default). |
 
@@ -26,16 +26,16 @@ When a patent's description is unavailable, the tool can optionally substitute i
 
 1. **At least one identifier required**: Either `patentId` or `patentNumber` must be provided. If the user gives a publication number like "US10123456B2", use `patentNumber`. If they give a numeric patent ID, use `patentId`.
 2. **Priority**: When both identifiers are supplied, `patentId` takes precedence.
-3. **Single patent per request**: Only one patent may be passed per request. If the user has multiple patents, obtain explicit consent and make a separate call for each.
+3. **Single patent per request**: This Skill sends one patent per call to control credits. For multiple patents, obtain explicit consent before separate calls; the gateway accepts up to 100 per request.
 4. **Default language**: If the user does not specify a language, default to `en` (English).
 
-> **Single Patent Limit**: This endpoint consumes many credits. If you need to check multiple patents, you must obtain explicit user consent and make separate requests. Each call can only pass one patent (`patentId` and `patentNumber` cannot be comma-separated into multiple values).
+> **Skill single-patent policy**: This endpoint consumes credits. If you need to check multiple patents, you must obtain explicit user consent and make separate requests. This Skill uses one patent per call; the gateway supports up to 100 English comma-separated identifiers.
 
 ## Invocation
 
 - **API Endpoint**: `POST /zhihuiya/descriptionDataTranslated` (full parameters/response/error codes in `references/api.md`)
 - **Python Script**: `python scripts/patent_description_data_translation.py '<JSON params>' [--inline]`
-- **Cost Constraints**: This tool consumes credits. The same parameter combination defaults to a single call per session. The script includes a 24-hour local cache. Do not automatically retry with different keywords, pagination, or modified parameters on failure or empty results; inform the user that additional costs will be incurred before continuing to search. **Single Patent Limit**: This endpoint consumes many credits. Each call can only pass one patent; if you need to check multiple patents, you must obtain explicit user consent and make separate requests.
+- **Cost Constraints**: This tool consumes credits. The same parameter combination defaults to a single call per session. The script includes a 24-hour local cache. Do not automatically retry with different keywords, pagination, or modified parameters on failure or empty results; inform the user that additional costs will be incurred before continuing to search. **Skill single-patent policy**: This endpoint consumes credits. This Skill uses one patent per call to control credits. For multiple patents, obtain explicit user consent before separate calls; the gateway supports up to 100 per request.
 
 **Output Strategy (default script behavior)**:
 - **Always** write the full response to `<cwd>/nexscope/<YYYY-MM-DD>/<session>/data/nexscope-zhihuiya-description-data-translated-<timestamp>.json` (`<cwd>` is the working directory at script execution time, which in Claude Code is the current project directory; `<session>` is taken from the `SESSION_ID` environment variable, auto-grouped by user task; **writing to /tmp is forbidden** -- error if the current directory is not writable)
@@ -95,3 +95,9 @@ lang: "jp"
 - Patent legal status or prosecution history
 - Patent citation or reference analysis
 - Patent portfolio analytics or statistics
+
+## API Key request rate
+
+All Nexscope API Keys belonging to the same user share one request-rate allowance for public API execution. The allowance is measured over any rolling 1-second window. Your RPS depends on your account entitlements; do not assume every user has a fixed 1 RPS. A single Skill operation may make multiple public API requests, and each request uses this allowance.
+
+If an execution request returns HTTP 429 with outer code `13012`, the request-rate allowance was exceeded. Honor the returned `Retry-After` before considering another request. Outer code `13013` means the concurrent-request limit was exceeded, not the rate limit; honor its `Retry-After` when supplied. Inspect the response and reconcile state before retrying. Never automatically replay a write operation or a request whose outcome is unclear.

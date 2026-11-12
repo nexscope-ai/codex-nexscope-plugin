@@ -72,7 +72,7 @@ You must provide **at least one** of the following two parameters. If both are p
 - Use **patentId** when the user provides an internal Nexscope identifier, typically obtained from a previous Nexscope search result.
 - When the user provides both, pass both and the API will prefer patentId.
 
-> **Single-patent limit**: This endpoint consumes significant credits. To query multiple patents, obtain explicit user consent and make separate calls for each. Only 1 patent per call (`patentId` and `patentNumber` do not accept comma-separated multiple values).
+> **Skill single-patent policy**: This endpoint consumes credits. To query multiple patents, obtain explicit user consent and make separate calls for each. This Skill sends one patent per call to control credits; the gateway accepts up to 100 English comma-separated identifiers.
 
 ## Usage Examples
 
@@ -102,7 +102,7 @@ You must provide **at least one** of the following two parameters. If both are p
 ## Important Limitations
 
 - **At least one identifier required**: Either `patentId` or `patentNumber` must be provided; omitting both will result in an error.
-- **Single patent per request**: Only one patent ID or publication number may be passed per call (no comma-separated batches).
+- **Skill request policy**: This Skill uses one patent per call to control credits; the gateway accepts up to 100 English comma-separated identifiers.
 - **Claims availability**: Not all patents have claims data available. Use `replaceByRelated` = `1` to attempt family member substitution when claims are missing.
 - **Claim object structure**: The individual claim objects within the `claims` array may vary in structure depending on the patent office and data source.
 
@@ -124,3 +124,9 @@ You must provide **at least one** of the following two parameters. If both are p
 - Patent citation or reference analysis
 - Patent full-text beyond claims (abstract, description, drawings)
 - Freedom-to-operate or infringement opinions (legal advice)
+
+## API Key request rate
+
+All Nexscope API Keys belonging to the same user share one request-rate allowance for public API execution. The allowance is measured over any rolling 1-second window. Your RPS depends on your account entitlements; do not assume every user has a fixed 1 RPS. A single Skill operation may make multiple public API requests, and each request uses this allowance.
+
+If an execution request returns HTTP 429 with outer code `13012`, the request-rate allowance was exceeded. Honor the returned `Retry-After` before considering another request. Outer code `13013` means the concurrent-request limit was exceeded, not the rate limit; honor its `Retry-After` when supplied. Inspect the response and reconcile state before retrying. Never automatically replay a write operation or a request whose outcome is unclear.

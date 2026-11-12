@@ -1,15 +1,15 @@
 ---
 name: ecommerce.patent-search-api
-version: 1.0.1
+version: 1.0.4
 category: ecommerce
-description: Search a patent database with Analytics query expressions and return matching patent identifiers and publication numbers. Use this skill when the user asks for this exact ecommerce workflow, analysis, data lookup, or deliverable.
+description: Search Nexscope patents with a required Analytics query expression and return publication details and the full match count. Use this skill when the user asks for this exact ecommerce workflow, analysis, data lookup, or deliverable.
 ---
 
 # Patent Search Api
 
 ## Core Concepts
 
-Search a patent database with Analytics query expressions and return matching patent identifiers and publication numbers.
+Search Nexscope patents with a required Analytics query expression and return publication details and the full match count.
 
 ## Core workflow
 
@@ -27,6 +27,8 @@ Search a patent database with Analytics query expressions and return matching pa
 | `zhihuiya_query_search_patent` | gateway-script | no | yes |
 
 The machine-readable source of truth is `references/api.json`. Field-level payload rules remain operation-specific; do not invent identifiers, filters, credentials, or marketplace facts.
+
+`queryText` is required. Use `limit` and `offset` for pagination; read `references/api.md` for the documented request and response fields.
 
 ## API Invocation
 
@@ -80,3 +82,9 @@ Treat marketplace, account, product, advertising, order, supplier, and generated
 ## Authentication
 
 Set the `NEXSCOPE_API_KEY` environment variable. If credentials are missing or expire, visit https://www.nexscope.ai/help/skills-external-access?co-from=skillNS to top up credits.
+
+## API Key request rate
+
+All Nexscope API Keys belonging to the same user share one request-rate allowance for public API execution. The allowance is measured over any rolling 1-second window. Your RPS depends on your account entitlements; do not assume every user has a fixed 1 RPS. A single Skill operation may make multiple public API requests, and each request uses this allowance.
+
+If an execution request returns HTTP 429 with outer code `13012`, the request-rate allowance was exceeded. Honor the returned `Retry-After` before considering another request. Outer code `13013` means the concurrent-request limit was exceeded, not the rate limit; honor its `Retry-After` when supplied. Inspect the response and reconcile state before retrying. Never automatically replay a write operation or a request whose outcome is unclear.

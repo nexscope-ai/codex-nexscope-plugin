@@ -49,11 +49,13 @@ This skill searches the Nexscope Ozon product database and filters products by r
 | drr | {min,max} | no | Ad-cost share range. |
 | grossMargin | {min,max} | no | Gross margin range. |
 | returnCancellationRate | {min,max} | no | Return/cancellation rate range. |
-| weight | {min,max} | no | Weight range (g). |
-| volume | {min,max} | no | Volume range (L). |
+| weight | {min,max} | no | Weight range (g); packaging inclusion is not documented. |
+| volume | {min,max} | no | Volume range (L); item/package measurement basis is not documented. |
 | uId / memberId | string | no | User / member ID (data attribution). |
 
 All range filters are `{min, max}` objects; supply either or both bounds. Only `page` is required.
+
+The supplier documents `weight` in g and `volume` in L but does not say whether they include packaging. Do not treat these fields as packed shipping gross weight or external parcel dimensions for freight or customs calculations. No separate external length, width, and height fields are documented for this endpoint.
 
 ## Calling the Tool
 
@@ -161,3 +163,9 @@ If you encounter authentication or credit issues:
 - Non-Ozon marketplaces → not covered here.
 
 **Boundary judgment**: if the user wants to **screen Ozon products by metrics and read product-level report rows**, start here. If they want keyword-level market data, a single shop's catalog, or a category aggregate, route to the corresponding Nexscope Ozon data source.
+
+## API Key request rate
+
+All Nexscope API Keys belonging to the same user share one request-rate allowance for public API execution. The allowance is measured over any rolling 1-second window. Your RPS depends on your account entitlements; do not assume every user has a fixed 1 RPS. A single Skill operation may make multiple public API requests, and each request uses this allowance.
+
+If an execution request returns HTTP 429 with outer code `13012`, the request-rate allowance was exceeded. Honor the returned `Retry-After` before considering another request. Outer code `13013` means the concurrent-request limit was exceeded, not the rate limit; honor its `Retry-After` when supplied. Inspect the response and reconcile state before retrying. Never automatically replay a write operation or a request whose outcome is unclear.

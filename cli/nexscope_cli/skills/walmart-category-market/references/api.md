@@ -50,7 +50,7 @@ Request examples:
 
 These research endpoints return a platform object with numeric `code`, nullable `msg`, and business `data`. Only outer `code: 0` means success; `200`, string codes, missing codes, and HTTP 200 alone do not. A nonzero code is a platform error: show `msg` and do not interpret the payload as a successful result.
 
-`msg` preserves the upstream message when available; Chinese messages are translated to English by Nexscope. A successful response without a message has `msg: null`. Do not infer success or retry behavior from the message text. Root provider `errcode`, `errmsg`, and `errorCode` are removed from the business payload; nested business `code` and `status` retain their own meanings.
+`msg` preserves the upstream message when available; Chinese messages are translated to English by Nexscope. A successful response without a message has `msg: null`. Do not infer success or retry behavior from the message text. On both success and failure, the direct fields `code`, `errcode`, `errorCode`, `msg`, `errmsg`, `message`, and `errorMsg` are removed from public `data`. Read the message only from outer `msg`; deeper business fields are preserved, including nested `code` and `status`.
 
 Package scripts unwrap this platform object for their business output and retain its `code`, `msg`, and timing metadata under `_nexscope`; for those outputs, inspect `_nexscope.code` / `_nexscope.msg`. Business `code` or `error` fields are not platform success markers.
 
@@ -68,8 +68,6 @@ The business `code` / `msg` fields, if present, remain inside platform `data`; o
 
 | Field | Type | Description |
 |---|---|---|
-| `code` | integer | Provider business value retained inside `data`; not the outer platform status |
-| `msg` | string | Response message; no-data responses may contain "Query succeeded, but no data" (query succeeded, but no data) |
 | `data` | object | Fixed response container; `data.value` preserves the original Nexscope array, object, scalar, or `null` according to the operation |
 | `operation` | string | The operation actually executed: `tree`, `searchByName`, or `marketReport` |
 | `requestConsumed` | integer | Upstream consumption for this request; if missing or 0, use the documented consumption for the operation; keep 0 when Nexscope explicitly returns `Code=11` (no data) |
@@ -136,4 +134,8 @@ This endpoint is separate from the tool API: `POST https://skill-api.nexscope.co
 
 `sentiment` must be one of `POSITIVE`, `NEUTRAL`, or `NEGATIVE`; `category` must be one of `BUG`, `COMPLAINT`, `SUGGESTION`, or `OTHER`.
 
-> Localization note: Example response strings and observed messages are translated into English. Actual provider responses may use their original locale. Request enums shown as JSON Unicode escapes must be sent with their decoded values.
+## API Key request rate and retries
+
+All API Keys of one Nexscope user share the public API execution request-rate allowance, measured in any rolling 1-second window. The allowed RPS depends on that user's entitlements; it is not a universal 1 RPS. One Skill operation may issue multiple public API requests, each of which uses the allowance.
+
+HTTP 429 with Nexscope outer code `13012` means request-rate exhaustion: honor the response's `Retry-After`. Outer code `13013` means concurrent-request exhaustion, not rate exhaustion; honor `Retry-After` when supplied. Check the HTTP status and outer JSON code separately. Do not automatically replay writes or requests with uncertain outcomes; first reconcile the operation's state.

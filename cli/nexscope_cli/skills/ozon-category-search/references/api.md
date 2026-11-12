@@ -32,7 +32,7 @@ POST Body (JSON). The following fields are consistent with the interface `inputS
 
 These research endpoints return a platform object with numeric `code`, nullable `msg`, and business `data`. Only outer `code: 0` means success; `200`, string codes, missing codes, and HTTP 200 alone do not. A nonzero code is a platform error: show `msg` and do not interpret the payload as a successful result.
 
-`msg` preserves the upstream message when available; Chinese messages are translated to English by Nexscope. A successful response without a message has `msg: null`. Do not infer success or retry behavior from the message text. Root provider `errcode`, `errmsg`, and `errorCode` are removed from the business payload; nested business `code` and `status` retain their own meanings.
+`msg` preserves the upstream message when available; Chinese messages are translated to English by Nexscope. A successful response without a message has `msg: null`. Do not infer success or retry behavior from the message text. On both success and failure, the direct fields `code`, `errcode`, `errorCode`, `msg`, `errmsg`, `message`, and `errorMsg` are removed from public `data`. Read the message only from outer `msg`; deeper business fields are preserved, including nested `code` and `status`.
 
 Business field tables and abbreviated business examples below describe `data`, unless explicitly labeled as a complete platform response. For example, a business `products` field is at HTTP `data.products`, and a business `data` array is at HTTP `data.data`. The research endpoints already had this outer envelope; no additional wrapper is added.
 
@@ -46,8 +46,6 @@ Metadata includes string `ts` (epoch milliseconds), string `cost` (elapsed milli
 
 | Field | Type | Description |
 |------|------|------|
-| code | string | Provider business value retained inside `data`; not the outer platform status |
-| msg | string | Message; `ok` for success |
 | id | string | Echoed category ID |
 | total | integer | **Number of records returned on this page** (equals the current page `data` count, not total category product count) |
 | totalSales | integer | Total category sales volume (within the statistics interval) |
@@ -140,8 +138,6 @@ curl -X POST ${NEXSCOPE_PROXY_BASE}/api/v1/tools/research/seerfar/ozon/categoryS
 
 ```json
 {
-  "code": "200",
-  "msg": "ok",
   "id": "15621032_15621049_115951147",
   "total": 5,
   "totalSales": 2066,
@@ -202,5 +198,11 @@ curl -X POST ${NEXSCOPE_PROXY_BASE}/api/v1/tools/research/seerfar/ozon/categoryS
 > `products` content is identical to `data`, represented as `"..."` in the example to indicate omission. `total` is the number of records returned on this page (5 in this example), not total category product count; `hasNextPage=true` indicates more pages exist. `sellerType` is fulfillment method distribution (not seller domestic/cross-border type).
 
 ---
+
+## API Key request rate and retries
+
+All API Keys of one Nexscope user share the public API execution request-rate allowance, measured in any rolling 1-second window. The allowed RPS depends on that user's entitlements; it is not a universal 1 RPS. One Skill operation may issue multiple public API requests, each of which uses the allowance.
+
+HTTP 429 with Nexscope outer code `13012` means request-rate exhaustion: honor the response's `Retry-After`. Outer code `13013` means concurrent-request exhaustion, not rate exhaustion; honor `Retry-After` when supplied. Check the HTTP status and outer JSON code separately. Do not automatically replay writes or requests with uncertain outcomes; first reconcile the operation's state.
 
 > Localization note: Example response strings and observed messages are translated into English. Actual provider responses may use their original locale. Request enums shown as JSON Unicode escapes must be sent with their decoded values.

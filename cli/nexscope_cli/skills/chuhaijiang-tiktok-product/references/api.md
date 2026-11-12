@@ -20,14 +20,14 @@
 - **Endpoint (New-arrival product ranking)**: `${NEXSCOPE_PROXY_BASE}/api/v1/tools/research/chuhaijiang/products/rankings/new-arrivals`
 - **Endpoint (Top-selling product ranking)**: `${NEXSCOPE_PROXY_BASE}/api/v1/tools/research/chuhaijiang/products/rankings/top-selling`
 - **Endpoint (Image search)**: `${NEXSCOPE_PROXY_BASE}/api/v1/tools/research/chuhaijiang/products/image-search`
-- **Image asset upload**: `POST ${NEXSCOPE_PROXY_BASE}/api/skill-asset/presign` → presigned HTTPS `PUT` → `POST ${NEXSCOPE_PROXY_BASE}/api/skill-asset/confirm`
+- **Image upload presign**: `POST ${NEXSCOPE_PROXY_BASE}/api/v1/tools/research/chuhaijiang/upload/presigned-url` with JSON `{"fileName":"product.jpg"}`. PUT the JPG/JPEG/PNG bytes to the returned temporary `data.data.url`, then use `data.data.os_key` for image search.
 - **Method**: POST, `Content-Type: application/json`
 - **Authentication**: Header `Authorization: Bearer <api_key>`; prefer reading api_key from the `NEXSCOPE_API_KEY` environment variable
 - **User-Agent**：`Nexscope-Skill/1.0`
 - **Forwarded headers**: `SESSION_ID`, `MESSAGE_ID`, `MODE_ID`, `APP_NAME` (empty strings if unset)
 - **Timeout**: 150s
 
-> If `${NEXSCOPE_PROXY_BASE}` is unset, the script falls back to `https://api.nexscope.ai`. The conventions above apply only to product research gateway POST requests; image uploads use the Skill Asset presign, external HTTPS PUT, and confirm workflow. External PUT requests do not carry the Nexscope API Key or forwarded headers.
+> `upload_image.py` requires both `NEXSCOPE_PROXY_BASE` and `NEXSCOPE_API_KEY`. Set the base to the host only (for example, `https://api.nexscope.ai/`); the script appends the complete gateway path. Use Bearer authentication for the presign POST only. The temporary storage PUT must not include the Nexscope API key.
 
 ## Entry scripts and consumption
 
@@ -43,7 +43,7 @@
 | New-arrival product ranking | `chuhaijiang_product_rank_new_arrivals.py` | Response-header billing |
 | Top-selling product ranking | `chuhaijiang_product_rank_top_selling.py` | Response-header billing |
 | Image search | `chuhaijiang_product_image_search.py` | Response-header billing |
-| Upload presigning | `upload_image.py` | Response-header billing |
+| Provider image upload | `upload_image.py` | Research gateway presign and temporary storage PUT |
 
 ## Common conventions
 
@@ -51,7 +51,7 @@
 
 ### Common request parameters
 
-Except for image search and upload presigning, product endpoints use the common fields below. Each endpoint accepts only fields listed in its request table.
+Except for image search and provider image upload, product endpoints use the common fields below. Each endpoint accepts only fields listed in its request table.
 
 | Parameter | Type | Required | Default | Description |
 |---|---|---:|---|---|
@@ -63,7 +63,7 @@ Except for image search and upload presigning, product endpoints use the common 
 
 These research endpoints return a platform object with numeric `code`, nullable `msg`, and business `data`. Only outer `code: 0` means success; `200`, string codes, missing codes, and HTTP 200 alone do not. A nonzero code is a platform error: show `msg` and do not interpret the payload as a successful result.
 
-`msg` preserves the upstream message when available; Chinese messages are translated to English by Nexscope. A successful response without a message has `msg: null`. Do not infer success or retry behavior from the message text. Root provider `errcode`, `errmsg`, and `errorCode` are removed from the business payload; nested business `code` and `status` retain their own meanings.
+`msg` preserves the upstream message when available; Chinese messages are translated to English by Nexscope. A successful response without a message has `msg: null`. Do not infer success or retry behavior from the message text. On both success and failure, the direct fields `code`, `errcode`, `errorCode`, `msg`, `errmsg`, `message`, and `errorMsg` are removed from public `data`. Read the message only from outer `msg`; deeper business fields are preserved, including nested `code` and `status`.
 
 Package scripts unwrap this platform object for their business output and retain its `code`, `msg`, and timing metadata under `_nexscope`; for those outputs, inspect `_nexscope.code` / `_nexscope.msg`. Business `code` or `error` fields are not platform success markers.
 
@@ -84,7 +84,7 @@ In the complete real end-to-end verification on 2026-08-29, all 10 product busin
 | `request_id` | string | Request trace ID |
 | `data` | object | Endpoint business data; the shape varies by endpoint |
 
-The 10 product business entry scripts cache successful responses for 24 hours by default. Cache entries are isolated by current working directory, caller identity, gateway, endpoint, and complete request parameters. A matching entry prints `Cache hit` without making a new paid request. HTTP or business failures are not cached; successful empty results may be cached. `--inline` does not bypass the cache. `--no-cache` skips cache reads and writes and forces a real request, which may incur another charge; use it only when the user explicitly agrees to additional consumption or when debugging. Upload presigning and external PUT requests do not use response caching.
+The 10 product business entry scripts cache successful responses for 24 hours by default. Cache entries are isolated by current working directory, caller identity, gateway, endpoint, and complete request parameters. A matching entry prints `Cache hit` without making a new paid request. HTTP or business failures are not cached; successful empty results may be cached. `--inline` does not bypass the cache. `--no-cache` skips cache reads and writes and forces a real request, which may incur another charge; use it only when the user explicitly agrees to additional consumption or when debugging. Provider image upload does not use response caching.
 
 ### Pagination and monetary value types
 
@@ -268,30 +268,27 @@ python scripts/chuhaijiang_product_rank_top_selling.py '{"country":"us","date":"
 
 ## Image search workflow
 
-### Upload presigning
+### Provider image upload
 
-- **URL**: `POST ${NEXSCOPE_PROXY_BASE}/api/skill-asset/presign` → presigned HTTPS `PUT` → `POST ${NEXSCOPE_PROXY_BASE}/api/skill-asset/confirm`
+- **URL**: `POST ${NEXSCOPE_PROXY_BASE}/api/v1/tools/research/chuhaijiang/upload/presigned-url`; then PUT to the returned `data.data.url`
 - **Script**: `upload_image.py`
 - **Consumption**: Nexscope response-header billing
-- **Successful data**: `publicUrl` and `assetId` returned by confirm, plus the `ossKey` corresponding to the confirmed upload
+- **Successful data**: `data.data.os_key` is the provider-issued `osKey`; `data.data.url` is the temporary upload URL
 
 Request parameters:
 
 | Parameter | Type | Required | Description |
 |---|---|---:|---|
-| `fileName` | string | Yes | File name with extension; the helper script supports JPG/JPEG/PNG |
+| `fileName` | string | Yes | Original JPG/JPEG/PNG file name |
+| image bytes | PUT body | Yes | JPG/JPEG/PNG image, up to 20 MB; PUT to the temporary URL |
 
-The helper script uses the Nexscope Skill Asset workflow to obtain a presigned URL, perform PUT, and confirm the asset. Use only the `publicUrl` from the confirm response, and never send `NEXSCOPE_API_KEY` to the presigned upload URL:
+The helper script requests a fresh provider presigned URL through the Nexscope research gateway, PUTs the image bytes to the returned storage URL without Bearer authentication, and returns the provider's `osKey`:
 
 ```bash
 python scripts/upload_image.py /path/to/product.jpg
 ```
 
-### External HTTP PUT
-
-Send HTTP PUT only to the `putUrl` returned by presign, with image bytes as the body and `Content-Type` matching the image format. This PUT does not pass through `${NEXSCOPE_PROXY_BASE}` and does not carry the Nexscope API Key. After a successful PUT, call confirm; unconfirmed assets must not be used for image search.
-
-On success, `upload_image.py` outputs only the confirmed public URL and safe asset metadata, never the presigned URL.
+On success, `upload_image.py` outputs `osKey` and safe upload metadata. It never prints the temporary upload or signed read URL. Use `osKey` in image search.
 
 ### Image search
 
@@ -302,16 +299,16 @@ On success, `upload_image.py` outputs only the confirmed public URL and safe ass
 
 | Parameter | Type | Required | Default | Description |
 |---|---|---:|---|---|
-| `osKey` | string | Yes | - | The `ossKey` returned after Skill Asset upload and confirmation |
+| `osKey` | string | Yes | - | The provider-issued `osKey` returned by `upload_image.py`; Nexscope `skill-assets/...` keys do not work |
 | `country` | string | No | `US` | Uppercase two-letter country code |
 
 ```bash
-python scripts/chuhaijiang_product_image_search.py '{"osKey":"returned-key","country":"US"}'
+python scripts/chuhaijiang_product_image_search.py '{"osKey":"<osKey from upload_image.py>","country":"US"}'
 ```
 
 ## Response structure and key fields
 
-Except for product details and upload presigning, successful business data is usually in `data.items[]`, with the total count in `data.total_count`. Business object fields may be missing, be `null`, or expand as upstream adds fields; scripts preserve the complete original JSON, and callers should not discard unknown fields.
+Except for product details and provider image upload, successful business data is usually in `data.items[]`, with the total count in `data.total_count`. Business object fields may be missing, be `null`, or expand as upstream adds fields; scripts preserve the complete original JSON, and callers should not discard unknown fields.
 
 | Endpoint | Data path | Key fields for parsing and chained calls |
 |---|---|---|
@@ -327,9 +324,9 @@ Except for product details and upload presigning, successful business data is us
 | New-arrival product ranking | `data.items[]` | `id`/`product_id`, product and shop information, cumulative and last 3/7-day GMV/sales, product status, and sales trends |
 | Top-selling product ranking | `data.items[]` | `id`/`product_id`, product and shop information, period/cumulative GMV and sales, and their growth rates |
 | Image search | `data.items[]` | `id`, `product_name`, `product_images`, prices, GMV, sales, category, and region |
-| Skill Asset upload | confirm `data` | `publicUrl` is the confirmed public URL; `assetId` identifies the asset; the script also preserves the `ossKey` corresponding to the confirmed upload for image search |
+| Provider image upload | `data.data` | `os_key` is the provider-issued `osKey` for image search; `url` is the temporary upload URL |
 
-For product details, do not read only `data.items`: when requesting `include=core,channel`, also parse `data.core.items` and `data.channel.items` separately. Never print, log, or persist the presigned `putUrl`. Check the actual JSON types before parsing nested objects and arrays.
+For product details, do not read only `data.items`: when requesting `include=core,channel`, also parse `data.core.items` and `data.channel.items` separately. Never print, log, or persist presigned URL query strings. Check the actual JSON types before parsing nested objects and arrays.
 
 ## Error codes
 
@@ -375,12 +372,18 @@ curl -X POST "${NEXSCOPE_PROXY_BASE}/api/v1/tools/research/chuhaijiang/products/
 
 ### Image search
 
-Prefer `python scripts/upload_image.py <local-image>` to keep presigned URLs out of terminal history. After the script returns `osKey`:
+Use `python scripts/upload_image.py <local-image>`. After the script returns the provider's `osKey`:
 
 ```bash
-python scripts/chuhaijiang_product_image_search.py '{"osKey":"returned-key","country":"US"}'
+python scripts/chuhaijiang_product_image_search.py '{"osKey":"<osKey from upload_image.py>","country":"US"}'
 ```
 
 ---
 
 Legacy local cache: a still-valid cache created before this response contract remains usable without a new paid request. The scripts mark its copied metadata as `_nexscope.responseContract = "legacy-cache"`, with `_nexscope.code` and `_nexscope.msg` set to `null` because the original platform status/message is unavailable. Do not infer platform success from business `errcode`, `code`, or `status`. Existing business data, billing metadata, cache contents and expiration are preserved; the marker is added only to the in-memory output.
+
+## API Key request rate and retries
+
+All API Keys of one Nexscope user share the public API execution request-rate allowance, measured in any rolling 1-second window. The allowed RPS depends on that user's entitlements; it is not a universal 1 RPS. One Skill operation may issue multiple public API requests, each of which uses the allowance.
+
+HTTP 429 with Nexscope outer code `13012` means request-rate exhaustion: honor the response's `Retry-After`. Outer code `13013` means concurrent-request exhaustion, not rate exhaustion; honor `Retry-After` when supplied. Check the HTTP status and outer JSON code separately. Do not automatically replay writes or requests with uncertain outcomes; first reconcile the operation's state.

@@ -66,6 +66,8 @@ Run `nexscope --version`, then `nexscope get-skills core`. If unavailable, insta
 6. If credits are insufficient, run `nexscope account`, show its `rechargeUrl`, and ask the user to recharge and reply **done**. Then run `nexscope account` again and verify the balance. A user's reply or payment webpage alone does not establish available credits. Resume only the requested failed operation after checking whether it already completed.
 7. Save requested deliverables. To convert a JSON list of objects: `nexscope export <absolute JSON file> --path data.items --output <new CSV path>`. Choose the actual list path from the response; do not assume `data.items` exists. Return a link to the result and explain partial results.
 
+For bundled workflows that execute Nexscope public APIs, all API Keys of the same user share one request-rate allowance over any rolling 1-second window. Allowed RPS depends on the user's entitlements; it is not fixed at 1 RPS for everyone. One Skill operation may issue multiple public API requests. In 1688 procurement, business scripts call `authorizedStores` first; this precheck is separately billed and uses a request-rate slot. On HTTP 429 with outer code `13012`, honor `Retry-After` before another request. Outer code `13013` is a concurrent-request limit; honor its `Retry-After` when supplied. Never automatically replay a write or a request with an unclear outcome; reconcile its state first.
+
 For 1688 buyer authorization, procurement, orders, shipping or invoices, select
 `1688-procurement` and read its complete returned guide first. LinkFox Agent is
 Nexscope's strategic partner in China providing authorization support; the guide
