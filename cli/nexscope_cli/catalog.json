@@ -2504,6 +2504,244 @@
       "available": true,
       "version": "1.0.5",
       "sourceRevision": "37f6ab63442c88fd694ab88c48418bb98c35e908"
+    },
+    "amazon-store-aplus-content": {
+      "source": "ecommerce-amazon-store-aplus-content",
+      "description": "Find and manage A+ content, media, ASIN associations, and submissions.",
+      "scripts": [
+        "scripts/amazon_sp_api.py"
+      ],
+      "files": {
+        "SKILL.md": "6be7c63a70e4884ccfa6e9c6340a4ad07ecb587f09cfb05fbfc3ddd7059a6943",
+        "references/api.json": "6489fd9a3b151920486b5f65966d6dbddafb4f470e2231a833d6d463b5318bae",
+        "references/api.md": "b92fc14c6abd0703a5c9d1a09bd92f8bcb146bc235d019ccd65cdcd75d2b6d5d",
+        "references/testing.md": "3cb93ebe56db858012f82f53a615124f6a37ff10d39fa2ef8ad9d966d9ce5fb6",
+        "scripts/amazon_sp_api.py": "07ae42ea2b83232d723569a2c45572e5591ae5fa6d5996d5eda2c803b1845ae9"
+      },
+      "available": true,
+      "version": "1.0.0",
+      "sourceRevision": "16aed02a86c6d2e3b4538ac2a9d8105b9ce935a9"
+    },
+    "amazon-store-auth": {
+      "source": "ecommerce-amazon-store-auth",
+      "description": "Generate a consent link and manage owned Seller Central connections.",
+      "scripts": [
+        "scripts/amazon_sp_api.py"
+      ],
+      "files": {
+        "SKILL.md": "472633fd1c87b1e81072f1da0c2d46c3e426d5b16e7bb634040f91beadfb6a6a",
+        "references/api.json": "d145168a4e3925450bdbc6fc05a84eb7f891d1643b7543b2379c9127ab105d0b",
+        "references/api.md": "e290e091370bd9e501f9f4a1dc595205add898657ff37e1dc8109b6fcaa527ae",
+        "references/testing.md": "14f5d4de0be597d2a36aa56a5c387944a8d2c8a22ae344df7dc12485c549a3bb",
+        "scripts/amazon_sp_api.py": "07ae42ea2b83232d723569a2c45572e5591ae5fa6d5996d5eda2c803b1845ae9"
+      },
+      "available": true,
+      "version": "1.0.0",
+      "sourceRevision": "16aed02a86c6d2e3b4538ac2a9d8105b9ce935a9"
+    },
+    "amazon-store-catalog": {
+      "source": "ecommerce-amazon-store-catalog",
+      "description": "Search the Amazon catalog and retrieve item information by ASIN.",
+      "scripts": [
+        "scripts/amazon_sp_api.py"
+      ],
+      "files": {
+        "SKILL.md": "ce30e3cfa051f762e87e57df1258c26383cf9b554b3deaec128ecf71c300f364",
+        "references/api.json": "82707c54fe173d7cf417e9f3d55067e7a579b667a33bc4b2be6477a7bede0dc7",
+        "references/api.md": "83b6ed768498686912bb4d395ba99917761e039f29b8b2ec1714da288f215a0c",
+        "references/testing.md": "392d57af71b9de82d8528fff5f54c674dca2130a035895d7c39d1b2294eea30f",
+        "scripts/amazon_sp_api.py": "07ae42ea2b83232d723569a2c45572e5591ae5fa6d5996d5eda2c803b1845ae9"
+      },
+      "available": true,
+      "version": "1.0.0",
+      "sourceRevision": "16aed02a86c6d2e3b4538ac2a9d8105b9ce935a9"
+    },
+    "amazon-store-customer-feedback": {
+      "source": "ecommerce-amazon-store-customer-feedback",
+      "description": "Inspect review topics, review trends, and return insights.",
+      "scripts": [
+        "scripts/amazon_sp_api.py"
+      ],
+      "files": {
+        "SKILL.md": "4272383cb967dabf58708419d4a9e88dd9e86e687aa30b5e48b30da4eb9624eb",
+        "references/api.json": "80a72010dbe558486d67a7ed6141bd24ca0c6925b13ddb918225f12cf6ebdb4f",
+        "references/api.md": "4d0b4eae5c3750eea1938e5c6e44666dd72ded29526940ae49c4005166ebc4b1",
+        "references/testing.md": "88f2f4bfb2762dfb0dbbbdbc202671d8aaf7c6324869e944f61975a2879dbb6b",
+        "scripts/amazon_sp_api.py": "07ae42ea2b83232d723569a2c45572e5591ae5fa6d5996d5eda2c803b1845ae9"
+      },
+      "available": true,
+      "version": "1.0.0",
+      "sourceRevision": "16aed02a86c6d2e3b4538ac2a9d8105b9ce935a9"
+    },
+    "amazon-store-external-fulfillment": {
+      "source": "ecommerce-amazon-store-external-fulfillment",
+      "description": "Work with external fulfillment orders, shipments, returns, and inventory.",
+      "scripts": [
+        "scripts/amazon_sp_api.py"
+      ],
+      "files": {
+        "SKILL.md": "5814e636d5b6590bab6b95d4ecf57b4699238d3afa181b055c9c835463571f33",
+        "references/api.json": "1432dab4079602c8bc2e55ed15fe886ca4126d270dcaeaecc88df618891fcbb0",
+        "references/api.md": "c376ca0003df5eca5add44f110f2340f0d239a8252c5448522c1f622774ce5f6",
+        "references/testing.md": "1b06b0439ab9fa9ebab9f93b38a19612f443cda57d08a7c4bfd9a0fbe5239b88",
+        "scripts/amazon_sp_api.py": "07ae42ea2b83232d723569a2c45572e5591ae5fa6d5996d5eda2c803b1845ae9"
+      },
+      "available": true,
+      "version": "1.0.0",
+      "sourceRevision": "16aed02a86c6d2e3b4538ac2a9d8105b9ce935a9"
+    },
+    "amazon-store-fba": {
+      "source": "ecommerce-amazon-store-fba",
+      "description": "Review FBA inventory, eligibility, and supported legacy inbound operations.",
+      "scripts": [
+        "scripts/amazon_sp_api.py"
+      ],
+      "files": {
+        "SKILL.md": "a83e60653a63576fa85563c377b5529c34ded6d339e22af78f18b411092f3a52",
+        "references/api.json": "c9e0cf4ec26d977f73b1deeb195ba37216483855b785f812cabd263b73f0fab1",
+        "references/api.md": "9b3241bb7f1c070eec6459d0dbc4bdf42f44142c03c99bd96d67e4248c30b8c7",
+        "references/testing.md": "b8488364d699143d1eaf5a3766f1721faecd0b9461ea1c8289e50b7c0ba02fd0",
+        "scripts/amazon_sp_api.py": "07ae42ea2b83232d723569a2c45572e5591ae5fa6d5996d5eda2c803b1845ae9"
+      },
+      "available": true,
+      "version": "1.0.0",
+      "sourceRevision": "16aed02a86c6d2e3b4538ac2a9d8105b9ce935a9"
+    },
+    "amazon-store-feeds": {
+      "source": "ecommerce-amazon-store-feeds",
+      "description": "Prepare, submit, and inspect Amazon feeds and their document records.",
+      "scripts": [
+        "scripts/amazon_sp_api.py"
+      ],
+      "files": {
+        "SKILL.md": "8d751fb48512de74c6a6f834f9b1be794f1f82098a354e33519279c6497dca0d",
+        "references/api.json": "678a52cd897887a5b4ffe8119017f4c621a00518375fd0c2c100e3143b7d7790",
+        "references/api.md": "720e9a2261f3e7796bf858c1b3c6c3ee7cbf70834c5e04fd4773ed2540d2394f",
+        "references/testing.md": "47cc5b11dd2b06e59306b35bc307b5e04f7c4ebb0544dfb01db9344d369a6d30",
+        "scripts/amazon_sp_api.py": "07ae42ea2b83232d723569a2c45572e5591ae5fa6d5996d5eda2c803b1845ae9"
+      },
+      "available": true,
+      "version": "1.0.0",
+      "sourceRevision": "16aed02a86c6d2e3b4538ac2a9d8105b9ce935a9"
+    },
+    "amazon-store-fulfillment-inbound": {
+      "source": "ecommerce-amazon-store-fulfillment-inbound",
+      "description": "Plan and track FBA inbound shipments, packing, and transportation.",
+      "scripts": [
+        "scripts/amazon_sp_api.py"
+      ],
+      "files": {
+        "SKILL.md": "54779ec58edc2cf3bdc4f5f8eaed0e0b4c6f44703ba07ed9cc09ea31cef7c6bf",
+        "references/api.json": "b5680676ca192feff85a095577cdf0d864d74199b619765c54046e2050de010e",
+        "references/api.md": "d8c8d93ac1b0c166b37fb9d4e0ac53b4c3c74922c7c14fc47b39c23566586f70",
+        "references/testing.md": "b52890f08d6671ebd7ecccf786fbaa5ae0a99f88edfd2e5d51655416d4ceddbd",
+        "scripts/amazon_sp_api.py": "07ae42ea2b83232d723569a2c45572e5591ae5fa6d5996d5eda2c803b1845ae9"
+      },
+      "available": true,
+      "version": "1.0.0",
+      "sourceRevision": "16aed02a86c6d2e3b4538ac2a9d8105b9ce935a9"
+    },
+    "amazon-store-fulfillment-outbound": {
+      "source": "ecommerce-amazon-store-fulfillment-outbound",
+      "description": "Review and manage outbound fulfillment orders, options, and invoice headers.",
+      "scripts": [
+        "scripts/amazon_sp_api.py"
+      ],
+      "files": {
+        "SKILL.md": "81498316d958673d861f5cdd6bc2913a5b987b938fd010daf5b897e3ec541e1e",
+        "references/api.json": "2ce302860731496b49a63bc1d1ff78c21537a520c768aac9df326ff0b3cf1cef",
+        "references/api.md": "f633718f422d62f04b6fb7c42f4223374cd1db8d8e27c15a369cabdf9b1595c1",
+        "references/testing.md": "2a5dd9721921a425b628ecdac18bd815f1ecff921df2ade175439430e1abcba2",
+        "scripts/amazon_sp_api.py": "07ae42ea2b83232d723569a2c45572e5591ae5fa6d5996d5eda2c803b1845ae9"
+      },
+      "available": true,
+      "version": "1.0.0",
+      "sourceRevision": "16aed02a86c6d2e3b4538ac2a9d8105b9ce935a9"
+    },
+    "amazon-store-listings": {
+      "source": "ecommerce-amazon-store-listings",
+      "description": "Inspect and manage listings and retrieve product type definitions.",
+      "scripts": [
+        "scripts/amazon_sp_api.py"
+      ],
+      "files": {
+        "SKILL.md": "019520aecbb3109ef019ae9ca2cc0c8614bbb3fec35e2cb1b30a29e7e9abcef4",
+        "references/api.json": "90c5692d7fb3062d8c576a9d060493fbb46dddefa8a90932fe87bc1e9e1253d9",
+        "references/api.md": "0381b75980fff665d858d38d60119aed1b71387adba51721ed34e9c2b6be47e0",
+        "references/testing.md": "31e92f2b5c082c9cd78c17ea6dc8367949d386aba92961df86e0141eb165bea7",
+        "scripts/amazon_sp_api.py": "07ae42ea2b83232d723569a2c45572e5591ae5fa6d5996d5eda2c803b1845ae9"
+      },
+      "available": true,
+      "version": "1.0.0",
+      "sourceRevision": "16aed02a86c6d2e3b4538ac2a9d8105b9ce935a9"
+    },
+    "amazon-store-orders": {
+      "source": "ecommerce-amazon-store-orders",
+      "description": "Retrieve and manage supported Seller Central order operations.",
+      "scripts": [
+        "scripts/amazon_sp_api.py"
+      ],
+      "files": {
+        "SKILL.md": "b328076e3235f90060a3ae69af85a4312c258401d3bdad6376c4511c157909b0",
+        "references/api.json": "36adbd8f1a8a0d7b230e0432ad0124e5cdb160ffe60336800359d5597b1f0ade",
+        "references/api.md": "c1cf2cff6c434a403a9512c3c617b81a58c44771327d7e5d51da2bb8a8e12400",
+        "references/testing.md": "b3c3ff26b01b43a5dbd01b440034fb204381b02489064a733a5fbfa851553ecd",
+        "scripts/amazon_sp_api.py": "07ae42ea2b83232d723569a2c45572e5591ae5fa6d5996d5eda2c803b1845ae9"
+      },
+      "available": true,
+      "version": "1.0.0",
+      "sourceRevision": "16aed02a86c6d2e3b4538ac2a9d8105b9ce935a9"
+    },
+    "amazon-store-pricing": {
+      "source": "ecommerce-amazon-store-pricing",
+      "description": "Inspect pricing, competitive summaries, offers, and batch offer information.",
+      "scripts": [
+        "scripts/amazon_sp_api.py"
+      ],
+      "files": {
+        "SKILL.md": "a58d11b3f854e8d185b4d6ec41ae4f3ee1adde7bda8031ae380b50fa47a09c90",
+        "references/api.json": "02b203ab320b7f02bb8cfdf2e1abefccfa26bb6ad3d2e096ff731f68910a0d40",
+        "references/api.md": "706142bd2cfbe24305e92188c3c6a23388f3240daeac56ee2a0aebad4a4ada27",
+        "references/testing.md": "4033013315bbf368edf7cc4420f6db10a3123e7a2c4c2257134125c5aa053069",
+        "scripts/amazon_sp_api.py": "07ae42ea2b83232d723569a2c45572e5591ae5fa6d5996d5eda2c803b1845ae9"
+      },
+      "available": true,
+      "version": "1.0.0",
+      "sourceRevision": "16aed02a86c6d2e3b4538ac2a9d8105b9ce935a9"
+    },
+    "amazon-store-report": {
+      "source": "ecommerce-amazon-store-report",
+      "description": "Create and retrieve Amazon report metadata and document references.",
+      "scripts": [
+        "scripts/amazon_sp_api.py"
+      ],
+      "files": {
+        "SKILL.md": "3c437222811ce9ebf72e4775b26609925f29fd9cfb69012dcdc512ace8af84e3",
+        "references/api.json": "97fb01b342c2a23f5f53c5fae78ab67c3ac8bdf89e78e0ab71e444a8be2f4f97",
+        "references/api.md": "1542436819454e1844f74bd914a843b66386650a6bbe8b473d02a21bf5e651e6",
+        "references/testing.md": "18cd0000d09847df84b0119172b74202eca1aae2d89361cd3590b895e34d39fa",
+        "scripts/amazon_sp_api.py": "07ae42ea2b83232d723569a2c45572e5591ae5fa6d5996d5eda2c803b1845ae9"
+      },
+      "available": true,
+      "version": "1.0.0",
+      "sourceRevision": "16aed02a86c6d2e3b4538ac2a9d8105b9ce935a9"
+    },
+    "amazon-store-uploads": {
+      "source": "ecommerce-amazon-store-uploads",
+      "description": "Preview and confirm backend-managed Amazon resource uploads.",
+      "scripts": [
+        "scripts/amazon_sp_api.py"
+      ],
+      "files": {
+        "SKILL.md": "f84f1bf8b0070450030005133770bb854c27ef5b70d7c43cc65236d2140935da",
+        "references/api.json": "3e23d765a17829269b874bb4e7c72c0faefdbf3c7db81176b082033943982741",
+        "references/api.md": "f1a9111ff93f0b8b911a2a686e063ce5948852546ed5e19ad3d25251be03c0e6",
+        "references/testing.md": "8bf5f8931c05e729ceab4f992a9b4dc821cc43312a8a69812d4a6b964acde9bf",
+        "scripts/amazon_sp_api.py": "07ae42ea2b83232d723569a2c45572e5591ae5fa6d5996d5eda2c803b1845ae9"
+      },
+      "available": true,
+      "version": "1.0.0",
+      "sourceRevision": "16aed02a86c6d2e3b4538ac2a9d8105b9ce935a9"
     }
   },
   "scopedUpdates": [
@@ -2670,6 +2908,25 @@
         "web-search",
         "zhihuiya-patent-image-search",
         "zhihuiya-utility-patent-image-search"
+      ]
+    },
+    {
+      "revision": "16aed02a86c6d2e3b4538ac2a9d8105b9ce935a9",
+      "skills": [
+        "amazon-store-aplus-content",
+        "amazon-store-auth",
+        "amazon-store-catalog",
+        "amazon-store-customer-feedback",
+        "amazon-store-external-fulfillment",
+        "amazon-store-fba",
+        "amazon-store-feeds",
+        "amazon-store-fulfillment-inbound",
+        "amazon-store-fulfillment-outbound",
+        "amazon-store-listings",
+        "amazon-store-orders",
+        "amazon-store-pricing",
+        "amazon-store-report",
+        "amazon-store-uploads"
       ]
     }
   ]

@@ -85,8 +85,8 @@ included, and the existing `codex-nexscope-plugin-0.1.1.zip` is not overwritten.
 
 ## Bundled sourcing workflows
 
-The bundled catalog contains 141 skills, including 139 routable workflows. It
-includes API Key request-rate guidance in 140 applicable Skill guides, including
+The bundled catalog contains 155 skills, including 153 routable workflows. It
+includes API Key request-rate guidance in 154 applicable Skill guides, including
 `1688-procurement` 1.0.5. Connection-only `amazon-ads-api-access` is outside
 the public API execution-rate guidance. A repository update does not upgrade
 production Skill packages or an installed plugin. Check the live API reference
